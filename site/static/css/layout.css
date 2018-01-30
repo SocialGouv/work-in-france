@@ -33,16 +33,15 @@ body {
 
 #skip-links {
     position: absolute;
-    width: auto;
-    top: 0;
-    left: -52em;
+    width: 100%;
+    text-align: center;
 }
 
 #skip-links a {
-    display: inline-block;
-    margin: 0 4px;
-    padding: 4px 10px;
-    transition: 150ms;
+    position: absolute;
+    left: -100%;
+    top: 20px;
+    padding: 20px;
 /*    background: #00578d;*/
     background: var(--darker-blue);
 /*    color: #fff;*/
@@ -50,9 +49,9 @@ body {
 }
 
 #skip-links a:focus,
-#skip-links a:focus ~ a,
-#skip-links:focus-within a {
-    transform: translate(52em);
+#skip-links a:active {
+    position: relative;
+    left: 0;
 }
 
 /* Header.
