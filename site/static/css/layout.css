@@ -7,6 +7,7 @@ body {
     background: var(--lighter-grey);
 }
 
+section,
 .site-header,
 .banner-content,
 .site-main,
@@ -18,6 +19,7 @@ body {
 
 @media (max-width: 400px) {  /* For any browser < max-width. */
 
+    section,
     .site-header,
     .banner-content,
     .site-main,
@@ -62,6 +64,11 @@ body {
     background: var(--white);
     padding-top: 10px;
     padding-bottom: 10px;
+
+/*    border: 1px solid #c9d3df;*/
+    border: 1px solid var(--light-grey);
+    border-width: 0 0 1px 0;
+
 }
 
 .site-header a.site-logo {
@@ -94,7 +101,6 @@ body {
 .menu {
     z-index: 1000;
     transform: translateX(100%);  /* Put it out of the viewport. */
-    transition: transform 0.3s ease-in-out;
     position: fixed;
     top: 0;
     left: 0;
@@ -175,6 +181,14 @@ body.js-menu-is-opened {
 .site-main {
 /*    background: #fff;*/
     background: var(--white);
+}
+
+/* Sections.
+--------------------------------------------------------------------------- */
+
+.section-color {
+/*    background: #ebeff3;*/
+    background: var(--lighter-grey);
 }
 
 /* Footer.

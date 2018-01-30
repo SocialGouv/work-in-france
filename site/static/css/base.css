@@ -53,15 +53,23 @@ https://fontlibrary.org/fr/font/source-sans-pro
 --------------------------------------------------------------------------- */
 
 :root {
+
     --black: #1c1c1c;
+    --white: #fff;
+
+    --light-blue: #b4e1fa;
+    --medium-blue: #0081d5;
     --dark-blue: #006cb0;
     --darker-blue: #00578d;
     --french-flag-blue: #003189;
-    --grey: #adb9c9;
-    --light-grey: #c9d3df;
+
+    --light-red: #f8e1e7;
+    --medium-red: #d1335b;
+
     --lighter-grey: #ebeff3;
-    --medium-blue: #0081d5;
-    --white: #fff;
+    --light-grey: #c9d3df;
+    --grey: #adb9c9;
+
 }
 
 body {

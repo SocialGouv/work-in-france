@@ -1,6 +1,12 @@
+/* Generic utils.
+--------------------------------------------------------------------------- */
+
 .center {
     text-align: center;
 }
+
+/* Multi column lists.
+--------------------------------------------------------------------------- */
 
 @media (min-width: 900px) {  /* For any browser > min-width. */
 
@@ -12,6 +18,21 @@
 
     .multi-column-list li {
         margin: 0 50px;
+    }
+
+}
+
+/* Aerate content on big screens
+--------------------------------------------------------------------------- */
+
+.aerate-content {
+    padding: 5% 15%;
+}
+
+@media (max-width: 800px) {  /* For any browser < max-width. */
+
+    .aerate-content {
+        padding: 0;
     }
 
 }
