@@ -5,20 +5,27 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title>WiF</title>
     <link rel="stylesheet" href="static/css/base.css" type="text/css">
+    <link rel="stylesheet" href="static/css/forms.css" type="text/css">
     <link rel="stylesheet" href="static/css/layout.css" type="text/css">
     <link rel="stylesheet" href="static/css/utils.css" type="text/css">
     <link rel="stylesheet" href="static/css/modules.css" type="text/css">
 </head>
 <body>
 
+    <nav aria-label="page" id="skip-links">
+        <a href="#site-main">Contenu principal</a>
+        <a href="#site-menu" class="js-menu-open-btn">Liens de navigation</a>
+        <a href="#site-footer">Pied de page</a>
+    </nav>
+
     <header class="site-header">
         <nav>
             <a class="site-logo" href="/">Work in France</a>
             <div>
-                <a href="#site-menu" class="site-menu-open">
+                <a href="#site-menu" id="menu-open-btn" class="js-menu-open-btn">
                     <img src="static/img/menu.svg" alt="Ouvrir le menu du site">
                 </a>
-                <div class="site-menu" id="site-menu">
+                <div class="menu" id="site-menu">
                     <h2>Menu</h2>
                     <ul>
                         <li>
@@ -43,7 +50,7 @@
                     </form>
                     <hr>
                     <p>
-                        <a href="#" class="site-menu-close">× Fermer</a>
+                        <a href="#" class="js-menu-close-btn">× Fermer</a>
                     </p>
                 </div>
             </div>
@@ -56,7 +63,7 @@
         </div>
     </div>
 
-    <main class="site-main">
+    <main id="site-main" class="site-main">
 
         <h3 class="center">Une autorisation provisoire de travail, comment ça se passe ?</h3>
 
@@ -595,7 +602,7 @@
 
     </main>
 
-    <footer class="site-footer">
+    <footer id="site-footer" class="site-footer">
         <div class="site-footer-content">
             <ul>
                 <li>

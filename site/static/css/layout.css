@@ -28,6 +28,33 @@ body {
 
 }
 
+/* Skip-links.
+--------------------------------------------------------------------------- */
+
+#skip-links {
+    position: absolute;
+    width: auto;
+    top: 0;
+    left: -52em;
+}
+
+#skip-links a {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 4px 10px;
+    transition: 150ms;
+/*    background: #00578d;*/
+    background: var(--darker-blue);
+/*    color: #fff;*/
+    color: var(--white);
+}
+
+#skip-links a:focus,
+#skip-links a:focus ~ a,
+#skip-links:focus-within a {
+    transform: translate(52em);
+}
+
 /* Header.
 --------------------------------------------------------------------------- */
 
@@ -54,18 +81,18 @@ body {
 /* Menu.
 --------------------------------------------------------------------------- */
 
-.site-menu-open {
+#menu-open-btn {
     display: block;
     width: 40px;
     height: 24px;
 }
 
-.site-menu-open > img {
+#menu-open-btn > img {
     width: 100%;
     height: 100%;
 }
 
-.site-menu {
+.menu {
     z-index: 1000;
     transform: translateX(100%);  /* Put it out of the viewport. */
     transition: transform 0.3s ease-in-out;
@@ -80,25 +107,24 @@ body {
     background: var(--white);
 }
 
-.site-menu.js-menu-open,
-.site-menu:target {
+.menu.js-menu-is-opened,
+.menu:target {
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
 
-body.js-menu-open {
+body.js-menu-is-opened {
     overflow: hidden;  /* Prevent body scrolling when the menu is open. */
 }
 
-.site-menu ul {
+.menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.site-menu ul li {
+.menu ul li {
     text-transform: uppercase;
-    font-size: .9rem;
     margin: 20px 0;
 }
 
