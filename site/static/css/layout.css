@@ -183,6 +183,11 @@ body.js-menu-is-opened {
     background: var(--white);
 }
 
+.site-main > section {
+    padding: 0;
+    margin: 0;
+}
+
 /* Sections.
 --------------------------------------------------------------------------- */
 
