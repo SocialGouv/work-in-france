@@ -26,7 +26,7 @@
 --------------------------------------------------------------------------- */
 
 .aerate-content {
-    padding: 5% 15%;
+    padding: 0 15%;
 }
 
 @media (max-width: 800px) {  /* For any browser < max-width. */
