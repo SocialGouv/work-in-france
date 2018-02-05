@@ -136,6 +136,10 @@ body.js-menu-is-opened {
 
 .banner {
     background: url(../img/map_bkg_pattern.png) repeat;
+
+/*    border: 1px solid #c9d3df;*/
+    border: 1px solid var(--light-grey);
+    border-width: 0 0 1px 0;
 }
 
 .banner-content {
