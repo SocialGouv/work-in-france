@@ -2,6 +2,8 @@
 // ------------------------------------------
 let form = document.querySelector('.js-qualify-form');
 
+let departmentSelect = document.querySelector('select#department');
+
 let validateForm = function (e) {
 
   e.preventDefault();
@@ -18,3 +20,4 @@ let validateForm = function (e) {
 }
 
 form.addEventListener('submit', validateForm);
+departmentSelect.addEventListener('change', validateForm);
