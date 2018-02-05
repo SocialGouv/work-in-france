@@ -13,19 +13,19 @@
 <body>
 
     <nav aria-label="page" id="skip-links">
-        <a href="#site-main">Contenu principal</a>
-        <a href="#site-menu" class="js-menu-open-btn">Liens de navigation</a>
-        <a href="#site-footer">Pied de page</a>
+        <a href="#skip-to-main">Contenu principal</a>
+        <a href="#skip-to-menu" class="js-menu-open-btn">Liens de navigation</a>
+        <a href="#skip-to-footer">Pied de page</a>
     </nav>
 
     <header class="site-header">
         <nav>
             <a class="site-logo" href="/">Work in France</a>
             <div>
-                <a href="#site-menu" id="menu-open-btn" class="js-menu-open-btn">
+                <a href="#skip-to-menu" id="menu-open-btn" class="js-menu-open-btn">
                     <img src="static/img/menu.svg" alt="Ouvrir le menu du site">
                 </a>
-                <div class="menu" id="site-menu">
+                <div class="menu" id="skip-to-menu">
                     <h2>Menu</h2>
                     <ul>
                         <li>
@@ -57,37 +57,41 @@
         </nav>
     </header>
 
-    <main class="site-main">
+    <main id="skip-to-main">
 
-        <div class="aerate-content">
+        <section class="section-white">
 
-            <h2>Demande d'autorisation provisoire de travail</h2>
+            <div class="aerate-content">
 
-            <p><b>Ce service n'est pas encore disponible dans votre département.</b></p>
+                <h2>Demande d'autorisation provisoire de travail</h2>
 
-            <p>La version bêta est disponible uniquement pour les demandes concernant le département 75.</p>
+                <p><b>Ce service n'est pas encore disponible dans votre département.</b></p>
 
-            <p>En attendant, veuillez vous adresser à la <abbr title="Direction régionale des entreprises, de la concurrence, de la consommation, du travail et de l'emploi">DIRECCTE</abbr> de votre département :</p>
+                <p>La version bêta est disponible uniquement pour les demandes concernant le département 75.</p>
 
-            <p>
-                <i>
-                    DIRECCTE Ile-de-France<br>
-                    21 Rue Madeleine Vionnet<br>
-                    93300 Aubervilliers<br>
-                    Téléphone : 01 70 96 13 00<br>
-                    <a href="http://idf.direccte.gouv.fr/Informations-generales">http://idf.direccte.gouv.fr/Informations-generales</a>
-                </i>
-            </p>
+                <p>En attendant, veuillez vous adresser à la <abbr title="Direction régionale des entreprises, de la concurrence, de la consommation, du travail et de l'emploi">DIRECCTE</abbr> de votre département :</p>
 
-            <p>
-                <a href="/">Revenir à l'accueil</a>
-            </p>
+                <p>
+                    <i>
+                        DIRECCTE Ile-de-France<br>
+                        21 Rue Madeleine Vionnet<br>
+                        93300 Aubervilliers<br>
+                        Téléphone : 01 70 96 13 00<br>
+                        <a href="http://idf.direccte.gouv.fr/Informations-generales">http://idf.direccte.gouv.fr/Informations-generales</a>
+                    </i>
+                </p>
 
-        </div>
+                <p>
+                    <a href="/">Revenir à l'accueil</a>
+                </p>
+
+            </div>
+
+        </section>
 
     </main>
 
-    <footer id="site-footer" class="site-footer">
+    <footer id="skip-to-footer" class="site-footer">
         <div class="site-footer-content">
             <ul>
                 <li>

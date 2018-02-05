@@ -13,19 +13,19 @@
 <body>
 
     <nav aria-label="page" id="skip-links">
-        <a href="#site-main">Contenu principal</a>
-        <a href="#site-menu" class="js-menu-open-btn">Liens de navigation</a>
-        <a href="#site-footer">Pied de page</a>
+        <a href="#skip-to-main">Contenu principal</a>
+        <a href="#skip-to-menu" class="js-menu-open-btn">Liens de navigation</a>
+        <a href="#skip-to-footer">Pied de page</a>
     </nav>
 
     <header class="site-header">
         <nav>
             <a class="site-logo" href="/">Work in France</a>
             <div>
-                <a href="#site-menu" id="menu-open-btn" class="js-menu-open-btn">
+                <a href="#skip-to-menu" id="menu-open-btn" class="js-menu-open-btn">
                     <img src="static/img/menu.svg" alt="Ouvrir le menu du site">
                 </a>
-                <div class="menu" id="site-menu">
+                <div class="menu" id="skip-to-menu">
                     <h2>Menu</h2>
                     <ul>
                         <li>
@@ -57,140 +57,144 @@
         </nav>
     </header>
 
-    <main class="site-main">
+    <main id="skip-to-main">
 
-        <div class="aerate-content">
+        <section class="section-white">
 
-            <h2>Demande d'autorisation provisoire de travail</h2>
+            <div class="aerate-content">
 
-            <form class="js-qualify-form" action="https://tps.apientreprise.fr/commencer/autorisation-provisoire-de-travail" method="get">
+                <h2>Demande d'autorisation provisoire de travail</h2>
 
-                <p>
-                    <label for="department">Département de résidence du salarié :</label>
-                    <select id="department" name="department" autofocus>
-                      <option value="01">01 - Ain</option>
-                      <option value="02">02 - Aisne</option>
-                      <option value="03">03 - Allier</option>
-                      <option value="04">04 - Alpes-de-Haute-Provence</option>
-                      <option value="05">05 - Hautes-alpes</option>
-                      <option value="06">06 - Alpes-maritimes</option>
-                      <option value="07">07 - Ardèche</option>
-                      <option value="08">08 - Ardennes</option>
-                      <option value="09">09 - Ariège</option>
-                      <option value="10">10 - Aube</option>
-                      <option value="11">11 - Aude</option>
-                      <option value="12">12 - Aveyron</option>
-                      <option value="13">13 - Bouches-du-Rhône</option>
-                      <option value="14">14 - Calvados</option>
-                      <option value="15">15 - Cantal</option>
-                      <option value="16">16 - Charente</option>
-                      <option value="17">17 - Charente-maritime</option>
-                      <option value="18">18 - Cher</option>
-                      <option value="19">19 - Corrèze</option>
-                      <option value="2a">2a - Corse-du-sud</option>
-                      <option value="2b">2b - Haute-Corse</option>
-                      <option value="21">21 - Côte-d'Or</option>
-                      <option value="22">22 - Côtes-d'Armor</option>
-                      <option value="23">23 - Creuse</option>
-                      <option value="24">24 - Dordogne</option>
-                      <option value="25">25 - Doubs</option>
-                      <option value="26">26 - Drôme</option>
-                      <option value="27">27 - Eure</option>
-                      <option value="28">28 - Eure-et-loir</option>
-                      <option value="29">29 - Finistère</option>
-                      <option value="30">30 - Gard</option>
-                      <option value="31">31 - Haute-garonne</option>
-                      <option value="32">32 - Gers</option>
-                      <option value="33">33 - Gironde</option>
-                      <option value="34">34 - Hérault</option>
-                      <option value="35">35 - Ille-et-vilaine</option>
-                      <option value="36">36 - Indre</option>
-                      <option value="37">37 - Indre-et-loire</option>
-                      <option value="38">38 - Isère</option>
-                      <option value="39">39 - Jura</option>
-                      <option value="40">40 - Landes</option>
-                      <option value="41">41 - Loir-et-cher</option>
-                      <option value="42">42 - Loire</option>
-                      <option value="43">43 - Haute-loire</option>
-                      <option value="44">44 - Loire-atlantique</option>
-                      <option value="45">45 - Loiret</option>
-                      <option value="46">46 - Lot</option>
-                      <option value="47">47 - Lot-et-garonne</option>
-                      <option value="48">48 - Lozère</option>
-                      <option value="49">49 - Maine-et-loire</option>
-                      <option value="50">50 - Manche</option>
-                      <option value="51">51 - Marne</option>
-                      <option value="52">52 - Haute-marne</option>
-                      <option value="53">53 - Mayenne</option>
-                      <option value="54">54 - Meurthe-et-moselle</option>
-                      <option value="55">55 - Meuse</option>
-                      <option value="56">56 - Morbihan</option>
-                      <option value="57">57 - Moselle</option>
-                      <option value="58">58 - Nièvre</option>
-                      <option value="59">59 - Nord</option>
-                      <option value="60">60 - Oise</option>
-                      <option value="61">61 - Orne</option>
-                      <option value="62">62 - Pas-de-calais</option>
-                      <option value="63">63 - Puy-de-dôme</option>
-                      <option value="64">64 - Pyrénées-atlantiques</option>
-                      <option value="65">65 - Hautes-Pyrénées</option>
-                      <option value="66">66 - Pyrénées-orientales</option>
-                      <option value="67">67 - Bas-rhin</option>
-                      <option value="68">68 - Haut-rhin</option>
-                      <option value="69">69 - Rhône</option>
-                      <option value="70">70 - Haute-saône</option>
-                      <option value="71">71 - Saône-et-loire</option>
-                      <option value="72">72 - Sarthe</option>
-                      <option value="73">73 - Savoie</option>
-                      <option value="74">74 - Haute-savoie</option>
-                      <option value="75" selected>75 - Paris</option>
-                      <option value="76">76 - Seine-maritime</option>
-                      <option value="77">77 - Seine-et-marne</option>
-                      <option value="78">78 - Yvelines</option>
-                      <option value="79">79 - Deux-sèvres</option>
-                      <option value="80">80 - Somme</option>
-                      <option value="81">81 - Tarn</option>
-                      <option value="82">82 - Tarn-et-garonne</option>
-                      <option value="83">83 - Var</option>
-                      <option value="84">84 - Vaucluse</option>
-                      <option value="85">85 - Vendée</option>
-                      <option value="86">86 - Vienne</option>
-                      <option value="87">87 - Haute-vienne</option>
-                      <option value="88">88 - Vosges</option>
-                      <option value="89">89 - Yonne</option>
-                      <option value="90">90 - Territoire de belfort</option>
-                      <option value="91">91 - Essonne</option>
-                      <option value="92">92 - Hauts-de-seine</option>
-                      <option value="93">93 - Seine-Saint-Denis</option>
-                      <option value="94">94 - Val-de-marne</option>
-                      <option value="95">95 - Val-d'oise</option>
-                      <option value="971">97 - Guadeloupe</option>
-                      <option value="972">97 - Martinique</option>
-                      <option value="973">97 - Guyane</option>
-                      <option value="974">97 - La réunion</option>
-                      <option value="976">97 - Mayotte</option>
-                    </select>
-                </p>
+                <form class="js-qualify-form" action="https://tps.apientreprise.fr/commencer/autorisation-provisoire-de-travail" method="get">
 
-                <div class="notification">
-                    <p>En cliquant ci-dessous, vous allez être redirigé vers le site <b>Démarches simplifiées</b> sur lequel vous pourrez :</p>
-                    <ul>
-                        <li>créer un compte en trois clics qui vous permettra de formuler de nouvelles demandes</li>
-                        <li>finaliser votre demande d'autorisation provisoire de travail</li>
-                    </ul>
-                </div>
+                    <p>
+                        <label for="department">Département de résidence du salarié :</label>
+                        <select id="department" name="department" autofocus>
+                          <option value="01">01 - Ain</option>
+                          <option value="02">02 - Aisne</option>
+                          <option value="03">03 - Allier</option>
+                          <option value="04">04 - Alpes-de-Haute-Provence</option>
+                          <option value="05">05 - Hautes-alpes</option>
+                          <option value="06">06 - Alpes-maritimes</option>
+                          <option value="07">07 - Ardèche</option>
+                          <option value="08">08 - Ardennes</option>
+                          <option value="09">09 - Ariège</option>
+                          <option value="10">10 - Aube</option>
+                          <option value="11">11 - Aude</option>
+                          <option value="12">12 - Aveyron</option>
+                          <option value="13">13 - Bouches-du-Rhône</option>
+                          <option value="14">14 - Calvados</option>
+                          <option value="15">15 - Cantal</option>
+                          <option value="16">16 - Charente</option>
+                          <option value="17">17 - Charente-maritime</option>
+                          <option value="18">18 - Cher</option>
+                          <option value="19">19 - Corrèze</option>
+                          <option value="2a">2a - Corse-du-sud</option>
+                          <option value="2b">2b - Haute-Corse</option>
+                          <option value="21">21 - Côte-d'Or</option>
+                          <option value="22">22 - Côtes-d'Armor</option>
+                          <option value="23">23 - Creuse</option>
+                          <option value="24">24 - Dordogne</option>
+                          <option value="25">25 - Doubs</option>
+                          <option value="26">26 - Drôme</option>
+                          <option value="27">27 - Eure</option>
+                          <option value="28">28 - Eure-et-loir</option>
+                          <option value="29">29 - Finistère</option>
+                          <option value="30">30 - Gard</option>
+                          <option value="31">31 - Haute-garonne</option>
+                          <option value="32">32 - Gers</option>
+                          <option value="33">33 - Gironde</option>
+                          <option value="34">34 - Hérault</option>
+                          <option value="35">35 - Ille-et-vilaine</option>
+                          <option value="36">36 - Indre</option>
+                          <option value="37">37 - Indre-et-loire</option>
+                          <option value="38">38 - Isère</option>
+                          <option value="39">39 - Jura</option>
+                          <option value="40">40 - Landes</option>
+                          <option value="41">41 - Loir-et-cher</option>
+                          <option value="42">42 - Loire</option>
+                          <option value="43">43 - Haute-loire</option>
+                          <option value="44">44 - Loire-atlantique</option>
+                          <option value="45">45 - Loiret</option>
+                          <option value="46">46 - Lot</option>
+                          <option value="47">47 - Lot-et-garonne</option>
+                          <option value="48">48 - Lozère</option>
+                          <option value="49">49 - Maine-et-loire</option>
+                          <option value="50">50 - Manche</option>
+                          <option value="51">51 - Marne</option>
+                          <option value="52">52 - Haute-marne</option>
+                          <option value="53">53 - Mayenne</option>
+                          <option value="54">54 - Meurthe-et-moselle</option>
+                          <option value="55">55 - Meuse</option>
+                          <option value="56">56 - Morbihan</option>
+                          <option value="57">57 - Moselle</option>
+                          <option value="58">58 - Nièvre</option>
+                          <option value="59">59 - Nord</option>
+                          <option value="60">60 - Oise</option>
+                          <option value="61">61 - Orne</option>
+                          <option value="62">62 - Pas-de-calais</option>
+                          <option value="63">63 - Puy-de-dôme</option>
+                          <option value="64">64 - Pyrénées-atlantiques</option>
+                          <option value="65">65 - Hautes-Pyrénées</option>
+                          <option value="66">66 - Pyrénées-orientales</option>
+                          <option value="67">67 - Bas-rhin</option>
+                          <option value="68">68 - Haut-rhin</option>
+                          <option value="69">69 - Rhône</option>
+                          <option value="70">70 - Haute-saône</option>
+                          <option value="71">71 - Saône-et-loire</option>
+                          <option value="72">72 - Sarthe</option>
+                          <option value="73">73 - Savoie</option>
+                          <option value="74">74 - Haute-savoie</option>
+                          <option value="75" selected>75 - Paris</option>
+                          <option value="76">76 - Seine-maritime</option>
+                          <option value="77">77 - Seine-et-marne</option>
+                          <option value="78">78 - Yvelines</option>
+                          <option value="79">79 - Deux-sèvres</option>
+                          <option value="80">80 - Somme</option>
+                          <option value="81">81 - Tarn</option>
+                          <option value="82">82 - Tarn-et-garonne</option>
+                          <option value="83">83 - Var</option>
+                          <option value="84">84 - Vaucluse</option>
+                          <option value="85">85 - Vendée</option>
+                          <option value="86">86 - Vienne</option>
+                          <option value="87">87 - Haute-vienne</option>
+                          <option value="88">88 - Vosges</option>
+                          <option value="89">89 - Yonne</option>
+                          <option value="90">90 - Territoire de belfort</option>
+                          <option value="91">91 - Essonne</option>
+                          <option value="92">92 - Hauts-de-seine</option>
+                          <option value="93">93 - Seine-Saint-Denis</option>
+                          <option value="94">94 - Val-de-marne</option>
+                          <option value="95">95 - Val-d'oise</option>
+                          <option value="971">97 - Guadeloupe</option>
+                          <option value="972">97 - Martinique</option>
+                          <option value="973">97 - Guyane</option>
+                          <option value="974">97 - La réunion</option>
+                          <option value="976">97 - Mayotte</option>
+                        </select>
+                    </p>
 
-                <p>
-                    <button type="submit" class="btn">Poursuivre votre demande sur <b>Démarches simplifiées</b></button>
-                </p>
+                    <div class="notification">
+                        <p>En cliquant ci-dessous, vous allez être redirigé vers le site <b>Démarches simplifiées</b> sur lequel vous pourrez :</p>
+                        <ul>
+                            <li>créer un compte en trois clics qui vous permettra de formuler de nouvelles demandes</li>
+                            <li>finaliser votre demande d'autorisation provisoire de travail</li>
+                        </ul>
+                    </div>
 
-            </form>
+                    <p>
+                        <button type="submit" class="btn">Poursuivre votre demande sur <b>Démarches simplifiées</b></button>
+                    </p>
 
-        </div>
+                </form>
+
+            </div>
+
+        </section>
 
     </main>
 
-    <footer id="site-footer" class="site-footer">
+    <footer id="skip-to-footer" class="site-footer">
         <div class="site-footer-content">
             <ul>
                 <li>

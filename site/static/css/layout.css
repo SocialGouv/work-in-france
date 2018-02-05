@@ -10,7 +10,6 @@ body {
 section,
 .site-header,
 .banner-content,
-.site-main,
 .site-footer {
     max-width: 1280px;
     margin: 0 auto;
@@ -22,7 +21,6 @@ section,
     section,
     .site-header,
     .banner-content,
-    .site-main,
     .site-footer {
         padding-left: 20px;
         padding-right: 20px;
@@ -175,21 +173,18 @@ body.js-menu-is-opened {
 
 }
 
-/* Main.
+/* Sections.
 --------------------------------------------------------------------------- */
 
-.site-main {
-/*    background: #fff;*/
-    background: var(--white);
-}
-
-.site-main > section {
+section > section {
     padding: 0;
     margin: 0;
 }
 
-/* Sections.
---------------------------------------------------------------------------- */
+.section-white {
+/*    background: #fff;*/
+    background: var(--white);
+}
 
 .section-color {
 /*    background: #ebeff3;*/
