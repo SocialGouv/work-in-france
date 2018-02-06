@@ -11,6 +11,8 @@ let validateForm = function (e) {
 
   let department = document.querySelector('#department option:checked').value;
 
+  console.log(department);
+
   if (department !== '75') {
     form.action = 'qualify-fail.html';
   }
@@ -19,5 +21,10 @@ let validateForm = function (e) {
 
 }
 
-form.addEventListener('submit', validateForm);
-departmentSelect.addEventListener('change', validateForm);
+if (form && departmentSelect) {
+
+  form.addEventListener('submit', validateForm);
+
+  departmentSelect.addEventListener('change', validateForm);
+
+}

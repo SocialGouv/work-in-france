@@ -25,10 +25,14 @@ let toggleMenu = function (e) {
   }
 }
 
-Array.from(menuOpenButtons).forEach(el => {
-  el.addEventListener('click', toggleMenu);
-});
+if (menuOpenButtons && menuCloseButtons) {
 
-Array.from(menuCloseButtons).forEach(el => {
-  el.addEventListener('click', toggleMenu);
-});
+  Array.from(menuOpenButtons).forEach(el => {
+    el.addEventListener('click', toggleMenu);
+  });
+
+  Array.from(menuCloseButtons).forEach(el => {
+    el.addEventListener('click', toggleMenu);
+  });
+
+}
