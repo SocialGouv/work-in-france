@@ -14,20 +14,20 @@ Créez un environnement Python isolé avec [`virtualenv`](https://virtualenv.pyp
 
 Vous pouvez utiliser [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/) pour faciliter cette étape :
 
-    ```
-    $ mkvirtualenv --python=`which python2.7` workinfrance
-    $ workon workinfrance
-    ```
+```
+$ mkvirtualenv --python=`which python2.7` workinfrance
+$ workon workinfrance
+```
 
 Installer `clay` :
 
-    ```
-    $ pip install clay
-    ```
+```
+$ pip install clay
+```
 
 ### 2. Lancer le serveur de développement
 
-    ```
-    $ cd site
-    $ clay run
-    ```
+```
+$ cd site
+$ clay run
+```
