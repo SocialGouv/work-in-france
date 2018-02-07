@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>WiF</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>{% block title %}Work in France{% endblock %}</title>
     <link rel="stylesheet" href="static/css/base.css" type="text/css">
     <link rel="stylesheet" href="static/css/forms.css" type="text/css">
     <link rel="stylesheet" href="static/css/layout.css" type="text/css">
     <link rel="stylesheet" href="static/css/utils.css" type="text/css">
     <link rel="stylesheet" href="static/css/modules.css" type="text/css">
+    {% block head %}{% endblock %}
 </head>
 <body>
 
@@ -57,21 +59,7 @@
         </nav>
     </header>
 
-    <main id="skip-to-main">
-
-        <section class="section-white">
-
-            <div class="aerate-content">
-
-                <h2>Mentions légales</h2>
-
-                <p> S'inspirer de <a href="https://mps.apientreprise.fr/cgu">mps.apientreprise.fr/cgu</a> ?</p>
-
-            </div>
-
-        </section>
-
-    </main>
+    {% block content %}{% endblock %}
 
     <footer id="skip-to-footer" class="site-footer">
         <div class="site-footer-content">
@@ -86,7 +74,7 @@
                     <a href="cgu.html">Mentions légales</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="mailto:&#x63;&#x6F;&#x6E;&#x74;&#x61;&#x63;&#x74;&#x40;&#x77;&#x6F;&#x72;&#x6B;&#x69;&#x6E;&#x66;&#x72;&#x61;&#x6E;&#x63;&#x65;&#x2E;&#x62;&#x65;&#x74;&#x61;&#x2E;&#x67;&#x6F;&#x75;&#x76;&#x2E;&#x66;&#x72;">Contact</a>
                 </li>
             </ul>
         </div>
