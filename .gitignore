@@ -18,3 +18,7 @@ Thumbs.db
 # Editor files #
 ################
 .tm_properties
+
+# NPM #
+################
+node_modules/
