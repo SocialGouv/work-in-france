@@ -1,3 +1,5 @@
+# coding: utf8
+
 # Project settings
 
 ## Do not show HTML fragments in the final build or in the _index.html
