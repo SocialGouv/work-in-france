@@ -2,7 +2,7 @@
 
 > La plateforme de demande d’autorisations provisoires de travail.
 
-Ce dépôt de code contient le site web de Work in France qui s'occupe de l'information et de la pré-qualification des utilisateurs, puis les redirige vers [TPS](https://github.com/betagouv/tps) (Téléprocédures Simplifiées) pour finaliser la procédure.
+Ce dépôt de code contient le site web statique de Work in France qui s'occupe de l'information et de la pré-qualification des utilisateurs, puis les redirige vers [TPS](https://github.com/betagouv/tps) (Téléprocédures Simplifiées) pour finaliser la procédure.
 
 ## Site web
 
@@ -30,4 +30,22 @@ $ pip install clay
 ```
 $ cd site
 $ clay run
+```
+
+## Déployer le site web
+
+Nous utilisons GitHub Pages pour héberger le site statique dans un premier temps. L'idée est faire générer un build du site par `clay` puis de pousser le résultat dans la branche `gh-pages`.
+
+Pour ce faire assurez-vous d'avoir installé les dépendances `npm` :
+
+```
+$ cd site
+$ npm install
+```
+
+Puis lancez ces commandes :
+
+```
+$ cd site
+$ npm run deploy
 ```
