@@ -10,19 +10,12 @@ Ce dépôt de code contient le site web statique de Work in France qui s'occup
 
 Nous utilisons [`clay`](http://lucuma.github.io/Clay/) pour générer une version statique du site de Work in France. `clay` utilise encore `python2.7` pour le moment.
 
-Créez un environnement Python isolé avec [`virtualenv`](https://virtualenv.pypa.io/).
-
-Vous pouvez utiliser [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/) pour faciliter cette étape :
+Créez un environnement Python isolé avec [`virtualenv`](https://virtualenv.pypa.io/) et installez les dépendances Python du projet. Vous pouvez utiliser [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/) pour faciliter cette étape :
 
 ```
 $ mkvirtualenv --python=`which python2.7` workinfrance
 $ workon workinfrance
-```
-
-Installer `clay` :
-
-```
-$ pip install clay
+$ pip install -r requirements.txt
 ```
 
 ### 2. Lancer le serveur de développement
