@@ -17,7 +17,6 @@ fieldset {
     width: 100%;
     min-width: 100%;
     padding: 1rem;
-/*    border: 1px solid #ebeff3;*/
     border: 1px solid var(--lighter-grey);
 }
 
@@ -55,9 +54,7 @@ textarea {
     margin: 0;
     max-width: 100%;
     padding: 10px 12px;
-/*    background: #fff;*/
     background: var(--white);
-/*    border: 1px solid #adb9c9;*/
     border: 1px solid var(--grey);
 }
 
@@ -81,12 +78,10 @@ input[type='checkbox'] {
 
 input[type='radio'] {
     border-radius: 50%;
-/*    background: #fff;*/
     background: var(--white);
 }
 
 input[type='radio']:checked {
-/*    border-color: #0081d5;*/
     border-color: var(--medium-blue);
 }
 
@@ -97,16 +92,13 @@ input[type='radio']:checked:before {
     display: inline-block;
     border-radius: 50%;
     transform: scale(.4);
-/*    background-color: #0081d5;*/
     background-color: var(--medium-blue);
 }
 
 /* Forms > custom checkbox. ------------------------------------ */
 
 input[type='checkbox']:checked {
-/*    background-color: #0081d5;*/
     background-color: var(--medium-blue);
-/*    border-color: #0081d5;*/
     border-color: var(--medium-blue);
 }
 
@@ -118,7 +110,6 @@ input[type='checkbox']:checked:before {
     width: 6px;
     height: 12px;
     /* Add a white border on the bottom and left, creating that 'L'. */
-/*    border: solid #fff;*/
     border: solid var(--white);
     border-width: 0 2px 2px 0;
     /* Rotate the L 45 degrees to turn it into a checkmark. */
@@ -146,9 +137,7 @@ input[type='checkbox']:checked:before {
 
     cursor: pointer;
 
-/*    border: 1px solid #0081d5;*/
     border: 1px solid var(--medium-blue);
-/*    background-color: #0081d5;*/
     background-color: var(--medium-blue);
 
     text-decoration: none;
@@ -158,9 +147,7 @@ input[type='checkbox']:checked:before {
 
 .btn:focus,
 .btn:hover {
-/*    background-color: #006cb0;*/
     background-color: var(--dark-blue);
-/*    border-color: #006cb0;*/
     border-color: var(--dark-blue);
 }
 
@@ -168,10 +155,7 @@ input[type='checkbox']:checked:before {
     position: relative;
     top: 1px;
     left: 1px;
-
-/*    background-color: #00578d;*/
     background-color: var(--darker-blue);
-/*    border-color: #00578d;*/
     border-color: var(--darker-blue);
 }
 

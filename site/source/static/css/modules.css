@@ -60,11 +60,8 @@
     border-radius: 3px;
     padding: 1rem;
     margin-bottom: 1rem;
-/*    color: #0081d5;*/
     color: var(--medium-blue);
-/*    border: 1px solid #0081d5;*/
     border: 1px solid var(--medium-blue);
-/*    background: #b4e1fa;*/
     background: var(--light-blue);
 }
 
@@ -73,10 +70,7 @@
 }
 
 .notification.error {
-/*    color: #d1335b;*/
     color: var(--medium-red);
-/*    border: 1px solid #d1335b;*/
     border: 1px solid var(--medium-red);
-/*    background: #f8e1e7;*/
     background: var(--light-red);
 }

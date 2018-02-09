@@ -3,7 +3,6 @@
 
 body {
     margin: 0;
-/*    background: #ebeff3;*/
     background: var(--lighter-grey);
 }
 
@@ -42,9 +41,7 @@ section,
     left: -100%;
     top: 20px;
     padding: 20px;
-/*    background: #00578d;*/
     background: var(--darker-blue);
-/*    color: #fff;*/
     color: var(--white);
 }
 
@@ -58,19 +55,16 @@ section,
 --------------------------------------------------------------------------- */
 
 .site-header {
-/*    background: #fff;*/
     background: var(--white);
     padding-top: 10px;
     padding-bottom: 10px;
 
-/*    border: 1px solid #c9d3df;*/
     border: 1px solid var(--light-grey);
     border-width: 0 0 1px 0;
 
 }
 
 .site-header a.site-logo {
-/*    color: #1c1c1c;*/
     color: var(--black);
     font-size: 1.7rem;
     text-decoration: none;
@@ -106,7 +100,6 @@ section,
     height: 100vh;
     padding: 15px;
     text-align: center;
-/*    background: #fff;*/
     background: var(--white);
 }
 
@@ -136,8 +129,6 @@ body.js-menu-is-opened {
 
 .banner {
     background: url(../img/map_bkg_pattern.png) repeat;
-
-/*    border: 1px solid #c9d3df;*/
     border: 1px solid var(--light-grey);
     border-width: 0 0 1px 0;
 }
@@ -165,7 +156,6 @@ body.js-menu-is-opened {
     padding: 30px 0;
     margin: 0; /* Avoid collapsing margin. */
     text-shadow: 0 1px 2px rgba(255,255,255,0.24);
-/*    color: #003189;*/
     color: var(--french-flag-blue);
 }
 
@@ -186,12 +176,10 @@ section > section {
 }
 
 .section-white {
-/*    background: #fff;*/
     background: var(--white);
 }
 
 .section-color {
-/*    background: #ebeff3;*/
     background: var(--lighter-grey);
 }
 
@@ -199,7 +187,6 @@ section > section {
 --------------------------------------------------------------------------- */
 
 .site-footer {
-/*    border: 1px solid #c9d3df;*/
     border: 1px solid var(--light-grey);
     border-width: 1px 0 0 0;
 }
@@ -220,7 +207,6 @@ section > section {
 
 .site-footer-content ul li:not(:last-of-type):after {
     content: '|';
-/*    color: #adb9c9;*/
     color: var(--grey);
     padding: 0 10px;
 }

@@ -6,11 +6,15 @@
     "type": "git",
     "url": "git+https://github.com/SocialGouv/work-in-france.git"
   },
-  "license": "Apache License",
+  "license": "Apache-2.0",
   "scripts": {
+    "css-watcher": "postcss --use postcss-import --use postcss-cssnext --output source/static/css/bundle.css source/static/css/_root.css --watch --no-map --verbose",
     "deploy": "clay build && gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^1.1.0",
+    "postcss-cli": "^5.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.0.0"
   }
 }

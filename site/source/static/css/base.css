@@ -81,10 +81,7 @@ html {
     font-size: 1rem;
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.6;  /* http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/ */
-
-/*    color: #1c1c1c;*/
     color: var(--black);
-
     -webkit-text-size-adjust: 100%;  /* Prevent font scaling in landscape while allowing user zoom. */
     -webkit-font-smoothing: antialiased;
 }
@@ -176,7 +173,6 @@ table {
     border-spacing: 0;
     empty-cells: show;
     text-align: left;
-/*    border: 1px solid #c9d3df;*/
     border: 1px solid var(--light-grey);
 }
 
@@ -185,14 +181,12 @@ table caption {
     text-align: center;
     border-width: 1px 1px 0 1px;
     padding: 0.625rem 0;
-/*    border: 1px solid #c9d3df;*/
     border: 1px solid var(--light-grey);
 }
 
 table td,
 table th {
     padding: 0.625rem 1rem;
-/*    border: 1px solid #c9d3df;*/
     border: 1px solid var(--light-grey);
 }
 
@@ -200,7 +194,6 @@ table thead,
 table tfoot {
     vertical-align: bottom;
     padding: 0.625rem 1rem;
-/*    background: #adb9c9;*/
     background: var(--light-grey);
 }
 
@@ -214,7 +207,6 @@ table tfoot {
 a,
 a:link,
 a:visited {
-/*    color: #0081d5;*/
     color: var(--medium-blue);
     text-decoration: underline;
 }
@@ -241,7 +233,6 @@ figure {
 
 hr {
     width: 100%;
-/*    border: 1px solid #c9d3df;*/
     border: 1px solid var(--light-grey);
     border-width: 1px 0 0 0;
 }
@@ -254,8 +245,6 @@ code {
     white-space: nowrap;
     border-radius: 2px;
     font-family: "Consolas", "Monaco", "Menlo", monospace;
-/*    background: #ebeff3;*/
-/*    border: 1px solid #c9d3df;*/
     background: var(--lighter-grey);
     border: 1px solid var(--light-grey);
 }
