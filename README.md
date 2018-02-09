@@ -41,14 +41,7 @@ Nous utilisons [`postcss-cli`](https://github.com/postcss/postcss-cli) pour obse
 
 ## Déployer le site web
 
-Nous utilisons GitHub Pages pour héberger le site statique dans un premier temps. L'idée est faire générer un build du site par `clay` puis de pousser le résultat dans la branche `gh-pages`.
-
-Pour ce faire assurez-vous d'avoir installé les dépendances `npm` :
-
-```
-$ cd site
-$ npm install
-```
+Nous utilisons GitHub Pages pour héberger le site statique dans un premier temps. L'idée est faire générer un build du site par `clay` puis de pousser le résultat dans la branche `gh-pages` :
 
 Puis lancez ces commandes :
 
