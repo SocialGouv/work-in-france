@@ -37,13 +37,9 @@ $ cd site
 $ npm run css-watcher
 ```
 
-Nous utilisons [`postcss-cli`](https://github.com/postcss/postcss-cli) pour observer le fichier `source/static/css/_root.css`. Celui-ci importe tous les fichiers CSS nécessaires et fonctionne grâce à [`postcss-import`](https://github.com/postcss/postcss-import) ; ça nous permet d'avoir un seul fichier en entrée qui nous permet de détecter les changements dans les fichiers qu'il importe. Le tout est ensuite passé dans la moulinette de [`postcss-cssnext`](https://github.com/MoOx/postcss-cssnext).
-
 ## Déployer le site web
 
-Nous utilisons GitHub Pages pour héberger le site statique dans un premier temps. L'idée est faire générer un build du site par `clay` puis de pousser le résultat dans la branche `gh-pages` :
-
-Puis lancez ces commandes :
+Pour déployer le site web, nous en générons une version statique avec `clay` que nous déployons sur GitHub Pages :
 
 ```
 $ cd site

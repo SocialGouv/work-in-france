@@ -8,7 +8,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "css-watcher": "postcss --use postcss-import --use postcss-cssnext --output source/static/css/bundle.css source/static/css/_root.css --watch --no-map --verbose",
+    "css-watcher": "postcss source/static/css/styles.css --use postcss-import --use postcss-cssnext --output source/static/css/bundle.css --no-map --watch --verbose",
     "deploy": "clay build && gh-pages -d build"
   },
   "devDependencies": {
