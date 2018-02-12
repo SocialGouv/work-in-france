@@ -1,7 +1,7 @@
 {
   "name": "work-in-france",
   "version": "0.0.1",
-  "description": "La plateforme de demande d'autorisations provisoires de travail.",
+  "description": "La plateforme de demande d'autorisation provisoires de travail.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SocialGouv/work-in-france.git"
