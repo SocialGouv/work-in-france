@@ -62,8 +62,10 @@ Daniel Balmy - DIRECCTE d'Ile-de-France - Unité Départementale de Paris
 ### Hébergeur
 
 Hébergement par [GitHub Pages](https://pages.github.com)
+
 88 Colin P Kelly Junior Street, San Francisco, CA 94107, United States.
 
 ### Crédits images
 
-L'image de la carte en page d'accueil a été créée par [Jannoon028 - Freepik.com](https://www.freepik.com/free-photo/wallpaper-geography-nation-map-paper_1048435.htm)
+- [Teerawut Masawat (Jannoon028) - Freepik.com](https://www.freepik.com/free-photo/wallpaper-geography-nation-map-paper_1048435.htm)
+- [Marina Prokic (Makyzz) - Freepik.com](https://www.freepik.com/free-vector/flat-icon-set-for-business_1063638.htm)

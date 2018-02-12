@@ -19,7 +19,6 @@ $ pip install -r requirements.txt
 Installez ensuite les dépendances `npm` (`npm 5+` est utilisé) :
 
 ```bash
-$ workon workinfrance  # your virtualenv must be activated
 $ cd site
 $ npm install
 ```
