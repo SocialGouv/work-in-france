@@ -8,10 +8,11 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "css-watcher": "postcss source/static/css/styles.css --use postcss-import --use postcss-cssnext --output source/static/css/bundle.css --no-map --watch --verbose",
+    "css-watcher": "postcss source/static/css/styles.css --use postcss-import --use postcss-cssnext --use cssnano --output source/static/css/bundle.css --no-map --watch --verbose",
     "deploy": "clay build && gh-pages -d build"
   },
   "devDependencies": {
+    "cssnano": "^3.10.0",
     "gh-pages": "^1.1.0",
     "postcss-cli": "^5.0.0",
     "postcss-cssnext": "^3.1.0",
