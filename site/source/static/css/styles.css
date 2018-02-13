@@ -8,6 +8,8 @@ This file is the main CSS file that imports other partial CSS files (a partial i
 - `postcss-import`: https://github.com/postcss/postcss-import
 - `postcss-cssnext`: https://github.com/MoOx/postcss-cssnext
 
+Before making any change to any CSS file in this project, ensure that `postcss-cli` is running with the `--watch` option, have a look at the NPM scripts to launch it easily.
+
 */
 @import "_base.css";
 @import "_forms.css";
