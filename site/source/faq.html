@@ -12,7 +12,9 @@
 
                 <h2 id="faq-summary">FAQ</h2>
 
-                <p>Vous avez d'autres questions ? <a href="mailto:&#x63;&#x6F;&#x6E;&#x74;&#x61;&#x63;&#x74;&#x40;&#x77;&#x6F;&#x72;&#x6B;&#x69;&#x6E;&#x66;&#x72;&#x61;&#x6E;&#x63;&#x65;&#x2E;&#x62;&#x65;&#x74;&#x61;&#x2E;&#x67;&#x6F;&#x75;&#x76;&#x2E;&#x66;&#x72;">Contactez-nous !</a></p>
+                <ul id="js-faq-summary-links"></ul>
+
+                <p>Vous avez d'autres questions ? <a href="mailto:contact@workinfrance.beta.gouv.fr">Contactez-nous !</a></p>
 
                 <hr>
 
@@ -33,11 +35,7 @@
         // Create the FAQ summary.
         // --------------------------------------------------------------------
 
-        let summaryTitle = document.querySelector('#faq-summary');
-
-        summaryTitle.insertAdjacentHTML('afterend', '<ul id="faq-summary-links"></ul>');
-
-        let summaryList = document.querySelector('#faq-summary-links');
+        let summaryList = document.querySelector('#js-faq-summary-links');
 
         let titles = document.querySelectorAll('h3');
 
