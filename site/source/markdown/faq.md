@@ -40,7 +40,9 @@ Vous serez averti par e-mail à chaque étape de la procédure (dépôt, complé
 
 <hr>
 
-### Quels justificatifs fournir pour les professions réglementées ?
+### Les démarches particulières
+
+#### Quels justificatifs fournir pour les professions réglementées ?
 
 Si votre demande d'autorisation provisoire de travail concerne une mission ou un travail relevant d'une profession réglementée, il faut prouver que l'étudiant demandeur a la capacité d'exercer une activité reglementée (architecture, médecine, comptabilité...).
 
@@ -62,11 +64,7 @@ Vous n'avez pas à fournir l'agrément ou les divers autorisations de votre empl
 
 Pour toute information complémentaire ou spécifique, n'hésitez pas à [nous contacter](mailto:contact@workinfrance.beta.gouv.fr).
 
-[Retour au sommaire](#faq-summary)
-
-<hr>
-
-### Ai-je besoin d'une autorisation provisioire de travail pour mon contrat ? 
+#### Ai-je besoin d'une autorisation provisoire de travail pour mon contrat ? 
 
 Pour certains contrats particuliers, vous aurez besoin d'une autorisation provisoire travail.
 
