@@ -67,13 +67,13 @@ Lorsqu'une décision est prise, le dossier passe automatiquement dans l'onglet d
 
 Statut de la demande    | Action de l'instructeur
 ------------------------|------------------------
-En construction         | Je vois une nouvelle demande mais celle-ci peut être encore modifiée. Je dois passer la demande en statut **« à suivre »** pour me l'attribuer.
-A suivre/suivi          | La demande vous est attribuée (ou à un autre agent) mais le demandeur peut toujours modifier la demande/ ajouter des pièces complémentaires. Vous devez passer le dossier en statut "**« En instruction »**" pour *figer* la demande.
-En instruction          | La demande est "figée" : la demande n'est plus modifiable et aucune pièce complémentaire ne peut être apportée. Il est préférable d'utiliser l'onglet "messagerie" à ce moment précis pour dialoguer avec le demandeur, lui demander des pièces complémentaires ou une modification de sa demande. Dans ce cas, vous devez repasser le dossier en statut "en construction" pour que le demandeur puisse faire ses modifications.
+En construction         | Je vois une nouvelle demande mais celle-ci peut être encore modifiée. Je dois passer la demande en statut **« à suivre »** pour me l'attribuer.
+A suivre/suivi          | La demande vous est attribuée (ou à un autre agent) mais le demandeur peut toujours modifier la demande/ ajouter des pièces complémentaires. Vous devez passer le dossier en statut "**« En instruction »**" pour *figer* la demande.
+En instruction          | La demande est "figée" : la demande n'est plus modifiable et aucune pièce complémentaire ne peut être apportée. Il est préférable d'utiliser l'onglet "messagerie" à ce moment précis pour dialoguer avec le demandeur, lui demander des pièces complémentaires ou une modification de sa demande. Dans ce cas, vous devez repasser le dossier en statut "en construction" pour que le demandeur puisse faire ses modifications.
 Décision                | La décision apportée est irrévocable et non modifiable : accepter la demande, refuser la demande, classer sans suite.
 Accepter                | Vous allez valider l'autorisation provisoire du demandeur. Il recevra son APT par mail avec l'attestation en pièce jointe.
 Refuser                 | Vous allez refuser l'autorisation provisoire du demandeur. Vous devrez utiliser l'onglet "ajouter une motivation".
-Classer sans suite      | Cet onglet est réservé pour les démarches de demandeur qui sont "annulées" (le demandeur ne souhaite plus faire de demande d'APT). Vous devez utiliser l'onglet "ajouter une motivation" pour préciser les raisons du "classement sans suite".
+Classer sans suite      | Cet onglet est réservé pour les démarches de demandeur qui sont "annulées" (le demandeur ne souhaite plus faire de demande d'APT). Vous devez utiliser l'onglet "ajouter une motivation" pour préciser les raisons du "classement sans suite".
 
 ## 7. Documentation complète
 
