@@ -32,7 +32,7 @@ Le fait de suivre un dossier permet de recevoir des notifications sur les change
 
 Cliquez sur le bouton **« En construction »** puis cliquez sur le bouton **« Passer en instruction »**. Confirmez votre choix en cliquant sur le bouton **« OK »** :
 
-<img src="img/accompagnateur_05.png" alt="" width="50%">
+<img src="img/accompagnateur_05.png" alt="" width="80%">
 
 Un dossier en instruction n'est plus modifiable par l'usager.
 
