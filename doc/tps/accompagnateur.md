@@ -4,23 +4,23 @@
 
 > [https://tps.apientreprise.fr/](https://tps.apientreprise.fr/)
 
-<img src="img/accompagnateur_01.png" alt="" width="50%">
+<img src="img/accompagnateur_01.png" alt="">
 
 ## 2. Sélectionner la procédure
 
 Cliquez sur la procédure ***Autorisation provisoire de travail pour les étudiants**** :
 
-<img src="img/accompagnateur_02.png" alt="" width="50%">
+<img src="img/accompagnateur_02.png" alt="">
 
 Allez dans l'onglet **« à suivre »** (normalement sélectionné par défaut). Un dossier dans l'onglet **« à suivre »** a le statut **« en construction »**. Il est consultable et modifiable par l'usager. Cliquez sur un dossier :
 
-<img src="img/accompagnateur_03.png" alt="" width="50%">
+<img src="img/accompagnateur_03.png" alt="">
 
 ## 3. Suivre un dossier
 
 Cliquez sur le bouton **« Suivre le dossier »** :
 
-<img src="img/accompagnateur_04.png" alt="" width="50%">
+<img src="img/accompagnateur_04.png" alt="">
 
 Suivre un dossier signifie s'attribuer le traitement du dossier. Plusieurs accompagnateurs peuvent suivre le même dossier.
 
@@ -32,7 +32,7 @@ Le fait de suivre un dossier permet de recevoir des notifications sur les change
 
 Cliquez sur le bouton **« En construction »** puis cliquez sur le bouton **« Passer en instruction »**. Confirmez votre choix en cliquant sur le bouton **« OK »** :
 
-<img src="img/accompagnateur_05.png" alt="" width="80%">
+<img src="img/accompagnateur_05.png" alt="">
 
 Un dossier en instruction n'est plus modifiable par l'usager.
 
@@ -50,11 +50,11 @@ Chaque décision est définitive et irrévocable.
 
 Pour **« Accepter »** un dossier, cliquez sur le bouton **« En instruction »** puis cliquez sur le bouton **« Accepter »** :
 
-<img src="img/accompagnateur_06.png" alt="" width="50%">
+<img src="img/accompagnateur_06.png" alt="">
 
 Vous êtes invité à rédiger une motivation qui sera consultable par l'usager dans son dossier après acceptation. Cliquez sur le bouton **« Valider la décision »**. Confirmez votre choix en cliquant sur le bouton **« OK »** :
 
-<img src="img/accompagnateur_07.png" alt="" width="50%">
+<img src="img/accompagnateur_07.png" alt="">
 
 Un message automatique est envoyé à l'usager afin de le notifier de l'acceptation de son dossier.
 
