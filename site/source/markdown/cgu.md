@@ -8,7 +8,7 @@
 
 *Work In France* est un service disponible dans le département 75 pour son lancement et a vocation à s'étendre progressivement à l'ensemble du territoire français.
 
-*Work In France* s'appuie sur l'outil [Téléprocédures Simplifiées](https://tps.apientreprise.fr) (TPS), développé par la DINSIC (Direction Interministérielle du Numérique et des Systèmes d'information et de communication de l'Etat) pour recevoir les demandes d'autorisations de travail et les redistribuer aux unités départementales des **Direccte** (Directions Régionales des Entreprises, de la Concurrence, de la Consommation, du Travail et de l'Emploi) concernées.
+*Work In France* s'appuie sur l'outil [Démarches Simplifiées](https://demarches-simplifiees.fr), développé par la DINSIC (Direction Interministérielle du Numérique et des Systèmes d'information et de communication de l'Etat) pour recevoir les demandes d'autorisations de travail et les redistribuer aux unités départementales des **Direccte** (Directions Régionales des Entreprises, de la Concurrence, de la Consommation, du Travail et de l'Emploi) concernées.
 
 ### Définitions
 
@@ -24,11 +24,11 @@ Bien que nous mettions tout en œuvre pour garantir le bon traitement de chaque 
 
 *Work In France* ne vous demande ni ne stocke d'information nominative telle que nom, prénoms ou adresse.
 
-Pour réaliser les formalités nécessaires proposées par les administrations partenaires, l'usager transmet des données à caractère personnel qui seront conservées via le service TPS. Conformément aux dispositions des articles L. 114-8 et suivants du code des relations entre le public et l'administration, les administrations échangent entre elles les informations strictement nécessaires à l'accomplissement de la démarche administrative.
+Pour réaliser les formalités nécessaires proposées par les administrations partenaires, l'usager transmet des données à caractère personnel qui seront conservées via le service Démarches Simplifiées. Conformément aux dispositions des articles L. 114-8 et suivants du code des relations entre le public et l'administration, les administrations échangent entre elles les informations strictement nécessaires à l'accomplissement de la démarche administrative.
 
 Par ailleurs, l'usager consent à l'accès de son dossier, et donc à ses données à caractère personnel, par les personnes habilitées, c'est-à-dire les accompagnateurs et les personnes qu'ils peuvent inviter en vue de statuer sur sa demande ; l'usager peut également donner accès à son dossier à un autre usager.
 
-Pour plus d'information sur la conservation des données personnelles, se référer aux [conditions générales d'utilisation de TPS](https://tps.gitbooks.io/tps-documentation/content/conditions-generales-dutilisation.html).
+Pour plus d'information sur la conservation des données personnelles, se référer aux [conditions générales d'utilisation de Démarches Simplifiées](https://tps.gitbooks.io/tps-documentation/content/conditions-generales-dutilisation.html).
 
 Nous collectons également des données anonymes d'audience, indépendamment des démarches effectuées. Cela nous permet par exemple de déterminer la durée d'une démarche, la typologie de démarche, la localisation et déterminer ainsi les pages à améliorer en priorité.
 
