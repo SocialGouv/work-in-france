@@ -189,6 +189,7 @@ section > section {
 .site-footer {
     border: 1px solid var(--light-grey);
     border-width: 1px 0 0 0;
+    text-align: center;
 }
 
 .site-footer-content ul {
@@ -197,7 +198,7 @@ section > section {
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
 }
 
