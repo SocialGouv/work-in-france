@@ -269,7 +269,7 @@
                 {% for item in direccte_addresses %}
                     <p class="js-qualify-fail-address" id="{{ item['slug'] }}" data-departments="{{ item['departments'] | tojson | forceescape }}">
                         <i>
-                            <b><abbr title="{% if type == 'Direccte' %}Direction Régionale des Entreprises, de la Concurrence, de la Consommation, du Travail et de l'Emploi{% elif type == 'Dieccte' %}Direction des Entreprises, de la Concurrence, de la Consommation, du Travail et de l’Emploi{% endif %}">{{ item['type'] }}</abbr> {{ item['name'] }}</b><br>
+                            <b><abbr title="{% if type == 'Direccte' %}Direction Régionale des Entreprises, de la Concurrence, de la Consommation, du Travail et de l'Emploi{% elif type == 'Dieccte' %}Direction des Entreprises, de la Concurrence, de la Consommation, du Travail et de l'Emploi{% endif %}">{{ item['type'] }}</abbr> {{ item['name'] }}</b><br>
                             {% for line in item['address'] %}{{ line }}<br>{% endfor %}
                             {{ item['post_code'] }} {{ item['city'] }}<br>
                             {% if item['phone'] %}Tél : {{ item['phone'] }}<br>{% endif %}
