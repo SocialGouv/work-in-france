@@ -5,11 +5,7 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
     <title>{% block title %}Work in France{% endblock %}</title>
-    <link rel="stylesheet" href="static/css/base.css" type="text/css">
-    <link rel="stylesheet" href="static/css/forms.css" type="text/css">
-    <link rel="stylesheet" href="static/css/layout.css" type="text/css">
-    <link rel="stylesheet" href="static/css/utils.css" type="text/css">
-    <link rel="stylesheet" href="static/css/modules.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/bundle.css?bust={{ range(1, 999999999999) | random }}" type="text/css">
     {% block head %}{% endblock %}
 </head>
 <body>
@@ -25,7 +21,7 @@
             <a class="site-logo" href="/">Work in France</a>
             <div>
                 <a href="#skip-to-menu" id="menu-open-btn" class="js-menu-open-btn">
-                    <img src="static/img/menu.svg" alt="Ouvrir le menu du site">
+                    <img src="/static/img/menu.svg" alt="Ouvrir le menu du site">
                 </a>
                 <div class="menu" id="skip-to-menu">
                     <h2>Menu</h2>
@@ -83,21 +79,21 @@
             <h3 class="center"><code>ul.steps</code></h3>
             <ul class="steps">
                 <li class="steps-item">
-                    <img src="static/img/steps/step1.svg" alt="" width="150" height="150">
+                    <img src="/static/img/steps/step1.svg" alt="" width="150" height="150">
                     <p>
                         <span>1</span>
                         Démarrez votre demande sur notre site
                     </p>
                 </li>
                 <li class="steps-item">
-                    <img src="static/img/steps/step2.svg" alt="" width="150" height="150">
+                    <img src="/static/img/steps/step2.svg" alt="" width="150" height="150">
                     <p>
                         <span>2</span>
                         Remplissez votre demande sur "Démarche simplifiée"
                     </p>
                 </li>
                 <li class="steps-item">
-                    <img src="static/img/steps/step3.svg" alt="" width="150" height="150">
+                    <img src="/static/img/steps/step3.svg" alt="" width="150" height="150">
                     <p>
                         <span>3</span>
                         Recevez votre autorisation par e-mail
@@ -429,15 +425,15 @@
             <div>
             <h2>Image - No <code>&lt;figure&gt;</code> element</h2>
             <p>
-              <img src="static/img/img.png" alt="Image alt text">
+              <img src="/static/img/img.png" alt="Image alt text">
             </p>
             <h2>Image - Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h2>
             <figure>
-              <img src="static/img/img.png" alt="Image alt text">
+              <img src="/static/img/img.png" alt="Image alt text">
             </figure>
             <h2>Image - Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h2>
             <figure>
-              <img src="static/img/img.png" alt="Image alt text">
+              <img src="/static/img/img.png" alt="Image alt text">
               <figcaption>Here is a caption for this image.</figcaption>
             </figure>
             </div>
@@ -628,7 +624,7 @@
         <div class="site-footer-content">
             <ul>
                 <li>
-                    <img src="static/img/gouv.svg" alt="" width="100">
+                    <img src="/static/img/gouv.svg" alt="" width="100">
                 </li>
                 <li>
                     <a href="faq.html">FAQ</a>
@@ -643,7 +639,7 @@
         </div>
     </footer>
 
-    <script src="static/js/nav.js"></script>
+    <script src="/static/js/nav.js"></script>
 
 </body>
 </html>
