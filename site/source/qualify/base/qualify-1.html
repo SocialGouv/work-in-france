@@ -12,7 +12,7 @@
 
                 <h2>Demande d'autorisation provisoire de travail</h2>
 
-                <form class="js-qualify-form" action="qualify-2.html" method="get">
+                <form class="js-qualify-form" action="{% block form_action %}{% endblock %}" method="get">
 
                     <p>
                         <label for="department">Département qui figure sur le titre de séjour du salarié :</label>
@@ -147,7 +147,7 @@
           e.stopPropagation();
           let department = document.querySelector('#department option:checked').value;
           if (department !== '75') {
-            form.action = 'qualify-fail.html';
+            form.action = '/qualify-fail.html';
           }
           form.submit();
         }

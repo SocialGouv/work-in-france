@@ -5,7 +5,7 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
     <title>{% block title %}Work in France{% endblock %}</title>
-    <link rel="stylesheet" href="static/css/bundle.css?bust={{ range(1, 999999999999) | random }}" type="text/css">
+    <link rel="stylesheet" href="/static/css/bundle.css?bust={{ range(1, 999999999999) | random }}" type="text/css">
     {% block head %}{% endblock %}
 </head>
 <body>
@@ -18,7 +18,7 @@
     <header class="site-header">
         <nav>
             <a class="site-logo" href="/">Work in France</a>
-            <img src="static/img/gouv.svg" alt="" width="80">
+            <img src="/static/img/gouv.svg" alt="" width="80">
         </nav>
     </header>
 
@@ -28,7 +28,7 @@
         <div class="site-footer-content">
             <ul>
                 <li>
-                    <img src="static/img/gouv.svg" alt="" width="100">
+                    <img src="/static/img/gouv.svg" alt="" width="100">
                 </li>
                 <li>
                     <a href="faq.html">FAQ</a>

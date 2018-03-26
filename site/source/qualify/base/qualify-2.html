@@ -17,8 +17,8 @@
                     <p>Les documents suivants vous seront demandés pendant votre démarche, assurez-vous de les avoir dans un format numérique (<b>image ou PDF</b>) avant de poursuivre :</p>
 
                     <h3>Documents obligatoires</h3>
-
-                    <ul>
+                    <ol>
+                        {% block mandatory_docs_list %}
                         <li>
                             <b>Contrat de travail (1 seul document contenant 1 ou plusieurs pages) :</b>
                             <ul>
@@ -51,11 +51,12 @@
                         <li>
                             <b>Passeport (1 seul document contenant 1 ou plusieurs pages) </b>
                         </li>
-                    </ul>
+                        {% endblock mandatory_docs_list %}
+                    </ol>
 
                     <h3>Documents optionnels</h3>
-
-                    <ul>
+                    <ol>
+                        {% block optional_docs_list %}
                         <li>
                             En cas de <a href="http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee" title="Vérifier si ma profession est réglementée" target="_blank">profession réglementée</a> :
                             <ul>
@@ -68,7 +69,8 @@
                                 <li><b>votre ancienne autorisation de travail (1 seul document contenant 1 ou plusieurs pages)</b></li>
                             </ul>
                         </li>
-                    </ul>
+                        {% endblock optional_docs_list %}
+                    </ol>
 
                     <br>
 
