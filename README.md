@@ -46,3 +46,12 @@ Pour déployer le site web, nous en générons une version statique avec `clay` 
 $ cd site
 $ npm run deploy
 ```
+
+
+## Docker
+
+Builder l'image avec `docker build .` puis :
+
+`docker run -it -p 8080:8080 -v $PWD:/app image-name`
+
+Le dossier courant (`$PWD`) est monté dans l'instance
