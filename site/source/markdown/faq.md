@@ -78,7 +78,7 @@ Voici la liste des contrats pour lesquels vous aurez besoin d'une autorisation p
 
 - ATER (Attaché temporaire de l'enseignement et de la recherche). [En savoir plus](http://www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/devenir-attache-temporaire-d-enseignement-et-de-recherche-a.t.e.r.html).
 
-    *Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat d'ATER délivré par le rectorat mentionnant la date de prise de fonction et l'arrêté ou attestation de nomination ou PV d'installation.*
+    *Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat d'ATER délivré par l'établissement mentionnant la date de prise de fonction et l'arrêté ou attestation de nomination ou procès verbal d'installation..*
 
 - Internes (hors AP/HP)
 
