@@ -1,14 +1,14 @@
 ### Qu'est-ce que Work in France ?
 
-Work In France est une plateforme permettant aux usagers d'effectuer des démarches de demandes d'autorisations de travail en ligne. Cette démarche est simple et gratuite grâce à notre formulaire de demande. En suivant les instructions sur notre plateforme, employeurs ou étudiants peuvent faire la demande d'autorisation de travail en ligne, en dix minutes.
+Work In France est une plateforme permettant aux usagers d'effectuer des démarches de demandes d'autorisations provisoires de travail en ligne. Cette démarche est simple et gratuite grâce à notre formulaire de demande. En suivant les instructions sur notre plateforme, employeurs ou étudiants peuvent faire la demande d'autorisation provisoire de travail en ligne, en moins de dix minutes.
 
-Work In France est un projet développé par les agents des ministères sociaux et les services du Premier Ministre.
+Work In France est un projet développé par les agents des ministères sociaux et les services du Premier Ministre.
 
 [Retour au sommaire](#faq-summary)
 
 <hr>
 
-### Dans quel département puis-je utiliser Work In France ?
+### Dans quel département puis-je utiliser Work In France ?
 
 Le service est pour l'instant accessible pour le recrutement des étudiants dont l'adresse sur le titre de séjour ou VLSTS (Visa de Long Séjour valant Titre de Séjour) est Paris (75). Les demandes pour les autres départements seront accessibles très prochainement. 
 
@@ -18,15 +18,15 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 
 ### Dans quel cas dois-je demander une autorisation de travail temporaire ?
 
-Work In France permet la délivrance d'autorisations temporaires de travail pour les étudiants en contrat d'apprentissage, en contrat de professionnalisation, en formation doctorale et les étudiants algériens soumis à l'accord franco-algérien du 27 décembre 1968.
+Work In France permet la délivrance d'autorisations provisoires de travail pour les étudiants en contrat d'apprentissage, en contrat de professionnalisation, en formation doctorale et les étudiants algériens soumis à l'accord franco-algérien du 27 décembre 1968.
 
 [Retour au sommaire](#faq-summary)
 
 <hr>
 
-### Est-ce que Work In France remplace la procédure papier ?
+### Est-ce que Work In France remplace la procédure papier ?
 
-Si vous utilisez Work In France, vous n'aurez plus besoin de faire une demande CERFA déposé dans les services de la main d'œuvre étrangère. Le formulaire rempli sur la plateforme Work In France sera transmis directement au service de la main d'œuvre étrangère compétent et vous recevrez votre réponse par e-mail. Plus besoin de vous déplacer !
+Si vous utilisez Work In France, vous n'aurez plus besoin de faire une demande CERFA déposée dans les services de la main d'œuvre étrangère. Le formulaire rempli sur la plateforme Work In France sera transmis directement au service de la main d'œuvre étrangère compétent et vous recevrez votre réponse par e-mail. Plus besoin de vous déplacer !
 
 [Retour au sommaire](#faq-summary)
 
@@ -34,7 +34,7 @@ Si vous utilisez Work In France, vous n'aurez plus besoin de faire une demande
 
 ### Combien de temps va prendre ma démarche ?
 
-Vous serez averti par e-mail à chaque étape de la procédure (dépôt, complétude du dossier, instruction, validation ou refus). Vous ne recevrez pas de courrier papier. Une fois votre dossier complet et étudié, vous recevrez par e-mail votre attestation ou une notification de refus dans les délais légaux.
+Vous serez averti par e-mail à chaque étape de la procédure (dépôt, complétude du dossier, instruction, validation ou refus). Vous ne recevrez pas de courrier papier. Une fois votre dossier complet et instruit, vous recevrez par e-mail votre attestation ou une notification de refus dans les délais légaux.
 
 [Retour au sommaire](#faq-summary)
 
@@ -44,17 +44,17 @@ Vous serez averti par e-mail à chaque étape de la procédure (dépôt, complé
 
 #### Quels justificatifs fournir pour les professions réglementées ?
 
-Si votre demande d'autorisation provisoire de travail concerne une mission ou un travail relevant d'une profession réglementée, il faut prouver que l'étudiant demandeur a la capacité d'exercer une activité reglementée (architecture, médecine, comptabilité...).
+Si votre demande d'autorisation provisoire de travail concerne une mission ou un travail relevant d'une profession réglementée, il faut prouver que l'étudiant a la capacité d'exercer cette activité reglementée (architecture, médecine, comptabilité...).
 
 Par exemple :
 
-- Un stagiaire expert comptable fournit une attestation de l'ordre associé
-- Un agent de sécurité fournit une copie du certificat de qualification professionnelle
-- Un commissaire aux comptes fournit une attestation de l'ordre associé
-- Un stagiaire avocat fournit une attestation de l'ordre associé
+- Un stagiaire expert comptable fournit une attestation de l'ordre associé,
+- Un agent de sécurité fournit une copie du certificat de qualification professionnelle,
+- Un commissaire aux comptes fournit une attestation de l'ordre associé,
+- Un stagiaire avocat fournit une attestation de l'ordre associé,
 - De même pour un notaire...
 
-Vous n'avez pas à fournir l'agrément ou les divers autorisations de votre employeur.
+Vous n'avez pas à fournir l'agrément ou les divers autorisations de votre employeur. (sauf pour les activités de mannequinat et de spectacle vivant en qualité d'artiste où doit être fournie la copie de la licence d'agence de mannequins prévue à l'article L. 7123-11 du code du travail ou de la licence d'entrepreneur de spectacles vivants prévu à l'article L. 7122-3 du code du travail ou encore, pour les entrepreneurs occasionnels de spectacles vivants, la copie de la déclaration préalable d'intervention à la direction régionale des affaires culturelles)
 
 - [Vérifiez ici si votre activité (en tant que salarié) est réglementée](http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee)
 
