@@ -5,6 +5,19 @@
     text-align: center;
 }
 
+/* Buttons row: a row containing 1 or more <a> element(s).
+--------------------------------------------------------------------------- */
+
+.buttons-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons-row a {
+    margin: 5px;
+}
+
 /* Multi column lists.
 --------------------------------------------------------------------------- */
 

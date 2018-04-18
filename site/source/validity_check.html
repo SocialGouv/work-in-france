@@ -1,0 +1,96 @@
+{% extends "base/layout.html" %}
+
+{% block title %}{{ super() }} - Bienvenue{% endblock %}
+
+{% block content %}
+
+    <main id="skip-to-main">
+
+        <section class="section-white">
+            <div class="aerate-content">
+
+                <h3>
+                    Vérifiez la validité
+                    <small>d'une autorisation provisoire de travail pour un étudiant étranger</small>
+                </h3>
+
+                <form>
+
+                    <div class="form-group">
+                      <label for="num" class="display-block">Numéro de l'autorisation provisoire de travail</label>
+                      <br>
+                      <input id="num" type="text">
+                    </div>
+
+                    <div class="form-group form-error">
+                      <label for="birthday_date" class="display-block">
+                          Date de naissance de l'étudiant
+                          <small>(au format jj/mm/aaaa)</small>
+                      </label>
+                      <br>
+                      <input id="birthday_date" type="text">
+                      <p class="form-error-text">Ce champ est obligatoire.</p>
+                    </div>
+
+                    <p>
+                      <input class="btn" type="submit" value="Vérifiez la validité">
+                    </p>
+
+                </form>
+
+                <p class="center">
+                    <span class="spinner">Chargement...</span>
+                </p>
+
+            </div>
+        </section>
+
+        <section class="section-white">
+            <div class="aerate-content">
+
+                <div class="notification success">
+                    <h4>Autorisation provisoire de travail valide.</h4>
+                    <ul>
+                        <li>Numéro : <b>1234567890</b></li>
+                        <li>Pour le salarié :
+                            <ul>
+                                <li>Prénom : <b>*a**</b></li>
+                                <li>Nom : <b>*e****</b></li>
+                            </ul>
+                        </li>
+                        <li>Pour l'entreprise identifiée par le numéro SIRET <b>12345678901234</b></li>
+                        <li>Valable du <b>12/12/2017</b> au <b>10/06/2018</b>.</li>
+                    </ul>
+                </div>
+
+                <div class="notification">
+                    <h4>Autorisation provisoire de travail expirée.</h4>
+                    <ul>
+                        <li>Numéro : <b>1234567890</b></li>
+                        <li>Pour le salarié :
+                            <ul>
+                                <li>Prénom : <b>*a**</b></li>
+                                <li>Nom : <b>*e****</b></li>
+                            </ul>
+                        </li>
+                        <li>Pour l'entreprise identifiée par le numéro SIRET <b>12345678901234</b></li>
+                        <li>Valable du <b>12/12/2017</b> au <b>10/06/2018</b>.</li>
+                    </ul>
+                </div>
+
+                <div class="notification error">
+                    <h4>Autorisation provisoire de travail non authentifiée.</h4>
+                    <p>Nous n'avons pas trouvé d'autorisation valide pour le numéro <b>1234567890</b> et la date de naissance <b>jj/mm/aaaa</b>.</p>
+                    <p>Veuillez nous contacter pour plus de précision.</p>
+                </div>
+
+                <p class="center">
+                    <a class="btn" href="#">Faire une nouvelle vérification</a>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+{% endblock %}

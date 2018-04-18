@@ -14,5 +14,7 @@ Before making any change to any CSS file in this project, ensure that `postcss-c
 @import "_base.css";
 @import "_forms.css";
 @import "_layout.css";
-@import "_modules.css";
+@import "_notifications.css";
+@import "_spinner.css";
+@import "_steps.css";
 @import "_utils.css";

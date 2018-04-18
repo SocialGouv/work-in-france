@@ -1,0 +1,27 @@
+/* Notification messages.
+--------------------------------------------------------------------------- */
+
+.notification {
+    border-radius: 3px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: var(--medium-blue);
+    border: 1px solid var(--medium-blue);
+    background: var(--light-blue);
+}
+
+.notification > :last-child {
+    margin-bottom: 0;
+}
+
+.notification.error {
+    color: var(--medium-red);
+    border: 1px solid var(--medium-red);
+    background: var(--light-red);
+}
+
+.notification.success {
+    color: var(--medium-green);
+    border: 1px solid var(--medium-green);
+    background: var(--light-green);
+}

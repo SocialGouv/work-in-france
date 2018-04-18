@@ -37,6 +37,7 @@ select {
 }
 
 input[type='checkbox'],
+input[type='date'],
 input[type='email'],
 input[type='file'],
 input[type='number'],
@@ -162,4 +163,41 @@ input[type='checkbox']:checked:before {
 .btn[disabled] {
     cursor: not-allowed;
     opacity: .5;
+}
+
+/* Errors. ------------------------------------ */
+
+.form-group {
+
+    & input[type='date'],
+    & input[type='email'],
+    & input[type='file'],
+    & input[type='number'],
+    & input[type='password'],
+    & input[type='search'],
+    & input[type='tel'],
+    & input[type='text'],
+    & input[type='url'],
+    & textarea {
+        min-width: 100%;
+    }
+
+    &.form-error label,
+    &.form-error .form-error-text {
+        color: var(--medium-red);
+    }
+
+    &.form-error input[type='date'],
+    &.form-error input[type='email'],
+    &.form-error input[type='file'],
+    &.form-error input[type='number'],
+    &.form-error input[type='password'],
+    &.form-error input[type='search'],
+    &.form-error input[type='tel'],
+    &.form-error input[type='text'],
+    &.form-error input[type='url'],
+    &.form-error textarea {
+        border: 1px solid var(--medium-red);
+    }
+
 }

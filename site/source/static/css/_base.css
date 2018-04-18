@@ -66,6 +66,9 @@ https://fontlibrary.org/fr/font/source-sans-pro
     --light-red: #f8e1e7;
     --medium-red: #d1335b;
 
+    --light-green: #daf5e7;
+    --medium-green: #03bd5b;
+
     --lighter-grey: #ebeff3;
     --light-grey: #c9d3df;
     --grey: #adb9c9;
@@ -151,6 +154,7 @@ h6 {
 /* Vertical rhythm.
 --------------------------------------------------------------------------- */
 
+.form-group,
 fieldset,
 h1,
 h2,
