@@ -17,11 +17,11 @@
                 <form @submit.prevent="checkForm">
 
                     <div class="form-group" v-bind:class="authIdClass">
-                        <label for="auth_id" class="display-block">Numéro de l'autorisation provisoire de travail</label>
+                        <label for="ds_id" class="display-block">Numéro de l'autorisation provisoire de travail</label>
                         <br>
-                        <input id="auth_id" type="text" v-model="form.auth_id">
-                        <ul v-if="form.errors.auth_id.length" style="margin-top: 0;">
-                            <li v-for="error in form.errors.auth_id" class="form-error-text">${ error }</li>
+                        <input id="ds_id" type="text" v-model="form.ds_id">
+                        <ul v-if="form.errors.ds_id.length" style="margin-top: 0;">
+                            <li v-for="error in form.errors.ds_id" class="form-error-text">${ error }</li>
                         </ul>
                     </div>
 
@@ -47,18 +47,31 @@
                 </form>
 
                 <div class="notification" v-bind:class="resultClass" v-if="result">
-                    <h4>Autorisation provisoire de travail valide.</h4>
-                    <ul>
-                        <li>Numéro : <b>${ result.ds_id }</b></li>
-                        <li>Pour le salarié :
-                            <ul>
-                                <li>Prénom : <b>${ result.prenom }</b></li>
-                                <li>Nom : <b>${ result.nom }</b></li>
-                            </ul>
-                        </li>
-                        <li>Pour l'entreprise identifiée par le numéro SIRET <b>${ result.siret }</b></li>
-                        <li>Valable du <b>${ result.date_de_debut_apt }</b> au <b>${ result.date_de_fin_apt }</b>.</li>
-                    </ul>
+                    <div v-if="!result.data">
+                        <h4>Autorisation provisoire de travail non valide.</h4>
+                        <p>Vérifiez les informations saisies. Contactez-nous pour plus de précisions.</p>
+                    </div>
+                    <div v-if="result.data">
+                        <h4 v-if="result.data.has_expired">Autorisation provisoire de travail expirée.</h4>
+                        <h4 v-if="!result.data.has_expired">Autorisation provisoire de travail valide.</h4>
+                        <ul>
+                            <li>Numéro : <b>${ result.data.ds_id }</b></li>
+                            <li>Pour le salarié :
+                                <ul>
+                                    <li>Prénom : <b>${ result.data.prenom }</b></li>
+                                    <li>Nom : <b>${ result.data.nom }</b></li>
+                                </ul>
+                            </li>
+                            <li>Pour l'entreprise identifiée par le numéro SIRET <b>${ result.data.siret }</b></li>
+                            <li>Valable du <b>${ result.data.date_de_debut_apt }</b> au <b>${ result.data.date_de_fin_apt }</b>.</li>
+                        </ul>
+                        <p>Contactez-nous pour récupérer une copie de l'attestation.</p>
+                    </div>
+                </div>
+
+                <div class="notification error" v-if="xhrError">
+                    <p>Un problème de connexion à notre service de vérification est survenu.</p>
+                    <p>Veuillez réessayer ultérieurement.</p>
                 </div>
 
             </div>

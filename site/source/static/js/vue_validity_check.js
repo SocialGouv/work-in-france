@@ -6,21 +6,22 @@ new Vue({
 
   data: {
     form: {
-      auth_id: null,
+      ds_id: null,
       birthday_date: null,
       errors: {
-        auth_id: [],
+        ds_id: [],
         birthday_date: [],
       },
     },
     pendingXhrRequest: false,
     result: null,
+    xhrError: null,
   },
 
   computed: {
     authIdClass: function () {
       return {
-        'form-error': this.form.errors.auth_id.length > 0,
+        'form-error': this.form.errors.ds_id.length > 0,
       }
     },
     birthdayDateClass: function () {
@@ -30,8 +31,12 @@ new Vue({
     },
     resultClass: function () {
       return {
-        'success': this.result,
-        'error': this.result && this.result.error,
+        // Expired APT.
+        'info': this.result && this.result.data && this.result.data.has_expired,
+        // Valid APT.
+        'success': this.result && this.result.data && !this.result.data.has_expired,
+        // Invalid APT.
+        'error': this.result && !this.result.data,
       }
     },
   },
@@ -44,20 +49,20 @@ new Vue({
         return false;
       }
 
-      this.form.errors.auth_id = []
+      this.form.errors.ds_id = []
       this.form.errors.birthday_date = []
 
       // Ensure fields are not empty.
-      if (!this.form.auth_id) {
-        this.form.errors.auth_id.push("Ce champ est obligatoire");
+      if (!this.form.ds_id) {
+        this.form.errors.ds_id.push("Ce champ est obligatoire");
       }
       if (!this.form.birthday_date) {
         this.form.errors.birthday_date.push("Ce champ est obligatoire");
       }
 
-      // Ensure `auth_id` is a number.
-      if (isNaN(this.form.auth_id)) {
-        this.form.errors.auth_id.push("Vous devez saisir un numéro");
+      // Ensure `ds_id` is a number.
+      if (isNaN(this.form.ds_id)) {
+        this.form.errors.ds_id.push("Vous devez saisir un numéro");
       }
 
       // Validate `birthday_date` format.
@@ -65,7 +70,7 @@ new Vue({
         this.form.errors.birthday_date.push("Le format de la date est incorrect, utilisez: jj/mm/aaaa");
       }
 
-      if (this.form.errors.auth_id.length || this.form.errors.birthday_date.length) {
+      if (this.form.errors.ds_id.length || this.form.errors.birthday_date.length) {
         return false;
       }
 
@@ -74,43 +79,48 @@ new Vue({
     },
 
     xhrPerformRequest: function () {
+
       this.pendingXhrRequest = true;
+      this.result = null;
+      this.xhrError = null;
+
+      let url = [
+        'http://localhost:1337/api/v1/apt_validity_check',
+        this.form.ds_id,
+        // Reformat dd/mm/yyyy to yyyy-mm-dd.
+        this.form.birthday_date.split('/').reverse().join('-')
+      ].join('/');
+
       let that = this;
-      // TODO: use the real URL with good params.
-      let url = 'https://reqres.in/api/users?page=2';
       let xhr = new XMLHttpRequest();
       xhr.responseType = 'json';  // https://mathiasbynens.be/notes/xhr-responsetype-json
       xhr.onreadystatechange = function () {
         if (this.readyState === XMLHttpRequest.DONE) {
           if (this.status === 200) {
-            that.xhrSuccessHandler(this.response);
+            that.xhrResponseHandler(this.response);
           } else {
-            that.xhrErrorHandler();
+            that.xhrErrorHandler(this.response);
           }
         }
       };
       xhr.open('GET', url, true);
       xhr.send(null);
+
     },
 
-    xhrSuccessHandler: function (jsonResponse) {
+    xhrResponseHandler: function (jsonResponse) {
       this.pendingXhrRequest = false;
-      // TODO: populate this.result with jsonResponse.
-      // console.log(jsonResponse);
-      this.result = {
-        ds_id: 12345,
-        siret: '12345678901234',
-        prenom: '*a**',
-        nom: '*e****',
-        has_expired: false,
-        date_de_debut_apt: '12/12/2017',
-        date_de_fin_apt: '10/06/2018',
-      };
+      if (jsonResponse.status === 'invalid') {  // Invalid APT.
+        this.result = {data: null};
+        return
+      }
+      this.result = {data: jsonResponse.data[0]};
     },
 
     xhrErrorHandler: function (jsonResponse) {
       this.pendingXhrRequest = false;
-      // TODO: handle error.
+      this.result = null;
+      this.xhrError = true;
     },
 
   },
