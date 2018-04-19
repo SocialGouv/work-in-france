@@ -43,9 +43,20 @@ new Vue({
 
   methods: {
 
+    dateStrToJson: function (dateStr) {
+      // Convert dd/mm/yyyy to yyyy-mm-dd.
+      return dateStr.split('/').reverse().join('-');
+    },
+
+    dateJsonToStr: function (dateJson) {
+      // Convert yyyy-mm-dd to dd/mm/yyyy.
+      return dateJson.split('-').reverse().join('/');
+    },
+
     checkForm: function (e) {
 
       if (this.pendingXhrRequest) {
+        // Prevent multiple form submit.
         return false;
       }
 
@@ -59,18 +70,17 @@ new Vue({
       if (!this.form.birthday_date) {
         this.form.errors.birthday_date.push("Ce champ est obligatoire");
       }
-
       // Ensure `ds_id` is a number.
       if (isNaN(this.form.ds_id)) {
         this.form.errors.ds_id.push("Vous devez saisir un numéro");
       }
-
       // Validate `birthday_date` format.
       if (!this.form.birthday_date.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
-        this.form.errors.birthday_date.push("Le format de la date est incorrect, utilisez: jj/mm/aaaa");
+        this.form.errors.birthday_date.push("Le format de la date est incorrect, utilisez : jj/mm/aaaa");
       }
 
       if (this.form.errors.ds_id.length || this.form.errors.birthday_date.length) {
+        // Stop here if there's any error.
         return false;
       }
 
@@ -84,11 +94,10 @@ new Vue({
       this.result = null;
       this.xhrError = null;
 
-      let url = [
+      let apiEndpointUrl = [
         'http://localhost:1337/api/v1/apt_validity_check',
         this.form.ds_id,
-        // Reformat dd/mm/yyyy to yyyy-mm-dd.
-        this.form.birthday_date.split('/').reverse().join('-')
+        this.dateStrToJson(this.form.birthday_date)
       ].join('/');
 
       let that = this;
@@ -103,7 +112,7 @@ new Vue({
           }
         }
       };
-      xhr.open('GET', url, true);
+      xhr.open('GET', apiEndpointUrl, true);
       xhr.send(null);
 
     },

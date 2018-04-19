@@ -63,7 +63,7 @@
                                 </ul>
                             </li>
                             <li>Pour l'entreprise identifiée par le numéro SIRET <b>${ result.data.siret }</b></li>
-                            <li>Valable du <b>${ result.data.date_de_debut_apt }</b> au <b>${ result.data.date_de_fin_apt }</b>.</li>
+                            <li>Valable du <b>${ dateJsonToStr(result.data.date_de_debut_apt) }</b> au <b>${ dateJsonToStr(result.data.date_de_fin_apt) }</b>.</li>
                         </ul>
                         <p>Contactez-nous pour récupérer une copie de l'attestation.</p>
                     </div>
