@@ -95,7 +95,8 @@ new Vue({
       this.xhrError = null;
 
       let apiEndpointUrl = [
-        'http://localhost:1337/api/v1/apt_validity_check',
+        'https://wif-bo-public.num.social.gouv.fr/api/v1/apt_validity_check',
+        // 'http://localhost:1337/api/v1/apt_validity_check',
         this.form.ds_id,
         this.dateStrToJson(this.form.birthday_date)
       ].join('/');
