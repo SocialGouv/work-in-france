@@ -1,3 +1,10 @@
+let API_ROOT = 'https://wif-bo-public.num.social.gouv.fr';
+
+if (window.location.hostname === 'localhost') {
+  console.log('Running in dev mode on localhost')
+  API_ROOT = 'http://localhost:1337';
+}
+
 new Vue({
 
   delimiters: ['${', '}'],  // Do not clash with Jinja 2 templates.
@@ -71,11 +78,11 @@ new Vue({
         this.form.errors.birthday_date.push("Ce champ est obligatoire");
       }
       // Ensure `ds_id` is a number.
-      if (isNaN(this.form.ds_id)) {
+      if (this.form.ds_id && isNaN(this.form.ds_id)) {
         this.form.errors.ds_id.push("Vous devez saisir un numéro");
       }
       // Validate `birthday_date` format.
-      if (!this.form.birthday_date.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
+      if (this.form.birthday_date && !this.form.birthday_date.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
         this.form.errors.birthday_date.push("Le format de la date est incorrect, utilisez : jj/mm/aaaa");
       }
 
@@ -95,11 +102,13 @@ new Vue({
       this.xhrError = null;
 
       let apiEndpointUrl = [
-        'https://wif-bo-public.num.social.gouv.fr/api/v1/apt_validity_check',
-        // 'http://localhost:1337/api/v1/apt_validity_check',
+        API_ROOT,
+        '/api/v1/apt_validity_check',
+        '/',
         this.form.ds_id,
+        '/',
         this.dateStrToJson(this.form.birthday_date)
-      ].join('/');
+      ].join('');
 
       let that = this;
       let xhr = new XMLHttpRequest();
