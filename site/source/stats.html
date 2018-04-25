@@ -1,0 +1,114 @@
+{% extends "base/layout.html" %}
+
+{% block title %}{{ super() }} - Statistiques{% endblock %}
+
+{% block content %}
+
+    <main id="skip-to-main">
+
+        <section class="section-white">
+            <h3>Statistiques</h3>
+            <p>Nombre de dossiers déposés : <b class="total-dossiers"></b></p>
+            <p>Nombre de dossiers acceptés : <b class="total-dossiers-closed"></b></p>
+            <p>Temps de traitement moyen : <b class="time-to-process"></b></p>
+        </section>
+
+        <section class="section-color">
+            <h4>
+                Évolution du nombre de dossiers déposés par jour
+                <small>pendant les 31 derniers jours</small>
+            </h4>
+            <div class="dossiers-by-day"></div>
+        </section>
+
+        <section class="section-white">
+            <h4>
+                Évolution du nombre de dossiers déposés par mois
+                <small>pendant les 365 derniers jours</small>
+            </h4>
+            <div class="dossiers-by-month"></div>
+        </section>
+
+        <section class="section-color">
+            <h4>Évolution du temps de traitement moyen par mois</h4>
+            <div class="time-to-process-by-month"></div>
+        </section>
+
+        <section class="section-white">
+            <h4>Répartition des dossiers par statut</h4>
+            <div class="dossiers-by-status"></div>
+        </section>
+
+        <section class="section-color">
+            <h4>Répartition des dossiers par pays</h4>
+            <div class="dossiers-by-country"></div>
+        </section>
+
+        <section class="section-white">
+            <p><small>Dernière mise à jour des données : <b class="last-update"></b></small></p>
+        </section>
+
+    </main>
+
+{% endblock %}
+
+{% block script %}
+{{ super() }}
+<script src="/static/js/frappe-charts.1.1.0.js"></script>
+<script>
+
+    let xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
+    xhr.onreadystatechange = function () {
+      if (this.readyState === XMLHttpRequest.DONE) {
+        if (this.status === 200) {
+          showStatsCallback(this.response);
+        } else {
+          console.log('Unable to load stats.json');
+        }
+      }
+    };
+    xhr.open('GET', '/static/js/stats.json', true);
+    xhr.send(null);
+
+    let showStatsCallback = function (json) {
+
+        document.querySelector('.total-dossiers').innerHTML = json.data.total_dossiers;
+        document.querySelector('.total-dossiers-closed').innerHTML = json.data.total_dossiers_closed;
+        document.querySelector('.time-to-process').innerHTML = json.data.time_to_process;
+        document.querySelector('.last-update').innerHTML = new Date(json.data.last_update)
+
+        new frappe.Chart('.dossiers-by-day', {
+            data: json.data_num_dossiers_day,
+            type: 'line',
+            height: 250,
+            colors: ['#006cb0'],
+        });
+        new frappe.Chart('.dossiers-by-month', {
+            data: json.data_num_dossiers_month,
+            type: 'line',
+            height: 250,
+            colors: ['#006cb0'],
+        });
+        new frappe.Chart('.dossiers-by-status', {
+            data: json.data_num_by_status,
+            type: 'bar',
+            height: 250,
+            colors: ['#006cb0'],
+        });
+        new frappe.Chart('.dossiers-by-country', {
+            data: json.data_num_by_contry,
+            type: 'bar',
+            height: 250,
+            colors: ['#006cb0'],
+        });
+        new frappe.Chart('.time-to-process-by-month', {
+            data: json.data_time_to_process_by_month,
+            type: 'bar',
+            height: 250,
+            colors: ['#006cb0'],
+        });
+    };
+
+</script>
+{% endblock %}
