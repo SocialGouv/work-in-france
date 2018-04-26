@@ -90,3 +90,17 @@ Voici la liste des contrats pour lesquels vous aurez besoin d'une autorisation p
     - *Copie passeport avec nom et prénom, ou titre de séjour étudiant diplôme de médecin*
 
 [Retour au sommaire](#faq-summary)
+
+<hr>
+
+### La démarche de demande d'autorisation provisoire de travail via Work in France est-elle gratuite ?
+
+Oui. En utilisant WorkInFrance, **votre démarche en ligne est entièrement gratuite**. Vous faites l'économie des frais et délais postaux pour le dépôt de la demande mais aussi pour la réception de la réponse de l'administration : elle vous sera notifiée par courriel !
+
+Il existe une **taxe employeur** collectée par l'Office français de l'immigration et de l'intégration (**OFII**). Cette taxe n'est exigible à l'employeur que lorsqu'un étudiant demande un changement de statut (passage d'étudiant à salarié par exemple).
+
+Or l'étudiant faisant l'objet d'une demande d'autorisation provisoire de travail via WorkInFrance conserve son statut étudiant.
+
+Par conséquent son employeur **n'a pas de taxe à payer à l'OFII**.
+
+[Retour au sommaire](#faq-summary)
