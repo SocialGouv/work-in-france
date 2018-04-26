@@ -2,13 +2,13 @@
 
 ### Présentation
 
-*Work In France* est une plateforme permettant aux usagers d'effectuer des démarches de demandes d'autorisations de travail en ligne.
+*Work In France* est une plateforme permettant aux usagers d'effectuer des démarches de demandes d'autorisations provisoires de travail en ligne.
 
-*Work In France* permet dans un premier temps la délivrance d'autorisations temporaires de travail pour les étudiants en contrat d'apprentissage, en contrat de professionnalisation, les internes en médecine, et les étudiants algériens soumis à l'accord franco-algérien du 27 décembre 1968. 
+*Work In France* permet dans un premier temps la délivrance d'autorisations provisoires de travail pour les étudiants en contrat d'apprentissage, en contrat de professionnalisation, les internes en médecine, et les étudiants algériens soumis à l'accord franco-algérien du 27 décembre 1968. 
 
 *Work In France* est un service disponible dans le département 75 pour son lancement et a vocation à s'étendre progressivement à l'ensemble du territoire français.
 
-*Work In France* s'appuie sur l'outil [Démarches Simplifiées](https://demarches-simplifiees.fr), développé par la DINSIC (Direction Interministérielle du Numérique et des Systèmes d'information et de communication de l'Etat) pour recevoir les demandes d'autorisations de travail et les redistribuer aux unités départementales des **Direccte** (Directions Régionales des Entreprises, de la Concurrence, de la Consommation, du Travail et de l'Emploi) concernées.
+*Work In France* s'appuie sur l'outil [Démarches Simplifiées](https://demarches-simplifiees.fr), développé par la DINSIC (Direction Interministérielle du Numérique et des Systèmes d'information et de communication de l'Etat) pour recevoir les demandes d'autorisations provisoires de travail et les redistribuer aux unités départementales des **Direccte** (Directions Régionales des Entreprises, de la Concurrence, de la Consommation, du Travail et de l'Emploi) concernées.
 
 ### Définitions
 
@@ -18,7 +18,7 @@
 
 ### Absence de garantie
 
-Bien que nous mettions tout en œuvre pour garantir le bon traitement de chaque démarche effectuée via *Work In France*, les demandes instruites par l'usager avec *Work In France* ne représentent en aucun cas une décision de délivrance d'une autorisation de travail. Nos partenaires sont les seuls décisionnaires sur l'attribution d'une autorisation de travail.
+Bien que nous mettions tout en œuvre pour garantir le bon traitement de chaque démarche effectuée via *Work In France*, en aucune manière le dépot par l'usager d'une demande via la plateforme n'en garantit l’acceptation par l'administration. Nos partenaires sont les seuls décisionnaires sur l'attribution d'une autorisation provisoire de travail.
 
 ### Vos données
 
