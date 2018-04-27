@@ -6,47 +6,59 @@
 
     <main id="skip-to-main">
 
-        <section class="section-white">
-            <h3>Statistiques</h3>
-            <p>Nombre de dossiers déposés : <b class="total-dossiers"></b></p>
-            <p>Nombre de dossiers acceptés : <b class="total-dossiers-closed"></b></p>
-            <p>Temps de traitement moyen : <b class="time-to-process"></b></p>
+        <section class="section-white stats-loading">
+            <div class="center">
+                <div class="spinner">Chargement...</div>
+            </div>
         </section>
 
-        <section class="section-color">
-            <h4>
-                Évolution du nombre de dossiers déposés par jour
-                <small>pendant les 31 derniers jours</small>
-            </h4>
-            <div class="dossiers-by-day"></div>
-        </section>
+        <div class="stats-container">
 
-        <section class="section-white">
-            <h4>
-                Évolution du nombre de dossiers déposés par mois
-                <small>pendant les 365 derniers jours</small>
-            </h4>
-            <div class="dossiers-by-month"></div>
-        </section>
+            <section class="section-white">
+                <h3>Statistiques</h3>
+                <ul>
+                    <li>Nombre de dossiers déposés : <b class="total-dossiers"></b></li>
+                    <li>Nombre de dossiers acceptés : <b class="total-dossiers-closed"></b></li>
+                    <li>Temps de traitement moyen : <b class="time-to-process"></b></li>
+                </ul>
+            </section>
 
-        <section class="section-color">
-            <h4>Évolution du temps de traitement moyen par mois</h4>
-            <div class="time-to-process-by-month"></div>
-        </section>
+            <section class="section-color">
+                <h4>
+                    Évolution du nombre de dossiers déposés par jour
+                    <small>pendant les 31 derniers jours</small>
+                </h4>
+                <div class="dossiers-by-day"></div>
+            </section>
 
-        <section class="section-white">
-            <h4>Répartition des dossiers par statut</h4>
-            <div class="dossiers-by-status"></div>
-        </section>
+            <section class="section-white">
+                <h4>
+                    Évolution du nombre de dossiers déposés par mois
+                    <small>pendant les 365 derniers jours</small>
+                </h4>
+                <div class="dossiers-by-month"></div>
+            </section>
 
-        <section class="section-color">
-            <h4>Répartition des dossiers par pays</h4>
-            <div class="dossiers-by-country"></div>
-        </section>
+            <section class="section-color">
+                <h4>Évolution du temps de traitement moyen par mois</h4>
+                <div class="time-to-process-by-month"></div>
+            </section>
 
-        <section class="section-white">
-            <p><small>Dernière mise à jour des données : <b class="last-update"></b></small></p>
-        </section>
+            <section class="section-white">
+                <h4>Répartition des dossiers par statut</h4>
+                <div class="dossiers-by-status"></div>
+            </section>
+
+            <section class="section-color">
+                <h4>Répartition des dossiers par pays</h4>
+                <div class="dossiers-by-country"></div>
+            </section>
+
+            <section class="section-white">
+                <p><small>Dernière mise à jour des données : <b class="last-update"></b></small></p>
+            </section>
+
+        </div>
 
     </main>
 
@@ -56,6 +68,12 @@
 {{ super() }}
 <script src="/static/js/frappe-charts.1.1.0.js"></script>
 <script>
+
+    let jsonUrl = '/static/json/stats.json';
+
+    let loaderElem = document.querySelector('.stats-loading');
+    let statsElem = document.querySelector('.stats-container');
+    statsElem.style.display = 'none';
 
     let xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
@@ -68,15 +86,28 @@
         }
       }
     };
-    xhr.open('GET', '/static/js/stats.json', true);
+    xhr.open('GET', jsonUrl, true);
     xhr.send(null);
 
     let showStatsCallback = function (json) {
 
+        loaderElem.style.display = 'none';
+        statsElem.style.display = 'block';
+
         document.querySelector('.total-dossiers').innerHTML = json.data.total_dossiers;
         document.querySelector('.total-dossiers-closed').innerHTML = json.data.total_dossiers_closed;
         document.querySelector('.time-to-process').innerHTML = json.data.time_to_process;
-        document.querySelector('.last-update').innerHTML = new Date(json.data.last_update)
+
+        let lastUpdate = new Date(json.data.last_update)
+        let options = {
+            'hour': '2-digit',
+            'day':'2-digit',
+            'month':'2-digit',
+            'year':'numeric',
+            'minute':'2-digit',
+        };
+        lastUpdate = new Intl.DateTimeFormat('fr-FR', options).format(lastUpdate);
+        document.querySelector('.last-update').innerHTML = lastUpdate;
 
         new frappe.Chart('.dossiers-by-day', {
             data: json.data_num_dossiers_day,
