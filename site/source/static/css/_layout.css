@@ -64,64 +64,56 @@ section,
 
 }
 
-.site-header a.site-logo {
-    color: var(--black);
-    font-size: 1.7rem;
-    text-decoration: none;
-}
-
 .site-header > nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Menu.
---------------------------------------------------------------------------- */
+.site-header > nav .site-header-logos {
 
-#menu-open-btn {
-    display: block;
-    width: 40px;
-    height: 24px;
+    display: flex;
+    align-items: center;
+
+    & .site-logo {
+        color: var(--black);
+        font-family: "Evolventa";
+        font-size: 1.7rem;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+
 }
 
-#menu-open-btn > img {
-    width: 100%;
-    height: 100%;
-}
+.site-header > nav ul {
 
-.menu {
-    z-index: 1000;
-    transform: translateX(100%);  /* Put it out of the viewport. */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 15px;
     text-align: center;
-    background: var(--white);
-}
-
-.menu.js-menu-is-opened,
-.menu:target {
-    transform: translateX(0);
-    transition: transform 0.3s ease-in-out;
-}
-
-body.js-menu-is-opened {
-    overflow: hidden;  /* Prevent body scrolling when the menu is open. */
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
     padding: 0;
+
+    & li {
+        display: inline-block;
+    }
+
+    & li:not(:first-of-type) {
+        margin-left: 10px;
+    }
+
+    & a {
+        color: var(--french-flag-blue);
+    }
+
 }
 
-.menu ul li {
-    text-transform: uppercase;
-    margin: 20px 0;
+@media (max-width: 600px) {  /* For any browser < max-width. */
+
+    .site-header > nav {
+        display: block;
+    }
+
+    .site-header > nav .site-header-logos {
+        justify-content: center;
+    }
+
 }
 
 /* Banner (with the big baseline).
