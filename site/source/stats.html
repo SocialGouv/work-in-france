@@ -69,7 +69,11 @@
 <script src="/static/js/frappe-charts.1.1.0.js"></script>
 <script>
 
-    let jsonUrl = '/static/json/stats.json';
+    let jsonUrl = 'https://wif-bo-public.num.social.gouv.fr/static/stats.json';
+    if (window.location.hostname === 'localhost') {
+      console.log('Running in dev mode on localhost')
+      jsonUrl = 'http://localhost:1337/static/stats.json';
+    }
 
     let loaderElem = document.querySelector('.stats-loading');
     let statsElem = document.querySelector('.stats-container');
@@ -82,7 +86,7 @@
         if (this.status === 200) {
           showStatsCallback(this.response);
         } else {
-          console.log('Unable to load stats.json');
+          console.log('Unable to load stats.json from', jsonUrl);
         }
       }
     };
