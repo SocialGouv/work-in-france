@@ -2,6 +2,16 @@
 
 {% block title %}{{ super() }} - Statistiques{% endblock %}
 
+{% block head %}
+{{ super() }}
+<style>
+/* Hack to display 0 values along x-axis in red. */
+.dossiers-by-day svg > g > g.dataset-units > circle[cy='180'] {
+    fill: #d1335b !important;
+}
+</style>
+{% endblock %}
+
 {% block content %}
 
     <main id="skip-to-main">
