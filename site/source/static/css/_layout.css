@@ -140,6 +140,7 @@ section,
 
     .banner-content {
         background-size: cover;
+        min-height: 0;
     }
 
 }
@@ -149,6 +150,15 @@ section,
     margin: 0; /* Avoid collapsing margin. */
     text-shadow: 0 1px 2px rgba(255,255,255,0.24);
     color: var(--french-flag-blue);
+}
+
+@media (max-width: 600px) {  /* For any browser < max-width. */
+
+    .banner-content h1 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
 }
 
 @media (min-width: 900px) {  /* For any browser > min-width. */
