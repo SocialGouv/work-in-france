@@ -34,6 +34,8 @@ Si vous utilisez Work In France, vous n'aurez plus besoin de faire une demande C
 
 ### Combien de temps va prendre ma démarche ?
 
+A l'heure actuelle, une autorisation provisoire de travail déposée sur Work In France est délivrée dans un délai de 3 à 5 jours ouvrés.
+
 Vous serez averti par e-mail à chaque étape de la procédure (dépôt, complétude du dossier, instruction, validation ou refus). Vous ne recevrez pas de courrier papier. Une fois votre dossier complet et instruit, vous recevrez par e-mail votre attestation ou une notification de refus dans les délais légaux.
 
 [Retour au sommaire](#faq-summary)
