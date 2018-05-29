@@ -52,3 +52,8 @@ $ npm run deploy
 Pour pouvoir travailler la page `validity_check.html`, vous devez faire tourner en parallèle le serveur du [back office public de Work in France](https://github.com/SocialGouv/work-in-france-bo-public) qui embarque l'API de vérification des autorisations.
 
 Reportez-vous à la documentation pour lancer le serveur.
+
+## Mettre à jour la F.A.Q.
+
+ 1 - Compléter [le fichier de la FAQ](https://github.com/SocialGouv/work-in-france/blob/master/site/source/markdown/faq.md) au [format markdown](https://fr.wikipedia.org/wiki/Markdown).
+ 2 - Soumettre une Pull request
