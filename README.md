@@ -53,7 +53,20 @@ Pour pouvoir travailler la page `validity_check.html`, vous devez faire tourner 
 
 Reportez-vous à la documentation pour lancer le serveur.
 
+## Docker
+
+Builder l'image avec `docker build . -t work-in-france` puis :
+
+`docker run -d --rm --name work-in-france -it -p 8080:8080 -v $PWD:/app work-in-france`
+
+ - Le dossier courant ($PWD) est monté dans l'instance
+ - Le site web est accessible sur http://127.0.0.1:8080
+
+Pour builder depuis le docker : `docker exec -ti work-in-france pipenv run clay build`.
+
+
 ## Mettre à jour la F.A.Q.
 
  1 - Compléter [le fichier de la FAQ](https://github.com/SocialGouv/work-in-france/blob/master/site/source/markdown/faq.md) au [format markdown](https://fr.wikipedia.org/wiki/Markdown).
- 2 - Soumettre une Pull request
+
+ 2 - Soumettre une pull request
