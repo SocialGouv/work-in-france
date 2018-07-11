@@ -104,7 +104,7 @@ Or l'étudiant faisant l'objet d'une demande d'autorisation provisoire de travai
 
 <hr>
 
-#### Cas particuliers : ai-je besoin d'une autorisation provisoire de travail pour mon contrat ? 
+### Cas particuliers : ai-je besoin d'une autorisation provisoire de travail pour mon contrat ? 
 
 **Si votre contrat est un contrat de travail traditionnel de droit privé, qui couvre moins d'un mi-temps, vous n'avez pas besoin d'une autorisation provisoire de travail.**
 
