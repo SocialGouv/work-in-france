@@ -8,7 +8,7 @@ Work In France est un service développé par le ministère des affaires sociale
 
 ### En combien de temps puis-je recevoir mon autorisation provisoire de travail ?
 
-A l'heure actuelle, une autorisation provisoire de travail déposée sur Work In France est délivrée dans un délai de **3 à 5 jours ouvrés**. 
+Une autorisation provisoire de travail déposée sur Work In France est délivrée dans un délai de **3 à 5 jours ouvrés**. 
 
 Pour assurer l'obtention de votre attestation dans ces délais soyez bien attentifs aux informations que vous allez saisir dans le formulaire.
 
@@ -72,7 +72,7 @@ Les documents suivants vous seront demandés pendant votre démarche, assurez-vo
 
 ### Dans quel département puis-je utiliser Work In France ?
 
-Le service est pour l'instant accessible pour le recrutement des étudiants dont l'adresse sur le titre de séjour ou VLSTS (Visa de Long Séjour valant Titre de Séjour) est **Paris (75)**. 
+Le service est pour l'instant accessible pour le recrutement des étudiants dont l'adresse sur le titre de séjour ou visa de long séjour valant titre de séjour (VLS-TS) est **Paris (75)**, quelle que soit l'adresse de l'entreprise ou de l'école.
 
 Les demandes pour les autres départements seront accessibles très prochainement. 
 
