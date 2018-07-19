@@ -55,15 +55,22 @@ Reportez-vous à la documentation pour lancer le serveur.
 
 ## Docker
 
-Builder l'image avec `docker build . -t work-in-france` puis :
+```sh
 
-`docker run -d --rm --name work-in-france -it -p 8080:8080 -v $PWD:/app work-in-france`
+# Builder l'image docker
+docker build . -t work-in-france
 
- - Le dossier courant ($PWD) est monté dans l'instance
- - Le site web est accessible sur http://127.0.0.1:8080
+# Lancer le site en mode dev
+docker run --rm -v $PWD/site:/app/site -ti -p 8080:8080 --entrypoint pipenv work-in-france run clay run
 
-Pour builder depuis le docker : `docker exec -ti work-in-france pipenv run clay build`.
+# Lancer un build du site. l'output se fera dans ./out
+docker run --rm -v $PWD/out:/app/site/build work-in-france
 
+```
+
+## CircleCI
+
+La mise à jour de la branche `master` déclenche un déploiement du site statique sur la branche `gh-pages`
 
 ## Mettre à jour la F.A.Q.
 
