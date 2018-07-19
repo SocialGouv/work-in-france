@@ -6,22 +6,6 @@ Work In France est un service développé par le ministère des affaires sociale
 
 <hr>
 
-### En combien de temps puis-je recevoir mon autorisation provisoire de travail ?
-
-Une autorisation provisoire de travail déposée sur Work In France est délivrée dans un délai de **3 à 5 jours ouvrés**. 
-
-Pour assurer l'obtention de votre attestation dans ces délais soyez bien attentifs aux informations que vous allez saisir dans le formulaire.
-
-Par exemple :
-- La concordance des NOM, PRÉNOM, DATE et LIEU DE NAISSANCE, NATIONALITÉ de l'étudiant avec les informations du document autorisant le séjour en France
-- Le respect du format "nombre d'heure / fréquence", ex. 35H/semaine
-- Le respect du format "salaire brut en euros / fréquence", ex. 9.88€/H
-- L'intitulé de l'emploi occupé (tel qu'il apparaît dans le contrat ou la promesse d'embauche)
-
-[Retour au sommaire](#faq-summary)
-
-<hr>
-
 ### Dans quel cas dois-je demander une autorisation provisoire de travail sur Work In France ?
 
 Work In France permet la délivrance ou le renouvellement d'autorisations provisoires de travail pour :
@@ -36,6 +20,38 @@ Work In France permet la délivrance ou le renouvellement d'autorisations provis
 - Les demandes de convention de stage
 - Les étudiants en changement de statut
 - Les étudiants sans titre de séjour
+
+Si votre contrat est un contrat de travail traditionnel de droit privé, qui couvre moins d'un mi-temps, vous n'avez pas besoin d'une autorisation provisoire de travail.
+
+**Cas particuliers**
+
+Voici la liste des cas particuliers de contrats pour lesquels vous aurez besoin d'une autorisation provisoire de travail :
+
+- [Convention de formation par la recherche (CIFRE)](http://www.enseignementsup-recherche.gouv.fr/cid67039/www.enseignementsup-recherche.gouv.fr/cid67039/cifre-la-convention-industrielle-de-formation-par-la-recherche.html) : Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat CIFRE.
+
+- [Attaché temporaire de l'enseignement et de la recherche (ATER)](http://www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/devenir-attache-temporaire-d-enseignement-et-de-recherche-a.t.e.r.html) : Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat d'ATER délivré par l'établissement mentionnant la date de prise de fonction et l'arrêté ou attestation de nomination ou procès verbal d'installation.
+
+- Internes (hors AP/HP). Pour votre demande d'autorisation de travail vous devrez fournir :
+    - Attestation de recrutement avec durée et salaire
+    - Attestation du chef de service
+    - Certificat de scolarité précisant inscription en DFMS ou DFMSA
+    - Copie passeport avec nom et prénom, ou titre de séjour étudiant diplôme de médecin
+
+[Retour au sommaire](#faq-summary)
+
+<hr>
+
+### En combien de temps puis-je recevoir mon autorisation provisoire de travail ?
+
+Une autorisation provisoire de travail déposée sur Work In France est délivrée dans un délai de **3 à 5 jours ouvrés**. 
+
+Pour assurer l'obtention de votre attestation dans ces délais soyez bien attentifs aux informations que vous allez saisir dans le formulaire.
+
+Par exemple :
+- La concordance des NOM, PRÉNOM, DATE et LIEU DE NAISSANCE, NATIONALITÉ de l'étudiant avec les informations du document autorisant le séjour en France
+- Le respect du format "nombre d'heure / fréquence", ex. 35H/semaine
+- Le respect du format "salaire brut en euros / fréquence", ex. 9.88€/H
+- L'intitulé de l'emploi occupé (tel qu'il apparaît dans le contrat ou la promesse d'embauche)
 
 [Retour au sommaire](#faq-summary)
 
@@ -99,26 +115,6 @@ En utilisant WorkInFrance, **votre démarche en ligne est entièrement gratuite*
 Il existe une taxe employeur collectée par l'Office français de l'immigration et de l'intégration (OFII). Cette taxe n'est exigible à l'employeur que lorsqu'un étudiant demande un changement de statut (passage d'étudiant à salarié par exemple).
 
 Or l'étudiant faisant l'objet d'une demande d'autorisation provisoire de travail via WorkInFrance conserve son statut étudiant. Par conséquent son employeur n'a pas de taxe à payer à l'OFII.
-
-[Retour au sommaire](#faq-summary)
-
-<hr>
-
-### Cas particuliers : ai-je besoin d'une autorisation provisoire de travail pour mon contrat ? 
-
-**Si votre contrat est un contrat de travail traditionnel de droit privé, qui couvre moins d'un mi-temps, vous n'avez pas besoin d'une autorisation provisoire de travail.**
-
-Voici la liste des cas particuliers de contrats pour lesquels vous aurez besoin d'une autorisation provisoire de travail :
-
-- [Convention de formation par la recherche (CIFRE)](http://www.enseignementsup-recherche.gouv.fr/cid67039/www.enseignementsup-recherche.gouv.fr/cid67039/cifre-la-convention-industrielle-de-formation-par-la-recherche.html) : Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat CIFRE.
-
-- [Attaché temporaire de l'enseignement et de la recherche (ATER)](http://www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/devenir-attache-temporaire-d-enseignement-et-de-recherche-a.t.e.r.html) : Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat d'ATER délivré par l'établissement mentionnant la date de prise de fonction et l'arrêté ou attestation de nomination ou procès verbal d'installation.
-
-- Internes (hors AP/HP). Pour votre demande d'autorisation de travail vous devrez fournir :
-    - Attestation de recrutement avec durée et salaire
-    - Attestation du chef de service
-    - Certificat de scolarité précisant inscription en DFMS ou DFMSA
-    - Copie passeport avec nom et prénom, ou titre de séjour étudiant diplôme de médecin
 
 [Retour au sommaire](#faq-summary)
 
