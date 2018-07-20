@@ -4,7 +4,7 @@ jobs:
     working_directory: /app
     branches:
       only:
-        - ci
+        - master
     docker:
       - image: docker:17
     steps:
