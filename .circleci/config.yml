@@ -7,13 +7,10 @@ jobs:
         - ci
     docker:
       - image: docker:17
-        environment:
-          GH_EMAIL: circleci@circleci.com
-          GH_NAME: circleci
     steps:
       - run:
-          name: install GIT
-          command: apk add --update git
+          name: install GIT + SSH
+          command: apk add --update git openssh
       - checkout
       - setup_remote_docker
       - run:
@@ -83,7 +80,7 @@ jobs:
 
             git add -A
             git commit --allow-empty -m "Deploy to GitHub pages [ci skip]"
-            git push --force --quiet origin $DEST_BRANCH > /dev/null 2>&1
+            git push --force origin $DEST_BRANCH
 
             cd ..
             rm -rf "${DEST_BRANCH}-branch"

@@ -1,8 +1,10 @@
-# Work in France
+# Work in France [![CircleCI](https://circleci.com/gh/SocialGouv/work-in-france.svg?style=svg)](https://circleci.com/gh/SocialGouv/work-in-france)
 
 > La plateforme de demande d'autorisations provisoires de travail.
 
 Ce dépôt de code contient le site web statique de Work in France qui s'occupe de l'information et de la pré-qualification des utilisateurs, puis les redirige vers [TPS](https://github.com/betagouv/tps) (Téléprocédures Simplifiées) pour finaliser la procédure.
+
+⚠ Les modifs sur la branche `master` déclenchent une mise à jour du site.
 
 ## Site web
 
