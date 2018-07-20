@@ -1,0 +1,88 @@
+version: 2
+jobs:
+  build:
+    working_directory: /app
+    branches:
+      only:
+        - master
+    docker:
+      - image: docker:17
+    steps:
+      - run:
+          name: install GIT + SSH
+          command: apk add --update git openssh
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build docker image
+          command: |
+            docker build . -t work-in-france
+      - run:
+          name: Docker cleanup
+          command: |
+            docker rm -f work-in-france-build || true
+      - run:
+          name: Run build through docker image
+          command: |
+            docker run --name work-in-france-build work-in-france
+      - run:
+          name: Copy build from docker image
+          # use docker cp instead of volumes
+          # https://stackoverflow.com/questions/46514380/how-to-specify-volume-for-docker-container-in-circleci-configuration
+          command: |
+            docker cp work-in-france-build:/app/site/build /app/site/
+      - run:
+          name: Docker cleanup
+          command: |
+            docker rm -f work-in-france-build || true
+      - run:
+          name: Check build
+          command: |
+            if [ ! -f /app/site/build/index.html ]; then
+              exit 1;
+            fi
+            if [ ! -f /app/site/build/validity_check.html ]; then
+              exit 1;
+            fi
+      - run:
+          name: Deploy
+          command: |
+            set -e
+
+            SITE_SOURCE="./site/build"
+            DEST_BRANCH="gh-pages"
+
+            remote=$(git config remote.origin.url)
+
+            if [ ! -d "$SITE_SOURCE" ]
+            then
+                echo "Usage: $0 <site source dir>"
+                exit 1
+            fi
+
+            mkdir "${DEST_BRANCH}-branch"
+            cd "${DEST_BRANCH}-branch"
+            git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
+            git config --global user.name "$GH_NAME" > /dev/null 2>&1
+            git init
+            git remote add origin "$remote"
+
+            if git rev-parse --verify "origin/${DEST_BRANCH}" > /dev/null 2>&1
+            then
+                git checkout $DEST_BRANCH
+                git rm -rf .
+            else
+                git checkout --orphan $DEST_BRANCH
+            fi
+
+            cp -a "../${SITE_SOURCE}/." .
+            touch .nojekyll
+
+            git add -A
+            git commit --allow-empty -m "Deploy to GitHub pages [ci skip]"
+            git push --force origin $DEST_BRANCH
+
+            cd ..
+            rm -rf "${DEST_BRANCH}-branch"
+
+            echo "Finished Deployment!"
