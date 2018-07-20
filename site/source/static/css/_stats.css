@@ -1,0 +1,36 @@
+/* Stats
+--------------------------------------------------------------------------- */
+
+.statistiques-resume {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.statistiques-resume > div {
+  flex: 1 0 auto;
+  text-align: center;
+  box-shadow: 0 1px 4px #c9d3df;
+  border: 1px solid silver;
+  margin: 0 20px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.statistiques-resume > div div:first-child {
+  font-size: 1.2em;
+}
+
+.statistiques-resume > div div:last-child {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+@media (max-width: 600px) {
+  .statistiques-resume > div {
+    margin-top: 30px;
+    flex: 1 0 100%;
+    font-size: 1.5em;
+  }
+}
