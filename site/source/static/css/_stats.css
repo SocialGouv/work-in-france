@@ -1,0 +1,25 @@
+/* Stats
+--------------------------------------------------------------------------- */
+
+.statistiques-resume {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.statistiques-resume > div div:first-child {
+  font-size: 1.2em;
+}
+
+.statistiques-resume > div div:last-child {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+@media (max-width: 600px) {
+  .box-bordered {
+    margin-top: 30px;
+    font-size: 1.3em;
+  }
+}
