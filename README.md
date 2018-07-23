@@ -49,6 +49,8 @@ $ cd site
 $ npm run deploy
 ```
 
+Un styleguide est disponible ici : https://workinfrance.beta.gouv.fr/cookbook.html
+
 ## Travailler sur la page de validation des autorisations
 
 Pour pouvoir travailler la page `validity_check.html`, vous devez faire tourner en parallèle le serveur du [back office public de Work in France](https://github.com/SocialGouv/work-in-france-bo-public) qui embarque l'API de vérification des autorisations.
