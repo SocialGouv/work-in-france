@@ -2,6 +2,10 @@
 
 {% block title %}{{ super() }} - Liste des documents à préparer{% endblock %}
 
+{% block head %}
+<script src="/static/js/qualify.js?{{ range(1, 999999999999) | random }}"></script>
+{% endblock %}
+
 {% block content %}
 
     <main id="skip-to-main">
@@ -103,7 +107,7 @@
                 <br>
 
                 <p class="center">
-                    <a class="btn" href="https://www.demarches-simplifiees.fr/commencer/autorisation-provisoire-de-travail">Poursuivre votre demande sur <b>Démarches simplifiées</b></a>
+                  <a id="button_redirect_ds" class="btn" href="#">Poursuivre votre demande sur <b>Démarches simplifiées</b></a>
                 </p>
 
             </div>
