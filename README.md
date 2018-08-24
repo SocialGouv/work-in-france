@@ -83,5 +83,7 @@ La mise à jour de la branche `master` déclenche un déploiement du site statiq
 ## Ajouter un département
 
 1 - créer les formulaires sur DS
+
 2 - autoriser le département sur le front dans [./site/source/qualify/base/qualify-1.html](./site/source/qualify/base/qualify-1.html)
+
 3 - définir les URLS des formulaires [./site/source/static/js/qualify.js](./site/source/static/js/qualify.js)
