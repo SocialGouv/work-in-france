@@ -12,14 +12,14 @@ Ce dépôt de code contient le site web statique de Work in France qui s'occup
 
 Nous utilisons [`clay`](http://lucuma.github.io/Clay/) pour générer une version statique du site. `clay` utilise encore `python2.7` pour le moment.
 
-Vous devez donc créer un environnement Python 2.7 isolé avec [`pipenv (>=11.8.3)`](https://github.com/pypa/pipenv) et y installer les dépendances Python du projet :
+Vous devez donc créer un environnement Python 2.7 isolé avec [`pipenv (>=11.8.3)`](https://github.com/pypa/pipenv) et y installer les dépendances Python du projet :
 
 ```bash
 $ pipenv --python 2.7
 $ pipenv install --dev
 ```
 
-Installez ensuite les dépendances `npm` (`npm 5+` est utilisé) :
+Installez ensuite les dépendances `npm` (`npm 5+` est utilisé) :
 
 ```bash
 $ cd site
@@ -60,7 +60,6 @@ Reportez-vous à la documentation pour lancer le serveur.
 ## Docker
 
 ```sh
-
 # Builder l'image docker
 docker build . -t work-in-france
 
@@ -69,7 +68,6 @@ docker run --rm -v $PWD/site:/app/site -ti -p 8080:8080 --entrypoint pipenv work
 
 # Lancer un build du site. l'output se fera dans ./out
 docker run --rm -v $PWD/out:/app/site/build work-in-france
-
 ```
 
 ## CircleCI
@@ -78,6 +76,12 @@ La mise à jour de la branche `master` déclenche un déploiement du site statiq
 
 ## Mettre à jour la F.A.Q.
 
- 1 - Compléter [le fichier de la FAQ](https://github.com/SocialGouv/work-in-france/blob/master/site/source/markdown/faq.md) au [format markdown](https://fr.wikipedia.org/wiki/Markdown).
+1 - Compléter [le fichier de la FAQ](https://github.com/SocialGouv/work-in-france/blob/master/site/source/markdown/faq.md) au [format markdown](https://fr.wikipedia.org/wiki/Markdown).
 
- 2 - Soumettre une pull request
+2 - Soumettre une pull request
+
+## Ajouter un département
+
+1 - créer les formulaires sur DS
+2 - autoriser le département sur le front dans [./site/source/qualify/base/qualify-1.html](./site/source/qualify/base/qualify-1.html)
+3 - définir les URLS des formulaires [./site/source/static/js/qualify.js](./site/source/static/js/qualify.js)
