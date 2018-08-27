@@ -146,7 +146,7 @@
           e.preventDefault();
           e.stopPropagation();
           let department = document.querySelector('#department option:checked').value;
-          const allowedDepartements = ['75']
+          const allowedDepartements = ['75', '69']
           if (allowedDepartements.indexOf(department) === -1) {
             form.action = '/qualify/fail.html';
           }
