@@ -277,7 +277,7 @@
 
                 <p><b>Ce service n'est pas encore disponible dans votre département.</b></p>
                 <p>La version bêta est disponible uniquement pour les demandes concernant le département 75.</p>
-                <p>En attendant, veuillez vous adresser à la <abbr title="Direction Régionale des Entreprises, de la Concurrence, de la Consommation, du Travail et de l'Emploi">Direccte</abbr> de votre région :</p>
+                <p>En attendant, veuillez vous adresser à la :</p>
 
                 {% for item in direccte_addresses %}
                     <p class="js-qualify-fail-address" id="{{ item['slug'] }}" data-departments="{{ item['departments'] | tojson | forceescape }}">
