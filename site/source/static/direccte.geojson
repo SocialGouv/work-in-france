@@ -5565,8 +5565,9 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          48.1882305,
-          6.4396143
+        6.4396143,
+          48.1882305
+
         ]
       },
       "properties": {
@@ -5585,8 +5586,8 @@
           "CodePostal": "88025",
           "NomCommune": "Épinal Cedex",
           "Localisation": {
-            "Latitude": "6.4396143",
-            "Longitude": "48.1882305",
+            "Latitude": "48.1882305",
+            "Longitude": "6.4396143",
             "Précision": "6"
           },
           "Accessibilité": {
