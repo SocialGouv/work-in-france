@@ -43,7 +43,7 @@ Voici la liste des cas particuliers de contrats pour lesquels vous aurez besoin 
 
 ### En combien de temps puis-je recevoir mon autorisation provisoire de travail ?
 
-Une autorisation provisoire de travail déposée sur Work In France est délivrée dans un délai de **3 à 5 jours ouvrés**. 
+Une autorisation provisoire de travail déposée sur Work In France est délivrée **dans un délai moyen de 5 jours ouvrés**, sauf cas spécifiques. Vous pouvez avoir une idée des délais de délivrance constatés en ce moment et leur évolution en vous rendant sur notre page [statistiques](https://workinfrance.beta.gouv.fr/stats.html).
 
 Pour assurer l'obtention de votre attestation dans ces délais soyez bien attentifs aux informations que vous allez saisir dans le formulaire.
 
