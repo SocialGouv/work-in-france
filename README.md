@@ -88,7 +88,9 @@ La mise à jour de la branche `master` déclenche un déploiement du site statiq
 
 3 - définir les URLS des formulaires [./site/source/static/js/qualify.js](./site/source/static/js/qualify.js)
 
-4 - mettre à jour la FAQ avec le(s) nouveau(x) départements : [./site/source/markdown/faq.md](./site/source/markdown/faq.md)
+4 - mettre à jour la page d'accueil avec le(s) nouveau(x) départements : [./site/source/index.html](./site/source/index.html)
+
+5 - mettre à jour la FAQ avec le(s) nouveau(x) départements : [./site/source/markdown/faq.md](./site/source/markdown/faq.md)
 
 ## Mettre à jour les coordonnées MOE
 
