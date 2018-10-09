@@ -17,6 +17,11 @@
                     <p>
                         <label for="department">Département qui figure sur le titre de séjour du salarié :</label>
                         <select id="department" name="department" autofocus>
+                          <option value="">Choisissez votre département</option>
+                          <option value=""></option>
+                          <option value="75">75 - Paris</option>
+                          <option value="69">69 - Rhône</option>
+                          <option value=""></option>
                           <option value="01">01 - Ain</option>
                           <option value="02">02 - Aisne</option>
                           <option value="03">03 - Allier</option>
@@ -92,7 +97,7 @@
                           <option value="72">72 - Sarthe</option>
                           <option value="73">73 - Savoie</option>
                           <option value="74">74 - Haute-savoie</option>
-                          <option value="75" selected>75 - Paris</option>
+                          <option value="75">75 - Paris</option>
                           <option value="76">76 - Seine-maritime</option>
                           <option value="77">77 - Seine-et-marne</option>
                           <option value="78">78 - Yvelines</option>
@@ -146,6 +151,10 @@
           e.preventDefault();
           e.stopPropagation();
           let department = document.querySelector('#department option:checked').value;
+          if (!department) {
+            alert("Merci de choisir votre département");
+            return false;
+          }
           const allowedDepartements = ['75', '69']
           if (allowedDepartements.indexOf(department) === -1) {
             form.action = '/qualify/fail.html';
