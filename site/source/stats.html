@@ -119,7 +119,7 @@
 
         document.querySelector('.total-dossiers').innerHTML = json.data.total_dossiers;
         document.querySelector('.total-dossiers-closed').innerHTML = json.data.total_dossiers_closed;
-        document.querySelector('.time-to-process').innerHTML = json.data.time_to_process;
+        document.querySelector('.time-to-process').innerHTML = json.data.time_to_process + " jours";
 
         let lastUpdate = new Date(json.data.last_update)
         let options = {
