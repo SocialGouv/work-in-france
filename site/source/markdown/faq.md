@@ -35,7 +35,7 @@ Voici la liste des cas particuliers de contrats pour lesquels vous aurez besoin 
     - Attestation de recrutement avec durée et salaire
     - Attestation du chef de service
     - Certificat de scolarité précisant inscription en DFMS ou DFMSA
-    - Copie passeport avec nom et prénom, ou titre de séjour étudiant diplôme de médecin
+    - Copie passeport avec nom et prénom, ou titre de séjour étudiant et diplôme de médecin
 
 [Retour au sommaire](#faq-summary)
 
