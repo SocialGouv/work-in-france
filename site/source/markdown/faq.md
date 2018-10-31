@@ -62,11 +62,11 @@ Par exemple :
 Les documents suivants vous seront demandés pendant votre démarche, assurez-vous de les avoir dans un format numérique (image ou PDF) :
 
 **Documents obligatoires**
-- Le mandat écrit vous autorisant à accomplir les démarches administratives au nom et pour le compte de votre employeur, [voir un modèle](https://workinfrance.beta.gouv.fr/static/pdf/mandat.pdf)
 - Le Contrat de travail : contrat de droit commun (CDD ou CDI), ou contrat d'apprentissage, ou contrat de professionnalisation, ou contrat doctoral
 - La carte d'étudiant en cours de validité ou le certificat de scolarité en cours de validité
 - Le.s document(s) autorisant le séjour en France : carte de séjour en cours de validité ou VLSTS (Visa de Long Séjour valant Titre de Séjour) en cours de validité ou en cas de renouvellement du titre de séjour ces 3 documents dans cet ordre : convocation à la Préfecture ou Sous-Préfecture, titre de séjour, récépissé de nouvelle demande de titre de séjour
 - Votre passeport
+- Le cas échéant : le mandat écrit autorisant l'étudiant à accomplir les démarches administratives au nom et pour le compte de l'employeur, [voir un modèle](https://workinfrance.beta.gouv.fr/static/pdf/mandat.pdf)
 
 **Documents optionnels**
 
