@@ -1,6 +1,6 @@
 ### Qu'est-ce que Work in France ?
 
-Work In France est un service développé par le ministère des affaires sociales qui permet aux employeurs ou étudiants d'effectuer des démarches de demandes d'autorisations provisoires de travail en ligne.
+Work In France est un service développé par le ministère des affaires sociales qui permet aux employeurs ou étudiants étrangers d'effectuer des démarches de demandes d'autorisations provisoires de travail en ligne.
 
 [Retour au sommaire](#faq-summary)
 
@@ -8,12 +8,12 @@ Work In France est un service développé par le ministère des affaires sociale
 
 ### Dans quel cas dois-je demander une autorisation provisoire de travail sur Work In France ?
 
-Work In France permet la délivrance ou le renouvellement d'autorisations provisoires de travail pour :
+Work In France permet la délivrance ou le renouvellement d'autorisations provisoires de travail en faveur de :
 
-- les étudiants en contrat d'alternance (contrat d'apprentissage ou contrat de professionnalisation).
+- l'étudiant étranger en contrat d'alternance (contrat d'apprentissage ou contrat de professionnalisation).
 *Pour rappel, l'étudiant étranger ne peut conclure un un tel contrat qu'à l'issue d'une première année de séjour. ([Article R5221-7](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=28D6FA25597F104E938F697A736EB175.tplgfr22s_2?idArticle=LEGIARTI000033332899&cidTexte=LEGITEXT000006072050&categorieLien=id&dateTexte=) du code du travail)*
-- les étudiants en formation doctorale
-- les étudiants algériens soumis à l'accord franco-algérien du 27 décembre 1968
+- l'étudiant étranger en formation doctorale
+- l'étudiants algérien soumis à l'accord franco-algérien du 27 décembre 1968
 
 **Ne sont pas concernés :**
 
@@ -21,7 +21,7 @@ Work In France permet la délivrance ou le renouvellement d'autorisations provis
 - Les étudiants en changement de statut
 - Les étudiants sans titre de séjour
 
-Si votre contrat est un contrat de travail traditionnel de droit privé, qui couvre moins d'un mi-temps, vous n'avez pas besoin d'une autorisation provisoire de travail.
+Conclure un contrat de travail traditionnel de droit privé à titre accessoire (dans la limite d'une durée annuelle de travail égale à 964 heures) ne nécéssite pas l'obtention d'une autorisation provisoire de travail. L'employeur doit en revanche accomplir la formalité de déclaration nominative préalable à l'embauche auprès de la préfecture du lieu de résidence de l'étudiant étranger au moins deux jours ouvrables avant la date d'effet de l'embauche. _([Articles R5221-26 à 28](https://www.legifrance.gouv.fr/affichCode.do?idSectionTA=LEGISCTA000018525738&cidTexte=LEGITEXT000006072050&dateTexte=20181031) du code du travail)_
 
 **Cas particuliers**
 
