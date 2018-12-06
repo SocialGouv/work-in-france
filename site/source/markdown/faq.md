@@ -96,6 +96,24 @@ Les demandes pour les autres départements seront accessibles très prochainemen
 
 <hr>
 
+### Que dois-je faire en cas de changement d'adresse ?
+
+Votre premier réflexe lorsque vous changez de résidence administrative doit être de le déclarer à la préfecture de votre nouveau département de résidence, en vertu de l'[article R321-8](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=2C1DC4AD82B47E2D7EF8A1DB782CF006.tplgfr22s_2?idArticle=LEGIARTI000033332803&cidTexte=LEGITEXT000006070158&categorieLien=id&dateTexte=) du code de l'entrée et du séjour des étrangers et du droit d'asile (ceseda) qui stipule que :
+
+**"Tout étranger, séjournant en France et astreint à la possession d'une autorisation de séjour d'une durée supérieure à un an, est tenu, lorsqu'il transfère le lieu de sa résidence effective et permanente, d'en faire la déclaration, dans les trois mois de son arrivée, à la préfecture territorialement compétente."**
+
+Vous avez donc 3 mois pour effectuer cette démarche qui facilitera grandement toutes les autres.
+
+En effet, le premier réflexe d'un service de la main d'oeuvre étrangère (en charge de l'instruction des demandes d'autorisation de travail) est de vérifier sa compétence territoriale, en vertu de l'[article R5221-15](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000018525766&cidTexte=LEGITEXT000006072050) du code du travail.
+
+Seule la préfecture a compétence à se prononcer sur les questions relatives au séjour d'un étranger résidant en France. C'est donc sur la base des documents délivrés par cette administration *(récépissés, attestation de changement d'adresse, convocation, etc)* qu'une Direccte va décider si elle peut ou pas se prononcer sur un dossier de demande d'autorisation de travail.
+
+**Tout autre type justificatif de domicile peut être refusé par la Direccte.** 
+
+[Retour au sommaire](#faq-summary)
+
+<hr>
+
 ### Est-ce que Work In France remplace la procédure papier ?
 
 Si vous utilisez Work In France, vous n'aurez plus besoin de faire une demande CERFA déposée dans les services de la main d'œuvre étrangère. Le formulaire rempli sur la plateforme Work In France sera transmis directement au service compétent et vous serez averti par e-mail à chaque étape de la procédure : dépôt, complétude du dossier, instruction, validation ou refus. 
