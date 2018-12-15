@@ -106,7 +106,7 @@ Vous avez donc 3 mois pour effectuer cette démarche qui facilitera grandement t
 
 En effet, le premier réflexe d'un service de la main d'oeuvre étrangère (en charge de l'instruction des demandes d'autorisation de travail) est de vérifier sa compétence territoriale, en vertu de l'[article R5221-15](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000018525766&cidTexte=LEGITEXT000006072050) du code du travail.
 
-Seule la préfecture a compétence à se prononcer sur les questions relatives au séjour d'un étranger résidant en France. C'est donc sur la base des documents délivrés par cette administration *(récépissés, attestation de changement d'adresse, convocation, etc)* qu'une Direccte va décider si elle peut ou pas se prononcer sur un dossier de demande d'autorisation de travail.
+Seule la préfecture a compétence à se prononcer sur les questions relatives au séjour d'un étranger résidant en France. C'est donc sur la base des documents délivrés par cette administration *(récépissés, attestation de changement d'adresse, convocation, etc.)* qu'une Direccte va décider si elle peut ou pas se prononcer sur un dossier de demande d'autorisation de travail.
 
 **Tout autre type justificatif de domicile peut être refusé par la Direccte.** 
 
