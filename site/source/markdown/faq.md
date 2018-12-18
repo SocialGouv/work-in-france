@@ -88,7 +88,7 @@ Les documents suivants vous seront demandés pendant votre démarche, assurez-vo
 
 ### Dans quel département puis-je utiliser Work In France ?
 
-Le service est pour l'instant accessible pour le recrutement des étudiants dont l'adresse qui figure sur le document autorisant le séjour en France (titre de séjour - récépissé de demande ou de renouvellement de carte de séjour - visa de long séjour valant titre de séjour (VLS-TS)) est dans **Paris (75)**, dans le **Rhône (69)** ou dans le **Loiret (45)**, quelle que soit l'adresse de l'employeur.
+Le service est pour l'instant accessible pour le recrutement des étudiants dont l'adresse qui figure sur le document autorisant le séjour en France (titre de séjour - récépissé de demande ou de renouvellement de carte de séjour - visa de long séjour valant titre de séjour (VLS-TS)) est dans **Paris (75)**, dans le **Rhône (69)**, dans le **Loiret (45)** ou dans la **Seine-Et-marne (77)**, quelle que soit l'adresse de l'employeur.
 
 Les demandes pour les autres départements seront accessibles très prochainement. 
 
