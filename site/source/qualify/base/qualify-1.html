@@ -23,6 +23,7 @@
                           <option value="69">69 - Rhône</option>
                           <option value="45">45 - Loiret</option>
                           <option value="77">77 - Seine-et-marne</option>
+                          <option value="95">95 - Val-d'oise</option>
                           <option value=""></option>
                           <option value="01">01 - Ain</option>
                           <option value="02">02 - Aisne</option>
@@ -157,7 +158,7 @@
             alert("Merci de choisir votre département");
             return false;
           }
-          const allowedDepartements = ['75','69','45','77']
+          const allowedDepartements = ['75','69','45','77','95']
           if (allowedDepartements.indexOf(department) === -1) {
             form.action = '/qualify/fail.html';
           }
