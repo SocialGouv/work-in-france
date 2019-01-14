@@ -14,7 +14,7 @@ RUN pip install pipenv
 
 ENV NVM_DIR="/nvm"
 ENV APP_DIR="/app"
-ENV NODE_VERSION="5.12.0"
+ENV NODE_VERSION="8"
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 ENV NPM_CONFIG_LOGLEVEL error
@@ -48,7 +48,8 @@ COPY . .
 
 WORKDIR $APP_DIR/site
 
-# build CSS then build the static website
+# build the static website
 
-ENTRYPOINT . $NVM_DIR/nvm.sh && npm run css-build && pipenv run clay build
+RUN . $NVM_DIR/nvm.sh && npm run build
 
+ENTRYPOINT echo "builded in ${APP_DIR}/site/build"
