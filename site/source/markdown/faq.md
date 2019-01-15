@@ -62,7 +62,7 @@ Par exemple :
 Les documents suivants vous seront demandés pendant votre démarche, assurez-vous de les avoir dans un format numérique (image ou PDF) :
 
 **Documents obligatoires**
-- Le Contrat de travail : contrat de droit commun (CDD ou CDI), ou contrat d'apprentissage, ou contrat de professionnalisation, ou contrat doctoral
+- Le contrat de travail : contrat de droit commun (CDD ou CDI), ou contrat d'apprentissage, ou contrat de professionnalisation, ou contrat doctoral
 - La carte d'étudiant en cours de validité ou le certificat de scolarité en cours de validité
 - Le.s document(s) autorisant le séjour en France : carte de séjour en cours de validité ou VLSTS (Visa de Long Séjour valant Titre de Séjour) en cours de validité ou en cas de renouvellement du titre de séjour ces 3 documents dans cet ordre : convocation à la Préfecture ou Sous-Préfecture, titre de séjour, récépissé de nouvelle demande de titre de séjour
 - Votre passeport
@@ -72,7 +72,7 @@ Les documents suivants vous seront demandés pendant votre démarche, assurez-vo
 
 - **Pour les cas de renouvellement** d'autorisation provisoire de travail : votre ancienne autorisation de travail et vos 3 dernières fiches de paie.
 
-- **Pour les cas des [professions réglementées](http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee)** (architecture, médecine, comptabilité) il faut prouver que l'étudiant a la capacité d'exercer cette activité et fournir un justificatif permettant d'exercer la profession réglementée. Par exemple :
+- **Pour les cas de [professions réglementées](http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee)** (architecture, médecine, comptabilité) il faut prouver que l'étudiant a la capacité d'exercer cette activité et fournir un justificatif permettant d'exercer la profession réglementée. Par exemple :
     - Un stagiaire expert comptable fournit une attestation de l'ordre associé
     - Un agent de sécurité fournit une copie du certificat de qualification professionnelle
     - Un commissaire aux comptes fournit une attestation de l'ordre associé
