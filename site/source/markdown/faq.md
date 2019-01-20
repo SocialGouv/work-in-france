@@ -12,7 +12,7 @@ Work In France permet la délivrance ou le renouvellement d'autorisations provis
 
 - l'étudiant étranger en contrat d'alternance (contrat d'apprentissage ou contrat de professionnalisation).
 *Pour rappel, l'étudiant étranger ne peut conclure un un tel contrat qu'à l'issue d'une première année de séjour. ([Article R5221-7](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=28D6FA25597F104E938F697A736EB175.tplgfr22s_2?idArticle=LEGIARTI000033332899&cidTexte=LEGITEXT000006072050&categorieLien=id&dateTexte=) du code du travail)*
-- l'étudiant étranger en formation doctorale
+- l'étudiant étranger en formation doctorale, le stagiaire expert-comptable, 
 - l'étudiant algérien soumis à l'accord franco-algérien du 27 décembre 1968
 
 **Ne sont pas concernés :**
