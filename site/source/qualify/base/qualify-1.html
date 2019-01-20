@@ -19,13 +19,14 @@
                         <select id="department" name="department" autofocus>
                           <option value="">Choisissez votre département</option>
                           <option value=""></option>
-                          <option value="75">75 - Paris</option>
-                          <option value="69">69 - Rhône</option>
-                          <option value="45">45 - Loiret</option>
-                          <option value="77">77 - Seine-et-marne</option>
-                          <option value="95">95 - Val-d'oise</option>
-                          <option value="92">92 - Hauts-de-seine</option>
                           <option value="13">13 - Bouches-du-Rhône</option>
+                          <option value="45">45 - Loiret</option>
+                          <option value="69">69 - Rhône</option>
+                          <option value="75">75 - Paris</option>
+                          <option value="76">76 - Seine-maritime</option>
+                          <option value="77">77 - Seine-et-marne</option>
+                          <option value="92">92 - Hauts-de-seine</option>
+                          <option value="95">95 - Val-d'oise</option>
                           <option value=""></option>
                           <option value="01">01 - Ain</option>
                           <option value="02">02 - Aisne</option>
@@ -160,7 +161,7 @@
             alert("Merci de choisir votre département");
             return false;
           }
-          const allowedDepartements = ['75','69','45','77','95','92','13']
+          const allowedDepartements = ['75','69','45','77','95','92','13','76']
           if (allowedDepartements.indexOf(department) === -1) {
             form.action = '/qualify/fail.html';
           }
