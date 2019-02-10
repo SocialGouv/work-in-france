@@ -2,9 +2,9 @@
 const demarches = {
   75: {
     company:
-      "https://www.demarches-simplifiees.fr/commencer/autorisation-provisoire-de-travail",
+      "https://www.demarches-simplifiees.fr/commencer/ud075-apt-etudiants-employeur",
     student:
-      "https://www.demarches-simplifiees.fr/commencer/autorisation-provisoire-de-travail"
+      " https://www.demarches-simplifiees.fr/commencer/ud075-apt-etudiants"
   },
   69: {
     company:
