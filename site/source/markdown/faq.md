@@ -114,6 +114,20 @@ Seule la préfecture a compétence à se prononcer sur les questions relatives a
 
 <hr>
 
+### Mon contrat de travail a évolué : que dois-je faire ?
+
+Comme il est précisé dans l'autorisation provisoire de travail délivrée via Workinfrance : 
+
+*"Toute modification des conditions d'emploi du salarié devra faire l'objet d'une nouvelle demande d'autorisation provisoire de travail."*
+
+Cela va concerner : **le type de contrat, l'emploi occupé, la date de fin de contrat (en cas de prolongement), le volume horaire (en cas d'augmentation) et le salaire (en cas de baisse)**. 
+
+Le changement du lieu effectif d'embauche peut en revanche simplement être signalé par l'envoi d'un email via la messagerie interne de démarches simplifiées liée à votre dossier. Ce signalement y sera automatiquement ajouté.
+
+[Retour au sommaire](#faq-summary)
+
+<hr>
+
 ### Est-ce que Work In France remplace la procédure papier ?
 
 Si vous utilisez Work In France, vous n'aurez plus besoin de faire une demande CERFA déposée dans les services de la main d'œuvre étrangère. Le formulaire rempli sur la plateforme Work In France sera transmis directement au service compétent et vous serez averti par e-mail à chaque étape de la procédure : dépôt, complétude du dossier, instruction, validation ou refus. 
