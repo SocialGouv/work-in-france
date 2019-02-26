@@ -116,9 +116,11 @@ Seule la préfecture a compétence à se prononcer sur les questions relatives a
 
 ### Mon contrat de travail a évolué : que dois-je faire ?
 
+*Pour rappel, **une autorisation provisoire de travail (APT) est valable pour un employeur bien précis**, identifié par son numéro de siret. Tout ce qui suit n'est donc valable que pour un contrat de travail qui évolue chez un même employeur. Un contrat proposé par un nouvel employeur devra d'office faire l'objet d'une nouvelle demande d'APT.*
+
 Comme il est précisé dans l'autorisation provisoire de travail délivrée via Workinfrance : 
 
-*"Toute modification des conditions d'emploi du salarié devra faire l'objet d'une nouvelle demande d'autorisation provisoire de travail."*
+***"Toute modification des conditions d'emploi du salarié devra faire l'objet d'une nouvelle demande d'autorisation provisoire de travail."***
 
 Cela va concerner : **le type de contrat, l'emploi occupé, la date de fin de contrat (en cas de prolongement), le volume horaire (en cas d'augmentation) et le salaire (en cas de baisse)**. 
 
