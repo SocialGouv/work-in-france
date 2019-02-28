@@ -64,6 +64,16 @@ jobs:
           command: |
             docker run --name work-in-france-build work-in-france
       - run:
+          name: Copy build from docker image
+          # use docker cp instead of volumes
+          # https://stackoverflow.com/questions/46514380/how-to-specify-volume-for-docker-container-in-circleci-configuration
+          command: |
+            docker cp work-in-france-build:/app/site/build /app/site/
+      - run:
+          name: Docker cleanup
+          command: |
+            docker rm -f work-in-france-build || true
+      - run:
           name: Deploy
           command: |
             set -e
