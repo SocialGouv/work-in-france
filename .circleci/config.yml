@@ -41,6 +41,28 @@ jobs:
             if [ ! -f /app/site/build/validity_check.html ]; then
               exit 1;
             fi
+  deploy:
+    working_directory: /app
+    docker:
+      - image: docker:17
+    steps:
+      - run:
+          name: install GIT + SSH
+          command: apk add --update git openssh
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build docker image
+          command: |
+            docker build . -t work-in-france
+      - run:
+          name: Docker cleanup
+          command: |
+            docker rm -f work-in-france-build || true
+      - run:
+          name: Run build through docker image
+          command: |
+            docker run --name work-in-france-build work-in-france
       - run:
           name: Deploy
           command: |
@@ -83,3 +105,16 @@ jobs:
             rm -rf "${DEST_BRANCH}-branch"
 
             echo "Finished Deployment!"
+
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
