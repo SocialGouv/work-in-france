@@ -1,100 +1,149 @@
+/*
+
+This file is the main CSS file that imports other partial CSS files (a partial is any file with an underscore `_` preceding the name).
+
+`postcss-cli` is used to watch the main CSS file. A flat CSS file named `bundle.css` is generated as soon as a change to any partial is made. This works thanks to `postcss-import` which inline `@import` rules content. Other PostCSS plugins are used such as `postcss-cssnext`.
+
+- `postcss-cli`: https://github.com/postcss/postcss-cli
+- `postcss-import`: https://github.com/postcss/postcss-import
+- `postcss-cssnext`: https://github.com/MoOx/postcss-cssnext
+
+Before making any change to any CSS file in this project, ensure that `postcss-cli` is running with the `--watch` option, have a look at the NPM scripts to launch it easily.
+
+*/
+/*
+Inspiration: https://github.com/etalab/template.data.gouv.fr
+--------------------------------------------------------------------------- */
+/* Box-model.
+--------------------------------------------------------------------------- */
 *,
-:after,
-:before {
-  box-sizing: border-box;
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+/* Fonts.
+https://calendar.perfplanet.com/2016/no-font-face-bulletproof-syntax/
+https://fontlibrary.org/fr/font/evolventa
+https://fontlibrary.org/fr/font/source-sans-pro
+--------------------------------------------------------------------------- */
+/* Used for titles. */
+@font-face {
+    font-family: "Evolventa";
+    src: url(../fonts/evolventa/woff2/evolventa-bold.woff2) format('woff2'),
+         url(../fonts/evolventa/woff/evolventa-bold.woff) format('woff');
+    font-weight: 800;
+}
+/* Used for content text. */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(../fonts/source-sans-pro/woff2/source-sans-pro-regular.otf.woff2) format('woff2'),
+         url(../fonts/source-sans-pro/woff/source-sans-pro-regular.otf.woff) format('woff');
+    font-weight: 400;
 }
 @font-face {
-  font-family: Evolventa;
-  src: url(../fonts/evolventa/woff2/evolventa-bold.woff2) format("woff2"),
-    url(../fonts/evolventa/woff/evolventa-bold.woff) format("woff");
-  font-weight: 800;
+    font-family: "Source Sans Pro";
+    src: url(../fonts/source-sans-pro/woff2/source-sans-pro-bold.otf.woff2) format('woff2'),
+         url(../fonts/source-sans-pro/woff/source-sans-pro-bold.otf.woff) format('woff');
+    font-weight: 800;
 }
 @font-face {
-  font-family: Source Sans Pro;
-  src: url(../fonts/source-sans-pro/woff2/source-sans-pro-regular.otf.woff2)
-      format("woff2"),
-    url(../fonts/source-sans-pro/woff/source-sans-pro-regular.otf.woff)
-      format("woff");
-  font-weight: 400;
+    font-family: "Source Sans Pro";
+    src: url(../fonts/source-sans-pro/woff2/source-sans-pro-italic.otf.woff2) format('woff2'),
+         url(../fonts/source-sans-pro/woff/source-sans-pro-italic.otf.woff) format('woff');
+    font-style: italic;
 }
-@font-face {
-  font-family: Source Sans Pro;
-  src: url(../fonts/source-sans-pro/woff2/source-sans-pro-bold.otf.woff2)
-      format("woff2"),
-    url(../fonts/source-sans-pro/woff/source-sans-pro-bold.otf.woff)
-      format("woff");
-  font-weight: 800;
-}
-@font-face {
-  font-family: Source Sans Pro;
-  src: url(../fonts/source-sans-pro/woff2/source-sans-pro-italic.otf.woff2)
-      format("woff2"),
-    url(../fonts/source-sans-pro/woff/source-sans-pro-italic.otf.woff)
-      format("woff");
-  font-style: italic;
-}
+/* Global.
+--------------------------------------------------------------------------- */
 :root {
-  --black: #1c1c1c;
-  --white: #fff;
-  --light-blue: #b4e1fa;
-  --medium-blue: #0081d5;
-  --dark-blue: #006cb0;
-  --darker-blue: #00578d;
-  --french-flag-blue: #003189;
-  --light-red: #f8e1e7;
-  --medium-red: #d1335b;
-  --light-green: #daf5e7;
-  --medium-green: #03bd5b;
-  --lighter-grey: #ebeff3;
-  --light-grey: #c9d3df;
-  --grey: #adb9c9;
+
+    --black: #1c1c1c;
+    --white: #fff;
+
+    --light-blue: #b4e1fa;
+    --medium-blue: #0081d5;
+    --dark-blue: #006cb0;
+    --darker-blue: #00578d;
+    --french-flag-blue: #003189;
+
+    --light-red: #f8e1e7;
+    --medium-red: #d1335b;
+
+    --light-green: #daf5e7;
+    --medium-green: #03bd5b;
+
+    --lighter-grey: #ebeff3;
+    --light-grey: #c9d3df;
+    --grey: #adb9c9;
+
 }
-body,
+body {
+    height: 1vh;
+}
 html {
-  height: 1vh;
+    height: 1vh;
+    font-size: 1rem;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;  /* http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/ */
+    color: var(--black);
+    -webkit-text-size-adjust: 100%;  /* Prevent font scaling in landscape while allowing user zoom. */
+    -webkit-font-smoothing: antialiased;
 }
-html {
-  font-size: 1rem;
-  font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  color: #1c1c1c;
-  color: var(--black);
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Evolventa;
+/* Typo.
+
+Font-size and units: setting the font size on the body to 1rem sets the text size to the
+browser's default font size: usually 16px.
+
+Then:
+16px = 1rem
+20px = 1.25rem => (20 * 1) / 16
+
+40px => 2.5rem
+34px => 2.125rem
+28px => 1.75rem
+26px => 1.625rem
+24px => 1.5rem
+20px => 1.25rem
+18px => 1.125rem
+16px => 1rem
+15px => 0.9375rem
+14px => 0.875rem
+13px => 0.8125rem
+12px => 0.75rem
+10px => 0.625rem
+ 5px => 0.3125rem
+
+Size below are from wing.css https://github.com/kbrsh/wing
+
+--------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Evolventa";
 }
 h1 {
-  font-size: 2.986rem;
-  line-height: 1.2;
+    font-size: 2.986rem;
+    line-height: 1.2;
 }
 h2 {
-  font-size: 2.488rem;
-  line-height: 1.25;
+    font-size: 2.488rem;
+    line-height: 1.25;
 }
 h3 {
-  font-size: 2.074rem;
-  line-height: 1.3;
+    font-size: 2.074rem;
+    line-height: 1.3;
 }
 h4 {
-  font-size: 1.728rem;
-  line-height: 1.35;
+    font-size: 1.728rem;
+    line-height: 1.35;
 }
 h5 {
-  font-size: 1.44rem;
-  line-height: 1.5;
+    font-size: 1.44rem;
+    line-height: 1.5;
 }
 h6 {
-  font-size: 1.2rem;
-  line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
+/* Vertical rhythm.
+--------------------------------------------------------------------------- */
 .form-group,
 fieldset,
 h1,
@@ -107,264 +156,277 @@ hr,
 p,
 pre,
 table {
-  margin: 0 0 1rem;
+    margin: 0 0 1rem 0;
 }
+/* Tables.
+--------------------------------------------------------------------------- */
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  empty-cells: show;
-  text-align: left;
-}
-table,
-table caption {
-  border: 1px solid #c9d3df;
-  border: 1px solid var(--light-grey);
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    text-align: left;
+    border: 1px solid var(--light-grey);
 }
 table caption {
-  font-style: italic;
-  text-align: center;
-  padding: 0.625rem 0;
+    font-style: italic;
+    text-align: center;
+    border-width: 1px 1px 0 1px;
+    padding: 0.625rem 0;
+    border: 1px solid var(--light-grey);
 }
 table td,
 table th {
-  padding: 0.625rem 1rem;
-  border: 1px solid #c9d3df;
-  border: 1px solid var(--light-grey);
+    padding: 0.625rem 1rem;
+    border: 1px solid var(--light-grey);
 }
-table tfoot,
-table thead {
-  vertical-align: bottom;
-  padding: 0.625rem 1rem;
-  background: #c9d3df;
-  background: var(--light-grey);
+table thead,
+table tfoot {
+    vertical-align: bottom;
+    padding: 0.625rem 1rem;
+    background: var(--light-grey);
 }
 table tfoot {
-  vertical-align: top;
+    vertical-align: top;
 }
+/* Links.
+--------------------------------------------------------------------------- */
 a,
 a:link,
 a:visited {
-  color: #0081d5;
-  color: var(--medium-blue);
-  text-decoration: underline;
+    color: var(--medium-blue);
+    text-decoration: underline;
 }
-a:active,
 a:focus,
-a:hover {
-  text-decoration: none;
+a:hover,
+a:active {
+    text-decoration: none;
 }
+/* Images.
+--------------------------------------------------------------------------- */
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 figure {
-  margin: 0;
+    margin: 0;
 }
+/* Divider.
+--------------------------------------------------------------------------- */
 hr {
-  width: 100%;
-  border: 1px solid #c9d3df;
-  border: solid var(--light-grey);
-  border-width: 1px 0 0;
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    border-width: 1px 0 0 0;
 }
+/* Code.
+--------------------------------------------------------------------------- */
 code {
-  padding: 2px;
-  white-space: nowrap;
-  border-radius: 2px;
-  font-family: Consolas, Monaco, Menlo, monospace;
-  background: #ebeff3;
-  background: var(--lighter-grey);
-  border: 1px solid #c9d3df;
-  border: 1px solid var(--light-grey);
+    padding: 2px;
+    white-space: nowrap;
+    border-radius: 2px;
+    font-family: "Consolas", "Monaco", "Menlo", monospace;
+    background: var(--lighter-grey);
+    border: 1px solid var(--light-grey);
 }
+/* Forms.
+--------------------------------------------------------------------------- */
 label[for] {
-  cursor: pointer;
+    cursor: pointer;
 }
 label + textarea {
-  vertical-align: top;
+    vertical-align: top;
 }
 fieldset {
-  width: 100%;
-  min-width: 100%;
-  padding: 1rem;
-  border: 1px solid #ebeff3;
-  border: 1px solid var(--lighter-grey);
+    /*
+    Width and min-width are required here to respect 100% textarea max-width within fieldset.
+    http://codepen.io/tmsdnl/pen/ByqJgO
+    */
+    width: 100%;
+    min-width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--lighter-grey);
 }
+/*
+Some types of properties are not inherited by default.
+We can use `inherit` to force inheritance in some cases.
+For example, the input element doesn't inherit any of the font properties.
+*/
 .btn,
 input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
 }
-input[type="checkbox"],
-input[type="date"],
-input[type="email"],
-input[type="file"],
-input[type="number"],
-input[type="password"],
-input[type="radio"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
+input[type='checkbox'],
+input[type='date'],
+input[type='email'],
+input[type='file'],
+input[type='number'],
+input[type='password'],
+input[type='radio'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
 textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 3px;
-  margin: 0;
-  max-width: 100%;
-  padding: 10px 12px;
-  background: #fff;
-  background: var(--white);
-  border: 1px solid #adb9c9;
-  border: 1px solid var(--grey);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+    margin: 0;
+    max-width: 100%;
+    padding: 10px 12px;
+    background: var(--white);
+    border: 1px solid var(--grey);
 }
 textarea {
-  min-height: 150px;
+    min-height: 150px;
 }
-input[type="checkbox"],
-input[type="radio"] {
-  position: relative;
-  vertical-align: middle;
-  padding: 0;
-  height: 22px;
-  width: 22px;
-  margin: 0 5px 0 0;
+/* Forms > custom radio and checkbox buttons. ------------------------------------ */
+input[type='radio'],
+input[type='checkbox'] {
+    position: relative;
+    vertical-align: middle;
+    padding: 0;
+    height: 22px;
+    width: 22px;
+    margin: 0 5px 0 0;
 }
-input[type="radio"] {
-  border-radius: 50%;
-  background: #fff;
-  background: var(--white);
+/* Forms > custom radio. ------------------------------------ */
+input[type='radio'] {
+    border-radius: 50%;
+    background: var(--white);
 }
-input[type="radio"]:checked {
-  border-color: #0081d5;
-  border-color: var(--medium-blue);
+input[type='radio']:checked {
+    border-color: var(--medium-blue);
 }
-input[type="radio"]:checked:before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  border-radius: 50%;
-  -webkit-transform: scale(0.4);
-  transform: scale(0.4);
-  background-color: #0081d5;
-  background-color: var(--medium-blue);
+input[type='radio']:checked:before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    transform: scale(.4);
+    background-color: var(--medium-blue);
 }
-input[type="checkbox"]:checked {
-  background-color: #0081d5;
-  background-color: var(--medium-blue);
-  border-color: #0081d5;
-  border-color: var(--medium-blue);
+/* Forms > custom checkbox. ------------------------------------ */
+input[type='checkbox']:checked {
+    background-color: var(--medium-blue);
+    border-color: var(--medium-blue);
 }
-input[type="checkbox"]:checked:before {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 12px;
-  border: solid #fff;
-  border: solid var(--white);
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: relative;
-  top: 2px;
-  left: 7px;
+input[type='checkbox']:checked:before {
+    /* Create a CSS checkmark. */
+    content: '';
+    display: block;
+    /* Make a small rectangle so the border will create an L-shape. */
+    width: 6px;
+    height: 12px;
+    /* Add a white border on the bottom and left, creating that 'L'. */
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    /* Rotate the L 45 degrees to turn it into a checkmark. */
+    transform: rotate(45deg);
+    /* Center the checkmark. */
+    position: relative;
+    top: 2px;
+    left: 7px;
 }
+/* Buttons. ------------------------------------ */
 .btn,
 .btn:link,
 .btn:visited {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: inline-block;
-  color: #f5f5f5;
-  padding: 10px 30px;
-  cursor: pointer;
-  border: 1px solid #0081d5;
-  border: 1px solid var(--medium-blue);
-  background-color: #0081d5;
-  background-color: var(--medium-blue);
-  text-decoration: none;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    display: inline-block;
+
+    color: #f5f5f5;
+
+    padding: 10px 30px;
+
+    cursor: pointer;
+
+    border: 1px solid var(--medium-blue);
+    background-color: var(--medium-blue);
+
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .btn:focus,
 .btn:hover {
-  background-color: #006cb0;
-  background-color: var(--dark-blue);
-  border-color: #006cb0;
-  border-color: var(--dark-blue);
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
 }
 .btn:active {
-  position: relative;
-  top: 1px;
-  left: 1px;
-  background-color: #00578d;
-  background-color: var(--darker-blue);
-  border-color: #00578d;
-  border-color: var(--darker-blue);
+    position: relative;
+    top: 1px;
+    left: 1px;
+    background-color: var(--darker-blue);
+    border-color: var(--darker-blue);
 }
 .btn[disabled] {
-  cursor: not-allowed;
-  opacity: 0.5;
+    cursor: not-allowed;
+    opacity: .5;
 }
-.form-group {
-  & input[type="date"],
-  & input[type="email"],
-  & input[type="file"],
-  & input[type="number"],
-  & input[type="password"],
-  & input[type="search"],
-  & input[type="tel"],
-  & input[type="text"],
-  & input[type="url"],
-  & textarea {
-    min-width: 100%;
-  }
-  &.form-error .form-error-text,
-  &.form-error label {
-    color: #d1335b;
-    color: var(--medium-red);
-  }
-  &.form-error input[type="date"],
-  &.form-error input[type="email"],
-  &.form-error input[type="file"],
-  &.form-error input[type="number"],
-  &.form-error input[type="password"],
-  &.form-error input[type="search"],
-  &.form-error input[type="tel"],
-  &.form-error input[type="text"],
-  &.form-error input[type="url"],
-  &.form-error textarea {
-    border: 1px solid #d1335b;
-    border: 1px solid var(--medium-red);
-  }
-}
+/* Errors. ------------------------------------ */
+.form-group input[type='date'],
+    .form-group input[type='email'],
+    .form-group input[type='file'],
+    .form-group input[type='number'],
+    .form-group input[type='password'],
+    .form-group input[type='search'],
+    .form-group input[type='tel'],
+    .form-group input[type='text'],
+    .form-group input[type='url'],
+    .form-group textarea {
+        min-width: 100%;
+    }
+.form-group.form-error label,
+    .form-group.form-error .form-error-text {
+        color: var(--medium-red);
+    }
+.form-group.form-error input[type='date'],
+    .form-group.form-error input[type='email'],
+    .form-group.form-error input[type='file'],
+    .form-group.form-error input[type='number'],
+    .form-group.form-error input[type='password'],
+    .form-group.form-error input[type='search'],
+    .form-group.form-error input[type='tel'],
+    .form-group.form-error input[type='text'],
+    .form-group.form-error input[type='url'],
+    .form-group.form-error textarea {
+        border: 1px solid var(--medium-red);
+    }
+/* Global layout and spacing around main site elements.
+--------------------------------------------------------------------------- */
 body {
   margin: 0;
-  background: #ebeff3;
   background: var(--lighter-grey);
 }
-.banner-content,
-.site-footer,
+section,
 .site-header,
-section {
+.banner-content,
+.site-footer {
   max-width: 1280px;
   margin: 0 auto;
   padding: 30px 40px;
 }
 @media (max-width: 600px) {
-  .banner-content,
-  .site-footer,
+  /* For any browser < max-width. */
+
+  section,
   .site-header,
-  section {
+  .banner-content,
+  .site-footer {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
+/* Skip-links.
+--------------------------------------------------------------------------- */
 #skip-links {
   position: absolute;
   width: 100%;
@@ -375,24 +437,23 @@ section {
   left: -100%;
   top: 20px;
   padding: 20px;
-  background: #00578d;
   background: var(--darker-blue);
-  color: #fff;
   color: var(--white);
 }
-#skip-links a:active,
-#skip-links a:focus {
+#skip-links a:focus,
+#skip-links a:active {
   position: relative;
   left: 0;
 }
+/* Header.
+--------------------------------------------------------------------------- */
 .site-header {
-  background: #fff;
   background: var(--white);
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #c9d3df;
-  border: solid var(--light-grey);
-  border-width: 0 0 1px;
+
+  border: 1px solid var(--light-grey);
+  border-width: 0 0 1px 0;
 }
 .site-header > nav {
   display: flex;
@@ -401,51 +462,59 @@ section {
 }
 .site-header > nav .site-header-logos {
   display: flex;
-  align-items: center;
-  & .site-logo {
-    color: #1c1c1c;
+  align-items: center
+}
+.site-header > nav .site-header-logos .site-logo {
     color: var(--black);
-    font-family: Evolventa;
+    font-family: "Evolventa";
     font-size: 1.7rem;
     margin-left: 10px;
     text-decoration: none;
   }
-}
 .site-header > nav ul {
   text-align: center;
-  padding: 0;
-  & li {
+  padding: 0
+}
+.site-header > nav ul li {
     display: inline-block;
   }
-  & li:not(:first-of-type) {
+.site-header > nav ul li:not(:first-of-type) {
     margin-left: 10px;
   }
-  & a {
-    color: #003189;
+.site-header > nav ul a {
     color: var(--french-flag-blue);
   }
-}
 @media (max-width: 600px) {
+  /* For any browser < max-width. */
+
   .site-header > nav {
     display: block;
   }
+
   .site-header > nav .site-header-logos {
     justify-content: center;
   }
 }
+/* Banner (with the big baseline).
+--------------------------------------------------------------------------- */
 .banner {
   background: url(../img/map_bkg_pattern.png) repeat;
-  border: 1px solid #c9d3df;
-  border: solid var(--light-grey);
-  border-width: 0 0 1px;
+  border: 1px solid var(--light-grey);
+  border-width: 0 0 1px 0;
 }
 .banner-content {
   padding-top: 0;
   padding-bottom: 0;
   min-height: 330px;
+  /*
+    Map image created by Jannoon028 - Freepik.com
+    https://www.freepik.com/free-photo/wallpaper-geography-nation-map-paper_1048435.htm
+    */
   background: url(../img/map.png) 0 0 no-repeat;
 }
 @media (max-width: 600px) {
+  /* For any browser < max-width. */
+
   .banner-content {
     background-size: cover;
     min-height: 0;
@@ -453,38 +522,42 @@ section {
 }
 .banner-content h1 {
   padding: 30px 0;
-  margin: 0;
-  text-shadow: 0 1px 2px hsla(0, 0%, 100%, 0.24);
-  color: #003189;
+  margin: 0; /* Avoid collapsing margin. */
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.24);
   color: var(--french-flag-blue);
 }
 @media (max-width: 600px) {
+  /* For any browser < max-width. */
+
   .banner-content h1 {
     text-align: center;
     font-size: 1.6rem;
   }
 }
 @media (min-width: 900px) {
+  /* For any browser > min-width. */
+
   .banner-content h1 {
-    padding-left: 40%;
+    padding-left: 40%; /* Push the baseline more to the right on big screens. */
   }
 }
+/* Sections.
+--------------------------------------------------------------------------- */
 section > section {
   padding: 0;
   margin: 0;
 }
 .section-white {
-  background: #fff;
   background: var(--white);
 }
 .section-color {
-  background: #ebeff3;
   background: var(--lighter-grey);
 }
+/* Footer.
+--------------------------------------------------------------------------- */
 .site-footer {
-  border: 1px solid #c9d3df;
-  border: solid var(--light-grey);
-  border-width: 1px 0 0;
+  border: 1px solid var(--light-grey);
+  border-width: 1px 0 0 0;
   text-align: center;
 }
 .site-footer-content ul {
@@ -493,7 +566,7 @@ section > section {
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin: 0 0 20px;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 .site-footer-content ul li img {
@@ -501,75 +574,62 @@ section > section {
 }
 .site-footer-content ul li:not(:last-of-type):after {
   content: "|";
-  color: #adb9c9;
   color: var(--grey);
   padding: 0 10px;
 }
+/* Some white box.
+--------------------------------------------------------------------------- */
 .box-bordered {
   text-align: center;
-  box-shadow: 0 1px 3px #c9d3df;
   box-shadow: 0 1px 3px var(--light-grey);
   border: 1px solid silver;
   margin: 20px;
   box-sizing: border-box;
   padding: 10px;
 }
+/* Notification messages.
+--------------------------------------------------------------------------- */
 .notification {
-  border-radius: 3px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  color: #0081d5;
-  color: var(--medium-blue);
-  border: 1px solid #0081d5;
-  border: 1px solid var(--medium-blue);
-  background: #b4e1fa;
-  background: var(--light-blue);
+    border-radius: 3px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: var(--medium-blue);
+    border: 1px solid var(--medium-blue);
+    background: var(--light-blue);
 }
 .notification > :last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 .notification.error {
-  color: #d1335b;
-  color: var(--medium-red);
-  border: 1px solid #d1335b;
-  border: 1px solid var(--medium-red);
-  background: #f8e1e7;
-  background: var(--light-red);
+    color: var(--medium-red);
+    border: 1px solid var(--medium-red);
+    background: var(--light-red);
 }
 .notification.success {
-  color: #03bd5b;
-  color: var(--medium-green);
-  border: 1px solid #03bd5b;
-  border: 1px solid var(--medium-green);
-  background: #daf5e7;
-  background: var(--light-green);
+    color: var(--medium-green);
+    border: 1px solid var(--medium-green);
+    background: var(--light-green);
 }
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-    transform: rotate(1turn);
-  }
-}
+/* Spinner.
+--------------------------------------------------------------------------- */
 @keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-    transform: rotate(1turn);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .spinner {
-  display: inline-block;
-  overflow: hidden;
-  text-indent: -999em;
-  border-radius: 50%;
-  width: 2em;
-  height: 2em;
-  border: 4px solid #c9d3df;
-  border-bottom-color: #0081d5;
-  border: 4px solid var(--light-grey);
-  border-bottom-color: var(--medium-blue);
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -999em;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    border: 4px solid var(--light-grey);
+    border-bottom: 4px solid var(--medium-blue);
+    animation: spin 1s infinite linear;
 }
+/* Stats
+--------------------------------------------------------------------------- */
 .statistiques-resume {
   display: flex;
   flex-wrap: wrap;
@@ -580,7 +640,7 @@ section > section {
   font-size: 1.2em;
 }
 .statistiques-resume > div div:last-child {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 2em;
 }
 @media (max-width: 600px) {
@@ -589,65 +649,81 @@ section > section {
     font-size: 1.3em;
   }
 }
+/* Steps: a.k.a. "how it work".
+--------------------------------------------------------------------------- */
 .steps {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin: 0 0 1rem;
-  padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0 1rem 0;
+    padding: 0;
 }
 .steps-item {
-  margin: 0 10px;
-  max-width: 250px;
+    margin: 0 10px;
+    max-width: 250px;
 }
 .steps-item img {
-  display: block;
-  margin: 30px auto;
-  width: 60%;
+    display: block;
+    margin: 30px auto;
+    width: 60%;
 }
 .steps-item p {
-  position: relative;
-  padding-left: 3rem;
+    position: relative;
+    padding-left: 3rem;
 }
-.steps-item p span {
-  display: inline-block;
-  position: absolute;
-  font-weight: 800;
-  top: 0;
-  left: 0;
-  border: 1px solid;
-  border-radius: 2rem;
-  width: 2rem;
-  height: 2rem;
-  line-height: 1.9rem;
-  text-align: center;
+.steps-item p span { /* Step number. */
+    display: inline-block;
+    position: absolute;
+    font-weight: 800;
+    top: 0;
+    left: 0;
+    border: 1px solid;
+    border-radius: 2rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.9rem;
+    text-align: center;
 }
+/* Generic utils.
+--------------------------------------------------------------------------- */
 .center {
-  text-align: center;
+    text-align: center;
 }
+/* Buttons row: a row containing 1 or more <a> element(s).
+--------------------------------------------------------------------------- */
 .buttons-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .buttons-row a {
-  margin: 5px;
+    margin: 5px;
 }
-@media (min-width: 900px) {
-  .multi-column-list {
-    -webkit-column-count: 2;
-    column-count: 2;
-  }
-  .multi-column-list li {
-    margin: 0 50px;
-  }
+/* Multi column lists.
+--------------------------------------------------------------------------- */
+@media (min-width: 900px) {  /* For any browser > min-width. */
+
+    .multi-column-list {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+
+    .multi-column-list li {
+        margin: 0 50px;
+    }
+
 }
+/* Aerate content on big screens
+--------------------------------------------------------------------------- */
 .aerate-content {
-  padding: 0 15%;
+    padding: 0 15%;
 }
-@media (max-width: 800px) {
-  .aerate-content {
-    padding: 0;
-  }
+@media (max-width: 800px) {  /* For any browser < max-width. */
+
+    .aerate-content {
+        padding: 0;
+    }
+
 }
