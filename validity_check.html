@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Faites votre demande d&apos;autorisation de travail en ligne avec Work In France. Work In France est un service de l&apos;Etat pour les entreprises ou les étudiants étrangers, en contrat d&apos;alternance, en contrat d&apos;apprentissage, ou en contrat de professionnalisation">
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <title>Work in France - Vérification d'une autorisation provisoire de travail</title>
+    <link rel="stylesheet" href="static/css/bundle.css?bust=954295750494" type="text/css">
+    
+    <!-- Hotjar Tracking Code for https://workinfrance.beta.gouv.fr/ -->
+    <script>
+       (function(h,o,t,j,a,r){
+           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+           h._hjSettings={hjid:1177745,hjsv:6};
+           a=o.getElementsByTagName('head')[0];
+           r=o.createElement('script');r.async=1;
+           r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+           a.appendChild(r);
+       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+<body>
+
+    <nav aria-label="page" id="skip-links">
+        <a href="#skip-to-main">Contenu principal</a>
+        <a href="#skip-to-footer">Pied de page</a>
+    </nav>
+
+    <header class="site-header">
+        <nav>
+            <div class="site-header-logos">
+                <img src="static/img/gouv.svg" alt="" width="80">
+                <a class="site-logo" href="index.html">Work in France</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="validity_check.html">Vérifier une autorisation</a>
+                </li>
+                <li>
+                    <a href="faq.html">Questions/Réponses</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main id="skip-to-main">
+
+        <section class="section-white" id="vue-js-app">
+            <div class="aerate-content">
+
+                <h3>
+                    Vérifiez la validité
+                    <small>d'une autorisation provisoire de travail pour un étudiant étranger</small>
+                </h3>
+
+                <p><i>Disponible au plus tard 1 heure après délivrance de l'autorisation.</i></p>
+
+                <form @submit.prevent="checkForm">
+
+                    <div class="form-group" v-bind:class="authIdClass">
+                        <label for="ds_id" class="display-block">Numéro de l'autorisation provisoire de travail</label>
+                        <br>
+                        <input id="ds_id" type="text" v-model="form.ds_id">
+                        <ul v-if="form.errors.ds_id.length" style="margin-top: 0;">
+                            <li v-for="error in form.errors.ds_id" class="form-error-text">${ error }</li>
+                        </ul>
+                    </div>
+
+                    <div class="form-group" v-bind:class="birthdayDateClass">
+                        <label for="birthday_date" class="display-block">
+                            Date de naissance de l'étudiant
+                            <small>(au format jj/mm/aaaa)</small>
+                        </label>
+                        <br>
+                        <input id="birthday_date" type="text" v-model="form.birthday_date">
+                        <ul v-if="form.errors.birthday_date.length" style="margin-top: 0;">
+                            <li v-for="error in form.errors.birthday_date" class="form-error-text">${ error }</li>
+                        </ul>
+                    </div>
+
+                    <p v-if="!pendingXhrRequest">
+                        <input class="btn" type="submit" value="Vérifiez la validité">
+                    </p>
+                    <p v-if="pendingXhrRequest">
+                        <span class="spinner">Chargement...</span>
+                    </p>
+
+                </form>
+
+                <div class="notification" v-bind:class="resultClass" v-if="result">
+                    <div v-if="!result.data">
+                        <h4>Autorisation provisoire de travail non valide.</h4>
+                        <p>Vérifiez les informations saisies. Contactez-nous pour plus de précisions.</p>
+                    </div>
+                    <div v-if="result.data">
+                        <h4 v-if="result.data.has_expired">Autorisation provisoire de travail expirée.</h4>
+                        <h4 v-if="!result.data.has_expired">Autorisation provisoire de travail valide.</h4>
+                        <ul>
+                            <li>Numéro : <b>${ result.data.ds_id }</b></li>
+                            <li>Pour le salarié :
+                                <ul>
+                                    <li>Prénom : <b>${ result.data.prenom }</b></li>
+                                    <li>Nom : <b>${ result.data.nom }</b></li>
+                                </ul>
+                            </li>
+                            <li>Pour l'entreprise identifiée par le numéro SIRET <b>${ result.data.siret }</b></li>
+                            <li>Valable du <b>${ dateJsonToStr(result.data.date_de_debut_apt) }</b> au <b>${ dateJsonToStr(result.data.date_de_fin_apt) }</b>.</li>
+                        </ul>
+                        <p>Contactez-nous pour récupérer une copie de l'attestation.</p>
+                    </div>
+                </div>
+
+                <div class="notification error" v-if="xhrError">
+                    <p>Un problème de connexion à notre service de vérification est survenu.</p>
+                    <p>Veuillez réessayer ultérieurement.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer id="skip-to-footer" class="site-footer">
+        <div class="site-footer-content">
+            <ul>
+                <li>
+                    <img src="static/img/gouv.svg" alt="" width="100">
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="cgu.html">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="https://wif-dashboard.num.social.gouv.fr">Statistiques</a>
+                </li>
+                <li>
+                    <a href="mailto:contact@workinfrance.beta.gouv.fr">Contact</a>
+                </li>
+            </ul>
+            <p>
+                <small><i><b>Rappel : <a href="https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006904868&amp;cidTexte=LEGITEXT000006072050" target="_blank">Article L.8256-1</a> du code du travail :</b> le fait de se rendre coupable de fraude ou fausse déclaration pour obtenir, faire obtenir ou tenter de faire obtenir à un étranger le titre mentionné à <a href="https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904851&dateTexte=&categorieLien=cid" target="_blank">l'article L.8251­-1</a> est puni d'un emprisonnement d'un an et d'une amende de 3000 €.</i></small>
+            </p>
+        </div>
+    </footer>
+
+    
+    
+        
+        <script>
+            var _paq = _paq || [];
+            _paq.push(["setDomains", ["*.work-in-france.beta.gouv.fr", "*.workinfrance.beta.gouv.fr"]]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="//stats.data.gouv.fr/";
+                _paq.push(['setTrackerUrl', u+'piwik.php']);
+                _paq.push(['setSiteId', '46']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <noscript><img src="//stats.data.gouv.fr/piwik.php?idsite=46" style="border: 0;" alt=""></noscript>
+    
+    <script src="static/js/vue.2.5.16.js"></script>
+    <script src="static/js/vue_validity_check.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*
+
+This file is the main CSS file that imports other partial CSS files (a partial is any file with an underscore `_` preceding the name).
+
+`postcss-cli` is used to watch the main CSS file. A flat CSS file named `bundle.css` is generated as soon as a change to any partial is made. This works thanks to `postcss-import` which inline `@import` rules content. Other PostCSS plugins are used such as `postcss-cssnext`.
+
+- `postcss-cli`: https://github.com/postcss/postcss-cli
+- `postcss-import`: https://github.com/postcss/postcss-import
+- `postcss-cssnext`: https://github.com/MoOx/postcss-cssnext
+
+Before making any change to any CSS file in this project, ensure that `postcss-cli` is running with the `--watch` option, have a look at the NPM scripts to launch it easily.
+
+*/
+@import "_base.css";
+@import "_forms.css";
+@import "_layout.css";
+@import "_notifications.css";
+@import "_spinner.css";
+@import "_stats.css";
+@import "_steps.css";
+@import "_utils.css";

@@ -1,0 +1,254 @@
+/*
+Inspiration: https://github.com/etalab/template.data.gouv.fr
+--------------------------------------------------------------------------- */
+
+/* Box-model.
+--------------------------------------------------------------------------- */
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/* Fonts.
+https://calendar.perfplanet.com/2016/no-font-face-bulletproof-syntax/
+https://fontlibrary.org/fr/font/evolventa
+https://fontlibrary.org/fr/font/source-sans-pro
+--------------------------------------------------------------------------- */
+
+/* Used for titles. */
+
+@font-face {
+    font-family: "Evolventa";
+    src: url(../fonts/evolventa/woff2/evolventa-bold.woff2) format('woff2'),
+         url(../fonts/evolventa/woff/evolventa-bold.woff) format('woff');
+    font-weight: 800;
+}
+
+/* Used for content text. */
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(../fonts/source-sans-pro/woff2/source-sans-pro-regular.otf.woff2) format('woff2'),
+         url(../fonts/source-sans-pro/woff/source-sans-pro-regular.otf.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(../fonts/source-sans-pro/woff2/source-sans-pro-bold.otf.woff2) format('woff2'),
+         url(../fonts/source-sans-pro/woff/source-sans-pro-bold.otf.woff) format('woff');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(../fonts/source-sans-pro/woff2/source-sans-pro-italic.otf.woff2) format('woff2'),
+         url(../fonts/source-sans-pro/woff/source-sans-pro-italic.otf.woff) format('woff');
+    font-style: italic;
+}
+
+/* Global.
+--------------------------------------------------------------------------- */
+
+:root {
+
+    --black: #1c1c1c;
+    --white: #fff;
+
+    --light-blue: #b4e1fa;
+    --medium-blue: #0081d5;
+    --dark-blue: #006cb0;
+    --darker-blue: #00578d;
+    --french-flag-blue: #003189;
+
+    --light-red: #f8e1e7;
+    --medium-red: #d1335b;
+
+    --light-green: #daf5e7;
+    --medium-green: #03bd5b;
+
+    --lighter-grey: #ebeff3;
+    --light-grey: #c9d3df;
+    --grey: #adb9c9;
+
+}
+
+body {
+    height: 1vh;
+}
+
+html {
+    height: 1vh;
+    font-size: 1rem;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;  /* http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/ */
+    color: var(--black);
+    -webkit-text-size-adjust: 100%;  /* Prevent font scaling in landscape while allowing user zoom. */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Typo.
+
+Font-size and units: setting the font size on the body to 1rem sets the text size to the
+browser's default font size: usually 16px.
+
+Then:
+16px = 1rem
+20px = 1.25rem => (20 * 1) / 16
+
+40px => 2.5rem
+34px => 2.125rem
+28px => 1.75rem
+26px => 1.625rem
+24px => 1.5rem
+20px => 1.25rem
+18px => 1.125rem
+16px => 1rem
+15px => 0.9375rem
+14px => 0.875rem
+13px => 0.8125rem
+12px => 0.75rem
+10px => 0.625rem
+ 5px => 0.3125rem
+
+Size below are from wing.css https://github.com/kbrsh/wing
+
+--------------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Evolventa";
+}
+
+h1 {
+    font-size: 2.986rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.488rem;
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: 2.074rem;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 1.728rem;
+    line-height: 1.35;
+}
+
+h5 {
+    font-size: 1.44rem;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Vertical rhythm.
+--------------------------------------------------------------------------- */
+
+.form-group,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre,
+table {
+    margin: 0 0 1rem 0;
+}
+
+/* Tables.
+--------------------------------------------------------------------------- */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    text-align: left;
+    border: 1px solid var(--light-grey);
+}
+
+table caption {
+    font-style: italic;
+    text-align: center;
+    border-width: 1px 1px 0 1px;
+    padding: 0.625rem 0;
+    border: 1px solid var(--light-grey);
+}
+
+table td,
+table th {
+    padding: 0.625rem 1rem;
+    border: 1px solid var(--light-grey);
+}
+
+table thead,
+table tfoot {
+    vertical-align: bottom;
+    padding: 0.625rem 1rem;
+    background: var(--light-grey);
+}
+
+table tfoot {
+    vertical-align: top;
+}
+
+/* Links.
+--------------------------------------------------------------------------- */
+
+a,
+a:link,
+a:visited {
+    color: var(--medium-blue);
+    text-decoration: underline;
+}
+
+a:focus,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/* Images.
+--------------------------------------------------------------------------- */
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+/* Divider.
+--------------------------------------------------------------------------- */
+
+hr {
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    border-width: 1px 0 0 0;
+}
+
+/* Code.
+--------------------------------------------------------------------------- */
+
+code {
+    padding: 2px;
+    white-space: nowrap;
+    border-radius: 2px;
+    font-family: "Consolas", "Monaco", "Menlo", monospace;
+    background: var(--lighter-grey);
+    border: 1px solid var(--light-grey);
+}

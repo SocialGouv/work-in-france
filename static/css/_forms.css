@@ -1,0 +1,203 @@
+/* Forms.
+--------------------------------------------------------------------------- */
+
+label[for] {
+    cursor: pointer;
+}
+
+label + textarea {
+    vertical-align: top;
+}
+
+fieldset {
+    /*
+    Width and min-width are required here to respect 100% textarea max-width within fieldset.
+    http://codepen.io/tmsdnl/pen/ByqJgO
+    */
+    width: 100%;
+    min-width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--lighter-grey);
+}
+
+
+/*
+Some types of properties are not inherited by default.
+We can use `inherit` to force inheritance in some cases.
+For example, the input element doesn't inherit any of the font properties.
+*/
+.btn,
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+input[type='checkbox'],
+input[type='date'],
+input[type='email'],
+input[type='file'],
+input[type='number'],
+input[type='password'],
+input[type='radio'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+    margin: 0;
+    max-width: 100%;
+    padding: 10px 12px;
+    background: var(--white);
+    border: 1px solid var(--grey);
+}
+
+textarea {
+    min-height: 150px;
+}
+
+/* Forms > custom radio and checkbox buttons. ------------------------------------ */
+
+input[type='radio'],
+input[type='checkbox'] {
+    position: relative;
+    vertical-align: middle;
+    padding: 0;
+    height: 22px;
+    width: 22px;
+    margin: 0 5px 0 0;
+}
+
+/* Forms > custom radio. ------------------------------------ */
+
+input[type='radio'] {
+    border-radius: 50%;
+    background: var(--white);
+}
+
+input[type='radio']:checked {
+    border-color: var(--medium-blue);
+}
+
+input[type='radio']:checked:before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    transform: scale(.4);
+    background-color: var(--medium-blue);
+}
+
+/* Forms > custom checkbox. ------------------------------------ */
+
+input[type='checkbox']:checked {
+    background-color: var(--medium-blue);
+    border-color: var(--medium-blue);
+}
+
+input[type='checkbox']:checked:before {
+    /* Create a CSS checkmark. */
+    content: '';
+    display: block;
+    /* Make a small rectangle so the border will create an L-shape. */
+    width: 6px;
+    height: 12px;
+    /* Add a white border on the bottom and left, creating that 'L'. */
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    /* Rotate the L 45 degrees to turn it into a checkmark. */
+    transform: rotate(45deg);
+    /* Center the checkmark. */
+    position: relative;
+    top: 2px;
+    left: 7px;
+}
+
+/* Buttons. ------------------------------------ */
+
+.btn,
+.btn:link,
+.btn:visited {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    display: inline-block;
+
+    color: #f5f5f5;
+
+    padding: 10px 30px;
+
+    cursor: pointer;
+
+    border: 1px solid var(--medium-blue);
+    background-color: var(--medium-blue);
+
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn:focus,
+.btn:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    background-color: var(--darker-blue);
+    border-color: var(--darker-blue);
+}
+
+.btn[disabled] {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+/* Errors. ------------------------------------ */
+
+.form-group {
+
+    & input[type='date'],
+    & input[type='email'],
+    & input[type='file'],
+    & input[type='number'],
+    & input[type='password'],
+    & input[type='search'],
+    & input[type='tel'],
+    & input[type='text'],
+    & input[type='url'],
+    & textarea {
+        min-width: 100%;
+    }
+
+    &.form-error label,
+    &.form-error .form-error-text {
+        color: var(--medium-red);
+    }
+
+    &.form-error input[type='date'],
+    &.form-error input[type='email'],
+    &.form-error input[type='file'],
+    &.form-error input[type='number'],
+    &.form-error input[type='password'],
+    &.form-error input[type='search'],
+    &.form-error input[type='tel'],
+    &.form-error input[type='text'],
+    &.form-error input[type='url'],
+    &.form-error textarea {
+        border: 1px solid var(--medium-red);
+    }
+
+}
