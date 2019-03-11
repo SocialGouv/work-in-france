@@ -22,6 +22,8 @@
                           <option value="13">13 - Bouches-du-Rhône</option>
                           <option value="45">45 - Loiret</option>
                           <option value="54">54 - Meurthe-et-moselle</option>
+                          <option value="57">57 - Moselle</option>
+                          <option value="67">67 - Bas-rhin</option>
                           <option value="69">69 - Rhône</option>
                           <option value="75">75 - Paris</option>
                           <option value="76">76 - Seine-maritime</option>
@@ -165,7 +167,7 @@
             alert("Merci de choisir votre département");
             return false;
           }
-          const allowedDepartements = ['75','69','45','77','95','92','13','76','91','78','54','88']
+          const allowedDepartements = ['75','69','45','77','95','92','13','76','91','78','54','88','57','67']
           if (allowedDepartements.indexOf(department) === -1) {
             form.action = '/qualify/fail.html';
           }
