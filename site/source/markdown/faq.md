@@ -93,6 +93,8 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 - les **Bouches-du-Rhône (13)**,
 - le **Loiret (45)**,
 - la **Meurthe-et-Moselle (54)**,
+- la **Moselle (57)**,
+- le **Bas-Rhin (67)**,
 - le **Rhône (69)**,
 - **Paris (75)**,
 - la **Seine-Maritime (76)**,
