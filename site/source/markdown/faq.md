@@ -98,6 +98,7 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 - la **Seine-Maritime (76)**,
 - la **Seine-Et-marne (77)**,
 - les **Yvelines (78)**,
+- les **Vosges (88)**,
 - l'**Essonne (91)**
 - les **Hauts-de-Seine (92)**,
 - ou dans le **Val-d'Oise (95)**
