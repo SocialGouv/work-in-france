@@ -32,6 +32,7 @@
                           <option value="88">88 - Vosges</option>
                           <option value="91">91 - Essonne</option>
                           <option value="92">92 - Hauts-de-seine</option>
+                          <option value="94">94 - Val-de-marne</option>
                           <option value="95">95 - Val-d'oise</option>
                           <option value=""></option>
                           <option value="01">01 - Ain</option>
@@ -167,7 +168,7 @@
             alert("Merci de choisir votre département");
             return false;
           }
-          const allowedDepartements = ['75','69','45','77','95','92','13','76','91','78','54','88','57','67']
+          const allowedDepartements = ['75','69','45','77','95','92','13','76','91','78','54','88','57','67','94']
           if (allowedDepartements.indexOf(department) === -1) {
             form.action = '/qualify/fail.html';
           }
