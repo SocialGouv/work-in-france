@@ -103,6 +103,7 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 - les **Vosges (88)**,
 - l'**Essonne (91)**
 - les **Hauts-de-Seine (92)**,
+- le **Val-de-Marne (94)**,
 - ou dans le **Val-d'Oise (95)**
 
 ... quelle que soit l'adresse de l'employeur.
