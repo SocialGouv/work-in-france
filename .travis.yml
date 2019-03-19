@@ -15,6 +15,7 @@ after_success:
   - docker cp work-in-france-build:/app/site/build out
 
 before_deploy:
+  - touch .nojekyll
   - git config user.name "Social Groovy Bot"
   - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
 env:
