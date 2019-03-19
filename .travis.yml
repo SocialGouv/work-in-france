@@ -9,5 +9,23 @@ install:
   - docker build . -t work-in-france
 script:
   - docker run --name work-in-france-build work-in-france
+after_success:
+  # use docker cp instead of volumes
+  # https://stackoverflow.com/questions/46514380/how-to-specify-volume-for-docker-container-in-circleci-configuration
+  - docker cp work-in-france-build:/app/site/build /app/site/
+
+before_deploy:
+  - git config user.name "Social Groovy Bot"
+  - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
+deploy:
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  local_dir: /app/site/build
+  provider: pages
+  skip_cleanup: true
+  target-branch: gh-pages
+  on:
+    branch: master
+  
 after_script:
   - docker rm -f work-in-france-build
