@@ -1,0 +1,13 @@
+---
+dist: xenial
+git:
+  depth: 5
+  
+language: minimal
+
+install:
+  - docker build . -t work-in-france
+script:
+  - docker run --name work-in-france-build work-in-france
+after_script:
+  - docker rm -f work-in-france-build
