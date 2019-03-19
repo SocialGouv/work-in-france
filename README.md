@@ -1,4 +1,4 @@
-# Work in France [![CircleCI](https://circleci.com/gh/SocialGouv/work-in-france.svg?style=svg)](https://circleci.com/gh/SocialGouv/work-in-france)
+# Work in France [![Build Status](https://travis-ci.com/SocialGouv/work-in-france.svg?branch=master)](https://travis-ci.com/SocialGouv/work-in-france)
 
 > La plateforme de demande d'autorisations provisoires de travail.
 
