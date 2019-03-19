@@ -12,7 +12,7 @@ script:
 after_success:
   # use docker cp instead of volumes
   # https://stackoverflow.com/questions/46514380/how-to-specify-volume-for-docker-container-in-circleci-configuration
-  - docker cp work-in-france-build:/app/site/build /app/site/
+  - docker cp work-in-france-build:/app/site/build out
 
 before_deploy:
   - git config user.name "Social Groovy Bot"
@@ -20,7 +20,7 @@ before_deploy:
 deploy:
   github-token: "$GITHUB_TOKEN"
   keep-history: true
-  local_dir: /app/site/build
+  local_dir: out
   provider: pages
   skip_cleanup: true
   target-branch: gh-pages
