@@ -90,6 +90,7 @@ Les documents suivants vous seront demandés pendant votre démarche, assurez-vo
 
 Le service est pour l'instant accessible pour le recrutement des étudiants dont l'adresse qui figure sur le document autorisant le séjour en France (titre de séjour - récépissé de demande ou de renouvellement de carte de séjour - visa de long séjour valant titre de séjour (VLS-TS)) est dans :
 
+- l'**Aube (10)**,
 - les **Bouches-du-Rhône (13)**,
 - le **Loiret (45)**,
 - la **Meurthe-et-Moselle (54)**,
