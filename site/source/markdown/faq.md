@@ -104,6 +104,7 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 - les **Vosges (88)**,
 - l'**Essonne (91)**
 - les **Hauts-de-Seine (92)**,
+- la **Seine-Saint-Denis (93)**,
 - le **Val-de-Marne (94)**,
 - ou dans le **Val-d'Oise (95)**
 
