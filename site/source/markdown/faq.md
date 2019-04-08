@@ -93,7 +93,7 @@ Conformément à l’article [R5221-11](https://www.legifrance.gouv.fr/affichCod
 Work In France permet à l’employeur ou à l’étudiant mandaté par son employeur de se saisir du dépôt de la demande d’APT.
 
 
-*Quelques rappels sur la nature du mandat :* 
+**Quelques rappels sur la nature du mandat** :
 
 La relation mandataire-mandant est définie par l'[article 1984](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006445236&cidTexte=LEGITEXT000006070721) du Code civil : 
 
@@ -105,7 +105,7 @@ Les limites de ce que peut accomplir le mandataire, par l'[article 1989](https:/
 (...)
 
 
-*Le point sur ce que permet le modèle de mandat de Work In France :* 
+**Le point sur ce que permet le modèle de mandat de Work In France** : 
 
 Une lecture attentive de [notre modèle de mandat](https://workinfrance.beta.gouv.fr/static/pdf/mandat.pdf) permet de lever tout doute quant à son objet, **exclusivement restreint à la demande d'autorisation provisoire de travail auprès de la Direccte**.
 
