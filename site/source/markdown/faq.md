@@ -106,15 +106,15 @@ Work In France permet à l’employeur ou à l’étudiant mandaté par son empl
 
 **Le point sur ce que permet le modèle de mandat de Work In France** : 
 
-Une lecture attentive de [notre modèle de mandat](https://workinfrance.beta.gouv.fr/static/pdf/mandat.pdf) permet de lever tout doute quant à son objet, **exclusivement restreint à la demande d'autorisation provisoire de travail auprès de la Direccte**.
+* Une lecture attentive de [notre modèle de mandat](https://workinfrance.beta.gouv.fr/static/pdf/mandat.pdf) permet de lever tout doute quant à son objet, **exclusivement restreint à la demande d'autorisation provisoire de travail auprès de la Direccte**.
 
-Extrait des [CGU de demarches-simplifiees.fr](https://doc.demarches-simplifiees.fr/cgu#realisation-dune-demarche-en-ligne) : L'usager remplit en ligne le formulaire et valide celui-ci […]. **La confirmation et la transmission du formulaire par l'usager vaut signature de celui-ci**. En utilisant le service, l'usager s'engage sur la véracité des informations transmises lors du dépôt de son dossier.
+* Extrait des [CGU de demarches-simplifiees.fr](https://doc.demarches-simplifiees.fr/cgu#realisation-dune-demarche-en-ligne) : *"L'usager remplit en ligne le formulaire et valide celui-ci […]. **La confirmation et la transmission du formulaire par l'usager vaut signature de celui-ci**. En utilisant le service, l'usager s'engage sur la véracité des informations transmises lors du dépôt de son dossier."*
 
 Ainsi, dans le cas de l’utilisation du téléservice Work In France, la mention du mandat : *“effectuer en mon nom et pour mon compte les démarches administratives et (...) signer les documents relatifs à la demande d'autorisation provisoire de travail relevant de l'employeur en sa faveur auprès de la Direccte”* **signifie très exactement remplir en ligne, confirmer et transmettre le formulaire de demande d’autorisation provisoire de travail via démarches-simplifiées**. 
 
 Autrement dit, à aucun moment l’étudiant ne se retrouve à signer un quelconque document papier pour le nom et pour le compte de l’employeur : **le mandat signé par l’employeur lui permet uniquement de se saisir de la transmission de la demande en ligne**.
 
-Les Direccte tolèrent également l'utilisation du [cerfa 15186*03](https://www.service-public.fr/particuliers/vosdroits/R18894) rempli, signé par l'employeur et comportant son cachet en lieu et place du mandat exprès de Work In France.
+Notez par ailleurs que les Direccte tolèrent également l'utilisation du [cerfa 15186*03](https://www.service-public.fr/particuliers/vosdroits/R18894) rempli, signé par l'employeur et comportant son cachet en lieu et place du mandat exprès de Work In France.
 
 
 [Retour au sommaire](#faq-summary)
