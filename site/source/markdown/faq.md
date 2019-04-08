@@ -95,11 +95,11 @@ Work In France permet à l’employeur ou à l’étudiant mandaté par son empl
 
 **Quelques rappels sur la nature du mandat** :
 
-La relation mandataire-mandant est définie par l'[article 1984](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006445236&cidTexte=LEGITEXT000006070721) du Code civil : 
+- La relation mandataire-mandant est définie par l'[article 1984](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006445236&cidTexte=LEGITEXT000006070721) du Code civil : 
 
 "Le mandat ou procuration est un acte par lequel **une personne donne à une autre le pouvoir de faire quelque chose** pour le mandant et en son nom.” (...)
  
-Les limites de ce que peut accomplir le mandataire, par l'[article 1989](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=FF9148D08A54D0B63DB8A4EA56C86173.tplgfr23s_1?idArticle=LEGIARTI000006445247&cidTexte=LEGITEXT000006070721&dateTexte=20190408&categorieLien=id&oldAction=&nbResultRech=) du même Code : 
+- Les limites de ce que peut accomplir le mandataire, par l'[article 1989](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=FF9148D08A54D0B63DB8A4EA56C86173.tplgfr23s_1?idArticle=LEGIARTI000006445247&cidTexte=LEGITEXT000006070721&dateTexte=20190408&categorieLien=id&oldAction=&nbResultRech=) du même Code : 
  
 “Le mandataire **ne peut rien faire au-delà de ce qui est porté dans son mandat.**” (...)
 
