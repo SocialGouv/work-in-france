@@ -101,8 +101,7 @@ La relation mandataire-mandant est définie par l'[article 1984](https://www.leg
  
 Les limites de ce que peut accomplir le mandataire, par l'[article 1989](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=FF9148D08A54D0B63DB8A4EA56C86173.tplgfr23s_1?idArticle=LEGIARTI000006445247&cidTexte=LEGITEXT000006070721&dateTexte=20190408&categorieLien=id&oldAction=&nbResultRech=) du même Code : 
  
-“Le mandataire **ne peut rien faire au-delà de ce qui est porté dans son mandat.**”
-(...)
+“Le mandataire **ne peut rien faire au-delà de ce qui est porté dans son mandat.**” (...)
 
 
 **Le point sur ce que permet le modèle de mandat de Work In France** : 
