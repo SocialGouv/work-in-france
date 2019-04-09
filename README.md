@@ -32,6 +32,14 @@ Ce dépôt de code contient le site web statique de [Work in France](https://w
 
 Editer [./site/source/qualify/fail.html](./site/source/qualify/fail.html)
 
+#### MAJ backoffice
+
+Pour MAJ les stats et validity-check
+
+ - se logger sur la VM wif
+ - dans `ds-collector` ajouter les nouvelles démarches dans `start.sh` et `update.sh` et relancer ces deux scripts
+ - dans `ds-dashboard/public/config.json` : ajouter les entrées pour les nouvelles démarches
+
 ### Installation de l'environnement de développement
 
 Un styleguide est disponible ici : https://workinfrance.beta.gouv.fr/cookbook.html
