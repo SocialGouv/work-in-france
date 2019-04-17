@@ -136,7 +136,7 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 - le **Rhône (69)**,
 - **Paris (75)**,
 - la **Seine-Maritime (76)**,
-- la **Seine-et-marne (77)**,
+- la **Seine-et-Marne (77)**,
 - les **Yvelines (78)**,
 - les **Vosges (88)**,
 - l'**Essonne (91)**
