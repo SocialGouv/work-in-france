@@ -21,6 +21,7 @@
                           <option value=""></option>
                           <option value="10">10 - Aube</option>
                           <option value="13">13 - Bouches-du-Rhône</option>
+                          <option value="35">35 - Ille-et-vilaine</option>
                           <option value="42">42 - Loire</option>
                           <option value="45">45 - Loiret</option>
                           <option value="54">54 - Meurthe-et-moselle</option>
@@ -172,7 +173,7 @@
             alert("Merci de choisir votre département");
             return false;
           }
-          const allowedDepartements = ['75','69','45','77','95','92','13','76','91','78','54','88','57','67','94','10','93','42','55']
+          const allowedDepartements = ['75','69','45','77','95','92','13','76','91','78','54','88','57','67','94','10','93','42','55','35']
           if (allowedDepartements.indexOf(department) === -1) {
             form.action = '/qualify/fail.html';
           }
