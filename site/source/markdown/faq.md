@@ -1,12 +1,12 @@
 ### Qu'est-ce que Work in France ?
 
-Work In France est un service public numérique développé par le ministère des affaires sociales qui permet aux employeurs ou étudiants étrangers d'effectuer des démarches de demandes d'autorisations provisoires de travail en ligne.
+Work In France est un service public numérique développé par le ministère des affaires sociales qui permet aux employeurs ou étudiants étrangers d'effectuer des démarches de demandes d'autorisations provisoires de travail (APT) en ligne.
 
-L'utilisateur complète un formulaire via la plateforme demarches-simplifiées.fr (https://www.demarches-simplifiees.fr/). 
+L'utilisateur complète un formulaire via la plateforme [demarches-simplifiées.fr](https://www.demarches-simplifiees.fr/). 
 
-Ce formulaire est directement transmis au service de la main d'oeuvre étrangère de la Direccte ; il s'agit de la direction locale traitant les questions liées au Travail. L'utilisateur reçoit une réponse rapide, directement par courriel. 
+Ce formulaire est directement transmis au service de la main d'oeuvre étrangère de la Direccte ; il s'agit de la direction locale traitant les questions liées au travail. L'utilisateur reçoit une réponse rapide, directement par courriel. 
 
-A la différence de la Préfecture qui délivre le titre de séjour, la Direccte délivre l'autorisation provisoire de travail, s'appuyant sur la situation administrative de l'étudiant.
+À la différence de la Préfecture qui délivre les documents relatifs au séjour, la Direccte délivre l'autorisation provisoire de travail (APT), s'appuyant sur la situation administrative de l'étudiant.
 
 [Retour au sommaire](#faq-summary)
 
