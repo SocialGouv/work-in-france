@@ -25,13 +25,13 @@ Pour rappel : lorsque l'étudiant étranger concerné est non ressortissant alg�
 
 **Cas particuliers**
 
-Voici la liste des cas particuliers de contrats pour lesquels vous aurez besoin d'une autorisation provisoire de travail :
+Voici la liste des cas particuliers de contrats pour lesquels l'étudiant aura besoin d'une autorisation provisoire de travail :
 
-- [Convention de formation par la recherche (CIFRE)](http://www.enseignementsup-recherche.gouv.fr/cid67039/www.enseignementsup-recherche.gouv.fr/cid67039/cifre-la-convention-industrielle-de-formation-par-la-recherche.html) : Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat CIFRE.
+- [Convention de formation par la recherche (CIFRE)](http://www.enseignementsup-recherche.gouv.fr/cid67039/www.enseignementsup-recherche.gouv.fr/cid67039/cifre-la-convention-industrielle-de-formation-par-la-recherche.html) : Pour sa demande d'autorisation de travail il devra fournir une copie du contrat CIFRE.
 
-- [Attaché temporaire de l'enseignement et de la recherche (ATER)](http://www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/devenir-attache-temporaire-d-enseignement-et-de-recherche-a.t.e.r.html) : Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat d'ATER délivré par l'établissement mentionnant la date de prise de fonction et l'arrêté ou attestation de nomination ou procès verbal d'installation.
+- [Attaché temporaire de l'enseignement et de la recherche (ATER)](http://www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/devenir-attache-temporaire-d-enseignement-et-de-recherche-a.t.e.r.html) : Pour sa demande d'autorisation de travail il devra fournir une copie du contrat d'ATER délivré par l'établissement mentionnant la date de prise de fonction et l'arrêté ou attestation de nomination ou procès verbal d'installation.
 
-- Internes (hors AP/HP). Pour votre demande d'autorisation de travail vous devrez fournir :
+- Interne (hors AP/HP). Pour sa demande d'autorisation de travail il devra fournir :
     - Attestation de recrutement avec durée et salaire
     - Attestation du chef de service
     - Certificat de scolarité précisant inscription en DFMS ou DFMSA
@@ -41,25 +41,19 @@ Voici la liste des cas particuliers de contrats pour lesquels vous aurez besoin 
 
 <hr>
 
-### En combien de temps puis-je recevoir mon autorisation provisoire de travail ?
+### En combien de temps reçoit-on l'autorisation provisoire de travail ?
 
-Une autorisation provisoire de travail déposée sur Work In France est délivrée **dans un délai moyen de 5 jours ouvrés**, sauf cas spécifiques. Vous pouvez avoir une idée des délais de délivrance constatés en ce moment et leur évolution en vous rendant sur notre page [statistiques](https://workinfrance.beta.gouv.fr/stats.html).
+Une autorisation provisoire de travail déposée sur Work In France est délivrée **dans un délai moyen de 5 jours ouvrés**, sauf cas spécifiques. Les délais de délivrance constatés en ce moment et leur évolution sont consultables sur notre page [statistiques](https://workinfrance.beta.gouv.fr/stats.html).
 
-Pour assurer l'obtention de votre attestation dans ces délais soyez bien attentifs aux informations que vous allez saisir dans le formulaire.
-
-Par exemple :
-- La concordance des NOM, PRÉNOM, DATE et LIEU DE NAISSANCE, NATIONALITÉ de l'étudiant avec les informations du document autorisant le séjour en France
-- Le respect du format "nombre d'heure / fréquence", ex. 35H/semaine
-- Le respect du format "salaire brut en euros / fréquence", ex. 9.88€/H
-- L'intitulé de l'emploi occupé (tel qu'il apparaît dans le contrat ou la promesse d'embauche)
+Pour obtenir l'attestation dans ces délais, il est important d'être attentif aux informations saisies dans le formulaire.
 
 [Retour au sommaire](#faq-summary)
 
 <hr>
 
-### Quel sont les documents à fournir pour faire ma demande d'autorisation provisoire de travail sur Work In France ?
+### Quel sont les documents à fournir pour faire une demande d'autorisation provisoire de travail sur Work In France ?
 
-Les documents suivants vous seront demandés pendant votre démarche, assurez-vous de les avoir dans un format numérique (image ou PDF) :
+Les documents suivants sont nécessaires pour effectuer cette démarche, dans un format numérique (image ou PDF) :
 
 **Documents obligatoires**
 - Le contrat de travail : contrat de droit commun (CDD ou CDI), ou contrat d'apprentissage, ou contrat de professionnalisation, ou contrat doctoral
@@ -70,7 +64,7 @@ Les documents suivants vous seront demandés pendant votre démarche, assurez-vo
 
 **Documents optionnels**
 
-- **Pour les cas de renouvellement** d'autorisation provisoire de travail : votre ancienne autorisation de travail et vos 3 dernières fiches de paie.
+- **Pour les cas de renouvellement** d'autorisation provisoire de travail : l'ancienne autorisation de travail et les 3 dernières fiches de paie.
 
 - **Pour les cas de [professions réglementées](http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee)** (architecture, médecine, comptabilité) il faut prouver que l'étudiant a la capacité d'exercer cette activité et fournir un justificatif permettant d'exercer la profession réglementée. Par exemple :
     - Un stagiaire expert comptable fournit une attestation de l'ordre associé
@@ -156,11 +150,11 @@ Les demandes pour les autres départements seront accessibles très prochainemen
 
 ### Que dois-je faire en cas de changement d'adresse ?
 
-Votre premier réflexe lorsque vous changez de résidence administrative doit être de le déclarer à la préfecture de votre nouveau département de résidence, en vertu de l'[article R321-8](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=2C1DC4AD82B47E2D7EF8A1DB782CF006.tplgfr22s_2?idArticle=LEGIARTI000033332803&cidTexte=LEGITEXT000006070158&categorieLien=id&dateTexte=) du code de l'entrée et du séjour des étrangers et du droit d'asile (ceseda) qui stipule que :
+Le premier réflexe de l'étudiant lors d'un changement de résidence permanente et effective, doit être de le déclarer à la préfecture de son nouveau département de résidence, en vertu de l'[article R321-8](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=2C1DC4AD82B47E2D7EF8A1DB782CF006.tplgfr22s_2?idArticle=LEGIARTI000033332803&cidTexte=LEGITEXT000006070158&categorieLien=id&dateTexte=) du code de l'entrée et du séjour des étrangers et du droit d'asile (ceseda) qui dispose que :
 
 **"Tout étranger, séjournant en France et astreint à la possession d'une autorisation de séjour d'une durée supérieure à un an, est tenu, lorsqu'il transfère le lieu de sa résidence effective et permanente, d'en faire la déclaration, dans les trois mois de son arrivée, à la préfecture territorialement compétente."**
 
-Vous avez donc 3 mois pour effectuer cette démarche qui facilitera grandement toutes les autres.
+L'étudiant a donc 3 mois pour effectuer cette démarche.
 
 En effet, le premier réflexe d'un service de la main d'oeuvre étrangère (en charge de l'instruction des demandes d'autorisation de travail) est de vérifier sa compétence territoriale, en vertu de l'[article R5221-15](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000018525766&cidTexte=LEGITEXT000006072050) du code du travail.
 
@@ -172,7 +166,7 @@ Seule la préfecture a compétence à se prononcer sur les questions relatives a
 
 <hr>
 
-### Mon contrat de travail a évolué : que dois-je faire ?
+### Le contrat de travail a évolué : que dois-je faire ?
 
 *Pour rappel, **une autorisation provisoire de travail (APT) est valable pour un employeur bien précis**, identifié par son numéro de siret. Tout ce qui suit n'est donc valable que pour un contrat de travail qui évolue chez un même employeur. Un contrat proposé par un nouvel employeur devra d'office faire l'objet d'une nouvelle demande d'APT.*
 
@@ -190,9 +184,9 @@ Le changement du lieu effectif d'embauche peut en revanche simplement être sign
 
 ### Est-ce que Work In France remplace la procédure papier ?
 
-Si vous utilisez Work In France, vous n'aurez plus besoin de faire une demande CERFA déposée dans les services de la main d'œuvre étrangère. Le formulaire rempli sur la plateforme Work In France sera transmis directement au service compétent et vous serez averti par e-mail à chaque étape de la procédure : dépôt, complétude du dossier, instruction, validation ou refus. 
+En utilisant Work In France, il n'est plus nécessaire de déposer une demande CERFA dans les services de la main d'œuvre étrangère. Le formulaire rempli sur la plateforme Work In France sera transmis directement au service compétent, avec une notification par courriel à chaque étape de la procédure : dépôt, complétude du dossier, instruction, validation ou refus. 
 
-Vous ne recevrez pas de courrier papier. Une fois votre dossier complet et instruit, vous recevrez par e-mail votre attestation ou une notification de refus dans les délais légaux.
+Il n'y aura aucun courrier papier. Une fois le dossier complet et instruit, l'attestation ou la notification de refus est envoyée par courriel dans les délais légaux.
 
 [Retour au sommaire](#faq-summary)
 
@@ -202,7 +196,7 @@ Vous ne recevrez pas de courrier papier. Une fois votre dossier complet et instr
 
 Oui. 
 
-En utilisant WorkInFrance, **votre démarche en ligne est entièrement gratuite**. Vous faites l'économie des frais et délais postaux pour le dépôt de la demande mais aussi pour la réception de la réponse de l'administration : elle vous sera notifiée par courriel !
+WorkInFrance propose une **démarche en ligne entièrement gratuite**. Cela permet d'économiser les frais et délais postaux pour le dépôt de la demande mais aussi pour la réception de la réponse de l'administration, directement notifiée par courriel !
 
 Il existe une taxe employeur collectée par l'Office français de l'immigration et de l'intégration (OFII). Cette taxe n'est exigible à l'employeur que lorsqu'un étudiant demande un changement de statut (passage d'étudiant à salarié par exemple).
 
@@ -214,9 +208,9 @@ Or l'étudiant faisant l'objet d'une demande d'autorisation provisoire de travai
 
 ### Comment vérifier la validité d'une autorisation provisoire de travail délivrée avec Work In France ?
 
-Vous pouvez à tout moment vérifier la validité d'une autorisation provisoire de travail en vous rendant sur [cette page](https://workinfrance.beta.gouv.fr/validity_check.html). Il vous suffit de saisir le numéro de l'autorisation provisoire de travail et la date de naissance de l'étudiant pour en avoir instantanément la validité.
+Vérifier la validité d'une autorisation provisoire de travail est possible à tout moment en consultant [cette page](https://workinfrance.beta.gouv.fr/validity_check.html). Il suffit de saisir le numéro de l'autorisation provisoire de travail et la date de naissance de l'étudiant pour en avoir instantanément la validité.
 
-Cette fonctionalité est disponible 1 heure après délivrance de l'autorisation provisoire de travail par le service Work In France.
+Cette fonctionalité est disponible une heure après délivrance de l'autorisation provisoire de travail par le service Work In France.
 
 [Retour au sommaire](#faq-summary)
 
