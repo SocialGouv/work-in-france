@@ -140,6 +140,7 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 - la **Meurthe-et-Moselle (54)**,
 - la **Meuse (55)**,
 - la **Moselle (57)**,
+- le **Puy-de-Dôme (63)**,
 - le **Bas-Rhin (67)**,
 - le **Rhône (69)**,
 - **Paris (75)**,
