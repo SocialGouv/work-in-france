@@ -142,6 +142,7 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 - la **Moselle (57)**,
 - le **Puy-de-Dôme (63)**,
 - le **Bas-Rhin (67)**,
+- le **Haut-Rhin (68)**,
 - le **Rhône (69)**,
 - **Paris (75)**,
 - la **Seine-Maritime (76)**,
