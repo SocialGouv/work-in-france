@@ -22,3 +22,7 @@ Thumbs.db
 # NPM #
 ################
 node_modules/
+
+# NEXT #
+################
+.next

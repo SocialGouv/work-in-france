@@ -2,24 +2,22 @@
   "name": "work-in-france",
   "version": "0.0.1",
   "description": "La plateforme de demande d'autorisation provisoires de travail.",
+  "author": "",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SocialGouv/work-in-france.git"
   },
-  "license": "Apache-2.0",
+  "main": "index.js",
   "scripts": {
-    "css-watcher": "npm run css-build -- --watch --verbose",
-    "css-build": "postcss source/static/css/styles.css --output source/static/css/bundle.css --no-map",
-    "build": "npm run css-build && pipenv run clay build",
-    "deploy": "gh-pages -d build"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
-  "devDependencies": {
-    "cssnano": "^4.1.8",
-    "gh-pages": "^1.1.0",
-    "postcss-cli": "^6.1.1",
-    "postcss-css-variables": "^0.12.0",
-    "postcss-import": "^11.0.0",
-    "postcss-nesting": "^7.0.0",
-    "postcss-preset-env": "^6.5.0"
+  "dependencies": {
+    "next": "^8.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
   }
 }

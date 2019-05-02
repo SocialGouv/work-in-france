@@ -1,0 +1,58 @@
+{
+  "name": "work-in-france",
+  "version": "1.0.0",
+  "description": "commit lint work in france",
+  "main": "commitlint.config.js",
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.3.1"
+  },
+  "scripts": {
+    "commitmsg": "validate-commit-msg",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwiss/apollo-trine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwiss/apollo-trine/issues"
+  },
+  "homepage": "https://github.com/kwiss/apollo-trine#readme",
+  "dependencies": {
+    "commitizen": "^3.0.7",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": "^[A-Z]+-[0-9]+ - .*",
+      "subjectPatternErrorMsg": "Subject must be in format 'CMS-123 - Commit message'",
+      "helpMessage": ""
+    }
+  }
+}
