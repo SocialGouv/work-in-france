@@ -9,7 +9,7 @@ const COLORS = {
   blackText: "#000000",
 
   // Backgrounds
-  blueBg: "#2E489C"
+  blueBg: "#2E489C",
 };
 
 export default COLORS;

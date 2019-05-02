@@ -1,12 +1,9 @@
 import React from "react";
 import { Layout } from "../components/commons/grid";
+import Search from "../components/search";
 
 const Home = () => {
-  return (
-    <Layout>
-      <div>home</div>
-    </Layout>
-  );
+  return <Search />;
 };
 
 export default Home;
