@@ -1,11 +1,29 @@
-import React from 'react';
-import logo from '/static/logi.png';
+import React from "react";
+import styled from "styled-components";
 
-const Header = () => {
+import { Layout } from "../commons/grid";
+
+const Logo = styled.div`
+  background: url("./static/logo.png") no-repeat;
+  background-size: 100%;
+  width: 80px;
+  height: 46px;
+`;
+
+const LogoWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const Header = props => {
+  console.log(props);
   return (
-    <div>
-      <Logo />
-    </div>
+    <Layout>
+      <LogoWrapper>
+        <Logo />
+        <span>Work in france</span>
+      </LogoWrapper>
+    </Layout>
   );
 };
 
