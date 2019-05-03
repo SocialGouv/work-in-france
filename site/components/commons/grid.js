@@ -7,10 +7,21 @@ const Layout = styled.div`
   flex-wrap: wrap;
 `;
 
+const LayoutNormal = styled.div`
+  max-width: ${props => props.theme.grid.size};
+  margin: 0 auto;
+`;
+
 const Col100 = styled.div`
-  flex: 0 0 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
 `;
 
-export { Layout, Col100 };
+const Col50 = styled.div`
+  width: 50%;
+  display: flex;
+  justify-content: center;
+`;
+
+export { Layout, Col100, Col50, LayoutNormal };
