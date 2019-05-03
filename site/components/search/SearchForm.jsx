@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Select from "react-select";
 
+import redirect from "../../utils/redirect";
 import {
   SearchFormWrapper,
   SearchFormLabel,
@@ -10,18 +11,25 @@ import {
   RadioInput,
   SearchButton,
 } from "./Style";
-
 import { Col100 } from "../commons/grid";
-import COUNTIES from "../../constants/counties";
+import { DEPARTEMENTS } from "../../constants/departements";
 
-function handleSubmit(currentRadio, currentCounty) {
-  console.log(currentRadio);
-  console.log(currentCounty);
-}
+const handleSubmit = (currentRadio, currentDepartement) => {
+  if (currentDepartement && currentDepartement.isAllowed) {
+    if (currentRadio === "student") {
+      redirect({}, "/student");
+    } else if (currentRadio === "company") {
+      redirect({}, "/company");
+    }
+  } else {
+    redirect({}, "/fail");
+  }
+};
 
 const SearchForm = () => {
   const [currentRadio, setcurrentRadio] = useState("student");
-  const [currentCounty, setcurrentCounty] = useState("");
+  const [currentDepartement, setcurrentDepartement] = useState("");
+  const [hasError, toggleError] = useState(false);
 
   return (
     <SearchFormWrapper>
@@ -31,8 +39,8 @@ const SearchForm = () => {
       <SelectWrapper>
         <Select
           isSearchable
-          onChange={value => setcurrentCounty(value)}
-          options={COUNTIES}
+          onChange={value => setcurrentDepartement(value)}
+          options={DEPARTEMENTS}
           placeholder="Choisissez votre département"
         />
       </SelectWrapper>
@@ -64,7 +72,12 @@ const SearchForm = () => {
         </RadioLabel>
       </RadioWrapper>
       <Col100>
-        <SearchButton onClick={() => handleSubmit(currentRadio, currentCounty)}>
+        {hasError && <p>Merci de choisir votre département</p>}
+        <SearchButton
+          onClick={() =>
+            !currentDepartement ? toggleError(true) : handleSubmit(currentRadio, currentDepartement)
+          }
+        >
           Je fais ma demande
         </SearchButton>
       </Col100>
