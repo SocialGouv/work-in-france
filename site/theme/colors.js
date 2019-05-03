@@ -9,6 +9,7 @@ const COLORS = {
   blackText: "#000000",
 
   // Backgrounds
+  red: "#EFEFEF",
   blueBg: "#2E489C",
 };
 

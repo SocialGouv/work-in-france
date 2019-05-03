@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Background = styled.div`
   background: ${props => props.theme.color.blueBg};
-  padding: 20px 10px;
+  padding: 20px 10px 40px;
 `;
 
 const SearchTitle = styled.h1`

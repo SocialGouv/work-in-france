@@ -2,8 +2,7 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
-  padding: 20px 20px 0px 20px;
-  height: 80px;
+  padding: 20px;
 `;
 
 const Logo = styled.div`
@@ -20,6 +19,7 @@ const LogoLink = styled.a`
   font-weight: bold;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 `;
 
 const MenuWrapper = styled.div`
