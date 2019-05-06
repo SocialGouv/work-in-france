@@ -1,9 +1,14 @@
-import React from "react";
-import { Layout } from "../components/commons/grid";
+import React, { Fragment } from "react";
 import Search from "../components/search";
+import Explanations from "../components/explanations";
 
 const Home = () => {
-  return <Search />;
+  return (
+    <Fragment>
+      <Search />
+      <Explanations />
+    </Fragment>
+  );
 };
 
 export default Home;
