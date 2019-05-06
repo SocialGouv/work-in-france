@@ -8,10 +8,18 @@ import Footer from "../components/footer";
 import theme from "../theme/index";
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: "Evolventa";
+    src: url(static/fonts/evolventa/woff2/evolventa-bold.woff2) format('woff2'),
+        url(static/fonts/evolventa/woff/evolventa-bold.woff) format('woff');
+    font-weight: 800;
+  }
+  
   div#__next, html, body {
     margin: 0;
     height: 100%;
     width: 100%;
+    background: #EBEFF3;
     font-family: 'Source Sans Pro', sans-serif;
   }
 `;

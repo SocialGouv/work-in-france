@@ -1,11 +1,11 @@
 import React from "react";
 
 import { H1, H2, H3, H4, H5, H6, Text } from "../components/commons/typography";
-import { LayoutNormal } from "../components/commons/grid";
+import { Wrapper } from "../components/commons/grid";
 
 const designSystem = () => {
   return (
-    <LayoutNormal>
+    <Wrapper>
       <H1 color="black">h1 title (can pass any size and any colors)</H1>
       <H2>h2 title</H2>
       <H3>h3 title</H3>
@@ -22,7 +22,7 @@ const designSystem = () => {
         dignissim sagittis ipsum, sed fermentum massa dapibus sit amet. Etiam consectetur
         consectetur magna nec elementum. Proin aliquam ex lacus, a sodales augue interdum vel.
       </Text>
-    </LayoutNormal>
+    </Wrapper>
   );
 };
 

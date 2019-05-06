@@ -1,10 +1,10 @@
 import React from "react";
-import { Flex, Box } from "@rebass/grid";
-import { LayoutNormal } from "../components/commons/grid";
+import { Flex, Box } from "rebass";
+import { Wrapper } from "../components/commons/grid";
 
 const fail = () => {
   return (
-    <LayoutNormal>
+    <Wrapper>
       <Flex>
         <Box>
           <h1>Demande d'autorisation provisoire de travail</h1>
@@ -32,7 +32,7 @@ const fail = () => {
           <a href=""> Revenir à l'accueil</a>
         </Box>
       </Flex>
-    </LayoutNormal>
+    </Wrapper>
   );
 };
 

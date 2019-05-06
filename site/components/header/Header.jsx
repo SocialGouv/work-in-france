@@ -2,29 +2,40 @@
 import React from "react";
 import Link from "next/link";
 
-import { Layout } from "../commons/grid";
-import { HeaderWrapper, LogoLink, Logo, MenuWrapper, MenuLink } from "./Style";
+import { Flex, Box } from "rebass";
+import { Wrapper } from "../commons/grid";
+import { LogoLink, Logo, MenuLink } from "./Style";
 
-const Header = props => {
+const Header = () => {
   return (
-    <HeaderWrapper>
-      <Layout>
-        <Link href="/">
-          <LogoLink>
-            <Logo />
-            Work in France
-          </LogoLink>
-        </Link>
-        <MenuWrapper>
-          <Link href="/validity_check">
-            <MenuLink> Vérifier une autorisation</MenuLink>
-          </Link>
-          <Link href="/faq">
-            <MenuLink> Questions / Réponses </MenuLink>
-          </Link>
-        </MenuWrapper>
-      </Layout>
-    </HeaderWrapper>
+    <Box bg="white">
+      <Wrapper>
+        <Flex alignItems="center" flexWrap="wrap" justifyContent="space-between">
+          <Box px={3} py={3} width={[1, 2 / 5, 1 / 3]}>
+            <Link href="/">
+              <LogoLink>
+                <Logo />
+                Work in France
+              </LogoLink>
+            </Link>
+          </Box>
+          <Box pb={[3, 0]} pt={0} px={3} width={[1, 3 / 5, 2 / 3]}>
+            <Flex flexWrap="wrap" justifyContent="flex-end">
+              <Box px={0} py={1} width={[1, "auto"]}>
+                <Link href="/validity_check">
+                  <MenuLink> Vérifier une autorisation</MenuLink>
+                </Link>
+              </Box>
+              <Box px={0} py={1} width={[1, "auto"]}>
+                <Link href="/faq">
+                  <MenuLink> Questions / Réponses </MenuLink>
+                </Link>
+              </Box>
+            </Flex>
+          </Box>
+        </Flex>
+      </Wrapper>
+    </Box>
   );
 };
 

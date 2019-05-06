@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="fr">
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta content="width=device-width, initial-scale=1" name="viewport" />
           <link
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700"
             rel="stylesheet"

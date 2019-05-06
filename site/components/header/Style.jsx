@@ -22,19 +22,15 @@ const LogoLink = styled.a`
   cursor: pointer;
 `;
 
-const MenuWrapper = styled.div`
-  margin-left: auto;
-  align-items: center;
-  display: flex;
-`;
-
 const MenuLink = styled.a`
-  margin-left: 20px;
-  color: ${props => props.theme.color.text};
+  &:first-child {
+    margin-right: 20px;
+  }
+  color: ${props => props.theme.colors.text};
   &:hover {
     text-decoration: underline;
     cursor: pointer;
   }
 `;
 
-export { HeaderWrapper, LogoLink, Logo, MenuWrapper, MenuLink };
+export { HeaderWrapper, LogoLink, Logo, MenuLink };
