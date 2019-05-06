@@ -1,7 +1,8 @@
+// @flow
 import React from "react";
 import { Box, Heading } from "rebass";
 
-import { Wrapper } from "../commons/grid";
+import { Wrapper } from "../commons/Grid";
 import SearchForm from "./SearchForm";
 
 const Search = () => {

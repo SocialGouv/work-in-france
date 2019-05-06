@@ -8,6 +8,6 @@ export default (context, target) => {
     context.res.end();
   } else {
     // In the browser, we just pretend like this never even happened ;)
-    Router.replace(target);
+    Router.push(target);
   }
 };

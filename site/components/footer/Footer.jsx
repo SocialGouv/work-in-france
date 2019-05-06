@@ -1,7 +1,8 @@
+// @flow
 import React from "react";
 import NextLink from "next/link";
 import { Flex, Box, Text, Image } from "rebass";
-import { Wrapper } from "../commons/grid";
+import { Wrapper } from "../commons/Grid";
 import { StyledLink } from "../commons/Link";
 
 const Footer = () => {

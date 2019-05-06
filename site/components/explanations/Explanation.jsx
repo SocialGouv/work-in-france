@@ -1,6 +1,7 @@
+// @flow
 import React from "react";
 import { Flex, Box, Heading, Text, Image } from "rebass";
-import { Wrapper } from "../commons/grid";
+import { Wrapper } from "../commons/Grid";
 
 const Explanation = () => {
   return (

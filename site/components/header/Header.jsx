@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 import { Flex, Box } from "rebass";
-import { Wrapper } from "../commons/grid";
+import { Wrapper } from "../commons/Grid";
 import { LogoLink, Logo, MenuLink } from "./Style";
 
 const Header = () => {

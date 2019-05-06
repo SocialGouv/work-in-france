@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, Box } from "rebass";
-import { Wrapper } from "../components/commons/grid";
+import { Wrapper } from "../components/commons/Grid";
 
 const fail = () => {
   return (
