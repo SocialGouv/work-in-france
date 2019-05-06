@@ -1,3 +1,6 @@
+// next js document doesn't support jsx extention
+/* eslint-disable react/jsx-filename-extension */
+
 import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
