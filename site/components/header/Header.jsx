@@ -11,7 +11,7 @@ const Header = () => {
     <Box bg="white">
       <Wrapper>
         <Flex alignItems="center" flexWrap="wrap" justifyContent="space-between">
-          <Box px={3} py={3} width={[1, 2 / 5, 1 / 3]}>
+          <Box pl={3} pr={3} py={3} width={[1, 2 / 5, 1 / 3]}>
             <Link href="/">
               <LogoLink>
                 <Logo />
