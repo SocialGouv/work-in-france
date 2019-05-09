@@ -6,9 +6,9 @@ FROM node:10-stretch
 ENV TZ Europe/Paris
 RUN cp /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
+COPY ./site /app
 WORKDIR /app
 
 RUN yarn --frozen-lockfile && yarn cache clean
-COPY ./site /app
 
 RUN yarn build && yarn export
