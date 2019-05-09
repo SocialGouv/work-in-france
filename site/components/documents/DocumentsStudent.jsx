@@ -1,6 +1,6 @@
 import React from "react";
-import { Flex, Box, Button, Link, Heading, Text } from "rebass";
-import { ACard } from "./Style";
+import { Flex, Box, Button, Link, Heading, Text, Image } from "rebass";
+import { ACard, List } from "./Style";
 
 const Documents = () => {
   return (
@@ -21,7 +21,7 @@ const Documents = () => {
         suivants, en cours de validité. Pour chaque pièce demandée, vous devrez fournir un seul
         document, qui pourra contenir une ou plusieurs pages.
       </Text>
-      <Box p={2} width={[1, 1 / 3]}>
+      <Box p={2} width={[1, 1 / 2, 1 / 3]}>
         <ACard
           border="2px solid"
           borderColor="blueBg"
@@ -30,60 +30,129 @@ const Documents = () => {
           p={3}
           width={[1]}
         >
-          Les 2 premières pages suffisent.
+          <Flex justifyContent="center">
+            <Image height="50px" src="/static/icon-passport.png" width="50px" />
+          </Flex>
+          <Heading fontSize={2} mb={3} textAlign="center">
+            PASSEPORT
+          </Heading>
+          <Text textAlign="center">Les 2 premières pages suffisent.</Text>
         </ACard>
       </Box>
-      <Box p={2} width={[1, 1 / 3]}>
+      <Box p={2} width={[1, 1 / 2, 1 / 3]}>
         <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
-          {`Pour l’année en cours, au choix :`}
-          <br />
-          {`- certificat de scolarité,`}
-          <br />
-          {`- certificat d'inscription ou de pré-inscription dans un établissement scolaire ou un centre
+          <Flex justifyContent="center">
+            <Image height="50px" src="/static/icon-student.png" width="50px" />
+          </Flex>
+          <Heading fontSize={2} mb={3} textAlign="center">
+            JUSTIFICATIF DE SCOLARITÉ
+          </Heading>
+          <Text fontSize={1} textAlign="left">
+            Suivant la situation :
+            <List>
+              <li>Pour l’année en cours, au choix :</li>
+              <li>- certificat de scolarité,</li>
+              <li>
+                {`- certificat d'inscription ou de pré-inscription dans un établissement scolaire ou un centre
         de formation,`}
-          <br />
-          {`- carte d’étudiant (recto-verso)`}
+              </li>
+              <li>- carte d’étudiant (recto-verso)</li>
+            </List>
+          </Text>
         </ACard>
       </Box>
-      <Box p={2} width={[1, 1 / 3]}>
+      <Box p={2} width={[1, 1 / 2, 1 / 3]}>
         <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
-          Vous autorisant à accomplir les démarches administratives pour le compte de votre
-          employeur, et signé par ce dernier. Voir un modèle
+          <Flex justifyContent="center">
+            <Image height="50px" src="/static/icon-order.png" width="50px" />
+          </Flex>
+          <Heading fontSize={2} mb={3} textAlign="center">
+            MANDAT
+          </Heading>
+          <Text fontSize={1} mb={2} textAlign="center">
+            Vous autorisant à accomplir les démarches administratives pour le compte de votre
+            employeur, et signé par ce dernier.
+          </Text>
+          <Link
+            href="http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee"
+            target="_blank"
+          >
+            <Text color="text" fontSize={0} textAlign="center">
+              Voir un modèle
+            </Text>
+          </Link>
         </ACard>
       </Box>
-      <Box p={2} width={[1, 1 / 3]}>
+      <Box p={2} width={[1, 1 / 2, 1 / 3]}>
         <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
-          Suivant la situation :
-          <br />
-          - contrat de droit commun (CDD ou CDI)
-          <br />
-          - contrat d’alternance (apprentissage ou professionnalisation)
-          <br />
-          - contrat doctoral
-          <br />
-          {`- promesse d’embauche`}
+          <Flex justifyContent="center">
+            <Image height="50px" src="/static/icon-contract.png" width="50px" />
+          </Flex>
+          <Heading fontSize={2} mb={3} textAlign="center">
+            CONTRAT DE TRAVAIL
+          </Heading>
+          <Text fontSize={1} textAlign="left">
+            Suivant la situation :
+            <List>
+              <li>- contrat de droit commun (CDD ou CDI)</li>
+              <li>- contrat d’alternance (apprentissage ou professionnalisation)</li>
+              <li>- contrat doctoral</li>
+              <li>- promesse d’embauche</li>
+            </List>
+          </Text>
         </ACard>
       </Box>
-      <Box p={2} width={[1, 2 / 3]}>
+      <Box p={2} width={[1, 1, 2 / 3]}>
         <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
-          <Flex>
-            <Box>
-              Au choix : - titre de séjour - VLS-TS (Visa de Long Séjour valant Titre de Séjour)
+          <Flex justifyContent="center">
+            <Image height="50px" src="/static/icon-france.png" width="50px" />
+          </Flex>
+          <Heading fontSize={2} mb={3} textAlign="center">
+            DOCUMENT AUTORISANT LE SÉJOUR EN FRANCE
+          </Heading>
+          <Flex flexWrap="wrap">
+            <Box pb={3} pr={3} width={[1, 1 / 3]}>
+              <Text fontSize={1} textAlign="left">
+                Au choix :
+                <List>
+                  <li>- titre de séjour </li>
+                  <li>- VLS-TS (Visa de Long Séjour valant Titre de Séjour)</li>
+                </List>
+              </Text>
             </Box>
-            <Box>
-              En cas de demande de renouvellement en cours, il faut fournir les 3 documents suivants
-              : - convocation à la Préfecture ou sous-Préfecture - titre de séjour - récépissé de
-              nouvelle demande de titre de séjour
+            <Box pr={3} width={[1, 2 / 3]}>
+              <Text fontSize={1} textAlign="left">
+                En cas de demande de renouvellement en cours, il faut fournir les 3 documents
+                suivants :
+                <List>
+                  <li>- convocation à la Préfecture ou sous-Préfecture </li>
+                  <li>- titre de séjour</li>
+                  <li>- récépissé de nouvelle demande de titre de séjour</li>
+                </List>
+              </Text>
             </Box>
           </Flex>
         </ACard>
       </Box>
-      <Box p={2} width={[1, 1 / 2]}>
+      <Box p={2} width={[1, 1 / 2, 1 / 3]}>
         <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
-          OPTIONNEL - EN CAS DE PROFESSION RÉGLEMENTÉE
-          <br />
-          Justificatif permettant d'exercer la profession réglementée Voir la liste des professions
-          concernées
+          <Flex justifyContent="center">
+            <Image height="50px" src="/static/icon-reglementation.png" width="50px" />
+          </Flex>
+          <Heading fontSize={2} mb={3} textAlign="center">
+            OPTIONNEL - EN CAS DE PROFESSION RÉGLEMENTÉE
+          </Heading>
+          <Text fontSize={1} mb={2} textAlign="center">
+            {`Justificatif permettant d'exercer la profession réglementée`}
+          </Text>
+          <Link
+            href="http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee"
+            target="_blank"
+          >
+            <Text color="text" fontSize={0} textAlign="center">
+              Voir la liste des professions concernées
+            </Text>
+          </Link>
         </ACard>
       </Box>
       <Text color="text" fontSize={2} lineHeight={1.4} p={3} textAlign="center" width={[1, 9 / 10]}>
@@ -91,19 +160,37 @@ const Documents = () => {
         <br />
         vous devez ajouter aux documents précédents :
       </Text>
-      <Box p={2} width={[1, 1 / 3]}>
+      <Box p={2} width={[1, 1 / 2, 1 / 4]}>
         <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
-          L’AUTORISATION DE TRAVAIL PRÉCÉDENTE
+          <Flex justifyContent="center">
+            <Image height="50px" mb={3} src="/static/icon-certificate.png" width="50px" />
+          </Flex>
+          <Heading fontSize={2} mb={3} textAlign="center">
+            L’AUTORISATION DE TRAVAIL PRÉCÉDENTE
+          </Heading>
         </ACard>
       </Box>
-      <Box p={2} width={[1, 1 / 3]}>
+      <Box p={2} width={[1, 1 / 2, 1 / 4]}>
         <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
-          LES DERNIERS BULLETINS DE PAIE
+          <Flex justifyContent="center">
+            <Image height="50px" mb={3} src="/static/icon-pay-slip.png" width="50px" />
+          </Flex>
+          <Heading fontSize={2} fontWeight="600" mb={3} textAlign="center">
+            LES DERNIERS BULLETINS DE PAIE
+          </Heading>
         </ACard>
       </Box>
-      <Text color="text" fontSize={2} lineHeight={1.4} p={3} textAlign="center" width={[1, 9 / 10]}>
-        Besoin d’une checklist ? Télécharger la liste en version imprimable
+      <Text color="text" fontSize={1} lineHeight={1.4} p={3} textAlign="center" width={[1, 9 / 10]}>
+        Besoin d’une checklist ?
       </Text>
+      <Link
+        href="http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee"
+        target="_blank"
+      >
+        <Text color="text" fontSize={0} textAlign="center">
+          Télécharger la liste en version imprimable
+        </Text>
+      </Link>
       <Text color="text" fontSize={2} lineHeight={1.4} p={3} textAlign="left" width={[1, 9 / 10]}>
         Vous allez être redirigé vers
         <b> Démarches Simplifiées,</b>
@@ -117,7 +204,10 @@ const Documents = () => {
         {` En utilisant le service, l'usager s'engage sur la véracité des informations transmises lors du
         dépôt de son dossier.`}
       </Text>
-      <Link href="https://rebassjs.org" pt={4}>
+      <Link
+        href="https://www.demarches-simplifiees.fr/commencer/ud076-apt-etudiants-employeur-v0"
+        pt={4}
+      >
         <Button bg="blueBg" px={4} py={3}>
           Je finalise ma demande sur Démarches Simplifiées
         </Button>

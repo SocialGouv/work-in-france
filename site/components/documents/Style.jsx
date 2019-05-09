@@ -1,13 +1,15 @@
 // @flow
 import styled from "styled-components";
-import { Box, Card } from "rebass";
+import { Card } from "rebass";
 
 const ACard = styled(Card)`
-  min-height: 200px;
+  min-height: 250px;
 `;
 
-const Rbox = styled(Box)`
-  position: relative;
+const List = styled.ul`
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0;
 `;
 
-export { Rbox, ACard };
+export { ACard, List };
