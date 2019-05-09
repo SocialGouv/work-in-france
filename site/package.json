@@ -18,8 +18,10 @@
     "@zeit/next-css": "^1.0.1",
     "next": "^8.0.4",
     "normalize.css": "^8.0.1",
+    "raw-loader": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-markdown": "^4.0.8",
     "react-select": "^2.4.3",
     "rebass": "^3.1.0",
     "styled-components": "^4.2.0"

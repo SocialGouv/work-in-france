@@ -4,6 +4,7 @@ module.exports = {
   plugins: ["flowtype", "prettier"],
   rules: {
     "prettier/prettier": "error",
+    "react/no-unescaped-entities": 0,
     "react/jsx-sort-props": [
       1,
       {

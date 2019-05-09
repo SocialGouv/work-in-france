@@ -1,4 +1,4 @@
-### Qu'est-ce que Work in France ?
+<h3 id="quest-ce-que-work-in-france">Qu'est-ce que Work in France ?</h3>
 
 Work In France est un service public numérique développé par le ministère des affaires sociales qui permet aux employeurs ou étudiants étrangers d'effectuer des démarches de demandes d'autorisations provisoires de travail (APT) en ligne.
 
@@ -12,7 +12,7 @@ Ce formulaire est directement transmis au service de la main d'oeuvre étrangèr
 
 <hr>
 
-### Dans quel cas dois-je demander une autorisation provisoire de travail sur Work In France ?
+<h3 id="dans-quel-cas-dois-je-demander-une-autorisation-provisoire-de-travail-sur-work-in-france">Dans quel cas dois-je demander une autorisation provisoire de travail sur Work In France ?</h3>
 
 Work In France permet la délivrance ou le renouvellement d'autorisations provisoires de travail en faveur de :
 
@@ -47,7 +47,7 @@ Voici la liste des cas particuliers de contrats pour lesquels vous aurez besoin 
 
 <hr>
 
-### En combien de temps puis-je recevoir mon autorisation provisoire de travail ?
+<h3 id="en-combien-de-temps-puis-je-recevoir-mon-autorisation-provisoire-de-travail"> En combien de temps puis-je recevoir mon autorisation provisoire de travail ?</h3>
 
 Une autorisation provisoire de travail déposée sur Work In France est délivrée **dans un délai moyen de 5 jours ouvrés**, sauf cas spécifiques. Vous pouvez avoir une idée des délais de délivrance constatés en ce moment et leur évolution en vous rendant sur notre page [statistiques](https://workinfrance.beta.gouv.fr/stats.html).
 
@@ -64,7 +64,7 @@ Par exemple :
 
 <hr>
 
-### Quel sont les documents à fournir pour faire ma demande d'autorisation provisoire de travail sur Work In France ?
+<h3 id="quel-sont-les-documents-a-fournir-pour-faire-ma-demande-dautorisation-provisoire-de-travail-sur-work-in-france"> Quel sont les documents à fournir pour faire ma demande d'autorisation provisoire de travail sur Work In France ?</h3>
 
 Les documents suivants vous seront demandés pendant votre démarche, assurez-vous de les avoir dans un format numérique (image ou PDF) :
 
@@ -95,7 +95,7 @@ Les documents suivants vous seront demandés pendant votre démarche, assurez-vo
 
 <hr>
 
-### Qui peut déposer la demande d'autorisation provisoire de travail ? Pourquoi un mandat exprès ?
+<h3 id="qui-peut-deposer-la-demande-dautorisation-provisoire-de-travail-pourquoi-un-mandat-expres"> Qui peut déposer la demande d'autorisation provisoire de travail ? Pourquoi un mandat exprès ?</h3>
 
 Conformément à l’article [R5221-11](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018495586&dateTexte=&categorieLien=cid) du Code du travail, la demande d'autorisation de travail (APT) doit être faite par l'employeur. Ce dernier peut également mandater par écrit une autre personne pour effectuer cette démarche en son nom et pour son compte.
 
@@ -127,7 +127,7 @@ Notez par ailleurs que les Direccte tolèrent également l'utilisation du [cerfa
 
 <hr>
 
-### Dans quels départements puis-je utiliser Work In France ?
+<h3 id="dans-quels-departements-puis-je-utiliser-work-in-france">Dans quels départements puis-je utiliser Work In France ?</h3>
 
 Le service est pour l'instant accessible pour le recrutement des étudiants dont l'adresse qui figure sur le document autorisant le séjour en France (titre de séjour - récépissé de demande ou de renouvellement de carte de séjour - visa de long séjour valant titre de séjour (VLS-TS)) est dans :
 
@@ -163,7 +163,7 @@ Les demandes pour les autres départements seront accessibles très prochainemen
 
 <hr>
 
-### Que dois-je faire en cas de changement d'adresse ?
+<h3 id="que-dois-je-faire-en-cas-de-changement-dadresse"> Que dois-je faire en cas de changement d'adresse ?</h3>
 
 Votre premier réflexe lorsque vous changez de résidence administrative doit être de le déclarer à la préfecture de votre nouveau département de résidence, en vertu de l'[article R321-8](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=2C1DC4AD82B47E2D7EF8A1DB782CF006.tplgfr22s_2?idArticle=LEGIARTI000033332803&cidTexte=LEGITEXT000006070158&categorieLien=id&dateTexte=) du code de l'entrée et du séjour des étrangers et du droit d'asile (ceseda) qui stipule que :
 
@@ -181,7 +181,7 @@ Seule la préfecture a compétence à se prononcer sur les questions relatives a
 
 <hr>
 
-### Mon contrat de travail a évolué : que dois-je faire ?
+<h3 id="mon-contrat-de-travail-a-evolue-que-dois-je-faire"> Mon contrat de travail a évolué : que dois-je faire ?</h3>
 
 _Pour rappel, **une autorisation provisoire de travail (APT) est valable pour un employeur bien précis**, identifié par son numéro de siret. Tout ce qui suit n'est donc valable que pour un contrat de travail qui évolue chez un même employeur. Un contrat proposé par un nouvel employeur devra d'office faire l'objet d'une nouvelle demande d'APT._
 
@@ -197,7 +197,7 @@ Le changement du lieu effectif d'embauche peut en revanche simplement être sign
 
 <hr>
 
-### Est-ce que Work In France remplace la procédure papier ?
+<h3 id="est-ce-que-work-in-france-remplace-la-procedure-papier"> Est-ce que Work In France remplace la procédure papier ?</h3>
 
 Si vous utilisez Work In France, vous n'aurez plus besoin de faire une demande CERFA déposée dans les services de la main d'œuvre étrangère. Le formulaire rempli sur la plateforme Work In France sera transmis directement au service compétent et vous serez averti par e-mail à chaque étape de la procédure : dépôt, complétude du dossier, instruction, validation ou refus.
 
@@ -207,7 +207,7 @@ Vous ne recevrez pas de courrier papier. Une fois votre dossier complet et instr
 
 <hr>
 
-### La démarche de demande d'autorisation provisoire de travail via Work in France est-elle gratuite ?
+<h3 id="la-demarche-de-demande-dautorisation-provisoire-de-travail-via-work-in-france-est-elle-gratuite"> La démarche de demande d'autorisation provisoire de travail via Work in France est-elle gratuite ?</h3>
 
 Oui.
 
@@ -221,7 +221,7 @@ Or l'étudiant faisant l'objet d'une demande d'autorisation provisoire de travai
 
 <hr>
 
-### Comment vérifier la validité d'une autorisation provisoire de travail délivrée avec Work In France ?
+<h3 id="comment-verifier-la-validite-dune-autorisation-provisoire-de-travail-delivree-avec-work-in-france"> Comment vérifier la validité d'une autorisation provisoire de travail délivrée avec Work In France ?</h3>
 
 Vous pouvez à tout moment vérifier la validité d'une autorisation provisoire de travail en vous rendant sur [cette page](https://workinfrance.beta.gouv.fr/validity_check.html). Il vous suffit de saisir le numéro de l'autorisation provisoire de travail et la date de naissance de l'étudiant pour en avoir instantanément la validité.
 
