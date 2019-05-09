@@ -1,3 +1,4 @@
-import Documents from "./DocumentsStudent";
+import DocumentsStudent from "./DocumentsStudent";
+import DocumentsCompany from "./DocumentsCompany";
 
-export { Documents as default };
+export { DocumentsStudent, DocumentsCompany };

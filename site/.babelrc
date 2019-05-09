@@ -8,10 +8,11 @@
             "browsers": ["last 5 Chrome version", "ie >= 11"]
           }
         }
-      }
+      },
     ]
   ],
   "plugins": [
+    "transform-flow-strip-types",
     [
       "styled-components",
       {

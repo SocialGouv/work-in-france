@@ -1,10 +1,8 @@
-import React, { Fragment } from "react";
-import Router from "next/router";
+import React from "react";
 import { Flex, Box, Button, Link, Heading, Text, Image } from "rebass";
 import { ACard, List } from "./Style";
 
-const DocumentsStudent = () => {
-  const qualifyLink = Router.router && Router.router.query.link ? Router.router.query.link : null;
+const DocumentsCompany = () => {
   return (
     <Flex flexWrap="wrap" justifyContent="center">
       <Heading
@@ -61,25 +59,6 @@ const DocumentsStudent = () => {
               <li>- carte d’étudiant (recto-verso)</li>
             </List>
           </Text>
-        </ACard>
-      </Box>
-      <Box p={2} width={[1, 1 / 2, 1 / 3]}>
-        <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
-          <Flex justifyContent="center">
-            <Image height="50px" src="/static/icon-order.png" width="50px" />
-          </Flex>
-          <Heading fontSize={2} mb={3} textAlign="center">
-            MANDAT
-          </Heading>
-          <Text fontSize={1} mb={2} textAlign="center">
-            Vous autorisant à accomplir les démarches administratives pour le compte de votre
-            employeur, et signé par ce dernier.
-          </Text>
-          <Link href="/static/pdf/mandat.pdf" target="_blank">
-            <Text color="text" fontSize={0} textAlign="center">
-              Voir un modèle
-            </Text>
-          </Link>
         </ACard>
       </Box>
       <Box p={2} width={[1, 1 / 2, 1 / 3]}>
@@ -190,38 +169,29 @@ const DocumentsStudent = () => {
           Télécharger la liste en version imprimable
         </Text>
       </Link>
-      {qualifyLink && (
-        <Fragment>
-          <Text
-            color="text"
-            fontSize={2}
-            lineHeight={1.4}
-            p={3}
-            textAlign="left"
-            width={[1, 9 / 10]}
-          >
-            Vous allez être redirigé vers
-            <b> Démarches Simplifiées,</b>
-            {` le site officiel de demandes administratives, pour finaliser
+      <Text color="text" fontSize={2} lineHeight={1.4} p={3} textAlign="left" width={[1, 9 / 10]}>
+        Vous allez être redirigé vers
+        <b> Démarches Simplifiées,</b>
+        {` le site officiel de demandes administratives, pour finaliser
         votre demande.`}
-            <br />
-            <br />
-            {`Extrait des CGU de demarches-simplifiees.fr : L'usager remplit en ligne le formulaire et
+        <br />
+        <br />
+        {`Extrait des CGU de demarches-simplifiees.fr : L'usager remplit en ligne le formulaire et
         valide celui-ci […]. La confirmation `}
-            <b>et la transmission du formulaire par l'usager vaut signature de celui-ci.</b>
-            {` En utilisant le service, l'usager s'engage sur la véracité des informations transmises lors du
+        <b>et la transmission du formulaire par l'usager vaut signature de celui-ci.</b>
+        {` En utilisant le service, l'usager s'engage sur la véracité des informations transmises lors du
         dépôt de son dossier.`}
-          </Text>
-
-          <Link href={`https://www.demarches-simplifiees.fr/commencer/${qualifyLink}`} pt={4}>
-            <Button bg="blueBg" px={4} py={3}>
-              Je finalise ma demande sur Démarches Simplifiées
-            </Button>
-          </Link>
-        </Fragment>
-      )}
+      </Text>
+      <Link
+        href="https://www.demarches-simplifiees.fr/commencer/ud076-apt-etudiants-employeur-v0"
+        pt={4}
+      >
+        <Button bg="blueBg" px={4} py={3}>
+          Je finalise ma demande sur Démarches Simplifiées
+        </Button>
+      </Link>
     </Flex>
   );
 };
 
-export default DocumentsStudent;
+export default DocumentsCompany;
