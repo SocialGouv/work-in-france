@@ -11,4 +11,4 @@ WORKDIR /app
 RUN yarn --frozen-lockfile && yarn cache clean
 COPY ./site /app
 
-RUN yarn build
+RUN yarn build && yarn export
