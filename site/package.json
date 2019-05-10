@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "La plateforme de demande d'autorisation provisoires de travail.",
   "author": "",
-  "license": "ISC",
+  "license": "Apache",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SocialGouv/work-in-france.git"
@@ -17,14 +17,21 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "axios": "^0.18.0",
+    "formik": "^1.5.4",
     "next": "^8.0.4",
+    "next-redux-wrapper": "^3.0.0-alpha.2",
     "normalize.css": "^8.0.1",
     "raw-loader": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-markdown": "^4.0.8",
+    "react-redux": "^7.0.3",
     "react-select": "^2.4.3",
     "rebass": "^3.1.0",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-saga": "^1.0.2",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
