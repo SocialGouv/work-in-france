@@ -5,7 +5,7 @@ import { Wrapper } from "../components/commons/Grid";
 
 const Student = () => {
   return (
-    <Box bg="white" p={4}>
+    <Box bg="white" p={[1, 4]}>
       <Wrapper>
         <DocumentsStudent />
       </Wrapper>

@@ -33,7 +33,7 @@ class SearchForm extends Component<Props, State> {
   handleSubmit = () => {
     const {
       currentDepartement,
-      currentDepartement: { student, company },
+      currentDepartement: { value, student, company },
       currentRadio,
     } = this.state;
     if (currentDepartement && currentDepartement.isAllowed) {
@@ -43,7 +43,7 @@ class SearchForm extends Component<Props, State> {
         redirect({}, `/company?link=${company}`);
       }
     } else {
-      redirect({}, "/fail");
+      redirect({}, `/fail?departement=${value}`);
     }
   };
 
