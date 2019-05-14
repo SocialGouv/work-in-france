@@ -9,6 +9,7 @@ export default {
     grey: "#EBEFF3",
     red: "#d1335b",
     blueBg: "#2E489C",
+    green: "#03bd5b",
   },
   buttons: {
     primary: {

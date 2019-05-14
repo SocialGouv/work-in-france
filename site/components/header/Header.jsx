@@ -22,7 +22,7 @@ const Header = () => {
           <Box pb={[3, 0]} pt={0} px={3} width={[1, 3 / 5, 2 / 3]}>
             <Flex flexWrap="wrap" justifyContent="flex-end">
               <Box px={0} py={1} width={[1, "auto"]}>
-                <Link href="/validity_check">
+                <Link href="/validitycheck">
                   <MenuLink> Vérifier une autorisation</MenuLink>
                 </Link>
               </Box>
