@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import { Box, Flex } from "rebass";
 import ReactMarkdown from "react-markdown";
 import { Wrapper } from "../components/commons/Grid";
@@ -7,6 +8,9 @@ import faqContent from "../contents/faq.md";
 const Faq = () => {
   return (
     <Box bg="white" p={4}>
+      <Head>
+        <title>Work in France - FAQ</title>
+      </Head>
       <Wrapper>
         <Flex>
           <Box p={3}>
