@@ -20,7 +20,7 @@ const Fail = () => {
   const currentContacts = getContacts(currentDepartement);
   return (
     <Flex>
-      <Box p={3}>
+      <Box mb="3" p={3}>
         <Heading color="text" fontFamily="Evolventa" fontSize={[3, 4, 5]} lineHeight={1.4} mb="2">
           Demande d'autorisation provisoire de travail
         </Heading>
@@ -37,10 +37,12 @@ const Fail = () => {
             return <span key={departement.value}>{`${departement.value}, `}</span>;
           })}
         </p>
-        <Heading mb="2">En attendant, veuillez vous adresser à la :</Heading>
+        <Heading mb="2" mt="4">
+          En attendant, veuillez vous adresser à la :
+        </Heading>
         {currentContacts.map(currentContact => {
           return (
-            <Card key={currentContact.slug} bg="grey" borderRadius="6px" mb="2" p={3}>
+            <Card key={currentContact.slug} bg="grey" borderRadius="6px" mb="4" p={3}>
               <Heading mb="2">{`${currentContact.type} ${currentContact.name}`}</Heading>
               {currentContact.address.map(line => {
                 return <Text key={line}>{line}</Text>;
@@ -60,7 +62,7 @@ const Fail = () => {
             </Card>
           );
         })}
-        <Link color="text" href="/" py="2">
+        <Link color="text" href="/" py="3">
           Revenir à l'accueil
         </Link>
       </Box>
