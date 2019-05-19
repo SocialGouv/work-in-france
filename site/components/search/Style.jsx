@@ -25,10 +25,12 @@ const RadioLabel = styled.label`
   color: ${props => props.theme.colors.white};
   font-size: 16px;
   cursor: pointer;
+  text-align: center;
+  width: 48%;
 `;
 
 const RadioInput = styled.input`
-  margin-right: 10px;
+  display: none;
 `;
 
 export { Background, SearchTitle, SearchFormLabel, RadioLabel, RadioInput };
