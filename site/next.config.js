@@ -9,7 +9,7 @@ module.exports = withCSS({
       "/cgu": { page: "/cgu" },
       "/student": { page: "/student" },
       "/company": { page: "/company" },
-      "/validity_check": { page: "/validity_check" },
+      "/validitycheck": { page: "/validityCheck" },
     };
   },
   webpack(config) {

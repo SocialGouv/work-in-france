@@ -15,11 +15,11 @@ type State = {
 type Props = {};
 
 class SearchForm extends Component<Props, State> {
-  setcurrentDepartement = (selected, setFieldValue) => {
+  setcurrentDepartement = (selected: Object, setFieldValue: Function) => {
     setFieldValue("currentDepartement", selected);
   };
 
-  handleSubmit = values => {
+  handleSubmit = (values: Object) => {
     const {
       currentDepartement,
       currentDepartement: { value, student, company },

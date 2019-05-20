@@ -1,6 +1,6 @@
 import React from "react";
 
-const Loader = props => (
+const Loader = () => (
   <svg
     aria-label="Loading content, please wait."
     fill="#FFFFFF"

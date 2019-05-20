@@ -5,6 +5,8 @@ export default function* rootSaga() {
   try {
     yield all([watchPostValidityCheck()]);
   } catch (err) {
+    /* eslint-disable no-console */
     console.log(err);
+    /* eslint-enable no-console */
   }
 }

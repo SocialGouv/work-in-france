@@ -35,7 +35,6 @@ const ValidityCheckForm = (props: Props) => {
       }}
       render={({ errors, touched, values, handleChange, handleBlur, handleSubmit }) => (
         <Form onSubmit={handleSubmit}>
-          {console.log(errors)}
           {validityCheck.status === "valid" && validityCheck.data && (
             <ValidityCheckValidStatus data={validityCheck.data} status={validityCheck.status} />
           )}
