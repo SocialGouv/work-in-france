@@ -9,6 +9,13 @@ script:
   - yarn run build
   - yarn run lint
 
-after_success:
-  - chmod +x ./publish.sh
-  - ./publish.sh
+before_deploy:
+  - npm install netlify-cli -g
+  - npm run deploy
+
+deploy:
+  provider: script
+  script: netlify deploy -s workinfrance -t $NETLIFY_PUBLISH_KEY -p ./out
+  skip_cleanup: true
+  on:
+    all_branches: true
