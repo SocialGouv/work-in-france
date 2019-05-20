@@ -3,8 +3,8 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "Evolventa";
-    src: url(static/fonts/evolventa/woff2/evolventa-bold.woff2) format('woff2'),
-        url(static/fonts/evolventa/woff/evolventa-bold.woff) format('woff');
+    src: url(/static/fonts/evolventa/woff2/evolventa-bold.woff2) format('woff2'),
+        url(/static/fonts/evolventa/woff/evolventa-bold.woff) format('woff');
     font-weight: 800;
   }
   h1, h2, h3 {

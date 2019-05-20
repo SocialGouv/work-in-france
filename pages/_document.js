@@ -80,7 +80,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700"
             rel="stylesheet"
           />
-          <link href="static/favicon.ico" rel="icon" />
+          <link href="/static/favicon.ico" rel="icon" />
           <meta
             content="Faites votre demande d'autorisation de travail en ligne avec Work In France. Work In France est un service de l'Etat pour les entreprises ou les étudiants étrangers, en contrat d'alternance, en contrat d'apprentissage, ou en contrat de professionnalisation"
             name="description"
