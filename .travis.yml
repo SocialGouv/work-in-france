@@ -12,12 +12,12 @@ script:
   - yarn run lint
 
 before_deploy:
-  - npm install netlify-cli -g
-  - npm run deploy
+  - yarn add netlify-cli -g
+  - yarn deploy
 
 deploy:
   provider: script
-  script: netlify deploy -s workinfrance --auth $NETLIFY_PUBLISH_KEY -p --dir ./out
+  script: netlify deploy -s $NETLIFY_SITE_ID --auth $NETLIFY_PUBLISH_KEY -p --dir ./out
   skip_cleanup: true
   on:
     all_branches: true
