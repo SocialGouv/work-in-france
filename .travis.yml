@@ -9,10 +9,10 @@ cache:
 install: yarn
 
 script:
-  - yarn run lint
+  - yarn lint
 
 before_deploy:
-  - yarn add netlify-cli -g
+  - yarn global add netlify-cli
   - yarn deploy
 
 deploy:
