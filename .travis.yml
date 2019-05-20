@@ -4,13 +4,11 @@ node_js:
 cache:
   directories:
     - node_modules
-install:
-  - docker build . -t work-in-france
+install: yarn
 script:
-  - docker run --name work-in-france-build work-in-france
-script:
-  - yarn build
-  - yarn lint
+  - yarn run build
+  - yarn run lint
+
 after_success:
   - chmod +x ./publish.sh
   - ./publish.sh
