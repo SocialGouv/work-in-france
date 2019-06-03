@@ -137,6 +137,12 @@ const demarches = {
       "https://www.demarches-simplifiees.fr/commencer/ud068-apt-etudiants-employeur",
     student:
       "https://www.demarches-simplifiees.fr/commencer/ud068-apt-etudiants"
+  },
+  25: {
+    company:
+      "https://www.demarches-simplifiees.fr/commencer/ud025-apt-etudiants-employeur",
+    student:
+      "https://www.demarches-simplifiees.fr/commencer/ud025-apt-etudiants"
   }
 };
 
