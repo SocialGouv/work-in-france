@@ -83,8 +83,8 @@ class SearchForm extends Component<Props, State> {
               </Box>
               <Box alignItems="center" pb={0} pt={1} width={[1, 1 / 2, 1 / 3]}>
                 <Button
-                  bg="white"
-                  color="text"
+                  bg="blueBg"
+                  color="white"
                   fontSize={2}
                   name="student"
                   onClick={() => setFieldValue("type", "student")}
@@ -97,8 +97,8 @@ class SearchForm extends Component<Props, State> {
               </Box>
               <Box alignItems="center" pb={0} pt={1} width={[1, 1 / 2, 1 / 3]}>
                 <Button
-                  bg="white"
-                  color="text"
+                  bg="blueBg"
+                  color="white"
                   fontSize={2}
                   name="company"
                   onClick={() => setFieldValue("type", "company")}
