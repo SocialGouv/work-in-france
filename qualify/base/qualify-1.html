@@ -6,7 +6,7 @@
     <meta name="description" content="Faites votre demande d&apos;autorisation de travail en ligne avec Work In France. Work In France est un service de l&apos;Etat pour les entreprises ou les étudiants étrangers, en contrat d&apos;alternance, en contrat d&apos;apprentissage, ou en contrat de professionnalisation">
     <link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
     <title>Work in France - Demande d'autorisation provisoire de travail</title>
-    <link rel="stylesheet" href="../../static/css/bundle.css?bust=612707109162" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bundle.css?bust=493977237795" type="text/css">
     
     <!-- Hotjar Tracking Code for https://workinfrance.beta.gouv.fr/ -->
     <script>
@@ -63,6 +63,7 @@
                           <option value=""></option>
                           <option value="10">10 - Aube</option>
                           <option value="13">13 - Bouches-du-Rhône</option>
+                          <option value="25">25 - Doubs</option>
                           <option value="35">35 - Ille-et-vilaine</option>
                           <option value="42">42 - Loire</option>
                           <option value="45">45 - Loiret</option>
@@ -259,7 +260,7 @@
             alert("Merci de choisir votre département");
             return false;
           }
-          const allowedDepartements = ['75','69','45','77','95','92','13','76','91','78','54','88','57','67','94','10','93','42','55','35','52','63','68']
+          const allowedDepartements = ['75','69','45','77','95','92','13','76','91','78','54','88','57','67','94','10','93','42','55','35','52','63','68','25']
           if (allowedDepartements.indexOf(department) === -1) {
             form.action = '/qualify/fail.html';
           }
