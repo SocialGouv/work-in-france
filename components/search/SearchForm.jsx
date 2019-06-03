@@ -4,6 +4,7 @@ import Select from "react-select";
 import { Button, Flex, Box, Text } from "rebass";
 
 import { Formik } from "formik";
+import orderDepartement from "../../utils/orderDepartementsArray";
 import redirect from "../../utils/redirect";
 import { DEPARTEMENTS } from "../../constants/departements";
 
@@ -60,7 +61,7 @@ class SearchForm extends Component<Props, State> {
                   isSearchable
                   name="departement"
                   onChange={value => this.setcurrentDepartement(value, setFieldValue)}
-                  options={DEPARTEMENTS}
+                  options={orderDepartement(DEPARTEMENTS)}
                   placeholder="Département sur le titre de séjour"
                   value={values.currentDepartement}
                 />
