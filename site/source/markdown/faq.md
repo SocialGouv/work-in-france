@@ -64,20 +64,39 @@ Pour obtenir l’attestation dans ces délais soyez bien attentif aux informatio
 
 ### Quel sont les documents à fournir pour faire ma demande d'autorisation provisoire de travail sur Work In France ?
 
-Les documents suivants vous seront demandés pendant votre démarche, assurez-vous de les avoir dans un format numérique (image ou PDF) :
+Les documents suivants vous seront demandés pendant votre démarche, assurez-vous de les avoir dans un format numérique (image ou PDF, un seul document contenant une ou plusieurs pages) :
 
 **Documents obligatoires**
-- Le contrat de travail : contrat de droit commun (CDD ou CDI), ou contrat d'apprentissage, ou contrat de professionnalisation, ou contrat doctoral
-- La carte d'étudiant en cours de validité ou le certificat de scolarité en cours de validité
-- Le.s document(s) autorisant le séjour en France : carte de séjour en cours de validité ou VLSTS (Visa de Long Séjour valant Titre de Séjour) en cours de validité ou en cas de renouvellement du titre de séjour ces 3 documents dans cet ordre : convocation à la Préfecture ou Sous-Préfecture, titre de séjour, récépissé de nouvelle demande de titre de séjour
-- Votre passeport
-- Le cas échéant : le mandat écrit autorisant l'étudiant à accomplir les démarches administratives au nom et pour le compte de l'employeur, [voir un modèle](https://workinfrance.beta.gouv.fr/static/pdf/mandat.pdf)
+- **Le contrat de travail :**
+    - contrat de droit commun (CDD ou CDI), 
+    - ou contrat en alternance (contrat d'apprentissage, ou contrat de professionnalisation), 
+    - ou contrat doctoral,
+    - ou promesse d'embauche.
+
+- **Un justificatif de scolarité pour l'année en cours**, par ordre de préférence : 
+    - certificat de scolarité,
+    - ou certificat d'inscription ou de pré-inscription dans un établissement scolaire ou un centre de formation, 
+    - ou carte d'étudiant.
+    
+- **Le.s document(s) autorisant le séjour en France :**
+    - carte de séjour en cours de validité, 
+    - ou Visa de Long Séjour valant Titre de Séjour (VLS-TS) en cours de validité,
+    - ou si le renouvellement du titre de séjour est en cours, ces 3 documents dans cet ordre : 
+        1- la convocation à la Préfecture ou Sous-Préfecture, 
+        2- l'ancien titre de séjour, 
+        3- le récépissé de nouvelle demande de titre de séjour.
+        
+- **Le passeport** de l'étudiant,
+
+- Si c'est l’étudiant qui réalise la démarche : **le mandat écrit** l'autorisant à accomplir la demande en ligne de demande d’autorisation provisoire de travail (APT) au nom et pour le compte de l'employeur, [voir un modèle](https://workinfrance.beta.gouv.fr/static/pdf/mandat.pdf)
+
+Rappel : **Fournir ces documents est obligatoire**, même en cas de demande de renouvellement d’une APT préexistante. 
 
 **Documents optionnels**
 
-- **Pour les cas de renouvellement** d'autorisation provisoire de travail : votre ancienne autorisation de travail et vos 3 dernières fiches de paie.
+- **Pour les cas de renouvellement** d'autorisation provisoire de travail (APT) : l'ancienne APT et les dernières fiches de paie.
 
-- **Pour les cas de [professions réglementées](http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee)** (architecture, médecine, comptabilité) il faut prouver que l'étudiant a la capacité d'exercer cette activité et fournir un justificatif permettant d'exercer la profession réglementée. Par exemple :
+- **Pour les [professions réglementées](http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee)** (architecture, médecine, comptabilité) il faut prouver que l'étudiant a la capacité d'exercer cette activité. Un justificatif permettant d'exercer la profession réglementée doit être fourni. Par exemple :
     - Un stagiaire expert comptable fournit une attestation de l'ordre associé
     - Un agent de sécurité fournit une copie du certificat de qualification professionnelle
     - Un commissaire aux comptes fournit une attestation de l'ordre associé
