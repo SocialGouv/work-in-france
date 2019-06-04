@@ -2,11 +2,28 @@
 
 Work In France est un service public numérique développé par le ministère des affaires sociales qui permet aux employeurs ou étudiants étrangers d'effectuer des démarches de demandes d'autorisations provisoires de travail (APT) en ligne.
 
-L'utilisateur complète un formulaire via la plateforme [demarches-simplifiées.fr](https://www.demarches-simplifiees.fr/). 
+L'utilisateur complète un formulaire via la plateforme [demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/). 
 
 Ce formulaire est directement transmis au service de la main d'oeuvre étrangère de la Direccte ; il s'agit de la direction locale traitant les questions liées au travail. L'utilisateur reçoit une réponse rapide, directement par courriel. 
 
-À la différence de la Préfecture qui délivre les documents relatifs au séjour, la Direccte délivre l'autorisation provisoire de travail (APT), s'appuyant sur la situation administrative de l'étudiant.
+À la différence de la Préfecture qui délivre les documents relatifs au séjour, la Direccte délivre l'APT en s'appuyant sur la situation administrative de l'étudiant.
+
+[Retour au sommaire](#faq-summary)
+
+<hr>
+
+### Qu’est-ce qu’une autorisation provisoire de travail pour étudiant étranger ? 
+
+En principe, l’étranger autorisé à séjourner en France dans le cadre de ses études peut travailler à titre accessoire, pour une durée ne dépassant pas 60% de la durée annuelle du travail ([article L313-7](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070158&idArticle=LEGIARTI000006335065&dateTexte=&categorieLien=cid) du Code de l’entrée et du séjour des étrangers et du droit d’asile). Cette durée correspond en général à 964 heures. Dans ce cas, une autorisation provisoire de travail (APT) n’est pas requise. 
+
+L'étudiant étranger qui, dans le cadre de son cursus dépasse cette durée doit être en possession d'une APT. 
+
+Il s'agit d'une attestation délivrée par le service de la main d’œuvre étrangère de la Direccte du département où l’étudiant a sa résidence effective et permanente. 
+Elle est valable pour un employeur bien précis, identifié par son numéro SIRET.
+
+Par exception, l’étudiant algérien doit disposer d’une APT dès qu’il souhaite travailler, peu importe le nombre d’heures projeté, dans la limite d'un mi-temps annuel pour la branche ou la profession concernée. 
+
+*Rappel : Il existe d’autres cas où un étranger a besoin d’une APT. Ces cas ne sont pas couverts par le téléservice Work In France, qui permet uniquement de délivrer ces autorisations aux étudiants.* 
 
 [Retour au sommaire](#faq-summary)
 
