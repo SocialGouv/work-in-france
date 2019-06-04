@@ -32,6 +32,10 @@ Pour plus d'information sur la conservation des données personnelles, se réfé
 
 Nous collectons également des données anonymes d'audience, indépendamment des démarches effectuées. Cela nous permet par exemple de déterminer la durée d'une démarche, la typologie de démarche, la localisation et déterminer ainsi les pages à améliorer en priorité.
 
+Pour la période de construction, *Work In France* utilise l’outil [Hotjar](https://www.hotjar.com/), notamment pour obtenir les retours écrits des utilisateurs concernant la pertinence des résultats proposés dans le cadre de leurs recherches. *Hotjar* utilise des cookies et d’autres technologies pour collecter des informations sur l’équipement et les comportements des visiteurs. Cet outil stocke ces informations dans un profil utilisateur pseudonymisé. Ni *Hotjar* ni l’éditeur n’utiliseront ces informations pour identifier des utilisateurs individuels ou pour les associer à d’autres données. Vous pouvez consulter la [politique de confidentialité de Hotjar](https://www.hotjar.com/legal/policies/privacy). Ces données ne seront jamais cédées. La durée de conservation de ces informations ne saurait dépasser deux ans.
+
+Vous pouvez librement désactiver ce service, sur l’ensemble des sites internet susceptibles de l’utiliser en suivant la procédure présentée [ici](https://www.hotjar.com/legal/compliance/opt-out)
+
 ### Évolutions
 
 Nous pouvons faire évoluer *Work In France* sans information préalable. Nous ajoutons régulièrement des fonctionnalités, améliorons l'interface et modifions des formulations sur la base de vos retours et des évolutions règlementaires.
