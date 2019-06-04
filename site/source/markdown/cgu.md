@@ -55,9 +55,9 @@ Tour Mirabeau
 39-43 Quai André Citroën
 75015 Paris
 
-### Directeur de la publication
+### Directrice de la publication
 
-Daniel Balmy - DIRECCTE d'Ile-de-France - Unité Départementale de Paris
+Hélène BRISSET - Directrice des Systèmes d'Information des ministères des Solidarités et de la Santé, du Travail et des Sports
 
 ### Hébergeur
 
