@@ -16,14 +16,14 @@ Ce formulaire est directement transmis au service de la main d'oeuvre étrangèr
 
 En principe, l’étranger autorisé à séjourner en France dans le cadre de ses études peut travailler à titre accessoire, pour une durée ne dépassant pas 60% de la durée annuelle du travail ([article L313-7](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070158&idArticle=LEGIARTI000006335065&dateTexte=&categorieLien=cid) du Code de l’entrée et du séjour des étrangers et du droit d’asile). Cette durée correspond en général à 964 heures. Dans ce cas, une autorisation provisoire de travail (APT) n’est pas requise. 
 
-L'étudiant étranger qui, dans le cadre de son cursus dépasse cette durée doit être en possession d'une APT. 
+L'étudiant étranger qui, dans le cadre de son cursus **dépasse cette durée** doit être en possession d'une APT. 
 
-Il s'agit d'une attestation délivrée par le service de la main d’œuvre étrangère de la Direccte du département où l’étudiant a sa résidence effective et permanente. 
-Elle est valable pour un employeur bien précis, identifié par son numéro SIRET.
+Il s'agit d'une attestation délivrée par le service de la main d’œuvre étrangère de la Direccte du département où l’étudiant a sa **résidence effective et permanente**. 
+**Elle est valable pour un employeur bien précis**, identifié par son numéro SIRET.
 
-Par exception, l’étudiant algérien doit disposer d’une APT dès qu’il souhaite travailler, peu importe le nombre d’heures projeté, dans la limite d'un mi-temps annuel pour la branche ou la profession concernée. 
+Par exception, l’étudiant algérien doit disposer d’une APT **dès qu’il souhaite travailler**, peu importe le nombre d’heures projeté, dans la limite d'un mi-temps annuel pour la branche ou la profession concernée. 
 
-*Rappel : Il existe d’autres cas où un étranger a besoin d’une APT. Ces cas ne sont pas couverts par le téléservice Work In France, qui permet uniquement de délivrer ces autorisations aux étudiants.* 
+*Rappel : Il existe d’autres cas où un étranger a besoin d’une APT. Ces cas ne sont pas couverts par **le téléservice Work In France, qui permet uniquement de délivrer ces autorisations aux étudiants**.* 
 
 [Retour au sommaire](#faq-summary)
 
