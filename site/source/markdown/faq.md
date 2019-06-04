@@ -34,31 +34,19 @@ Par exception, l’étudiant algérien doit disposer d’une APT **dès qu’il 
 Work In France permet la délivrance ou le renouvellement d'autorisations provisoires de travail en faveur de :
 
 - l'étudiant étranger en contrat d'alternance (contrat d'apprentissage ou contrat de professionnalisation).
-*Pour rappel, l'étudiant étranger ne peut conclure un tel contrat qu'à l'issue d'une première année de séjour. ([Article R5221-7](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=7BE158D4CBEA6D44F80AB6797D5270FD.tplgfr22s_2?idArticle=LEGIARTI000038033063&cidTexte=LEGITEXT000006072050&categorieLien=id&dateTexte=) du code du travail)*
-- l'étudiant étranger en formation doctorale, le stagiaire expert-comptable, 
-- l'étudiant algérien soumis à l'accord franco-algérien du 27 décembre 1968
+*Pour rappel, l'étudiant étranger ne peut conclure un tel contrat qu'à l'issue d'une première année de séjour. ([Article R5221-7](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=7BE158D4CBEA6D44F80AB6797D5270FD.tplgfr22s_2?idArticle=LEGIARTI000038033063&cidTexte=LEGITEXT000006072050&categorieLien=id&dateTexte=) du code du travail)*,
+- l'étudiant étranger en formation doctorale (notamment dans le cadre d’une [Convention de formation par la recherche (CIFRE)](http://www.enseignementsup-recherche.gouv.fr/cid67039/www.enseignementsup-recherche.gouv.fr/cid67039/cifre-la-convention-industrielle-de-formation-par-la-recherche.html) ou d’un contrat d’[Attaché temporaire de l'enseignement et de la recherche (ATER)](http://www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/devenir-attache-temporaire-d-enseignement-et-de-recherche-a.t.e.r.html)),
+- le stagiaire expert-comptable,
+- l’interne en médecine (hors AP-HP),
+- l'étudiant algérien soumis à l'accord franco-algérien du 27 décembre 1968.
 
 **Ne sont pas concernés :**
 
-- Les demandes de convention de stage
-- Les étudiants en changement de statut
-- Les étudiants sans titre de séjour
+- Les demandes de convention de stage, sauf si le stage constitue l’une des conditions d’obtention d’un diplôme,
+- Les étudiants en changement de statut : cette démarche est à initier en Préfecture,
+- Les étudiants sans titre de séjour : il n’ont pas le droit de travailler (article [L8251-1](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=2D9587ED645FC0974A27D4C03A386AFF.tplgfr31s_2?idArticle=LEGIARTI000024197709&cidTexte=LEGITEXT000006072050&dateTexte=20190425) du Code du travail)
 
-Pour rappel : lorsque l'étudiant étranger concerné est non ressortissant algérien, l'obtention d'une autorisation provisoire de travail n'est pas nécessaire pour conclure un contrat de travail traditionnel de droit privé à titre accessoire (dans la limite d'une durée annuelle de travail égale à 964 heures). L'employeur doit en revanche accomplir la formalité de déclaration nominative préalable à l'embauche auprès de la préfecture du lieu de résidence de l'étudiant au moins deux jours ouvrables avant la date d'effet de l'embauche. _([Articles R5221-26 à 28](https://www.legifrance.gouv.fr/affichCode.do?idSectionTA=LEGISCTA000018525738&cidTexte=LEGITEXT000006072050&dateTexte=20181031) du code du travail)_
-
-**Cas particuliers**
-
-Voici la liste des cas particuliers de contrats pour lesquels vous aurez besoin d'une autorisation provisoire de travail :
-
-- [Convention de formation par la recherche (CIFRE)](http://www.enseignementsup-recherche.gouv.fr/cid67039/www.enseignementsup-recherche.gouv.fr/cid67039/cifre-la-convention-industrielle-de-formation-par-la-recherche.html) : Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat CIFRE.
-
-- [Attaché temporaire de l'enseignement et de la recherche (ATER)](http://www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/www.enseignementsup-recherche.gouv.fr/cid23097/devenir-attache-temporaire-d-enseignement-et-de-recherche-a.t.e.r.html) : Pour votre demande d'autorisation de travail vous devrez fournir une copie du contrat d'ATER délivré par l'établissement mentionnant la date de prise de fonction et l'arrêté ou attestation de nomination ou procès verbal d'installation.
-
-- Internes (hors AP/HP). Pour votre demande d'autorisation de travail vous devrez fournir :
-    - Attestation de recrutement avec durée et salaire
-    - Attestation du chef de service
-    - Certificat de scolarité précisant inscription en DFMS ou DFMSA
-    - Copie passeport avec nom et prénom, ou titre de séjour étudiant et diplôme de médecin
+Pour rappel : L'employeur doit, **dans tous les cas, accomplir la formalité de déclaration nominative préalable à l'embauche** auprès de la Préfecture du lieu de résidence de l'étudiant au moins deux jours ouvrables avant la date d'effet de l'embauche. ([Articles R5221-26 à 28](https://www.legifrance.gouv.fr/affichCode.do?idSectionTA=LEGISCTA000018525738&cidTexte=LEGITEXT000006072050&dateTexte=20181031) du Code du travail). Cette démarche est obligatoire même lorsqu’une APT n’est pas requise.
 
 [Retour au sommaire](#faq-summary)
 
