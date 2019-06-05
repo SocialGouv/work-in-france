@@ -3,7 +3,11 @@ import styled from "styled-components";
 import { Card } from "rebass";
 
 const ACard = styled(Card)`
-  min-height: 250px;
+  min-height: 290px;
+`;
+
+const BCard = styled(Card)`
+  min-height: 200px;
 `;
 
 const List = styled.ul`
@@ -12,4 +16,4 @@ const List = styled.ul`
   padding: 0;
 `;
 
-export { ACard, List };
+export { ACard, BCard, List };

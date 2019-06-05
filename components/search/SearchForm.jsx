@@ -61,7 +61,7 @@ class SearchForm extends Component<Props, State> {
                   isSearchable
                   name="departement"
                   onChange={value => this.setcurrentDepartement(value, setFieldValue)}
-                  options={orderDepartement(DEPARTEMENTS)}
+                  options={orderDepartement(DEPARTEMENTS, true)}
                   placeholder="Département sur le titre de séjour"
                   value={values.currentDepartement}
                 />

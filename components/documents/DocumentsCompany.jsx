@@ -1,8 +1,11 @@
 import React from "react";
+import Router from "next/router";
 import { Flex, Box, Button, Link, Heading, Text, Image } from "rebass";
-import { ACard, List } from "./Style";
+import { ACard, BCard, List } from "./Style";
+import DocumentSelect from "./DocumentSelect";
 
 const DocumentsCompany = () => {
+  const qualifyLink = Router.router && Router.router.query.link ? Router.router.query.link : null;
   return (
     <Flex flexWrap="wrap" justifyContent="center">
       <Heading
@@ -139,24 +142,24 @@ const DocumentsCompany = () => {
         vous devez ajouter aux documents précédents :
       </Text>
       <Box p={2} width={[1, 1 / 2, 1 / 4]}>
-        <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
+        <BCard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
           <Flex justifyContent="center">
             <Image height="50px" mb={3} src="/static/icon-certificate.png" width="50px" />
           </Flex>
           <Heading fontSize={2} mb={3} textAlign="center">
             L’AUTORISATION DE TRAVAIL PRÉCÉDENTE
           </Heading>
-        </ACard>
+        </BCard>
       </Box>
       <Box p={2} width={[1, 1 / 2, 1 / 4]}>
-        <ACard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
+        <BCard border="2px solid" borderColor="blueBg" borderRadius={12} color="text" p={3}>
           <Flex justifyContent="center">
             <Image height="50px" mb={3} src="/static/icon-pay-slip.png" width="50px" />
           </Flex>
           <Heading fontSize={2} fontWeight="600" mb={3} textAlign="center">
             LES DERNIERS BULLETINS DE PAIE
           </Heading>
-        </ACard>
+        </BCard>
       </Box>
       <Text color="text" fontSize={1} lineHeight={1.4} p={3} textAlign="center" width={[1, 9 / 10]}>
         Besoin d’une checklist ?
@@ -182,14 +185,22 @@ const DocumentsCompany = () => {
         {` En utilisant le service, l'usager s'engage sur la véracité des informations transmises lors du
         dépôt de son dossier.`}
       </Text>
-      <Link
-        href="https://www.demarches-simplifiees.fr/commencer/ud076-apt-etudiants-employeur-v0"
-        pt={4}
-      >
-        <Button bg="blueBg" px={4} py={3}>
-          Je finalise ma demande sur Démarches Simplifiées
-        </Button>
-      </Link>
+      <Box width={1 / 2}>
+        <Flex flexWrap="wrap">
+          <Box width={1}>
+            <DocumentSelect isStudent />
+          </Box>
+          <Link
+            href={`https://www.demarches-simplifiees.fr/commencer/${qualifyLink}`}
+            pt={2}
+            width={1}
+          >
+            <Button bg="blueBg" px={4} py={3} width={1}>
+              Je finalise ma demande sur Démarches Simplifiées
+            </Button>
+          </Link>
+        </Flex>
+      </Box>
     </Flex>
   );
 };
