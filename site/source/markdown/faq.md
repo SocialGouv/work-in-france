@@ -231,11 +231,13 @@ Vous ne recevrez pas de courrier papier. Une fois votre dossier complet et instr
 
 Oui. 
 
-En utilisant WorkInFrance, **votre démarche en ligne est entièrement gratuite**. Vous faites l'économie des frais et délais postaux pour le dépôt de la demande mais aussi pour la réception de la réponse de l'administration : elle vous sera notifiée par courriel !
+En utilisant WorkInFrance, **votre démarche en ligne est entièrement gratuite**. Vous économisez les frais et délais postaux pour le dépôt de la demande, et recevez plus vite la réponse de l'administration : elle vous est directement notifiée par e-mail !
 
-Il existe une taxe employeur collectée par l'Office français de l'immigration et de l'intégration (OFII). Cette taxe n'est exigible à l'employeur que lorsqu'un étudiant demande un changement de statut (passage d'étudiant à salarié par exemple).
+Pour rappel : **l’employeur ne doit régler aucune taxe** spécifique auprès de l'Office français de l'immigration et de l'intégration (OFII) en cas de demande d’autorisation provisoire de travail (APT) pour étudiant, car l’étranger conserve son statut étudiant.
 
-Or l'étudiant faisant l'objet d'une demande d'autorisation provisoire de travail via WorkInFrance conserve son statut étudiant. Par conséquent son employeur n'a pas de taxe à payer à l'OFII.
+
+*A contrario*, cette taxe sera demandée à l'employeur de l'étudiant étranger qui, lorsqu'il change le motif de son séjour change de statut et se voit délivrer un nouveau type de titre de séjour. (dans le cadre du passage du statut étudiant à celui de salarié par exemple).
+
 
 [Retour au sommaire](#faq-summary)
 
