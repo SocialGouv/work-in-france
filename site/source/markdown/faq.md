@@ -202,15 +202,20 @@ Seule la préfecture a compétence à se prononcer sur les questions relatives a
 
 ### Mon contrat de travail a évolué : que dois-je faire ?
 
-*Pour rappel, **une autorisation provisoire de travail (APT) est valable pour un employeur bien précis**, identifié par son numéro de siret. Tout ce qui suit n'est donc valable que pour un contrat de travail qui évolue chez un même employeur. Un contrat proposé par un nouvel employeur devra d'office faire l'objet d'une nouvelle demande d'APT.*
+Pour rappel :  **une autorisation provisoire de travail (APT) est valable pour un employeur bien précis**, identifié par son numéro de siret. **Pour tout nouveau contrat proposé par un nouvel employeur il est donc nécessaire de déposer une nouvelle demande d'APT**. 
 
-Comme il est précisé dans l'autorisation provisoire de travail délivrée via Workinfrance : 
+Les modifications de contrat **avec le même employeur** qui exigent une nouvelle demande d’APT sont :
+- le type de contrat, 
+- l'emploi occupé,
+- la date de fin de contrat (en cas de prolongement), 
+- le volume horaire (en cas d'augmentation),
+- le salaire (en cas de baisse).
 
-***"Toute modification des conditions d'emploi du salarié devra faire l'objet d'une nouvelle demande d'autorisation provisoire de travail."***
+L'APT délivrée via Work In France précise en effet que :
+***« Toute modification des conditions d'emploi du salarié devra faire l'objet d'une nouvelle demande d'autorisation provisoire de travail. »***
 
-Cela va concerner : **le type de contrat, l'emploi occupé, la date de fin de contrat (en cas de prolongement), le volume horaire (en cas d'augmentation) et le salaire (en cas de baisse)**. 
+Le changement du lieu effectif d'embauche peut en revanche simplement être signalé par l'envoi d'un email via la messagerie interne de [demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/) liée à votre dossier. Ce signalement y sera automatiquement ajouté.
 
-Le changement du lieu effectif d'embauche peut en revanche simplement être signalé par l'envoi d'un email via la messagerie interne de démarches simplifiées liée à votre dossier. Ce signalement y sera automatiquement ajouté. 
 Vous pouvez sigaler de la même manière l'annulation d'un contrat pour lequel une APT vous a été délivrée. 
 
 [Retour au sommaire](#faq-summary)
