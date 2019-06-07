@@ -243,9 +243,9 @@ Or l'étudiant faisant l'objet d'une demande d'autorisation provisoire de travai
 
 ### Comment vérifier la validité d'une autorisation provisoire de travail délivrée avec Work In France ?
 
-Vous pouvez à tout moment vérifier la validité d'une autorisation provisoire de travail en vous rendant sur [cette page](https://workinfrance.beta.gouv.fr/validity_check.html). Il vous suffit de saisir le numéro de l'autorisation provisoire de travail et la date de naissance de l'étudiant pour en avoir instantanément la validité.
+Vous pouvez à tout moment vérifier la validité d'une autorisation provisoire de travail (APT) en vous rendant sur [cette page](https://workinfrance.beta.gouv.fr/validity_check.html). Il vous suffit de saisir le numéro de l'APT et la date de naissance de l'étudiant pour en connaître instantanément la validité.
 
-Cette fonctionalité est disponible 1 heure après délivrance de l'autorisation provisoire de travail par le service Work In France.
+Cette fonctionalité est disponible une heure après la délivrance de l'APT par e-mail, via le téléservice Work In France.
 
 [Retour au sommaire](#faq-summary)
 
