@@ -210,7 +210,8 @@ Comme il est précisé dans l'autorisation provisoire de travail délivrée via 
 
 Cela va concerner : **le type de contrat, l'emploi occupé, la date de fin de contrat (en cas de prolongement), le volume horaire (en cas d'augmentation) et le salaire (en cas de baisse)**. 
 
-Le changement du lieu effectif d'embauche peut en revanche simplement être signalé par l'envoi d'un email via la messagerie interne de démarches simplifiées liée à votre dossier. Ce signalement y sera automatiquement ajouté.
+Le changement du lieu effectif d'embauche peut en revanche simplement être signalé par l'envoi d'un email via la messagerie interne de démarches simplifiées liée à votre dossier. Ce signalement y sera automatiquement ajouté. 
+Vous pouvez sigaler de la même manière l'annulation d'un contrat pour lequel une APT vous a été délivrée. 
 
 [Retour au sommaire](#faq-summary)
 
