@@ -215,9 +215,19 @@ const DocumentsStudent = () => {
           </Text>
           <Box width={1 / 2}>
             <Flex flexWrap="wrap">
+              <Text>
+                Vous êtes un Etudiant, vous allez être redirigé vers Démarches Simplifiées, le site
+                officiel de demandes administratives, pour finaliser votre demande. Elle sera
+                directement transmise au service de la main d'oeuvre étrangère de la Direccte du
+                département que vous avez sélectionné :
+              </Text>
               <Box width={1}>
                 <DocumentSelect isStudent />
               </Box>
+              <Text>
+                Assurez-vous d'avoir bien sélectionné le département où se situe l'adresse figurant
+                sur le document de séjour de l'étudiant."
+              </Text>
               <Link
                 href={`https://www.demarches-simplifiees.fr/commencer/${qualifyLink}`}
                 pt={2}

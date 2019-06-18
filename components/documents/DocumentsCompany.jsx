@@ -172,24 +172,39 @@ const DocumentsCompany = () => {
           Télécharger la liste en version imprimable
         </Text>
       </Link>
-      <Text color="text" fontSize={2} lineHeight={1.4} p={3} textAlign="left" width={[1, 9 / 10]}>
+      <Text
+        color="text"
+        fontSize={2}
+        lineHeight={1.4}
+        mt="4"
+        p={3}
+        textAlign="left"
+        width={[1, 9 / 10]}
+      >
         Vous allez être redirigé vers
         <b> Démarches Simplifiées,</b>
         {` le site officiel de demandes administratives, pour finaliser
         votre demande.`}
-        <br />
-        <br />
-        {`Extrait des CGU de demarches-simplifiees.fr : L'usager remplit en ligne le formulaire et
-        valide celui-ci […]. La confirmation `}
-        <b>et la transmission du formulaire par l'usager vaut signature de celui-ci.</b>
-        {` En utilisant le service, l'usager s'engage sur la véracité des informations transmises lors du
-        dépôt de son dossier.`}
+      </Text>
+      <Text color="text" fontSize={2} lineHeight={1.4} p={3} textAlign="left" width={[1, 9 / 10]}>
+        Vous êtes un Employeur, vous allez être redirigé vers Démarches Simplifiées, le site
+        officiel de demandes administratives, pour finaliser votre demande. Elle sera directement
+        transmise au service de la main d'oeuvre étrangère de la Direccte du département que vous
+        avez sélectionné :
       </Text>
       <Box width={1 / 2}>
         <Flex flexWrap="wrap">
           <Box width={1}>
-            <DocumentSelect isStudent />
+            <DocumentSelect isStudent={false} />
           </Box>
+        </Flex>
+      </Box>
+      <Text color="text" fontSize={2} lineHeight={1.4} p={3} textAlign="left" width={[1, 9 / 10]}>
+        Assurez-vous d'avoir bien sélectionné le département où se situe l'adresse figurant sur le
+        document de séjour de l'étudiant.
+      </Text>
+      <Box width={1 / 2}>
+        <Flex flexWrap="wrap">
           <Link
             href={`https://www.demarches-simplifiees.fr/commencer/${qualifyLink}`}
             pt={2}
@@ -201,6 +216,13 @@ const DocumentsCompany = () => {
           </Link>
         </Flex>
       </Box>
+      <Text color="text" fontSize={2} lineHeight={1.4} p={3} textAlign="left" width={[1, 9 / 10]}>
+        {`Extrait des CGU de demarches-simplifiees.fr : L'usager remplit en ligne le formulaire et
+      valide celui-ci […]. La confirmation `}
+        <b>et la transmission du formulaire par l'usager vaut signature de celui-ci.</b>
+        {` En utilisant le service, l'usager s'engage sur la véracité des informations transmises lors du
+      dépôt de son dossier.`}
+      </Text>
     </Flex>
   );
 };

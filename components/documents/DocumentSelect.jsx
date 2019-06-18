@@ -10,16 +10,21 @@ type Props = {
   isStudent: boolean,
 };
 
+// $FlowFixMe
+const IS_BROWSER = process.browser;
+
 const DocumentSelect = (props: Props) => {
   const { isStudent } = props;
-  const qualifyLink = Router.router && Router.router.query.link ? Router.router.query.link : null;
-  const currentDepartementArray = DEPARTEMENTS.filter(departement => {
-    return departement.company === qualifyLink || departement.student === qualifyLink;
-  });
-  const currentDepartement = currentDepartementArray.reduce(current => {
-    return current;
-  });
-
+  let currentDepartement = [];
+  if (IS_BROWSER) {
+    const qualifyLink = Router.router && Router.router.query.link ? Router.router.query.link : null;
+    const currentDepartementArray = DEPARTEMENTS.filter(departement => {
+      return departement.company === qualifyLink || departement.student === qualifyLink;
+    });
+    currentDepartement = currentDepartementArray.reduce(current => {
+      return current;
+    });
+  }
   return (
     <div>
       <Select
@@ -29,7 +34,9 @@ const DocumentSelect = (props: Props) => {
         onChange={selectedOption => {
           redirect(
             {},
-            `/student?link=${isStudent ? selectedOption.student : selectedOption.company}`,
+            isStudent
+              ? `/student?link=${selectedOption.student}`
+              : `/company?link=${selectedOption.company}`,
           );
         }}
         options={orderDepartement(DEPARTEMENTS)}
