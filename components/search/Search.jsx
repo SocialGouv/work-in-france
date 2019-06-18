@@ -18,7 +18,7 @@ const Search = () => {
     >
       <Wrapper>
         <Heading
-          color="white"
+          color="text"
           fontFamily="Evolventa"
           fontSize={[3, 5, 6]}
           lineHeight={1.4}
@@ -29,7 +29,7 @@ const Search = () => {
         </Heading>
         <Flex justifyContent="center">
           <Text
-            color="white"
+            color="text"
             fontSize={[2, 3, 4]}
             lineHeight={1.4}
             mb={[3, 4]}
