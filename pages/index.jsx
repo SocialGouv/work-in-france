@@ -13,7 +13,7 @@ const Home = () => {
       <Search />
       <Text bg="blueBg" color="white" p="4" textAlign="center">
         {`Le service s'ouvre progressivement. Vérifiez que l'adresse qui figure sur le document
-        autorisant le séjour en France soit dans un des `}
+        autorisant le séjour en France est dans un des `}
         <Link color="white" href="/faq/#dans-quels-departements-puis-je-utiliser-work-in-france">
           départements ouverts.
         </Link>
