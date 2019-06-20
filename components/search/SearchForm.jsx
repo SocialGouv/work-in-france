@@ -92,7 +92,7 @@ class SearchForm extends Component<Props, State> {
                   type="submit"
                   width={[1]}
                 >
-                  Je suis étudiant
+                  Je suis un étudiant
                 </Button>
               </Box>
               <Box alignItems="center" pb={0} pt={1} width={[1, 1 / 2, 1 / 3]}>
