@@ -6,7 +6,7 @@
   "license": "Apache",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SocialGouv/work-in-france.git"
+    "url": "git+https://github.com/kwiss/work-in-france.git"
   },
   "husky": {
     "hooks": {
