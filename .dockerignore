@@ -1,3 +1,5 @@
-site/node_modules
-site/build
-.git
+.*
+*.md
+**/.next
+**/build
+**/node_modules
