@@ -189,10 +189,7 @@ const DocumentsStudent = () => {
       <Text color="text" fontSize={1} lineHeight={1.4} p={3} textAlign="center" width={[1, 9 / 10]}>
         Besoin d’une checklist ?
       </Text>
-      <Link
-        href="http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee"
-        target="_blank"
-      >
+      <Link href="/static/pdf/checklist-etudiant.pdf" target="_blank">
         <Text color="text" fontSize={0} textAlign="center">
           Télécharger la liste en version imprimable
         </Text>
