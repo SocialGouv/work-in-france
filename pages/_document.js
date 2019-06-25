@@ -4,7 +4,7 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable react/no-danger */
 
-import React from "react";
+import React, { Fragment } from "react";
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
@@ -23,10 +23,10 @@ export default class MyDocument extends Document {
       return {
         ...initialProps,
         styles: (
-          <>
+          <Fragment>
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </>
+          </Fragment>
         ),
       };
     } finally {
@@ -76,10 +76,6 @@ export default class MyDocument extends Document {
       <html lang="fr">
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
-          <link
-            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700"
-            rel="stylesheet"
-          />
           <link href="/static/favicon.ico" rel="icon" />
           <meta
             content="Faites votre demande d'autorisation de travail en ligne avec Work In France. Work In France est un service de l'Etat pour les entreprises ou les étudiants étrangers, en contrat d'alternance, en contrat d'apprentissage, ou en contrat de professionnalisation"
