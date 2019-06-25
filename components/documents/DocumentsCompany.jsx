@@ -1,11 +1,14 @@
 import React from "react";
-import Router from "next/router";
+import queryString from "query-string";
 import { Flex, Box, Button, Link, Heading, Text, Image } from "rebass";
 import { ACard, BCard, List } from "./Style";
 import DocumentSelect from "./DocumentSelect";
 
 const DocumentsCompany = () => {
-  const qualifyLink = Router.router && Router.router.query.link ? Router.router.query.link : null;
+  let qualify = { link: null };
+  if (process.browser) {
+    qualify = queryString.parse(window.location.search);
+  }
   return (
     <Flex flexWrap="wrap" justifyContent="center">
       <Heading
@@ -206,7 +209,7 @@ const DocumentsCompany = () => {
       <Box width={1 / 2}>
         <Flex flexWrap="wrap">
           <Link
-            href={`https://www.demarches-simplifiees.fr/commencer/${qualifyLink}`}
+            href={`https://www.demarches-simplifiees.fr/commencer/${qualify.link}`}
             pt={2}
             width={1}
           >
