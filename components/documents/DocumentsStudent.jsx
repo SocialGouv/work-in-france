@@ -1,13 +1,16 @@
+// @flow
 import React, { Fragment } from "react";
-import queryString from "query-string";
+import "url-search-params-polyfill";
 import { Flex, Box, Button, Link, Heading, Text, Image } from "rebass";
 import { ACard, BCard, List } from "./Style";
 import DocumentSelect from "./DocumentSelect";
 
 const DocumentsStudent = () => {
-  let qualify = { link: null };
+  let qualify = "";
+  // $FlowFixMe
   if (process.browser) {
-    qualify = queryString.parse(window.location.search);
+    const link = new URLSearchParams(window.location.search);
+    qualify = link.get("link");
   }
   return (
     <Flex flexWrap="wrap" justifyContent="center">
@@ -214,7 +217,7 @@ const DocumentsStudent = () => {
         au service de la main d'oeuvre étrangère de la Direccte du département que vous avez
         sélectionné :
       </Text>
-      {qualify.link && (
+      {qualify && (
         <Fragment>
           <Box width={1 / 2}>
             <Flex flexWrap="wrap">
@@ -237,7 +240,7 @@ const DocumentsStudent = () => {
           <Box width={1 / 2}>
             <Flex flexWrap="wrap">
               <Link
-                href={`https://www.demarches-simplifiees.fr/commencer/${qualify.link}`}
+                href={`https://www.demarches-simplifiees.fr/commencer/${qualify}`}
                 pt={2}
                 width={1}
               >
