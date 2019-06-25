@@ -18,6 +18,16 @@ Register frontend image:
   <<: *register-stage
   variables:
     CONTEXT: .
-    # Required to put yarn_cache in tmp files
-    DOCKER_BUILD_ARGS: "--shm-size 521M"
+    DOCKER_BUILD_ARGS: >-
+      --shm-size 521M
+      --cache-from $CI_REGISTRY_IMAGE/work-in-france/builder
     IMAGE_NAME: $CI_REGISTRY_IMAGE/work-in-france
+
+Register frontend image:
+  <<: *register-stage
+  stage: "Code Quality"
+  variables:
+    CONTEXT: .
+    # Required to put yarn_cache in tmp files
+    DOCKER_BUILD_ARGS: "--shm-size 521M --target builder"
+    IMAGE_NAME: $CI_REGISTRY_IMAGE/work-in-france/builder
