@@ -32,7 +32,7 @@ Notify Fail:
   script:
     - echo "Notify Failure to GitHub deployment id '$(cat $DEPLOY_ID_FILE)'"
     - export URL="http://${FRONTEND_HOST}"
-    - sh ./.k8s/scripts/send-url.sh $(cat $DEPLOY_ID_FILE) failure
+    - sh -x ./.k8s/scripts/send-url.sh $(cat $DEPLOY_ID_FILE) failure
 
 Notify Success:
   <<: *notify_stage
@@ -43,4 +43,4 @@ Notify Success:
   script:
     - echo "Notify Success to GitHub deployment id '$(cat $DEPLOY_ID_FILE)'"
     - export URL="http://${FRONTEND_HOST}"
-    - sh ./.k8s/scripts/send-url.sh $(cat $DEPLOY_ID_FILE) success
+    - sh -x ./.k8s/scripts/send-url.sh $(cat $DEPLOY_ID_FILE) success
