@@ -18,6 +18,7 @@
 
 Quality tests:
   <<: *quality_stage
+  <<: *node_stage
   script:
     - yarn build
     - yarn lint
