@@ -214,7 +214,7 @@ const DocumentsStudent = () => {
         au service de la main d'oeuvre étrangère de la Direccte du département que vous avez
         sélectionné :
       </Text>
-      {qualifyLink && (
+      {qualify.link && (
         <Fragment>
           <Box width={1 / 2}>
             <Flex flexWrap="wrap">
