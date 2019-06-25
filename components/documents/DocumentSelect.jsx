@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import Select from "react-select";
-import queryString from "query-string";
+import "url-search-params-polyfill";
 import redirect from "../../utils/redirect";
 import { DEPARTEMENTS } from "../../constants/departements";
 import orderDepartement from "../../utils/orderDepartementsArray";
@@ -17,9 +17,11 @@ const DocumentSelect = (props: Props) => {
   const { isStudent } = props;
   let currentDepartement = [];
   if (IS_BROWSER) {
-    const qualify = queryString.parse(window.location.search);
+    let qualify = "";
+    const link = new URLSearchParams(window.location.search);
+    qualify = link.get("link");
     const currentDepartementArray = DEPARTEMENTS.filter(departement => {
-      return departement.company === qualify.link || departement.student === qualify.link;
+      return departement.company === qualify || departement.student === qualify;
     });
     currentDepartement = currentDepartementArray.reduce(current => {
       return current;
