@@ -16,6 +16,9 @@ before_deploy:
   - touch .nojekyll
   - touch out/.nojekyll
 
+env:
+  - secure: "FB/Hi2kMRySBdmNlEBg9u5sFMXvDJ8okz/A921pAn5rtBCJ2SgpNyHMwvqrXvYRGaliYUPgTrm4/2caw5xiA18e4g/OxJfBjppkHGTr3IL72a39WWf7ls0t/zfvypW0aBsQMrXryUEvaxQT7eDFIjmMXBOccO0JB4lPyEKgpUwmmU9Iyo1J2787+N6NR7J/3U/4jduH2fGLT9l5n1Sq8KtfHiEwttMEASGDlJm/OyQ8qFrpO7J3db7wJP85BKfzvWWZ867pKdGUsqM/I/BH5QerU4VohxUQyx48vN4uNkX010ZsVbFPNJnd8CcN1sppH9TdOjcL3EPUjPDPHJttLTufZqgtFw5xgaufDB3uAPc07GGe6T4wcoK5zwOwDsBaX/2eJ636N1VEYcwuebPzdlTlwBvlenrBGMQPZU2fMiEExOCwTOjM+FIZiffkJs3+p1P6DOHLZViif5L6iDm2lTR+phPUeue5Zn4/HP4eA0yoM5diughE2v7nMpel4Vilzl9PDxfWRMc8IKDh72Cq3Rt1VUS3lZqXUVyHVsshVedv+x10VJkJ5vZV79n9LvHnydR69129tyqEKP0tokXBX7Sg50ScNMoTF81/NrtBguIxEqH/uax2skYlTEjpCGtng0mQ6IUCLPqPyV9taOsBue/otJOne4gyYCJ9aIy4RcTQ="
+
 deploy:
   github-token: "$GITHUB_TOKEN"
   keep-history: true
