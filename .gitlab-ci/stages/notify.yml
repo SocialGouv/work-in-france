@@ -15,7 +15,7 @@ Notify Starting Deployment:
   <<: *notify_stage
   stage: "Registration"
   script:
-    - sh ./.k8s/scripts/get-deploy-id.sh
+    - sh -x ./.k8s/scripts/get-deploy-id.sh
     - echo "GitHub deployment id '$(cat github_deploy_id)'"
   artifacts:
     paths:
