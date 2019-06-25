@@ -20,9 +20,11 @@ curl -0 -v \
 }
 EOF
 
-cat "$CACHE_RESPONSE" \
+cat "${CACHE_RESPONSE}"
+
+cat "${CACHE_RESPONSE}" \
   | python -c "import json,sys;obj=json.load(sys.stdin);print(obj.get('id'))" \
-  > "$DEPLOY_ID_FILE"
+  > "${DEPLOY_ID_FILE}"
 
 if [[ $(cat $DEPLOY_ID_FILE) = "None" ]]; then
   exit 1;
