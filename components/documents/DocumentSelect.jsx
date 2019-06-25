@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import Select from "react-select";
-import Router from "next/router";
+import queryString from "query-string";
 import redirect from "../../utils/redirect";
 import { DEPARTEMENTS } from "../../constants/departements";
 import orderDepartement from "../../utils/orderDepartementsArray";
@@ -17,9 +17,9 @@ const DocumentSelect = (props: Props) => {
   const { isStudent } = props;
   let currentDepartement = [];
   if (IS_BROWSER) {
-    const qualifyLink = Router.router && Router.router.query.link ? Router.router.query.link : null;
+    const qualify = queryString.parse(window.location.search);
     const currentDepartementArray = DEPARTEMENTS.filter(departement => {
-      return departement.company === qualifyLink || departement.student === qualifyLink;
+      return departement.company === qualify.link || departement.student === qualify.link;
     });
     currentDepartement = currentDepartementArray.reduce(current => {
       return current;

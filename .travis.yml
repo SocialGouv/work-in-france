@@ -10,14 +10,18 @@ install: yarn
 
 script:
   - yarn lint
-
-before_deploy:
-  - yarn global add netlify-cli
   - yarn deploy
 
+before_deploy:
+  - touch .nojekyll
+  - touch out/.nojekyll
+
 deploy:
-  provider: script
-  script: netlify deploy -s $NETLIFY_SITE_ID --auth $NETLIFY_PUBLISH_KEY -p --dir ./out
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  local_dir: out
+  provider: pages
   skip_cleanup: true
+  target-branch: gh-pages
   on:
-    all_branches: true
+    branch: master

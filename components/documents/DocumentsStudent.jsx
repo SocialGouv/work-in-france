@@ -1,11 +1,14 @@
 import React, { Fragment } from "react";
-import Router from "next/router";
+import queryString from "query-string";
 import { Flex, Box, Button, Link, Heading, Text, Image } from "rebass";
 import { ACard, BCard, List } from "./Style";
 import DocumentSelect from "./DocumentSelect";
 
 const DocumentsStudent = () => {
-  const qualifyLink = Router.router && Router.router.query.link ? Router.router.query.link : null;
+  let qualify = { link: null };
+  if (process.browser) {
+    qualify = queryString.parse(window.location.search);
+  }
   return (
     <Flex flexWrap="wrap" justifyContent="center">
       <Heading
@@ -211,7 +214,7 @@ const DocumentsStudent = () => {
         au service de la main d'oeuvre étrangère de la Direccte du département que vous avez
         sélectionné :
       </Text>
-      {qualifyLink && (
+      {qualify.link && (
         <Fragment>
           <Box width={1 / 2}>
             <Flex flexWrap="wrap">
@@ -234,7 +237,7 @@ const DocumentsStudent = () => {
           <Box width={1 / 2}>
             <Flex flexWrap="wrap">
               <Link
-                href={`https://www.demarches-simplifiees.fr/commencer/${qualifyLink}`}
+                href={`https://www.demarches-simplifiees.fr/commencer/${qualify.link}`}
                 pt={2}
                 width={1}
               >
