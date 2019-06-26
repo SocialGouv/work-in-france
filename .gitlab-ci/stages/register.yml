@@ -21,6 +21,9 @@
 
 Register frontend image:
   <<: *register-stage
+  before_script:
+    - echo "$CI_JOB_TOKEN" | docker login $CI_REGISTRY -u gitlab-ci-token --password-stdin
+    - docker pull $CI_REGISTRY_IMAGE/work-in-france/builder:$CI_COMMIT_BEFORE_SHA || true
   variables:
     CONTEXT: .
     DOCKER_BUILD_ARGS: >-
