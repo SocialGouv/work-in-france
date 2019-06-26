@@ -4,6 +4,7 @@
   image: python:$PYTHON_VERSION
   variables:
     DEPLOY_ID_FILE: github_deploy_id
+    PROJECT_PATH: "SocialGouv/work-in-france"
   before_script:
     - apk add --update curl
     - source .gitlab-ci/env.sh

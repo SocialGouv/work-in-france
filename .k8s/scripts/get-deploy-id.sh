@@ -3,9 +3,10 @@ set -eu -o pipefail
 
 CACHE_RESPONSE=${CACHE_RESPONSE:="/tmp/deploy_payload.json"}
 DEPLOY_ID_FILE=${DEPLOY_ID_FILE:="DEPLOY_ID"}
+PROJECT_PATH=${PROJECT_PATH:=$CI_PROJECT_PATH}
 
 curl -0 -v \
-"https://${GITHUB_TOKEN}@api.github.com/repos/${CI_PROJECT_PATH}/deployments" \
+"https://${GITHUB_TOKEN}@api.github.com/repos/${PROJECT_PATH}/deployments" \
 -H "Content-Type:application/json" \
 -H "Accept: application/vnd.github.flash-preview+json, application/vnd.github.ant-man-preview+json" \
 -o "${CACHE_RESPONSE}" \
