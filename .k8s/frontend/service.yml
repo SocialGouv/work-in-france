@@ -2,16 +2,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
-  labels:
-    app: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
-    branch: ${BRANCH_NAME}
-    commit: ${COMMIT}
-    job: "${JOB_ID}"
-    tag: "${COMMIT_TAG}"
+  name: work-in-france-frontend
 spec:
   selector:
-    app: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
+    app: work-in-france-frontend
   ports:
-    - port: ${PORT}
+    - port: 80
       name: frontend
