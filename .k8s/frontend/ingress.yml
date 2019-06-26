@@ -2,19 +2,13 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
-  labels:
-    app: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
-    branch: ${BRANCH_NAME}
-    commit: ${COMMIT}
-    job: "${JOB_ID}"
-    tag: "${COMMIT_TAG}"
+  name: work-in-france-frontend
 spec:
   rules:
-  - host: ${FRONTEND_HOST}
+  - host: work-in-france.dev.factory.factory.social.gouv.fr
     http:
       paths:
       - path: /
         backend:
-          serviceName: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
-          servicePort: ${PORT}
+          serviceName: work-in-france-frontend
+          servicePort: 80
