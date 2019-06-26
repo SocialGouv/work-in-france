@@ -13,7 +13,7 @@ curl -0 -v \
 -d @- << EOF
 {
   "auto_merge": false,
-  "description": "Deplying ${CI_PROJECT_PATH}@${CI_COMMIT_SHORT_SHA}",
+  "description": "Deplying ${PROJECT_PATH}@${CI_COMMIT_SHORT_SHA}",
   "environment": "${ENVIRONMENT}",
   "ref": "${CI_COMMIT_REF_NAME}",
   "required_contexts": [],
