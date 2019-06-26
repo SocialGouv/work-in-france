@@ -1,9 +1,5 @@
 #
 
-.base-docker-image-stage:
-  image: docker:$DOCKER_VERSION
-  services:
-    - docker:$DOCKER_VERSION-dind
 
 #
 

@@ -1,5 +1,10 @@
 #
 
+.base-docker-image-stage:
+  image: docker:$DOCKER_VERSION
+  services:
+    - docker:$DOCKER_VERSION-dind
+
 .register-stage: &register-stage
   extends: .base-docker-image-stage
   stage: "Registration"
