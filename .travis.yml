@@ -27,4 +27,4 @@ deploy:
   skip_cleanup: true
   target-branch: gh-pages
   on:
-    branch: master
+    branch: v1.x
