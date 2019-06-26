@@ -45,7 +45,7 @@
 
 .deploy-frontend: &deploy_frontend
   <<: *deploy_stage
-  extends: .deploy-frontend-to-k8s
+  extends: .k8s-fontend-depoyment
   variables:
     <<: *deploy_stage_variables
     PORT: 80
@@ -56,10 +56,8 @@ Deploy App (dev):
   <<: *deploy_frontend
   <<: *dev_stage
   <<: *docker_kube_dev_stage
-  extends: .k8s-fontend-depoyment
 
 Deploy App (incubateur):
   <<: *deploy_frontend
   <<: *incubateur_stage
   <<: *docker_kube_dev_stage
-  extends: .k8s-fontend-depoyment
