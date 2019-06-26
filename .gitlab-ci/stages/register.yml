@@ -28,7 +28,7 @@ Register frontend image:
     CONTEXT: .
     DOCKER_BUILD_ARGS: >-
       --shm-size 521M
-      --cache-from $CI_REGISTRY_IMAGE/work-in-france/builder
+      --cache-from $CI_REGISTRY_IMAGE/work-in-france/builder:$CI_COMMIT_BEFORE_SHA
     IMAGE_NAME: $CI_REGISTRY_IMAGE/work-in-france/frontend
 
 Register builder image:
