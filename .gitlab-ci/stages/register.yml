@@ -23,7 +23,7 @@ Register frontend image:
       --cache-from $CI_REGISTRY_IMAGE/work-in-france/builder
     IMAGE_NAME: $CI_REGISTRY_IMAGE/work-in-france
 
-Register frontend image:
+Register builder image:
   <<: *register-stage
   stage: "Code Quality"
   variables:
