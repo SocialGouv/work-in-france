@@ -23,7 +23,7 @@ if [[ -n "${COMMIT_TAG}" ]]; then
   export BRANCH_HASH=$( printf "${COMMIT_TAG}" | sed "s/\./-/g" );
 fi
 
-export FRONTEND_HOST="${BRANCH_HASH}.work-in-france.${ENVIRONMENT}.factory.social.gouv.fr";
+export FRONTEND_HOST="${BRANCH_HASH}.work-in-france.${ENVIRONMENT}.social.gouv.fr";
 
 #
 
