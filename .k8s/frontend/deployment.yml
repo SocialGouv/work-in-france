@@ -3,12 +3,6 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
-  labels:
-    app: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
-    branch: ${BRANCH_NAME}
-    commit: ${COMMIT}
-    job: "${JOB_ID}"
-    tag: "${COMMIT_TAG}"
 spec:
   replicas: 1
   selector:
@@ -18,6 +12,10 @@ spec:
     metadata:
       labels:
         app: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
+        branch: ${BRANCH_NAME}
+        commit: ${COMMIT}
+        job: "${JOB_ID}"
+        tag: "${COMMIT_TAG}"
     spec:
       containers:
         - image: ${REGISTRY}/frontend:${IMAGE_TAG}
