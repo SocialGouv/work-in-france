@@ -209,7 +209,7 @@ const DocumentsStudent = () => {
       votre demande.`}
       </Text>
       <Text color="text" fontSize={2} lineHeight={1.4} p={3} textAlign="left" width={[1, 9 / 10]}>
-        Vous êtes un Etudiant, vous allez être redirigé vers Démarches Simplifiées, le site officiel
+        Vous êtes un étudiant, vous allez être redirigé vers Démarches Simplifiées, le site officiel
         de demandes administratives, pour finaliser votre demande. Elle sera directement transmise
         au service de la main d'oeuvre étrangère de la Direccte du département que vous avez
         sélectionné :
