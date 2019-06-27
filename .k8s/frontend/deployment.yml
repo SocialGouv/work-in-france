@@ -2,9 +2,9 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
+  name: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
   labels:
-    app: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
+    app: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
     branch: ${BRANCH_NAME}
     commit: ${COMMIT}
     job: "${JOB_ID}"
@@ -13,11 +13,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
+      app: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
   template:
     metadata:
       labels:
-        app: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
+        app: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
     spec:
       containers:
         - image: ${REGISTRY}/frontend:${IMAGE_TAG}

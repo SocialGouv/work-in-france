@@ -2,9 +2,9 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
+  name: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
   labels:
-    app: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
+    app: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
     branch: ${BRANCH_NAME}
     commit: ${COMMIT}
     job: "${JOB_ID}"
@@ -16,5 +16,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: ${K8S_NAMESPACE}-frontend${HASH_BRANCH_NAME}
+          serviceName: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
           servicePort: ${PORT}
