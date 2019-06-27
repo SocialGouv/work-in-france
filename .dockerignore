@@ -1,3 +1,6 @@
-site/node_modules
-site/build
-.git
+.*
+!.babelrc
+*.md
+**/.next
+**/build
+**/node_modules
