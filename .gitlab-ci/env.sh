@@ -24,6 +24,7 @@ if [[ -n "${COMMIT_TAG}" ]]; then
 fi
 
 if [[ -n "${PRODUCTION}" ]]; then
+  export BRANCH_HASH=prod;
   export FRONTEND_HOST="work-in-france.${ENVIRONMENT}.social.gouv.fr";
 else
   export FRONTEND_HOST="${BRANCH_HASH}.work-in-france.${ENVIRONMENT}.social.gouv.fr";
