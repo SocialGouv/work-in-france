@@ -34,8 +34,20 @@ curl -0 -sS \
   "environment": "${ENVIRONMENT}",
   "ref": "${REF}",
   "required_contexts": [],
-  "transient_environment": ${TRANSIENT_ENVIRONMENT}
-  "production_environment": ${PRODUCTION_ENVIRONMENT}
+  "transient_environment": "${TRANSIENT_ENVIRONMENT}"
+  "production_environment": "${PRODUCTION_ENVIRONMENT}"
+}
+EOF
+
+cat << EOF
+{
+  "auto_merge": false,
+  "description": "Deplying ${PROJECT_PATH}@${CI_COMMIT_SHORT_SHA} in ${ENVIRONMENT}",
+  "environment": "${ENVIRONMENT}",
+  "ref": "${REF}",
+  "required_contexts": [],
+  "transient_environment": "${TRANSIENT_ENVIRONMENT}"
+  "production_environment": "${PRODUCTION_ENVIRONMENT}"
 }
 EOF
 
