@@ -17,7 +17,7 @@ if [[ "${REF}" = "master" ]]; then
   TRANSIENT_ENVIRONMENT=false
 fi
 
-if [[ -n "${PRODUCTION}" ]]; then
+if [[ -n "${PRODUCTION+x}" ]]; then
   ENVIRONMENT=production
   PRODUCTION_ENVIRONMENT=true
 fi

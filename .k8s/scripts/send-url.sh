@@ -8,7 +8,7 @@ STATE="${2}"
 
 PROJECT_PATH=${PROJECT_PATH:=$CI_PROJECT_PATH}
 
-if [[ -n "${PRODUCTION}" ]]; then
+if [[ -n "${PRODUCTION+x}" ]]; then
   ENVIRONMENT=production
 fi
 
