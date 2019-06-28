@@ -20,62 +20,72 @@ Ce dépôt de code contient le site web statique de [Work in France](https://w
 
 1 - créer les formulaires sur DS
 
-2 - autoriser le département sur le front dans [./site/source/qualify/base/qualify-1.html](./site/source/qualify/base/qualify-1.html)
+2 - autoriser le département sur le front dans [./departements.js](./departements.js)
 
-3 - définir les URLS des formulaires [./site/source/static/js/qualify.js](./site/source/static/js/qualify.js)
+ajouter la clef valeur dans le département voulu
+```
+isAllowed: true,
+```
 
-4 - mettre à jour la page d'accueil avec le(s) nouveau(x) départements : [./site/source/index.html](./site/source/index.html)
+3 - définir les URLS des formulaires [./departements.js](./departements.js) 
 
-5 - mettre à jour la FAQ avec le(s) nouveau(x) départements : [./site/source/markdown/faq.md](./site/source/markdown/faq.md)
+ajouter les clefs valeurs pour les deux types d'url
+
+```
+{
+  company: "ud063-apt-etudiants-employeur",
+  student: "ud063-apt-etudiants",
+}
+```
+
+la valeur est l'id trouvé dans l'url du formulaire DS par exemple
+```
+ud010-apt-etudiants-employeur
+```
+
+4 - mettre à jour la FAQ avec le(s) nouveau(x) départements : [./contents/faq.md](./contents/faq.md)
 
 #### Mettre à jour les coordonnées MOE
 
-Editer [./site/source/qualify/fail.html](./site/source/qualify/fail.html)
+Editer [./constants/contact.js](./constants/contact.js)
+et ajouter les departements dans le tableau des "departements" de la région corresponsante.
+
+```
+departments: ["14", "27", "50", "61", "76"],
+```
+
+si on veut ajouter un departement il suffit d'ajouter un département en entier
+en reprennant la config d'un autre par exemple : 
+
+```
+  {
+    slug: "normandie",
+    type: "Direccte",
+    name: "Normandie",
+    departments: ["14", "27", "50", "61", "76"],
+    address: ["3 place Saint Clair", "BP 70034"],
+    post_code: "14202",
+    city: "HEROUVILLE SAINT CLAIR CEDEX",
+    phone: "02.31.47.73.00",
+    fax: "02.31.47.73.01",
+    url: "http://normandie.direccte.gouv.fr/Concurrence-et-consommation",
+    email: null,
+  },
+```
+
+il sera matché automatiquement avec la liste des département ouverts
 
 ### Installation de l'environnement de développement
 
 Un styleguide est disponible ici : https://workinfrance.beta.gouv.fr/cookbook.html
 
-Nous utilisons [`clay`](http://lucuma.github.io/Clay/) pour générer une version statique du site.
-
-#### avec Docker
-
-Une image docker permet de builder le site sans installer les dépendances.
-
-```sh
-# Builder l'image docker
-docker build . -t work-in-france
-
-# Lancer le site en mode dev
-docker run --rm -v $PWD/site:/app/site -ti -p 8080:8080 --entrypoint pipenv work-in-france run clay run
-
-# récupérer un build du site. l'output se fera dans ./out
-docker cp work-in-france-build:/app/site/build /app/site/
-```
-
-Voir la config de [circleci](.circleci/config.yml) qui déclenche un déploiement du site statique sur la branche `gh-pages`
-
-#### sans Docker
-
-Vous devez créer un environnement Python 2.7 isolé avec [`pipenv (>=11.8.3)`](https://github.com/pypa/pipenv) et y installer les dépendances Python du projet :
-
-```bash
-$ pipenv --python 2.7
-$ pipenv install --dev
-```
-
-Installez ensuite les dépendances `npm` (`npm 5+` est utilisé) :
-
-```bash
-$ cd site
-$ npm install
-```
+Nous utilisons [`NextJS`](https://nextjs.org/) pour générer une version statique du site.
 
 ##### Lancer le serveur de développement
 
 ```bash
-$ cd site
-$ pipenv run clay run
+$ yarn
+$ yarn dev
 ```
 
 ##### Lancer le scrutateur CSS pour générer le fichier `bundle.css`
