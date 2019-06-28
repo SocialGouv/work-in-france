@@ -31,6 +31,7 @@ jobs:
   include:
     - stage: Build
       <<: *node_stage
+      if: NOT env(RELEASE) AND NOT env(PRODUCTION)
       script:
         - yarn build
         - yarn lint
@@ -58,7 +59,7 @@ jobs:
     - stage: Go Prod
       <<: *node_stage
       if: env(PRODUCTION)
-      name: "A tag is going to production 🎉 :shipit:"
+      name: A tag is going to production 🏭
       branches:
         only:
         - /v.*/
@@ -68,6 +69,6 @@ jobs:
         >-
           curl -X POST
           -F token=${GITLAB_TOKEN}
-          -F ref=${TRAVIS_TAG}
+          -F ref=${TRAVIS_BRANCH}
           -F "variables[PRODUCTION]=true"
           https://gitlab.factory.social.gouv.fr/api/v4/projects/50/trigger/pipeline
