@@ -57,14 +57,12 @@ jobs:
         - GH_TOKEN=${GITHUB_TOKEN} yarn lerna version ${LERNA_ARGS:=--yes}
 
     - stage: Go Prod
-      <<: *node_stage
       if: env(PRODUCTION)
       name: A tag is going to production 🏭
       branches:
         only:
         - /v.*/
       env: *gitlab_keys
-      install: skip
       script:
         >-
           curl -X POST
