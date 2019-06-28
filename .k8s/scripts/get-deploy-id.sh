@@ -4,6 +4,24 @@ set -eu -o pipefail
 CACHE_RESPONSE=${CACHE_RESPONSE:="/tmp/deploy_payload.json"}
 DEPLOY_ID_FILE=${DEPLOY_ID_FILE:="DEPLOY_ID"}
 PROJECT_PATH=${PROJECT_PATH:=$CI_PROJECT_PATH}
+REF=${REF:=$CI_COMMIT_REF_NAME}
+COMMIT_TAG=${COMMIT_TAG:=$CI_COMMIT_TAG}
+TRANSIENT_ENVIRONMENT=${TRANSIENT_ENVIRONMENT:=true}
+PRODUCTION_ENVIRONMENT=${PRODUCTION_ENVIRONMENT:=false}
+
+if [[ -n "${COMMIT_TAG}" ]]; then
+  REF="${COMMIT_TAG}"
+  TRANSIENT_ENVIRONMENT=false
+fi
+
+if [[ "${REF}" = "master" ]]; then
+  TRANSIENT_ENVIRONMENT=false
+fi
+
+if [[ -n "${PRODUCTION}" ]]; then
+  ENVIRONMENT=production
+  PRODUCTION_ENVIRONMENT=true
+fi
 
 curl -0 -v \
 "https://${GITHUB_TOKEN}@api.github.com/repos/${PROJECT_PATH}/deployments" \
@@ -13,15 +31,14 @@ curl -0 -v \
 -d @- << EOF
 {
   "auto_merge": false,
-  "description": "Deplying ${PROJECT_PATH}@${CI_COMMIT_SHORT_SHA}",
+  "description": "Deplying ${PROJECT_PATH}@${CI_COMMIT_SHORT_SHA} in ${ENVIRONMENT}",
   "environment": "${ENVIRONMENT}",
-  "ref": "${CI_COMMIT_REF_NAME}",
+  "ref": "${REF}",
   "required_contexts": [],
-  "transient_environment": true
+  "transient_environment": ${TRANSIENT_ENVIRONMENT}
+  "production_environment": ${PRODUCTION_ENVIRONMENT}
 }
 EOF
-
-cat "${CACHE_RESPONSE}"
 
 cat "${CACHE_RESPONSE}" \
   | python -c "import json,sys;obj=json.load(sys.stdin);print(obj.get('id'))" \

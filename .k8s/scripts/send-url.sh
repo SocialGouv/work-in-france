@@ -8,6 +8,10 @@ STATE="${2}"
 
 PROJECT_PATH=${PROJECT_PATH:=$CI_PROJECT_PATH}
 
+if [[ -n "${PRODUCTION}" ]]; then
+  ENVIRONMENT=production
+fi
+
 if [[ -z ${DEPLOY_ID} ]] || ! [[ ${STATE} = "success" || ${STATE} = "failure" ]]; then
   echo -e "$0 <github_deployment_id> <success|failure>"
   exit 128
