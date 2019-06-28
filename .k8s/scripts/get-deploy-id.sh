@@ -34,8 +34,8 @@ curl -0 -sS \
   "environment": "${ENVIRONMENT}",
   "ref": "${REF}",
   "required_contexts": [],
-  "transient_environment": "${TRANSIENT_ENVIRONMENT}"
-  "production_environment": "${PRODUCTION_ENVIRONMENT}"
+  "transient_environment": ${TRANSIENT_ENVIRONMENT},
+  "production_environment": ${PRODUCTION_ENVIRONMENT}
 }
 EOF
 
@@ -46,8 +46,8 @@ cat << EOF
   "environment": "${ENVIRONMENT}",
   "ref": "${REF}",
   "required_contexts": [],
-  "transient_environment": "${TRANSIENT_ENVIRONMENT}"
-  "production_environment": "${PRODUCTION_ENVIRONMENT}"
+  "transient_environment": ${TRANSIENT_ENVIRONMENT},
+  "production_environment": ${PRODUCTION_ENVIRONMENT}
 }
 EOF
 
