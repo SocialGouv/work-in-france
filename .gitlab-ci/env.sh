@@ -2,7 +2,7 @@
 
 #
 
-export BRANCH_NAME=${BRANCH_NAME:=$( printf "${CI_COMMIT_REF_NAME}" | LC_CTYPE=C sed -r "s/[^[:alpha:][:digit:]]/-/g" )}
+export BRANCH_NAME=${BRANCH_NAME:=$( printf "${CI_COMMIT_REF_NAME}" | LC_CTYPE=C sed -r "s/[^[:alpha:][:digit:]-_.]/-/g" )}
 export COMMIT_TAG=${COMMIT_TAG:=$CI_COMMIT_TAG}
 export COMMIT=${COMMIT:=$CI_COMMIT_SHA}
 export ENVIRONMENT=${ENVIRONMENT:="dev.factory"};

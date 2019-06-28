@@ -12,10 +12,10 @@ spec:
     metadata:
       labels:
         app: ${K8S_NAMESPACE}-frontend-${BRANCH_HASH}
-        branch: ${BRANCH_NAME}
-        commit: ${COMMIT}
-        job: "${JOB_ID}"
-        tag: "${COMMIT_TAG}"
+        git/branch: ${BRANCH_NAME}
+        git/commit: ${COMMIT}
+        git/tag: "${COMMIT_TAG}"
+        gitlab/job: "${JOB_ID}"
     spec:
       containers:
         - image: ${REGISTRY}/frontend:${IMAGE_TAG}
