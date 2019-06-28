@@ -12,7 +12,7 @@ Ce dépôt de code contient le site web statique de [Work in France](https://w
 
 #### Mettre à jour la F.A.Q.
 
-1 - Compléter [le fichier de la FAQ](https://github.com/SocialGouv/work-in-france/blob/master/site/source/markdown/faq.md) au [format markdown](https://fr.wikipedia.org/wiki/Markdown).
+1 - Compléter [le fichier de la FAQ](https://github.com/SocialGouv/work-in-france/blob/v1.x/contents/faq.md) au [format markdown](https://fr.wikipedia.org/wiki/Markdown).
 
 2 - Soumettre une pull request
 
@@ -20,14 +20,14 @@ Ce dépôt de code contient le site web statique de [Work in France](https://w
 
 1 - créer les formulaires sur DS
 
-2 - autoriser le département sur le front dans [./departements.js](./departements.js)
+2 - autoriser le département sur le front dans [./constants/departements.js](./constants/departements.js)
 
 ajouter la clef valeur dans le département voulu
 ```
 isAllowed: true,
 ```
 
-3 - définir les URLS des formulaires [./departements.js](./departements.js) 
+3 - définir les URLS des formulaires [./constants/departements.js](./constants/departements.js) 
 
 ajouter les clefs valeurs pour les deux types d'url
 
