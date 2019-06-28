@@ -22,7 +22,7 @@ if [[ -n "${PRODUCTION+x}" ]]; then
   PRODUCTION_ENVIRONMENT=true
 fi
 
-curl -0 -v \
+curl -0 -sS \
 "https://${GITHUB_TOKEN}@api.github.com/repos/${PROJECT_PATH}/deployments" \
 -H "Content-Type:application/json" \
 -H "Accept: application/vnd.github.flash-preview+json, application/vnd.github.ant-man-preview+json" \
@@ -38,6 +38,8 @@ curl -0 -v \
   "production_environment": ${PRODUCTION_ENVIRONMENT}
 }
 EOF
+
+cat "${CACHE_RESPONSE}"
 
 cat "${CACHE_RESPONSE}" \
   | python -c "import json,sys;obj=json.load(sys.stdin);print(obj.get('id'))" \
