@@ -50,7 +50,13 @@ const DEPARTEMENTS = [
   { value: "30", label: "30 - Gard" },
   { value: "31", label: "31 - Haute-garonne" },
   { value: "32", label: "32 - Gers" },
-  { value: "33", label: "33 - Gironde" },
+  { 
+    value: "33", 
+    label: "33 - Gironde",
+    isAllowed: true,
+    company: "ud033-apt-etudiants-employeur",
+    student: "ud033-apt-etudiants", 
+  },
   { value: "34", label: "34 - Hérault" },
   {
     value: "35",
