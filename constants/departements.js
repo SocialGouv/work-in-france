@@ -50,7 +50,13 @@ const DEPARTEMENTS = [
   { value: "30", label: "30 - Gard" },
   { value: "31", label: "31 - Haute-garonne" },
   { value: "32", label: "32 - Gers" },
-  { value: "33", label: "33 - Gironde" },
+  {
+    value: "33",
+    label: "33 - Gironde",
+    isAllowed: true,
+    company: "ud033-apt-etudiants-employeur",
+    student: "ud033-apt-etudiants",
+  },
   { value: "34", label: "34 - Hérault" },
   {
     value: "35",
@@ -86,7 +92,13 @@ const DEPARTEMENTS = [
   { value: "48", label: "48 - Lozère" },
   { value: "49", label: "49 - Maine-et-loire" },
   { value: "50", label: "50 - Manche" },
-  { value: "51", label: "51 - Marne" },
+  {
+    isAllowed: true,
+    value: "51",
+    label: "51 - Marne",
+    company: "ud051-apt-etudiant-employeur",
+    student: "ud051-apt-etudiant",
+  },
   {
     value: "52",
     label: "52 - Haute-marne",
