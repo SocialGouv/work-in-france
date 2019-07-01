@@ -1,30 +1,72 @@
-language: node_js
+---
 
-node_js:
-  - 10
+dist: xenial
+language: minimal
+git:
+  depth: 5
 
-cache:
-  directories:
-    - node_modules
-install: yarn
+#
 
-script:
-  - yarn lint
-  - yarn deploy
+.env:
+  github_keys: &github_keys
+    - secure: "FB/Hi2kMRySBdmNlEBg9u5sFMXvDJ8okz/A921pAn5rtBCJ2SgpNyHMwvqrXvYRGaliYUPgTrm4/2caw5xiA18e4g/OxJfBjppkHGTr3IL72a39WWf7ls0t/zfvypW0aBsQMrXryUEvaxQT7eDFIjmMXBOccO0JB4lPyEKgpUwmmU9Iyo1J2787+N6NR7J/3U/4jduH2fGLT9l5n1Sq8KtfHiEwttMEASGDlJm/OyQ8qFrpO7J3db7wJP85BKfzvWWZ867pKdGUsqM/I/BH5QerU4VohxUQyx48vN4uNkX010ZsVbFPNJnd8CcN1sppH9TdOjcL3EPUjPDPHJttLTufZqgtFw5xgaufDB3uAPc07GGe6T4wcoK5zwOwDsBaX/2eJ636N1VEYcwuebPzdlTlwBvlenrBGMQPZU2fMiEExOCwTOjM+FIZiffkJs3+p1P6DOHLZViif5L6iDm2lTR+phPUeue5Zn4/HP4eA0yoM5diughE2v7nMpel4Vilzl9PDxfWRMc8IKDh72Cq3Rt1VUS3lZqXUVyHVsshVedv+x10VJkJ5vZV79n9LvHnydR69129tyqEKP0tokXBX7Sg50ScNMoTF81/NrtBguIxEqH/uax2skYlTEjpCGtng0mQ6IUCLPqPyV9taOsBue/otJOne4gyYCJ9aIy4RcTQ="
+  gitlab_keys: &gitlab_keys
+    - secure: "Z6IuIwZCkK+nzIvfWRQuZRo+hy1NgF8jKwaaWIBpgmaf7tmFgxkRAruFYKy/TuJChRyZLN6BtvO9v9pzgW39q+O03ao1BrvzmYfUHn+Ugg+OqCI8YwYPydZdTW43MJEdQVQAHrtRBesZHSlEutC97H0NbjqLcheFG5Sw12F+e114PU8cVze5yNw3cEOhkfpmoh7I7QhW9wzzbhJECNashXRvwXAzuTdcjuYCRrJMhuaFkrZfSQthF0JzyX3iL5CYbVz0Q+F7kRSQJ0jAckwY3xoNhaaVIla4Uo2tsTEZnQj9ebDgtJ/suxy7KnnhvYIT2O+xW1nXW/3/sT4m1hfZ5D1evfxz6lrHnyn0wPaqPV2NzaPEylgtcj18nRUQUTYpTY1U44xrHPtVzUA/F/02RZ9Rdjt0O/1+YFuqbbojCftUMiPhhULKNwKj+wxfNXYgeNeMBYGww/gDxwuwn/tTrUQ0EGQRZnOuY9uanHK376u1iU+WKTHMT9p4uQZF7yBWWNqMrTnhfbpKHkwc3bzKzo/43NifjLlz4+aWE8LQySlWJTcia2uo2KZnnjo32y6pXKzODEi8iR1Dj4D4wpTugU6EQQfKsSedYeZAftZaJTgJVvGB7KF2JHofgyudJG22xb63C+cQisTC5AtFvlI2QmN1psFt2/EXYvkPcoClH2M="
 
-before_deploy:
-  - touch .nojekyll
-  - touch out/.nojekyll
+#
 
-env:
-  - secure: "FB/Hi2kMRySBdmNlEBg9u5sFMXvDJ8okz/A921pAn5rtBCJ2SgpNyHMwvqrXvYRGaliYUPgTrm4/2caw5xiA18e4g/OxJfBjppkHGTr3IL72a39WWf7ls0t/zfvypW0aBsQMrXryUEvaxQT7eDFIjmMXBOccO0JB4lPyEKgpUwmmU9Iyo1J2787+N6NR7J/3U/4jduH2fGLT9l5n1Sq8KtfHiEwttMEASGDlJm/OyQ8qFrpO7J3db7wJP85BKfzvWWZ867pKdGUsqM/I/BH5QerU4VohxUQyx48vN4uNkX010ZsVbFPNJnd8CcN1sppH9TdOjcL3EPUjPDPHJttLTufZqgtFw5xgaufDB3uAPc07GGe6T4wcoK5zwOwDsBaX/2eJ636N1VEYcwuebPzdlTlwBvlenrBGMQPZU2fMiEExOCwTOjM+FIZiffkJs3+p1P6DOHLZViif5L6iDm2lTR+phPUeue5Zn4/HP4eA0yoM5diughE2v7nMpel4Vilzl9PDxfWRMc8IKDh72Cq3Rt1VUS3lZqXUVyHVsshVedv+x10VJkJ5vZV79n9LvHnydR69129tyqEKP0tokXBX7Sg50ScNMoTF81/NrtBguIxEqH/uax2skYlTEjpCGtng0mQ6IUCLPqPyV9taOsBue/otJOne4gyYCJ9aIy4RcTQ="
+.node_stage: &node_stage
+  language: node_js
+  node_js: "10"
+  cache: yarn
+  before_install:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    - export PATH="$HOME/.yarn/bin:$PATH"
+  install:
+    - yarn --frozen-lockfile
 
-deploy:
-  github-token: "$GITHUB_TOKEN"
-  keep-history: true
-  local_dir: out
-  provider: pages
-  skip_cleanup: true
-  target-branch: gh-pages
-  on:
-    branch: v1.x
+#
+
+jobs:
+  include:
+    - stage: Build
+      <<: *node_stage
+      if: NOT env(RELEASE) AND NOT env(PRODUCTION)
+      script:
+        - yarn build
+        - yarn lint
+        - yarn export
+
+
+    - stage: Release
+      <<: *node_stage
+      if: env(RELEASE)
+      name: Make a new release 🎉
+      git:
+        # NOTE(douglasduteil): disable git --depth
+        # Try to have all the commits for the release Change Log
+        # see travis-ci/travis-ci#3412
+        depth: 9999999 # Over 9000 !
+      env: *github_keys
+      before_script:
+        - git checkout ${TRAVIS_BRANCH}
+        - git config user.name "Social Groovy Bot"
+        - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
+        - git remote set-url origin https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+      script:
+        - GH_TOKEN=${GITHUB_TOKEN} yarn lerna version ${LERNA_ARGS:=--yes}
+
+    - stage: Go Prod
+      if: env(PRODUCTION)
+      name: A tag is going to production 🏭
+      branches:
+        only:
+        - /v.*/
+      env: *gitlab_keys
+      script:
+        >-
+          curl -X POST
+          -F token=${GITLAB_TOKEN}
+          -F ref=${TRAVIS_BRANCH}
+          -F "variables[PRODUCTION]=true"
+          https://gitlab.factory.social.gouv.fr/api/v4/projects/50/trigger/pipeline
