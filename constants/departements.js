@@ -86,7 +86,13 @@ const DEPARTEMENTS = [
   { value: "48", label: "48 - Lozère" },
   { value: "49", label: "49 - Maine-et-loire" },
   { value: "50", label: "50 - Manche" },
-  { value: "51", label: "51 - Marne" },
+  { 
+    isAllowed: true,
+    value: "51", 
+    label: "51 - Marne",
+    company: "ud051-apt-etudiant-employeur",
+    student: "ud051-apt-etudiant",
+  },
   {
     value: "52",
     label: "52 - Haute-marne",
