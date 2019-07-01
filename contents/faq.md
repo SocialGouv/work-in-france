@@ -133,6 +133,7 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 
 - l'**Aube (10)**,
 - les **Bouches-du-Rhône (13)**,
+- la **Gironde (33)**,
 - l'**Ille-et-Vilaine (35)**,
 - la **Loire (42)**,
 - le **Loiret (45)**,
