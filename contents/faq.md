@@ -136,6 +136,7 @@ Le service est pour l'instant accessible pour le recrutement des étudiants dont
 - l'**Ille-et-Vilaine (35)**,
 - la **Loire (42)**,
 - le **Loiret (45)**,
+- la **Marne (51)**,
 - la **Haute-Marne (52)**,
 - la **Meurthe-et-Moselle (54)**,
 - la **Meuse (55)**,
