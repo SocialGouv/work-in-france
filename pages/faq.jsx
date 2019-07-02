@@ -1,9 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { Box, Flex } from "rebass";
-import ReactMarkdown from "react-markdown";
 import { Wrapper } from "../components/commons/Grid";
-import faqContent from "../contents/faq.md";
+import FaqContent from "../contents/faq.mdx";
 
 const Faq = () => {
   return (
@@ -75,7 +74,7 @@ const Faq = () => {
                 </a>
               </li>
             </ul>
-            <ReactMarkdown escapeHtml={false} source={faqContent} />
+            <FaqContent />
           </Box>
         </Flex>
       </Wrapper>
