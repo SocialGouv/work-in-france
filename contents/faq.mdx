@@ -1,3 +1,8 @@
+import France from "@socialgouv/react-departements";
+import { DEPARTEMENTS } from "../constants/departements";
+
+export const activeDepartments = DEPARTEMENTS.filter(d => d.isAllowed);
+
 <h3 id="quest-ce-que-work-in-france">Qu'est-ce que Work in France ?</h3>
 
 Work In France est un service public numérique développé par le ministère des affaires sociales qui permet aux employeurs ou étudiants étrangers d'effectuer des démarches de demandes d'autorisations provisoires de travail (APT) en ligne.
@@ -10,7 +15,7 @@ Ce formulaire est directement transmis au service de la main d'oeuvre étrangèr
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="dans-quel-cas-dois-je-demander-une-autorisation-provisoire-de-travail-sur-work-in-france">Dans quel cas dois-je demander une autorisation provisoire de travail sur Work In France ?</h3>
 
@@ -45,7 +50,7 @@ Voici la liste des cas particuliers de contrats pour lesquels vous aurez besoin 
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="en-combien-de-temps-puis-je-recevoir-mon-autorisation-provisoire-de-travail"> En combien de temps puis-je recevoir mon autorisation provisoire de travail ?</h3>
 
@@ -62,7 +67,7 @@ Par exemple :
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="quel-sont-les-documents-a-fournir-pour-faire-ma-demande-dautorisation-provisoire-de-travail-sur-work-in-france"> Quel sont les documents à fournir pour faire ma demande d'autorisation provisoire de travail sur Work In France ?</h3>
 
@@ -93,7 +98,7 @@ Les documents suivants vous seront demandés pendant votre démarche, assurez-vo
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="qui-peut-deposer-la-demande-dautorisation-provisoire-de-travail-pourquoi-un-mandat-expres"> Qui peut déposer la demande d'autorisation provisoire de travail ? Pourquoi un mandat exprès ?</h3>
 
@@ -125,37 +130,21 @@ Notez par ailleurs que les Direccte tolèrent également l'utilisation du [cerfa
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="dans-quels-departements-puis-je-utiliser-work-in-france">Dans quels départements puis-je utiliser Work In France ?</h3>
 
 Le service est pour l'instant accessible pour le recrutement des étudiants dont l'adresse qui figure sur le document autorisant le séjour en France (titre de séjour - récépissé de demande ou de renouvellement de carte de séjour - visa de long séjour valant titre de séjour (VLS-TS)) est dans :
 
-- l'**Aube (10)**,
-- les **Bouches-du-Rhône (13)**,
-- la **Gironde (33)**,
-- l'**Ille-et-Vilaine (35)**,
-- la **Loire (42)**,
-- le **Loiret (45)**,
-- la **Marne (51)**,
-- la **Haute-Marne (52)**,
-- la **Meurthe-et-Moselle (54)**,
-- la **Meuse (55)**,
-- la **Moselle (57)**,
-- le **Puy-de-Dôme (63)**,
-- le **Bas-Rhin (67)**,
-- le **Haut-Rhin (68)**,
-- le **Rhône (69)**,
-- **Paris (75)**,
-- la **Seine-Maritime (76)**,
-- la **Seine-et-Marne (77)**,
-- les **Yvelines (78)**,
-- les **Vosges (88)**,
-- l'**Essonne (91)**
-- les **Hauts-de-Seine (92)**,
-- la **Seine-Saint-Denis (93)**,
-- le **Val-de-Marne (94)**,
-- ou dans le **Val-d'Oise (95)**
+<France departements={activeDepartments.map(d => d.value)} />
+
+Soit :
+
+<div>
+  {activeDepartments.map(dpt => (
+    <li>{dpt.label}</li>
+  ))}
+</div>
 
 ... quelle que soit l'adresse de l'employeur.
 
@@ -163,7 +152,7 @@ Les demandes pour les autres départements seront accessibles très prochainemen
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="que-dois-je-faire-en-cas-de-changement-dadresse"> Que dois-je faire en cas de changement d'adresse ?</h3>
 
@@ -181,7 +170,7 @@ Seule la préfecture a compétence à se prononcer sur les questions relatives a
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="mon-contrat-de-travail-a-evolue-que-dois-je-faire"> Mon contrat de travail a évolué : que dois-je faire ?</h3>
 
@@ -197,7 +186,7 @@ Le changement du lieu effectif d'embauche peut en revanche simplement être sign
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="est-ce-que-work-in-france-remplace-la-procedure-papier"> Est-ce que Work In France remplace la procédure papier ?</h3>
 
@@ -207,7 +196,7 @@ Vous ne recevrez pas de courrier papier. Une fois votre dossier complet et instr
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="la-demarche-de-demande-dautorisation-provisoire-de-travail-via-work-in-france-est-elle-gratuite"> La démarche de demande d'autorisation provisoire de travail via Work in France est-elle gratuite ?</h3>
 
@@ -221,7 +210,7 @@ Or l'étudiant faisant l'objet d'une demande d'autorisation provisoire de travai
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
 
 <h3 id="comment-verifier-la-validite-dune-autorisation-provisoire-de-travail-delivree-avec-work-in-france"> Comment vérifier la validité d'une autorisation provisoire de travail délivrée avec Work In France ?</h3>
 
@@ -231,4 +220,4 @@ Cette fonctionalité est disponible 1 heure après délivrance de l'autorisation
 
 [Retour au sommaire](#faq-summary)
 
-<hr>
+<hr />
