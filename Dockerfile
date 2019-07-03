@@ -5,7 +5,7 @@ WORKDIR /app
 COPY ./package.json /app/package.json
 COPY ./yarn.lock /app/yarn.lock
 
-# Require "--shm-size 256M" options !
+# Require "--shm-size 512M" options !
 RUN yarn --frozen-lockfile --cache-folder /dev/shm/yarn
 
 COPY ./.babelrc /app/.babelrc
