@@ -140,7 +140,7 @@ See https://github.com/SocialGouv/work-in-france/deployments
 
 ### Auto
 
-Trigger a custom build on [Travis](https://travis-ci.com/SocialGouv/emjpm) (in the "More options" right menu) on the tag `v*` you  with a custom config:
+Trigger a custom build on [Travis](https://travis-ci.com/SocialGouv/work-in-france) (in the "More options" right menu) on the tag `v*` you  with a custom config:
 
 ```yml
 env:
