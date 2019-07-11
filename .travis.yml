@@ -36,16 +36,7 @@ jobs:
         - yarn build
         - yarn lint
         - yarn export
-      env: *github_keys
-      deploy:
-        github-token: "$GITHUB_TOKEN"
-        keep-history: true
-        local_dir: out
-        provider: pages
-        skip_cleanup: true
-        target-branch: gh-pages
-        on:
-          branch: master
+
 
     - stage: Release
       <<: *node_stage
