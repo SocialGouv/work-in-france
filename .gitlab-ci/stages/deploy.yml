@@ -21,14 +21,9 @@
   only:
     - branches
 
-.docker_kube_dev_stage: &docker_kube_dev_stage
-  before_script:
-    - source ./.gitlab-ci/env.sh
-
 .k8s-fontend-depoyment:
   extends: .base-docker-kube-image-stage
   script:
-    - /apps/create-kubeconfig.sh
     #
     - envsubst < ./.k8s/frontend/deployment.yml > ./deployment.yml
     - envsubst < ./.k8s/frontend/service.yml > ./service.yml
@@ -55,9 +50,7 @@
 Deploy App (dev):
   <<: *deploy_frontend
   <<: *dev_stage
-  <<: *docker_kube_dev_stage
 
 Deploy App (incubateur):
   <<: *deploy_frontend
   <<: *incubateur_stage
-  <<: *docker_kube_dev_stage
