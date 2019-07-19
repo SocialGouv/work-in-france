@@ -17,7 +17,6 @@ export BRANCH_HASH=${BRANCH_HASH:=$BRANCH_NAME_HASHED}
 
 if [[ "${BRANCH_NAME}" = "master" ]]; then
   export BRANCH_HASH=master;
-  export ENVIRONMENT=incubateur;
 fi
 
 if [[ -n "${COMMIT_TAG}" ]]; then
@@ -27,6 +26,7 @@ fi
 
 if [[ -n "${PRODUCTION+x}" ]]; then
   export BRANCH_HASH=prod;
+  export ENVIRONMENT=incubateur;
   export FRONTEND_HOST="work-in-france.${ENVIRONMENT}.social.gouv.fr";
 else
   export FRONTEND_HOST="${BRANCH_HASH}.work-in-france.${ENVIRONMENT}.social.gouv.fr";
