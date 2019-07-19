@@ -18,7 +18,7 @@ Ce dépôt de code contient le site web statique de [Work in France](https://w
 
 #### Ajouter un département
 
-1 - créer les formulaires sur DS
+1 - Créer les formulaires sur DS
 
 2 - autoriser le département sur le front dans [./constants/departements.js](./constants/departements.js)
 
