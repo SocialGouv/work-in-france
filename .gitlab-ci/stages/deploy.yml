@@ -13,13 +13,20 @@
   environment:
     name: incubateur
   only:
-    - tags
+    refs:
+      - triggers
+    variables:
+      - $PRODUCTION
+
 
 .dev_stage: &dev_stage
   environment:
     name: dev.factory
   only:
     - branches
+  except:
+    variables:
+      - $PRODUCTION
 
 .k8s-fontend-depoyment:
   extends: .base-docker-kube-image-stage
