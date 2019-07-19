@@ -8,11 +8,11 @@ Ce dépôt de code contient le site web statique de [Work in France](https://w
 
 ### Modifier du contenu
 
-⚠ Les modifs sur la branche `master` déclenchent une mise à jour du site.
+⚠ Les modifs sur la branche `master` déclenchent une mise à jour du site version dev : master.work-in-france.dev.factory.social.gouv.fr.
 
 #### Mettre à jour la F.A.Q.
 
-1 - Compléter [le fichier de la FAQ](https://github.com/SocialGouv/work-in-france/blob/master/site/source/markdown/faq.md) au [format markdown](https://fr.wikipedia.org/wiki/Markdown).
+1 - Compléter [le fichier de la FAQ](https://github.com/SocialGouv/work-in-france/blob/master/contents/faq.mdx) au [format markdown](https://fr.wikipedia.org/wiki/Markdown).
 
 2 - Soumettre une pull request
 
