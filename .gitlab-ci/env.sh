@@ -17,6 +17,7 @@ export BRANCH_HASH=${BRANCH_HASH:=$BRANCH_NAME_HASHED}
 
 if [[ "${BRANCH_NAME}" = "master" ]]; then
   export BRANCH_HASH=master;
+  export ENVIRONMENT=incubateur;
 fi
 
 if [[ -n "${COMMIT_TAG}" ]]; then
