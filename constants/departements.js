@@ -121,7 +121,7 @@ const DEPARTEMENTS = [
   { value: "59", label: "59 - Nord" },
   { value: "60", label: "60 - Oise" },
   { value: "61", label: "61 - Orne" },
-  { 
+  {
     isAllowed: true,
     value: "62",
     label: "62 - Pas-de-Calais",
