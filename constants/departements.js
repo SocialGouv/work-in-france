@@ -133,7 +133,13 @@ const DEPARTEMENTS = [
   { value: "59", label: "59 - Nord" },
   { value: "60", label: "60 - Oise" },
   { value: "61", label: "61 - Orne" },
-  { value: "62", label: "62 - Pas-de-calais" },
+  {
+    isAllowed: true,
+    value: "62",
+    label: "62 - Pas-de-Calais",
+    company: "ud062-apt-etudiants-employeur",
+    student: "ud062-apt-etudiants",
+  },
   {
     value: "63",
     label: "63 - Puy-de-dôme",
