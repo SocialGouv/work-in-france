@@ -130,7 +130,7 @@ const DEPARTEMENTS = [
     student: "ud057-apt-etudiants",
   },
   { value: "58", label: "58 - Nièvre" },
-  { 
+  {
     isAllowed: true,
     value: "59",
     label: "59 - Nord",
