@@ -130,7 +130,13 @@ const DEPARTEMENTS = [
     student: "ud057-apt-etudiants",
   },
   { value: "58", label: "58 - Nièvre" },
-  { value: "59", label: "59 - Nord" },
+  { 
+    isAllowed: true,
+    value: "59",
+    label: "59 - Nord",
+    company: "ud059-apt-etudiants-employeur",
+    student: "ud059-apt-etudiants",
+  },
   { value: "60", label: "60 - Oise" },
   { value: "61", label: "61 - Orne" },
   {
