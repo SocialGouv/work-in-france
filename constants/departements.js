@@ -6,7 +6,7 @@ const DEPARTEMENTS = [
     label: "02 - Aisne",
     company: "ud002-apt-etudiants-employeur",
     student: "ud002-apt-etudiants",
-  }, 
+  },
   { value: "03", label: "03 - Allier" },
   { value: "04", label: "04 - Alpes-de-Haute-Provence" },
   { value: "05", label: "05 - Hautes-alpes" },
