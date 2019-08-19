@@ -33,3 +33,6 @@ spec:
               port: ${PORT}
             initialDelaySeconds: 3
             periodSeconds: 5
+          env:
+          - name: VERSION
+            value: "${VERSION}"
