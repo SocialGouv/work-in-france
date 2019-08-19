@@ -17,6 +17,7 @@ module.exports = withMDX(
       };
     },
     publicRuntimeConfig: {
+      // eslint-disable-next-line global-require
       VERSION: process.env.VERSION || require("./package.json").version,
     },
     webpack(config) {
