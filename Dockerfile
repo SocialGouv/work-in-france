@@ -20,7 +20,8 @@ COPY ./constants /app/constants
 COPY ./pages /app/pages
 COPY ./components /app/components
 
-ARG VERSION=${VERSION:-%%VERSION%%}
+ARG VERSION
+ENV VERSION=${VERSION}
 
 RUN yarn deploy
 
