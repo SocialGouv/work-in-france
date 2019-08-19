@@ -14,4 +14,4 @@
   before_script:
     - source ./.gitlab-ci/env.sh
     - /apps/create-kubeconfig.sh
-    - if [ -n "${COMMIT_TAG}" || -n "${PRODUCTION+x}" ]; then SUFFIX=".prod"; else SUFFIX=".dev"; fi
+    - if [[ -n "${COMMIT_TAG}" || -n "${PRODUCTION+x}" ]]; then SUFFIX=".prod"; else SUFFIX=".dev"; fi
