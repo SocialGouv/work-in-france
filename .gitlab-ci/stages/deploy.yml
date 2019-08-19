@@ -31,7 +31,7 @@
 #
 #
 
-.k8s-fontend-depoyment:
+.k8s-frontend-depoyment:
   extends: .base-docker-kube-image-stage
   script:
     #
@@ -47,10 +47,10 @@
 
 .deploy-frontend: &deploy_frontend
   <<: *deploy_stage
-  extends: .k8s-fontend-depoyment
+  extends: .k8s-frontend-depoyment
   variables:
     <<: *deploy_stage_variables
-    CONTEXT: fontend
+    CONTEXT: frontend
     IMAGE_NAME: ${CI_REGISTRY_IMAGE}/frontend
     PORT: 80
 
