@@ -16,6 +16,9 @@ module.exports = withMDX(
         "/validitycheck": { page: "/validitycheck" },
       };
     },
+    publicRuntimeConfig: {
+      VERSION: process.env.VERSION || require("./package.json").version,
+    },
     webpack(config) {
       config.module.rules.push({
         test: /\.md$/,

@@ -1,9 +1,14 @@
 // @flow
 import React from "react";
+import getConfig from "next/config";
 import NextLink from "next/link";
 import { Flex, Box, Text, Image } from "rebass";
 import { Wrapper } from "../commons/Grid";
 import { StyledLink } from "../commons/Link";
+
+const { publicRuntimeConfig } = getConfig();
+
+const GITHUB_REPO = "https://github.com/SocialGouv/work-in-france";
 
 const Footer = () => {
   return (
@@ -41,6 +46,25 @@ const Footer = () => {
                 <NextLink href="mailto:contact@workinfrance.beta.gouv.fr" passHref>
                   <StyledLink>Contactez-nous</StyledLink>
                 </NextLink>
+              </Text>
+            </Flex>
+          </Box>
+          <Box px={5} width={1}>
+            <Flex flexWrap="wrap" flexDirection="row-reverse" justifyContent="space-around">
+
+              <NextLink
+                href={`${GITHUB_REPO}/tree/${publicRuntimeConfig.VERSION}`}
+                passHref
+              >
+                <StyledLink>Contribuer sur Github</StyledLink>
+              </NextLink>
+              <NextLink
+                href={`${GITHUB_REPO}/compare/${publicRuntimeConfig.VERSION}`}
+                passHref
+              >
+                <StyledLink>Journal des modifications</StyledLink>
+              </NextLink>
+              <Text>Version {publicRuntimeConfig.VERSION}
               </Text>
             </Flex>
           </Box>
