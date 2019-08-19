@@ -20,6 +20,8 @@ COPY ./constants /app/constants
 COPY ./pages /app/pages
 COPY ./components /app/components
 
+ARG VERSION=${VERSION}
+
 RUN yarn deploy
 
 FROM nginx:1.17-alpine
