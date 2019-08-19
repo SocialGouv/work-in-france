@@ -57,10 +57,7 @@ const Footer = () => {
               <NextLink href={`${GITHUB_REPO}/compare/${publicRuntimeConfig.VERSION}`} passHref>
                 <StyledLink>Journal des modifications</StyledLink>
               </NextLink>
-              <Text>
-                Version
-                {publicRuntimeConfig.VERSION}
-              </Text>
+              <Text>{`Version ${publicRuntimeConfig.VERSION}`}</Text>
             </Flex>
           </Box>
           <Box px={0} py={3} width={1}>
