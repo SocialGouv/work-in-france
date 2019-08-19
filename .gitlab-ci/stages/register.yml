@@ -30,7 +30,6 @@ Register frontend image:
       --shm-size 521M
       --cache-from $CI_REGISTRY_IMAGE/builder:$CI_COMMIT_SHA
     IMAGE_NAME: $CI_REGISTRY_IMAGE/frontend
-    VERSION: $CI_COMMIT_SHORT_SHA
 
 Register builder image:
   <<: *register-stage
@@ -40,3 +39,4 @@ Register builder image:
     # Required to put yarn_cache in tmp files
     DOCKER_BUILD_ARGS: "--shm-size 521M --target builder"
     IMAGE_NAME: $CI_REGISTRY_IMAGE/builder
+    VERSION: $CI_COMMIT_SHORT_SHA
