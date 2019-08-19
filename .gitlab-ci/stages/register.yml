@@ -30,6 +30,7 @@ Register frontend image:
       --shm-size 521M
       --cache-from $CI_REGISTRY_IMAGE/builder:$CI_COMMIT_SHA
     IMAGE_NAME: $CI_REGISTRY_IMAGE/frontend
+    VERSION: $CI_COMMIT_SHORT_SHA
 
 Register builder image:
   <<: *register-stage
