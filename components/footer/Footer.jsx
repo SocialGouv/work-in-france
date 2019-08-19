@@ -51,21 +51,13 @@ const Footer = () => {
           </Box>
           <Box px={5} width={1}>
             <Flex flexWrap="wrap" flexDirection="row-reverse" justifyContent="space-around">
-
-              <NextLink
-                href={`${GITHUB_REPO}/tree/${publicRuntimeConfig.VERSION}`}
-                passHref
-              >
+              <NextLink href={`${GITHUB_REPO}/tree/${publicRuntimeConfig.VERSION}`} passHref>
                 <StyledLink>Contribuer sur Github</StyledLink>
               </NextLink>
-              <NextLink
-                href={`${GITHUB_REPO}/compare/${publicRuntimeConfig.VERSION}`}
-                passHref
-              >
+              <NextLink href={`${GITHUB_REPO}/compare/${publicRuntimeConfig.VERSION}`} passHref>
                 <StyledLink>Journal des modifications</StyledLink>
               </NextLink>
-              <Text>Version {publicRuntimeConfig.VERSION}
-              </Text>
+              <Text>Version {publicRuntimeConfig.VERSION}</Text>
             </Flex>
           </Box>
           <Box px={0} py={3} width={1}>
