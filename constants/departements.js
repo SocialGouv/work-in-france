@@ -143,7 +143,13 @@ const DEPARTEMENTS = [
     company: "ud059-apt-etudiants-employeur",
     student: "ud059-apt-etudiants",
   },
-  { value: "60", label: "60 - Oise" },
+  {
+    isAllowed: true,
+    value: "60",
+    label: "60 - Oise",
+    company: "ud060-apt-etudiants-employeur",
+    student: "ud060-apt-etudiants",
+  },
   { value: "61", label: "61 - Orne" },
   {
     isAllowed: true,
