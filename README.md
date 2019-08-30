@@ -43,7 +43,7 @@ la valeur est l'id trouvé dans l'url du formulaire DS par exemple
 ud010-apt-etudiants-employeur
 ```
 
-4 - mettre à jour la FAQ avec le(s) nouveau(x) départements : [./contents/faq.md](./contents/faq.md)
+4 - mettre à jour [la FAQ](https://github.com/SocialGouv/work-in-france/blob/master/contents/faq.mdx) avec le(s) nouveau(x) départements.
 
 #### Mettre à jour les coordonnées MOE
 
