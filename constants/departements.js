@@ -72,7 +72,7 @@ const DEPARTEMENTS = [
     student: "ud035-apt-etudiants",
   },
   {
-    value: "36", 
+    value: "36",
     label: "36 - Indre",
     isAllowed: true,
     company: "ud036-apt-etudiants-employeur",
