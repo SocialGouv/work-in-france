@@ -1,9 +1,8 @@
 import React from "react";
 import { Box, Flex } from "rebass";
-import ReactMarkdown from "react-markdown";
 import Head from "next/head";
 import { Wrapper } from "../components/commons/Grid";
-import cguContent from "../contents/cgu.md";
+import CguContent from "../contents/cgu.mdx";
 
 const cgu = () => {
   return (
@@ -14,7 +13,7 @@ const cgu = () => {
       <Wrapper>
         <Flex>
           <Box p={3}>
-            <ReactMarkdown source={cguContent} />
+            <CguContent />
           </Box>
         </Flex>
       </Wrapper>
