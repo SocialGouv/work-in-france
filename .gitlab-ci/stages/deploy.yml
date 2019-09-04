@@ -32,7 +32,7 @@
 #
 
 .k8s-frontend-depoyment:
-  extends: .base-docker-kube-image-stage
+  extends: .base_docker_kube_image_stage
   script:
     #
     - envsubst < ./.k8s/frontend/deployment.yml > ./deployment.yml
@@ -69,7 +69,7 @@ Deploy App (incubateur):
 #
 
 .k8s-certificate-depoyment:
-  extends: .base-docker-kube-image-stage
+  extends: .base_docker_kube_image_stage
   script:
     #
     - envsubst < ./.k8s/certificate/certificate.yml > ./certificate.yml
