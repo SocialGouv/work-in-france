@@ -44,3 +44,17 @@ Notify Success:
     - echo "Notify Success to GitHub deployment id '$(cat $DEPLOY_ID_FILE)'"
     - export URL="http://${FRONTEND_HOST}"
     - sh -x ./.k8s/scripts/send-url.sh $(cat $DEPLOY_ID_FILE) success
+
+#
+
+Go Prod:
+  <<: *notify_stage
+  stage: "Notify Finished Deployment"
+  when: manual
+  only: master
+  script:
+    - curl --request POST \
+        --form "ref=master" \
+        --form "token=$CI_JOB_TOKEN" \
+        --form "variables[PRODUCTION]=true" \
+        https://gitlab.factory.social.gouv.fr/api/v4/projects/50/trigger/pipeline
