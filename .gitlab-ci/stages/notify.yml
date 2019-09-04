@@ -53,6 +53,9 @@ Go Prod:
   when: manual
   only:
     - master
+  expect:
+    variables:
+      - $PRODUCTION
   script:
     - curl --request POST
         --form "ref=master"
