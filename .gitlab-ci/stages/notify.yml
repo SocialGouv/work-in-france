@@ -58,9 +58,9 @@ Go Prod:
     variables:
       - $PRODUCTION
   script:
+    - echo "Put ${CI_COMMIT_REF_NAME}@${CI_COMMIT_SHORT_SHA} in production"
     - curl --request POST
-        --form description="Put ${CI_COMMIT_REF_NAME}@${CI_COMMIT_SHORT_SHA} in production"
         --form ref="${CI_COMMIT_REF_NAME}"
-        --form token="${CI_JOB_TOKEN}"
+        --form token="${PIPELINE_TIGER_TOKEN}"
         --form variables[PRODUCTION]="true"
         https://gitlab.factory.social.gouv.fr/api/v4/projects/50/trigger/pipeline
