@@ -54,7 +54,7 @@ Go Prod:
   only:
     - master
     - tags
-  expect:
+  except:
     variables:
       - $PRODUCTION
   script:
