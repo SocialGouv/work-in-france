@@ -51,7 +51,8 @@ Go Prod:
   <<: *notify_stage
   stage: "Notify Finished Deployment"
   when: manual
-  only: master
+  only:
+    - master
   script:
     - curl --request POST \
         --form "ref=master" \
