@@ -1,4 +1,7 @@
-# Work in France [![Build Status](https://travis-ci.com/SocialGouv/work-in-france.svg?branch=master)](https://travis-ci.com/SocialGouv/work-in-france)
+# Work in France 
+
+[![Build Status][travis-image]][travis-url]
+[![Pipeline status][gitlab-image]](gitlab-url)
 
 > La plateforme de demande d'autorisations provisoires de travail.
 
@@ -151,7 +154,7 @@ Reportez-vous à la documentation pour lancer le serveur.
 
 ### Auto
 
-Trigger a custom build on [Travis](https://travis-ci.com/SocialGouv/emjpm) (in the "More options" right menu) on the `master` branch with a custom config:
+Trigger a custom build on [Travis][travis-url] (in the "More options" right menu) on the `master` branch with a custom config:
 
 ```yml
 env:
@@ -192,7 +195,7 @@ See https://github.com/SocialGouv/work-in-france/deployments
 
 ### Auto
 
-Trigger a custom build on [Travis](https://travis-ci.com/SocialGouv/work-in-france) (in the "More options" right menu) on the tag `v*` you  with a custom config:
+Trigger a custom build on [Travis][travis-url] (in the "More options" right menu) on the tag `v*` you  with a custom config:
 
 ```yml
 env:
@@ -208,3 +211,8 @@ $ kubectl apply -f ./.k8s/frontend/deployment.yml
 $ kubectl apply -f ./.k8s/frontend/service.yml
 $ kubectl apply -f ./.k8s/frontend/ingress.yml
 ```
+
+[travis-image]: http://travis-ci.com/SocialGouv/work-in-france.svg?branch=master
+[travis-url]: http://travis-ci.com/SocialGouv/work-in-france
+[gitlab-image]: https://gitlab.factory.social.gouv.fr/SocialGouv/work-in-france/badges/master/pipeline.svg
+[gitlab-url]: https://gitlab.factory.social.gouv.fr/SocialGouv/work-in-france/commits/master
