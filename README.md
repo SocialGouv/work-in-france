@@ -1,7 +1,7 @@
 # Work in France 
 
 [![Build Status][travis-image]][travis-url]
-[![Pipeline status][gitlab-image]](gitlab-url)
+[![Pipeline status][gitlab-image]][gitlab-url]
 
 > La plateforme de demande d'autorisations provisoires de travail.
 
