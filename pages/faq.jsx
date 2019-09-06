@@ -19,7 +19,7 @@ const Faq = () => {
                 <a href="#quest-ce-que-work-in-france">Qu'est-ce que Work in France ?</a>
               </li>
               <li>
-                <a href="#dans-quels-cas-dois-je-demander-une-autorisation-provisoire-de-travail-sur-work-in-france">
+                <a href="#dans-quel-cas-dois-je-demander-une-autorisation-provisoire-de-travail-sur-work-in-france">
                   Dans quels cas dois-je demander une autorisation provisoire de travail sur Work In
                   France ?
                 </a>
