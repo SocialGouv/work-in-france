@@ -25,6 +25,11 @@ const Faq = () => {
                 </a>
               </li>
               <li>
+                 <a href="#quest-ce-quune-autorisation-provisoire-de-travail-pour-étudiant-étranger">
+                  Qu’est-ce qu’une autorisation provisoire de travail pour étudiant étranger ?
+                </a>
+              </li>
+              <li>
                 <a href="#en-combien-de-temps-puis-je-recevoir-mon-autorisation-provisoire-de-travail">
                   En combien de temps puis-je recevoir mon autorisation provisoire de travail ?
                 </a>
