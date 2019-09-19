@@ -16,9 +16,7 @@ const Faq = () => {
             <h2 id="faq-summary">FAQ</h2>
             <ul id="js-faq-summary-links">
               <li>
-                <a href="#quest-ce-que-work-in-france">
-                  Qu'est-ce que Work in France ?
-                </a>
+                <a href="#quest-ce-que-work-in-france">Qu'est-ce que Work in France ?</a>
               </li>
               <li>
                 <a href="#quest-ce-quune-autorisation-provisoire-de-travail-pour-etudiant-etranger">
