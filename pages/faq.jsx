@@ -19,22 +19,14 @@ const Faq = () => {
                 <a href="#quest-ce-que-work-in-france">Qu'est-ce que Work in France ?</a>
               </li>
               <li>
-                <a href="#dans-quels-cas-dois-je-demander-une-autorisation-provisoire-de-travail-sur-work-in-france">
+                <a href="#quest-ce-quune-autorisation-provisoire-de-travail-pour-etudiant-etranger">
+                  Qu’est-ce qu’une autorisation provisoire de travail pour étudiant étranger ?
+                </a>
+              </li>
+              <li>
+                <a href="#dans-quel-cas-dois-je-demander-une-autorisation-provisoire-de-travail-sur-work-in-france">
                   Dans quels cas dois-je demander une autorisation provisoire de travail sur Work In
                   France ?
-                </a>
-              </li>
-              <li>
-                 <a href="#quest-ce-quune-autorisation-provisoire-de-travail-pour-etudiant-etranger">
-                  Qu’est-ce qu’une autorisation provisoire de travail pour étudiant étranger ?
-                </a>
-              </li>
-              <li>
-                </a>
-              </li>
-              <li>
-                 <a href="#quest-ce-quune-autorisation-provisoire-de-travail-pour-étudiant-étranger">
-                  Qu’est-ce qu’une autorisation provisoire de travail pour étudiant étranger ?
                 </a>
               </li>
               <li>
