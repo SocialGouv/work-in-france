@@ -123,7 +123,7 @@ const ValidityCheckForm = (props: Props) => {
           errors.authorizationId = "Ce champ est obligatoire";
         } else if (!/^[0-9]{6,}$/i.test(values.authorizationId)) {
           errors.authorizationId =
-            "Votre numéro autorisation doit être constitué de minimum 6 chiffres";
+            "Votre numéro d'autorisation doit être constitué de minimum 6 chiffres";
         }
         if (!values.birthdateDay) {
           errors.birthdateDay = "Obligatoire";
@@ -138,7 +138,7 @@ const ValidityCheckForm = (props: Props) => {
         if (!values.birthdateYear) {
           errors.birthdateYear = "Obligatoire";
         } else if (!/^[0-9]{4}$/i.test(values.birthdateYear)) {
-          errors.birthdateYear = "Veuillez renseigner une d'année";
+          errors.birthdateYear = "Veuillez renseigner une année";
         }
         return errors;
       }}
