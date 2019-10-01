@@ -31,7 +31,7 @@ const CONTACTS = [
     type: "Direccte",
     name: "Auvergne-Rhône-Alpes",
     departments: ["01", "03", "07", "15", "26", "38", "42", "43", "63", "73", "74"],
-    address: ["Tour Swisslife, 1 boulevard Vivier-Merle"],
+    address: ["Tour Swisslife", "1 boulevard Vivier-Merle"],
     post_code: "69000",
     city: "LYON",
     phone: "04.72.68.29.00",
