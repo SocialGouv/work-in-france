@@ -36,7 +36,8 @@ const CONTACTS = [
     city: "LYON",
     phone: "04.72.68.29.00",
     fax: "04.72.68.29.29",
-    url: "http://auvergne-rhone-alpes.direccte.gouv.fr/Le-service-main-d-oeuvre-etrangere-MOE-accueil-et-accompagnement-des-etrangers",
+    url:
+      "http://auvergne-rhone-alpes.direccte.gouv.fr/Le-service-main-d-oeuvre-etrangere-MOE-accueil-et-accompagnement-des-etrangers",
     email: null,
   },
   {
