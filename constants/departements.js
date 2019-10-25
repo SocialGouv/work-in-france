@@ -199,7 +199,13 @@ const DEPARTEMENTS = [
   { value: "71", label: "71 - Saône-et-loire" },
   { value: "72", label: "72 - Sarthe" },
   { value: "73", label: "73 - Savoie" },
-  { value: "74", label: "74 - Haute-savoie" },
+  {
+    isAllowed: true,
+    value: "74",
+    label: "74 - Haute-Savoie",
+    company: "ud074-apt-etudiants-employeur",
+    student: "ud074-apt-etudiants",
+  },
   {
     isAllowed: true,
     value: "75",
