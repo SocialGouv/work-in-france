@@ -4,21 +4,35 @@
 #
 
 include:
-  - /.gitlab-ci/variables.yml
-  - /.gitlab-ci/extends.yml
+#  - /.gitlab-ci/variables.yml
+#  - /.gitlab-ci/extends.yml
   #
-  - /.gitlab-ci/stages/quality.yml
-  - /.gitlab-ci/stages/register.yml
-  - /.gitlab-ci/stages/notify.yml
-  - /.gitlab-ci/stages/deploy.yml
+#  - /.gitlab-ci/stages/quality.yml
+#  - /.gitlab-ci/stages/register.yml
+#  - /.gitlab-ci/stages/notify.yml
+#  - /.gitlab-ci/stages/deploy.yml
+  - project: SocialGouv/gitlab-ci-yml
+    file: /base_yarn_stage.yml
+    ref: v4.6.0
 
 #
 
 stages:
 - "Code Quality"
-- "Registration"
-- "Deploy"
-- "Notify Finished Deployment"
-- "Delete K8S Objects"
+#- "Registration"
+#- "Deploy"
+#- "Notify Finished Deployment"
+#- "Delete K8S Objects"
 
 #
+
+Code quality:
+  stage: Code Quality
+  extends:
+    - .base_yarn_quality
+    - .base_yarn_build
+  when: manual
+  except:
+    variables:
+      - $PRODUCTION
+  allow_failure: false
