@@ -12,13 +12,29 @@ include:
 #  - /.gitlab-ci/stages/notify.yml
 #  - /.gitlab-ci/stages/deploy.yml
   - project: SocialGouv/gitlab-ci-yml
+    file: /base_docker_kubectl_image_stage.yml
+    ref: v4.6.0
+  - project: SocialGouv/gitlab-ci-yml
     file: /base_yarn_stage.yml
     ref: v4.6.0
+  - project: SocialGouv/gitlab-ci-yml
+    file: /base_create_namespace_stage.yml
+    ref: v4.6.0
+
+#
+
+variables:
+  PROJECT: work-in-france
+#  DOCKER_DRIVER: overlay2
+#  DOCKER_HOST: tcp://localhost:2375
+  DEV_ENVIRONMENT_NAME: "wif-dev"
+  PROD_ENVIRONMENT_NAME: "prod"
 
 #
 
 stages:
 - "Code Quality"
+- "Prepare"
 #- "Registration"
 #- "Deploy"
 #- "Notify Finished Deployment"
@@ -36,3 +52,14 @@ Code quality:
     variables:
       - $PRODUCTION
   allow_failure: false
+
+#
+
+Create namespace:
+  stage: Prepare
+  extends: .base_create_namespace_stage
+  environment:
+    name: autodevops
+  except:
+    variables:
+      - $PRODUCTION
