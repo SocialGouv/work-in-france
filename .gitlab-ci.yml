@@ -42,6 +42,49 @@ stages:
 
 #
 
+.resolve_env: &resolve_env |-
+  set -x
+
+  export BRANCH_NAME=${BRANCH_NAME:=$CI_COMMIT_REF_SLUG}
+  export HASH_SIZE=${HASH_SIZE:=7}
+  export K8S_PROJECT=${K8S_PROJECT:=$PROJECT}
+  BRANCH_NAME_HASHED=$( printf "${BRANCH_NAME}" | sha1sum | cut -c1-${HASH_SIZE} )
+  export BRANCH_HASH=${BRANCH_HASH:="$BRANCH_NAME_HASHED"}
+  export K8S_NAMESPACE="${PROJECT}-feature-${BRANCH_HASH}"
+
+
+  if [[ -n $PRODUCTION ]]; then
+    export BRANCH_HASH=prod
+    export IMAGE_TAG=$(printf "${CI_COMMIT_TAG}" | sed "s/^v//")
+    export K8S_NAMESPACE="${PROJECT}"
+    export DOMAIN="prod.${PROJECT}.fabrique.social.gouv.fr"
+
+  elif [[ "${BRANCH_NAME}" = "migrate-wif-on-azure" ]]; then
+    export BRANCH_HASH=master
+    export IMAGE_TAG=${CI_COMMIT_SHA}
+    export K8S_NAMESPACE="${PROJECT}-${BRANCH_HASH}"
+    export DOMAIN="${PROJECT}-master.dev.fabrique.social.gouv.fr"
+
+  elif [[ -n "${CI_COMMIT_TAG}" ]]; then
+    export BRANCH_HASH=preprod;
+    export IMAGE_TAG=$(printf "${CI_COMMIT_TAG}" | sed "s/^v//")
+    export K8S_NAMESPACE="${PROJECT}-${BRANCH_HASH}"
+    export DOMAIN="${PROJECT}-preprod.dev.fabrique.social.gouv.fr"
+
+  else
+    export IMAGE_TAG=${CI_COMMIT_SHA}
+    export DOMAIN="${BRANCH_HASH}-${PROJECT}.dev.fabrique.social.gouv.fr"
+  fi
+
+  export HOST="${DOMAIN}"
+
+  set +x
+
+before_script:
+  - *resolve_env
+
+#
+
 Code quality:
   stage: Code Quality
   extends:
@@ -58,8 +101,6 @@ Code quality:
 Create namespace:
   stage: Prepare
   extends: .base_create_namespace_stage
-  environment:
-    name: autodevops
   except:
     variables:
       - $PRODUCTION
