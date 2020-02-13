@@ -20,6 +20,9 @@ include:
   - project: SocialGouv/gitlab-ci-yml
     file: /base_create_namespace_stage.yml
     ref: v4.6.0
+  - project: SocialGouv/gitlab-ci-yml
+    file: /base_register_stage.yml
+    ref: v4.6.0
 
 #
 
@@ -35,7 +38,7 @@ variables:
 stages:
 - "Code Quality"
 - "Prepare"
-#- "Registration"
+- "Registration"
 #- "Deploy"
 #- "Notify Finished Deployment"
 #- "Delete K8S Objects"
@@ -104,3 +107,33 @@ Create namespace:
   except:
     variables:
       - $PRODUCTION
+
+#
+
+.register_stage: &register_stage
+  extends: .base_register_stage
+  stage: Registration
+  except:
+    variables:
+      - $PRODUCTION
+
+#
+Register frontend image:
+  <<: *register_stage
+  variables:
+    CONTEXT: .
+    DOCKER_BUILD_ARGS: >-
+      --build-arg VERSION=$CI_COMMIT_SHORT_SHA
+      --shm-size 521M
+      --cache-from $CI_REGISTRY_IMAGE/builder:$CI_COMMIT_SHA
+    IMAGE_NAME: ${CI_REGISTRY_IMAGE}/frontend
+
+Register builder image:
+  <<: *register_stage
+  variables:
+    CONTEXT: .
+    DOCKER_BUILD_ARGS: >-
+      --build-arg VERSION=$CI_COMMIT_SHORT_SHA
+      --shm-size 521M
+      --target builder
+    IMAGE_NAME: ${CI_REGISTRY_IMAGE}/builder
