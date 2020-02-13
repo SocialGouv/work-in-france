@@ -23,10 +23,6 @@ deployment:
     periodSeconds: 5
     port: ${PORT}
 
-#  env:
-#    - name: REACT_APP_API_URL
-#      value: "http://api-hpa:4000"
-
 service:
   port: ${PORT}
   targetPort: ${PORT}
