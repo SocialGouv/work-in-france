@@ -4,13 +4,6 @@
 #
 
 include:
-#  - /.gitlab-ci/variables.yml
-#  - /.gitlab-ci/extends.yml
-  #
-#  - /.gitlab-ci/stages/quality.yml
-#  - /.gitlab-ci/stages/register.yml
-#  - /.gitlab-ci/stages/notify.yml
-#  - /.gitlab-ci/stages/deploy.yml
   - project: SocialGouv/gitlab-ci-yml
     file: /base_docker_kubectl_image_stage.yml
     ref: v4.6.0
@@ -81,7 +74,7 @@ stages:
   elif [[ "${BRANCH_NAME}" = "migrate-wif-on-azure" ]]; then
     export BRANCH_HASH=master
     export IMAGE_TAG=${CI_COMMIT_SHA}
-    export K8S_NAMESPACE="${PROJECT}-${BRANCH_HASH}"
+    export K8S_NAMESPACE="${PROJECT}"
     export DOMAIN="${PROJECT}-master.dev.fabrique.social.gouv.fr"
 
   elif [[ -n "${CI_COMMIT_TAG}" ]]; then
@@ -171,32 +164,33 @@ Notify Starting Deployment:
     REGISTRY: $CI_REGISTRY_IMAGE
 #
 
-Deploy app:
-  <<: *deploy_with_hpa_chart
-  variables:
-    <<: *deploy_with_hpa_chart_variables
-    CONTEXT: app
-    PORT: ${APP_PORT}
-    VALUES_FILE: ./.k8s/app.values.yml
-  environment:
-    name: ${DEV_ENVIRONMENT_NAME}
-  except:
-    variables:
-      - $PRODUCTION
-
-#Deploy app (prod):
+#Deploy app:
 #  <<: *deploy_with_hpa_chart
 #  variables:
 #    <<: *deploy_with_hpa_chart_variables
 #    CONTEXT: app
 #    PORT: ${APP_PORT}
 #    VALUES_FILE: ./.k8s/app.values.yml
-#    APP_RESOURCE_CPU_LIMIT: "250m"
-#    APP_RESOURCE_MEMORY_LIMIT: "256Mi"
-#    APP_RESOURCE_CPU_REQUEST: "5m"
-#    APP_RESOURCE_MEMORY_REQUEST: "16Mi"
 #  environment:
-#    name: ${PROD_ENVIRONMENT_NAME}
+#    name: ${DEV_ENVIRONMENT_NAME}
+#  except:
+#    variables:
+#      - $PRODUCTION
+
+Deploy app (prod):
+  <<: *deploy_with_hpa_chart
+  variables:
+    <<: *deploy_with_hpa_chart_variables
+    CONTEXT: app
+    PORT: ${APP_PORT}
+    VALUES_FILE: ./.k8s/app.values.yml
+    APP_RESOURCE_CPU_LIMIT: "250m"
+    APP_RESOURCE_MEMORY_LIMIT: "256Mi"
+    APP_RESOURCE_CPU_REQUEST: "5m"
+    APP_RESOURCE_MEMORY_REQUEST: "16Mi"
+    K8S_NAMESPACE: ${PROJECT} # to delete
+  environment:
+    name: ${PROD_ENVIRONMENT_NAME}
 #  only:
 #    refs:
 #      - triggers
