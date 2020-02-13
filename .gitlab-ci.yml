@@ -23,15 +23,31 @@ include:
   - project: SocialGouv/gitlab-ci-yml
     file: /base_register_stage.yml
     ref: v4.6.0
+  - project: SocialGouv/gitlab-ci-yml
+    file: /base_deploy_hpa_chart_stage.yml
+    ref: v4.6.0
+  - project: SocialGouv/gitlab-ci-yml
+    file: /base_notify_github_stage.yml
+    ref: v4.6.0
+  - project: SocialGouv/gitlab-ci-yml
+    file: /base_docker_helm_image_stage.yml
+    ref: v4.6.0
 
 #
 
 variables:
   PROJECT: work-in-france
-#  DOCKER_DRIVER: overlay2
-#  DOCKER_HOST: tcp://localhost:2375
+  DOCKER_DRIVER: overlay2
+  DOCKER_HOST: tcp://localhost:2375
   DEV_ENVIRONMENT_NAME: "wif-dev"
   PROD_ENVIRONMENT_NAME: "prod"
+  # Ports
+  APP_PORT: 80
+  # Quotas app
+  APP_RESOURCE_CPU_LIMIT: "50m"
+  APP_RESOURCE_MEMORY_LIMIT: "96Mi"
+  APP_RESOURCE_CPU_REQUEST: "5m"
+  APP_RESOURCE_MEMORY_REQUEST: "80Mi"
 
 #
 
@@ -39,7 +55,7 @@ stages:
 - "Code Quality"
 - "Prepare"
 - "Registration"
-#- "Deploy"
+- "Deploy"
 #- "Notify Finished Deployment"
 #- "Delete K8S Objects"
 
@@ -86,7 +102,7 @@ stages:
 before_script:
   - *resolve_env
 
-#
+################################ CODE QUALITY ###############################
 
 Code quality:
   stage: Code Quality
@@ -99,7 +115,8 @@ Code quality:
       - $PRODUCTION
   allow_failure: false
 
-#
+################################ PREPARE ####################################
+
 
 Create namespace:
   stage: Prepare
@@ -108,7 +125,8 @@ Create namespace:
     variables:
       - $PRODUCTION
 
-#
+################################ REGISTRATION ################################
+
 
 .register_stage: &register_stage
   extends: .base_register_stage
@@ -137,3 +155,50 @@ Register builder image:
       --shm-size 521M
       --target builder
     IMAGE_NAME: ${CI_REGISTRY_IMAGE}/builder
+
+################################# DEPLOY ###############################
+
+Notify Starting Deployment:
+  extends: .base_notify_pending_stage
+  stage: Deploy
+
+#
+.deploy_with_hpa_chart: &deploy_with_hpa_chart
+  stage: Deploy
+  extends: .base_deploy_hpa_chart_stage
+  dependencies: []
+  variables: &deploy_with_hpa_chart_variables
+    REGISTRY: $CI_REGISTRY_IMAGE
+#
+
+Deploy app:
+  <<: *deploy_with_hpa_chart
+  variables:
+    <<: *deploy_with_hpa_chart_variables
+    CONTEXT: app
+    PORT: ${APP_PORT}
+    VALUES_FILE: ./.k8s/app.values.yml
+  environment:
+    name: ${DEV_ENVIRONMENT_NAME}
+  except:
+    variables:
+      - $PRODUCTION
+
+#Deploy app (prod):
+#  <<: *deploy_with_hpa_chart
+#  variables:
+#    <<: *deploy_with_hpa_chart_variables
+#    CONTEXT: app
+#    PORT: ${APP_PORT}
+#    VALUES_FILE: ./.k8s/app.values.yml
+#    APP_RESOURCE_CPU_LIMIT: "250m"
+#    APP_RESOURCE_MEMORY_LIMIT: "256Mi"
+#    APP_RESOURCE_CPU_REQUEST: "5m"
+#    APP_RESOURCE_MEMORY_REQUEST: "16Mi"
+#  environment:
+#    name: ${PROD_ENVIRONMENT_NAME}
+#  only:
+#    refs:
+#      - triggers
+#    variables:
+#      - $PRODUCTION
