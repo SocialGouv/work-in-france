@@ -49,8 +49,6 @@ stages:
 - "Prepare"
 - "Registration"
 - "Deploy"
-#- "Notify Finished Deployment"
-#- "Delete K8S Objects"
 
 #
 
@@ -71,7 +69,7 @@ stages:
     export K8S_NAMESPACE="${PROJECT}"
     export DOMAIN="prod.${PROJECT}.fabrique.social.gouv.fr"
 
-  elif [[ "${BRANCH_NAME}" = "migrate-wif-on-azure" ]]; then
+  elif [[ "${BRANCH_NAME}" = "master" ]]; then
     export BRANCH_HASH=master
     export IMAGE_TAG=${CI_COMMIT_SHA}
     export K8S_NAMESPACE="${PROJECT}-${BRANCH_HASH}"
@@ -118,8 +116,8 @@ Create namespace:
     variables:
       - $PRODUCTION
 
-################################ REGISTRATION ################################
 
+################################ REGISTRATION ################################
 
 .register_stage: &register_stage
   extends: .base_register_stage
@@ -168,7 +166,7 @@ Deploy app:
   <<: *deploy_with_hpa_chart
   variables:
     <<: *deploy_with_hpa_chart_variables
-    CONTEXT: app
+    CONTEXT: frontend
     PORT: ${APP_PORT}
     VALUES_FILE: ./.k8s/app.values.yml
   environment:
@@ -181,7 +179,7 @@ Deploy app (prod):
   <<: *deploy_with_hpa_chart
   variables:
     <<: *deploy_with_hpa_chart_variables
-    CONTEXT: app
+    CONTEXT: frontend
     PORT: ${APP_PORT}
     VALUES_FILE: ./.k8s/app.values.yml
     APP_RESOURCE_CPU_LIMIT: "250m"
