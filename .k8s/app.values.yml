@@ -1,5 +1,5 @@
 image:
-  repository: ${CI_REGISTRY_IMAGE}/frontend
+  repository: ${CI_REGISTRY_IMAGE}
   tag: ${IMAGE_TAG}
 
 deployment:
