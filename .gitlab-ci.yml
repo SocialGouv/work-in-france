@@ -1,46 +1,16 @@
 
 ---
 
-#
-
 include:
   - project: SocialGouv/gitlab-ci-yml
-    file: /base_docker_kubectl_image_stage.yml
-    ref: v4.6.0
-  - project: SocialGouv/gitlab-ci-yml
-    file: /base_yarn_stage.yml
-    ref: v4.6.0
-  - project: SocialGouv/gitlab-ci-yml
-    file: /base_create_namespace_stage.yml
-    ref: v4.6.0
-  - project: SocialGouv/gitlab-ci-yml
-    file: /base_register_stage.yml
-    ref: v4.6.0
-  - project: SocialGouv/gitlab-ci-yml
-    file: /base_deploy_hpa_chart_stage.yml
-    ref: v4.6.0
-  - project: SocialGouv/gitlab-ci-yml
-    file: /base_notify_github_stage.yml
-    ref: v4.6.0
-  - project: SocialGouv/gitlab-ci-yml
-    file: /base_docker_helm_image_stage.yml
-    ref: v4.6.0
-  - project: SocialGouv/gitlab-ci-yml
-    file: /base_delete_useless_k8s_ns_stage.yml
-    ref: v4.6.0
-
-#
+    file: /autodevops_simple_app.yml
+    ref: v7.3.3
 
 variables:
   PROJECT: work-in-france
-  DOCKER_DRIVER: overlay2
-  DOCKER_HOST: tcp://localhost:2375
-  DEV_ENVIRONMENT_NAME: "wif-dev"
-  PROD_ENVIRONMENT_NAME: "prod"
-  # Ports
-  APP_PORT: 80
-  #Versions
-  NODE_VERSION: "10"
+  RANCHER_PROJECT_ID: "c-kk8xm:p-gj8cn" # "default" project id here
+  PORT: 80
+  VALUES_FILE: ./.k8s/app.values.yml # Your values
   # Quotas app
   APP_RESOURCE_CPU_LIMIT: "50m"
   APP_RESOURCE_MEMORY_LIMIT: "96Mi"
@@ -49,203 +19,221 @@ variables:
 
 #
 
-stages:
-- "Code Quality"
-- "Prepare"
-- "Registration"
-- "Deploy"
-- "Release"
-- "Notify Finished Deployment"
+#variables:
+#  PROJECT: work-in-france
+#  DOCKER_DRIVER: overlay2
+#  DOCKER_HOST: tcp://localhost:2375
+#  DEV_ENVIRONMENT_NAME: "wif-dev"
+#  PROD_ENVIRONMENT_NAME: "prod"
+#  # Ports
+#  APP_PORT: 80
+#  #Versions
+#  NODE_VERSION: "10"
+#  # Quotas app
+#  APP_RESOURCE_CPU_LIMIT: "50m"
+#  APP_RESOURCE_MEMORY_LIMIT: "96Mi"
+#  APP_RESOURCE_CPU_REQUEST: "5m"
+#  APP_RESOURCE_MEMORY_REQUEST: "80Mi"
 
+##
 #
-
-.resolve_env: &resolve_env |-
-  set -x
-
-  export BRANCH_NAME=${BRANCH_NAME:=$CI_COMMIT_REF_SLUG}
-  export HASH_SIZE=${HASH_SIZE:=7}
-  export K8S_PROJECT=${K8S_PROJECT:=$PROJECT}
-  BRANCH_NAME_HASHED=$( printf "${BRANCH_NAME}" | sha1sum | cut -c1-${HASH_SIZE} )
-  export BRANCH_HASH=${BRANCH_HASH:="$BRANCH_NAME_HASHED"}
-  export K8S_NAMESPACE="${PROJECT}-feature-${BRANCH_HASH}"
-
-
-  if [[ -n $PRODUCTION ]]; then
-    export BRANCH_HASH=prod
-    export IMAGE_TAG=$(printf "${CI_COMMIT_TAG}" | sed "s/^v//")
-    export K8S_NAMESPACE="${PROJECT}"
-    export DOMAIN="prod.${PROJECT}.fabrique.social.gouv.fr"
-
-  elif [[ "${BRANCH_NAME}" = "master" ]]; then
-    export BRANCH_HASH=master
-    export IMAGE_TAG=${CI_COMMIT_SHA}
-    export K8S_NAMESPACE="${PROJECT}-${BRANCH_HASH}"
-    export DOMAIN="${PROJECT}-master.dev.fabrique.social.gouv.fr"
-
-  elif [[ -n "${CI_COMMIT_TAG}" ]]; then
-    export BRANCH_HASH=preprod;
-    export IMAGE_TAG=$(printf "${CI_COMMIT_TAG}" | sed "s/^v//")
-    export K8S_NAMESPACE="${PROJECT}-${BRANCH_HASH}"
-    export DOMAIN="${PROJECT}-preprod.dev.fabrique.social.gouv.fr"
-
-  else
-    export IMAGE_TAG=${CI_COMMIT_SHA}
-    export DOMAIN="${BRANCH_HASH}-${PROJECT}.dev.fabrique.social.gouv.fr"
-  fi
-
-  export HOST="${DOMAIN}"
-
-  set +x
-
-before_script:
-  - *resolve_env
-
-################################ CODE QUALITY ###############################
-
-Code quality:
-  stage: Code Quality
-  extends:
-    - .base_yarn_quality
-    - .base_yarn_build
-  when: manual
-  except:
-    variables:
-      - $PRODUCTION
-  allow_failure: false
-
-################################ PREPARE ####################################
-
-
-Create namespace:
-  stage: Prepare
-  extends: .base_create_namespace_stage
-  except:
-    variables:
-      - $PRODUCTION
-
-
-################################ REGISTRATION ################################
-
-.register_stage: &register_stage
-  extends: .base_register_stage
-  stage: Registration
-  except:
-    variables:
-      - $PRODUCTION
-
+#stages:
+#- "Code Quality"
+#- "Prepare"
+#- "Registration"
+#- "Deploy"
+#- "Release"
+#- "Notify Finished Deployment"
 #
-Register frontend image:
-  <<: *register_stage
-  variables:
-    CONTEXT: .
-    DOCKER_BUILD_ARGS: >-
-      --build-arg VERSION=$CI_COMMIT_SHORT_SHA
-      --shm-size 521M
-      --cache-from $CI_REGISTRY_IMAGE/builder:$CI_COMMIT_SHA
-    IMAGE_NAME: ${CI_REGISTRY_IMAGE}/frontend
-
-Register builder image:
-  <<: *register_stage
-  variables:
-    CONTEXT: .
-    DOCKER_BUILD_ARGS: >-
-      --build-arg VERSION=$CI_COMMIT_SHORT_SHA
-      --shm-size 521M
-      --target builder
-    IMAGE_NAME: ${CI_REGISTRY_IMAGE}/builder
-
-################################# DEPLOY ###############################
-
-Notify Starting Deployment:
-  extends: .base_notify_pending_stage
-  stage: Deploy
-
+##
 #
-.deploy_with_hpa_chart: &deploy_with_hpa_chart
-  stage: Deploy
-  extends: .base_deploy_hpa_chart_stage
-  dependencies: []
-  variables: &deploy_with_hpa_chart_variables
-    REGISTRY: $CI_REGISTRY_IMAGE
+#.resolve_env: &resolve_env |-
+#  set -x
 #
-
-Deploy app:
-  <<: *deploy_with_hpa_chart
-  variables:
-    <<: *deploy_with_hpa_chart_variables
-    CONTEXT: frontend
-    PORT: ${APP_PORT}
-    VALUES_FILE: ./.k8s/app.values.yml
-  environment:
-    name: ${DEV_ENVIRONMENT_NAME}
-  except:
-    variables:
-      - $PRODUCTION
-
-Deploy app (prod):
-  <<: *deploy_with_hpa_chart
-  variables:
-    <<: *deploy_with_hpa_chart_variables
-    CONTEXT: frontend
-    PORT: ${APP_PORT}
-    VALUES_FILE: ./.k8s/app.values.yml
-    APP_RESOURCE_CPU_LIMIT: "250m"
-    APP_RESOURCE_MEMORY_LIMIT: "256Mi"
-    APP_RESOURCE_CPU_REQUEST: "5m"
-    APP_RESOURCE_MEMORY_REQUEST: "16Mi"
-  environment:
-    name: ${PROD_ENVIRONMENT_NAME}
-  only:
-    refs:
-      - triggers
-    variables:
-      - $PRODUCTION
-
-
-################################# RELEASE ###############################
-
-Make a new release and deploy to preprod environment:
-  stage: Release
-  image: node:${NODE_VERSION}
-  variables:
-    GIT_AUTHOR_EMAIL: 45039513+SocialGroovyBot@users.noreply.github.com
-    GIT_AUTHOR_NAME: Social Groovy Bot
-    GIT_COMMITTER_EMAIL: ${GIT_AUTHOR_EMAIL}
-    GIT_COMMITTER_NAME: ${GIT_AUTHOR_NAME}
-  cache:
-    key: "${CI_JOB_NAME}-${CI_COMMIT_REF_SLUG}"
-    paths:
-      - ${CI_PROJECT_DIR}/.yarn
-  before_script:
-    - git checkout ${CI_COMMIT_REF_NAME}
-    - git config user.name "Social Groovy Bot"
-    - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
-    - git remote set-url origin https://${GITHUB_TOKEN}@github.com/${CI_PROJECT_PATH}.git
-  script:
-    - yarn config set cache-folder ${CI_PROJECT_DIR}/.yarn
-    - yarn --frozen-lockfile
-    - GH_TOKEN=${GITHUB_TOKEN} yarn lerna version ${LERNA_ARGS:="--force-publish --yes"}
-  except:
-    variables:
-      - $CI_COMMIT_MESSAGE =~ /^chore\(release.*/
-  only:
-    - master
-  when: manual
-
-
-################################# NOTIFY ###############################
-
-Notify Fail:
-  extends: .base_notify_fail_stage
-  stage: Notify Finished Deployment
-  dependencies:
-    - Notify Starting Deployment
-
-Notify Success:
-  extends: .base_notify_success_stage
-  stage: Notify Finished Deployment
-  dependencies:
-    - Notify Starting Deployment
-
-Delete useless k8s namespaces:
-  extends: .base_delete_useless_k8s_ns_stage
+#  export BRANCH_NAME=${BRANCH_NAME:=$CI_COMMIT_REF_SLUG}
+#  export HASH_SIZE=${HASH_SIZE:=7}
+#  export K8S_PROJECT=${K8S_PROJECT:=$PROJECT}
+#  BRANCH_NAME_HASHED=$( printf "${BRANCH_NAME}" | sha1sum | cut -c1-${HASH_SIZE} )
+#  export BRANCH_HASH=${BRANCH_HASH:="$BRANCH_NAME_HASHED"}
+#  export K8S_NAMESPACE="${PROJECT}-feature-${BRANCH_HASH}"
+#
+#
+#  if [[ -n $PRODUCTION ]]; then
+#    export BRANCH_HASH=prod
+#    export IMAGE_TAG=$(printf "${CI_COMMIT_TAG}" | sed "s/^v//")
+#    export K8S_NAMESPACE="${PROJECT}"
+#    export DOMAIN="prod.${PROJECT}.fabrique.social.gouv.fr"
+#
+#  elif [[ "${BRANCH_NAME}" = "master" ]]; then
+#    export BRANCH_HASH=master
+#    export IMAGE_TAG=${CI_COMMIT_SHA}
+#    export K8S_NAMESPACE="${PROJECT}-${BRANCH_HASH}"
+#    export DOMAIN="${PROJECT}-master.dev.fabrique.social.gouv.fr"
+#
+#  elif [[ -n "${CI_COMMIT_TAG}" ]]; then
+#    export BRANCH_HASH=preprod;
+#    export IMAGE_TAG=$(printf "${CI_COMMIT_TAG}" | sed "s/^v//")
+#    export K8S_NAMESPACE="${PROJECT}-${BRANCH_HASH}"
+#    export DOMAIN="${PROJECT}-preprod.dev.fabrique.social.gouv.fr"
+#
+#  else
+#    export IMAGE_TAG=${CI_COMMIT_SHA}
+#    export DOMAIN="${BRANCH_HASH}-${PROJECT}.dev.fabrique.social.gouv.fr"
+#  fi
+#
+#  export HOST="${DOMAIN}"
+#
+#  set +x
+#
+#before_script:
+#  - *resolve_env
+#
+################################# CODE QUALITY ###############################
+#
+#Code quality:
+#  stage: Code Quality
+#  extends:
+#    - .base_yarn_quality
+#    - .base_yarn_build
+#  when: manual
+#  except:
+#    variables:
+#      - $PRODUCTION
+#  allow_failure: false
+#
+################################# PREPARE ####################################
+#
+#
+#Create namespace:
+#  stage: Prepare
+#  extends: .base_create_namespace_stage
+#  except:
+#    variables:
+#      - $PRODUCTION
+#
+#
+################################# REGISTRATION ################################
+#
+#.register_stage: &register_stage
+#  extends: .base_register_stage
+#  stage: Registration
+#  except:
+#    variables:
+#      - $PRODUCTION
+#
+##
+#Register frontend image:
+#  <<: *register_stage
+#  variables:
+#    CONTEXT: .
+#    DOCKER_BUILD_ARGS: >-
+#      --build-arg VERSION=$CI_COMMIT_SHORT_SHA
+#      --shm-size 521M
+#      --cache-from $CI_REGISTRY_IMAGE/builder:$CI_COMMIT_SHA
+#    IMAGE_NAME: ${CI_REGISTRY_IMAGE}/frontend
+#
+#Register builder image:
+#  <<: *register_stage
+#  variables:
+#    CONTEXT: .
+#    DOCKER_BUILD_ARGS: >-
+#      --build-arg VERSION=$CI_COMMIT_SHORT_SHA
+#      --shm-size 521M
+#      --target builder
+#    IMAGE_NAME: ${CI_REGISTRY_IMAGE}/builder
+#
+################################## DEPLOY ###############################
+#
+#Notify Starting Deployment:
+#  extends: .base_notify_pending_stage
+#  stage: Deploy
+#
+##
+#.deploy_with_hpa_chart: &deploy_with_hpa_chart
+#  stage: Deploy
+#  extends: .base_deploy_hpa_chart_stage
+#  dependencies: []
+#  variables: &deploy_with_hpa_chart_variables
+#    REGISTRY: $CI_REGISTRY_IMAGE
+##
+#
+#Deploy app:
+#  <<: *deploy_with_hpa_chart
+#  variables:
+#    <<: *deploy_with_hpa_chart_variables
+#    CONTEXT: frontend
+#    PORT: ${APP_PORT}
+#    VALUES_FILE: ./.k8s/app.values.yml
+#  environment:
+#    name: ${DEV_ENVIRONMENT_NAME}
+#  except:
+#    variables:
+#      - $PRODUCTION
+#
+#Deploy app (prod):
+#  <<: *deploy_with_hpa_chart
+#  variables:
+#    <<: *deploy_with_hpa_chart_variables
+#    CONTEXT: frontend
+#    PORT: ${APP_PORT}
+#    VALUES_FILE: ./.k8s/app.values.yml
+#    APP_RESOURCE_CPU_LIMIT: "250m"
+#    APP_RESOURCE_MEMORY_LIMIT: "256Mi"
+#    APP_RESOURCE_CPU_REQUEST: "5m"
+#    APP_RESOURCE_MEMORY_REQUEST: "16Mi"
+#  environment:
+#    name: ${PROD_ENVIRONMENT_NAME}
+#  only:
+#    refs:
+#      - triggers
+#    variables:
+#      - $PRODUCTION
+#
+#
+################################## RELEASE ###############################
+#
+#Make a new release and deploy to preprod environment:
+#  stage: Release
+#  image: node:${NODE_VERSION}
+#  variables:
+#    GIT_AUTHOR_EMAIL: 45039513+SocialGroovyBot@users.noreply.github.com
+#    GIT_AUTHOR_NAME: Social Groovy Bot
+#    GIT_COMMITTER_EMAIL: ${GIT_AUTHOR_EMAIL}
+#    GIT_COMMITTER_NAME: ${GIT_AUTHOR_NAME}
+#  cache:
+#    key: "${CI_JOB_NAME}-${CI_COMMIT_REF_SLUG}"
+#    paths:
+#      - ${CI_PROJECT_DIR}/.yarn
+#  before_script:
+#    - git checkout ${CI_COMMIT_REF_NAME}
+#    - git config user.name "Social Groovy Bot"
+#    - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
+#    - git remote set-url origin https://${GITHUB_TOKEN}@github.com/${CI_PROJECT_PATH}.git
+#  script:
+#    - yarn config set cache-folder ${CI_PROJECT_DIR}/.yarn
+#    - yarn --frozen-lockfile
+#    - GH_TOKEN=${GITHUB_TOKEN} yarn lerna version ${LERNA_ARGS:="--force-publish --yes"}
+#  except:
+#    variables:
+#      - $CI_COMMIT_MESSAGE =~ /^chore\(release.*/
+#  only:
+#    - master
+#  when: manual
+#
+#
+################################## NOTIFY ###############################
+#
+#Notify Fail:
+#  extends: .base_notify_fail_stage
+#  stage: Notify Finished Deployment
+#  dependencies:
+#    - Notify Starting Deployment
+#
+#Notify Success:
+#  extends: .base_notify_success_stage
+#  stage: Notify Finished Deployment
+#  dependencies:
+#    - Notify Starting Deployment
+#
+#Delete useless k8s namespaces:
+#  extends: .base_delete_useless_k8s_ns_stage
