@@ -5,6 +5,9 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
     "react/no-unescaped-entities": 0,
+    "react/jsx-fragments": "warn",
+    "react/jsx-props-no-spreading": "warn",
+    "jsx-a11y/control-has-associated-label": "warn",
     "react/jsx-sort-props": [
       1,
       {
