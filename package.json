@@ -39,7 +39,7 @@
     "react-markdown": "^4.3.1",
     "react-redux": "^7.2.0",
     "react-select": "^2.4.3",
-    "rebass": "^3.1.0",
+    "rebass": "^4.0.7",
     "redux": "^4.0.5",
     "redux-actions": "^2.6.5",
     "redux-saga": "^1.1.3",
