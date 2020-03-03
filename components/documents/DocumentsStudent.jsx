@@ -149,7 +149,7 @@ const DocumentsStudent = () => {
             OPTIONNEL - EN CAS DE PROFESSION RÉGLEMENTÉE
           </Heading>
           <Text fontSize={1} mb={2} textAlign="center">
-            {`Justificatif permettant d'exercer la profession réglementée`}
+            Justificatif permettant d'exercer la profession réglementée
           </Text>
           <Link
             href="http://www.ciep.fr/enic-naric-page/verifier-si-profession-est-reglementee"
