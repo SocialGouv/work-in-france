@@ -9,6 +9,7 @@ module.exports = withMDX({
       "/fail": { page: "/fail" },
       "/faq": { page: "/faq" },
       "/cgu": { page: "/cgu" },
+      "/stats": { page: "/stats" },
       "/student": { page: "/student" },
       "/company": { page: "/company" },
       "/validitycheck": { page: "/validitycheck" },
