@@ -11,11 +11,12 @@ variables:
   RANCHER_PROJECT_ID: "c-kk8xm:p-gj8cn" # "default" project id here
   PORT: 80
   VALUES_FILE: ./.k8s/app.values.yml # Your values
+  DOCKER_BUILD_ARGS: "--shm-size 512M"
   # Quotas app
-  APP_RESOURCE_CPU_LIMIT: "50m"
-  APP_RESOURCE_MEMORY_LIMIT: "96Mi"
-  APP_RESOURCE_CPU_REQUEST: "5m"
-  APP_RESOURCE_MEMORY_REQUEST: "80Mi"
+#  APP_RESOURCE_CPU_LIMIT: "50m"
+#  APP_RESOURCE_MEMORY_LIMIT: "96Mi"
+#  APP_RESOURCE_CPU_REQUEST: "5m"
+#  APP_RESOURCE_MEMORY_REQUEST: "80Mi"
 
 #
 
