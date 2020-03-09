@@ -38,7 +38,7 @@ const Footer = () => {
                 </NextLink>
               </Text>
               <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
-                <NextLink href="https://wif-dashboard.num.social.gouv.fr/national" passHref>
+                <NextLink href="/stats" passHref>
                   <StyledLink>Statistiques</StyledLink>
                 </NextLink>
               </Text>

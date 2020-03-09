@@ -8,6 +8,7 @@ module.exports = {
     "react/jsx-fragments": "warn",
     "react/jsx-props-no-spreading": "warn",
     "jsx-a11y/control-has-associated-label": "warn",
+    "react/prop-types": "warn",
     "react/jsx-sort-props": [
       1,
       {
