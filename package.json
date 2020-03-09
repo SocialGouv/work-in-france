@@ -38,7 +38,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-markdown": "^4.3.1",
-    "react-query": "^1.0.10",
+    "react-query": "^1.0.23",
     "react-redux": "^7.2.0",
     "react-select": "^2.4.3",
     "rebass": "3.1.0",
