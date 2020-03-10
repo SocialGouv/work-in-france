@@ -4,28 +4,28 @@ image:
 
 deployment:
 
-  port: ${PORT}
+  port: 80
 
   resources:
     limits:
-      cpu: ${APP_RESOURCE_CPU_LIMIT}
-      memory: ${APP_RESOURCE_MEMORY_LIMIT}
+      cpu: "50m"
+      memory: "96Mi"
     requests:
-      cpu: ${APP_RESOURCE_CPU_REQUEST}
-      memory: ${APP_RESOURCE_MEMORY_REQUEST}
+      cpu: "5m"
+      memory: "80Mi"
 
   livenessProbe:
     path: /
     periodSeconds: 5
-    port: ${PORT}
+    port: 80
   readinessProbe:
     path: /
     periodSeconds: 5
-    port: ${PORT}
+    port: 80
 
 service:
-  port: ${PORT}
-  targetPort: ${PORT}
+  port: 80
+  targetPort: 80
 
 ingress:
   enabled: true
@@ -33,13 +33,13 @@ ingress:
     appgw.ingress.kubernetes.io/ssl-redirect: "true"
     kubernetes.io/ingress.class: "azure/application-gateway"
   hosts:
-    - host: ${DOMAIN}
+    - host: "work-in-france.fabrique.social.gouv.fr"
       paths:
         - path: /
-          servicePort: ${PORT}
+          servicePort: 80
   tls:
     - hosts:
-        - ${DOMAIN}
+        - "work-in-france.fabrique.social.gouv.fr"
       secretName: work-in-france-crt
 
 autoscaling:
