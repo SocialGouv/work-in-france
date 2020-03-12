@@ -4,7 +4,7 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable react/no-danger */
 
-import React, { Fragment } from "react";
+import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
@@ -23,10 +23,10 @@ export default class MyDocument extends Document {
       return {
         ...initialProps,
         styles: (
-          <Fragment>
+          <>
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </Fragment>
+          </>
         ),
       };
     } finally {

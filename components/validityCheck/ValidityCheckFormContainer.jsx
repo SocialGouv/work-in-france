@@ -12,7 +12,4 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(ValidityCheckForm);
+export default connect(mapStateToProps, mapDispatchToProps)(ValidityCheckForm);
