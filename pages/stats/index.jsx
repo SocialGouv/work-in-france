@@ -71,9 +71,9 @@ const Charts = ({ group }) => {
           value={data.status.closed && data.status.closed.count}
         />
         <CardNumber
+          suffix={Math.ceil(parseFloat(data.duration)) > 1 ? " jours" : " jour"}
           title="Temps de traitement moyen"
           value={Math.ceil(parseFloat(data.duration))}
-          suffix={Math.ceil(parseFloat(data.duration)) > 1 ? " jours" : " jour"}
         />
       </Flex>
       <br />

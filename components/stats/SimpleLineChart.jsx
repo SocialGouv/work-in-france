@@ -10,11 +10,11 @@ import YAxis from "recharts/lib/cartesian/YAxis";
 function SimpleLineChart({ data = [], children }) {
   return (
     // 99% per https://github.com/recharts/recharts/issues/172
-    <ResponsiveContainer width="99%" height={320}>
+    <ResponsiveContainer height={320} width="99%">
       <LineChart data={data}>
         <XAxis dataKey="name" tick={{ fontFamily: "sans-serif" }} />
         <YAxis tick={{ fontFamily: "sans-serif" }} />
-        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <CartesianGrid strokeDasharray="3 3" vertical={false} />
         <Tooltip wrapperStyle={{ fontFamily: "sans-serif" }} />
         <Legend wrapperStyle={{ paddingTop: 20, fontFamily: "sans-serif" }} />
         {children}

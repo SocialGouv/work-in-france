@@ -1,5 +1,5 @@
 // @flow
-import React, { Fragment } from "react";
+import React from "react";
 import "url-search-params-polyfill";
 import { Flex, Box, Button, Link, Heading, Text, Image } from "rebass";
 import { ACard, BCard, List } from "./Style";
@@ -215,7 +215,7 @@ const DocumentsStudent = () => {
         sélectionné :
       </Text>
       {qualify && (
-        <Fragment>
+        <>
           <Box width={1 / 2}>
             <Flex flexWrap="wrap">
               <Box width={1}>
@@ -261,7 +261,7 @@ const DocumentsStudent = () => {
             {` En utilisant le service, l'usager s'engage sur la véracité des informations transmises lors du
         dépôt de son dossier.`}
           </Text>
-        </Fragment>
+        </>
       )}
     </Flex>
   );

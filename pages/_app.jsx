@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import App from "next/app";
 import { ThemeProvider } from "styled-components";
 import { Provider } from "react-redux";
@@ -25,18 +25,18 @@ class MyApp extends App {
   render() {
     const { Component, pageProps, store } = this.props;
     return (
-      <Fragment>
+      <>
         <GlobalStyle />
         <Provider store={store}>
           <ThemeProvider theme={theme}>
-            <Fragment>
+            <>
               <Header />
               <Component {...pageProps} />
               <Footer />
-            </Fragment>
+            </>
           </ThemeProvider>
         </Provider>
-      </Fragment>
+      </>
     );
   }
 }

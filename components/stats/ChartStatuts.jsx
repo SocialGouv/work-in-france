@@ -49,7 +49,7 @@ const ChartStatuts = ({ data }) => {
       <br />
       <ResponsiveContainer height={400}>
         <PieChart>
-          <Pie label={renderCustomizedLabel} data={pieData} dataKey="count" fill="#8884d8">
+          <Pie data={pieData} dataKey="count" fill="#8884d8" label={renderCustomizedLabel}>
             {pieData && pieData.map(entry => <Cell key={entry.color} fill={entry.color} />)}
           </Pie>
         </PieChart>

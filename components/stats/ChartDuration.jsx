@@ -39,10 +39,10 @@ const ChartDuration = ({ data }) => (
     <br />
     <SimpleLineChart data={getChartData(data)}>
       <Line
-        name="Temps de traitement moyen en jours"
-        type="linear"
         dataKey="total"
+        name="Temps de traitement moyen en jours"
         stroke="#0053b3"
+        type="linear"
       />
     </SimpleLineChart>
   </div>
