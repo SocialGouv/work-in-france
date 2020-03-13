@@ -3,18 +3,7 @@ const withMDX = require("@zeit/next-mdx")({
 });
 
 module.exports = withMDX({
-  exportPathMap() {
-    return {
-      "/": { page: "/" },
-      "/fail": { page: "/fail" },
-      "/faq": { page: "/faq" },
-      "/cgu": { page: "/cgu" },
-      "/stats": { page: "/stats" },
-      "/student": { page: "/student" },
-      "/company": { page: "/company" },
-      "/validitycheck": { page: "/validitycheck" },
-    };
-  },
+  exportTrailingSlash: true,
   publicRuntimeConfig: {
     // eslint-disable-next-line global-require
     VERSION: process.env.VERSION || require("./package.json").version,
