@@ -1,24 +1,10 @@
-
----
-
-#
-
 include:
-  - /.gitlab-ci/variables.yml
-  - /.gitlab-ci/extends.yml
-  #
-  - /.gitlab-ci/stages/quality.yml
-  - /.gitlab-ci/stages/register.yml
-  - /.gitlab-ci/stages/notify.yml
-  - /.gitlab-ci/stages/deploy.yml
+  - project: SocialGouv/gitlab-ci-yml
+    file: /autodevops_simple_app.yml
+    ref: v9.0.0
 
-#
-
-stages:
-- "Code Quality"
-- "Registration"
-- "Deploy"
-- "Notify Finished Deployment"
-- "Delete K8S Objects"
-
-#
+variables:
+  PROJECT: work-in-france
+  RANCHER_PROJECT_ID: "c-kk8xm:p-gj8cn" # "default" project id here
+  VALUES_FILE: ./.k8s/app.values.yml # Your values
+  DOCKER_BUILD_ARGS: "--shm-size 512M"

@@ -1,0 +1,43 @@
+image:
+  repository: ${CI_REGISTRY_IMAGE}
+  tag: ${IMAGE_TAG}
+
+deployment:
+
+  port: 80
+
+  resources:
+    limits:
+      cpu: "50m"
+      memory: "96Mi"
+    requests:
+      cpu: "5m"
+      memory: "80Mi"
+
+  livenessProbe:
+    path: /
+    periodSeconds: 5
+    port: 80
+  readinessProbe:
+    path: /
+    periodSeconds: 5
+    port: 80
+
+service:
+  port: 80
+  targetPort: 80
+
+ingress:
+  enabled: true
+  annotations:
+    appgw.ingress.kubernetes.io/ssl-redirect: "true"
+    kubernetes.io/ingress.class: "azure/application-gateway"
+  hosts:
+    - host: "work-in-france.fabrique.social.gouv.fr"
+      paths:
+        - path: /
+          servicePort: 80
+  tls:
+    - hosts:
+        - "work-in-france.fabrique.social.gouv.fr"
+      secretName: work-in-france-crt
