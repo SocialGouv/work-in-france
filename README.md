@@ -11,7 +11,7 @@ Ce dépôt de code contient le site web statique de [Work in France](https://w
 
 ### Modifier du contenu
 
-⚠ Les modifs sur la branche `master` déclenchent une mise à jour du site version dev : http://master.work-in-france.dev.factory.social.gouv.fr.
+⚠ Les modifs sur la branche `master` déclenchent une mise à jour du site en prod :https://work-in-france.fabrique.social.gouv.fr.
 
 #### Mettre à jour la F.A.Q.
 
