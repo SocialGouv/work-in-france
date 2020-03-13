@@ -15,13 +15,7 @@ deployment:
       memory: "80Mi"
 
   livenessProbe:
-    path: /
-    periodSeconds: 5
-    port: 80
-  readinessProbe:
-    path: /
-    periodSeconds: 5
-    port: 80
+    initialDelaySeconds: 30
 
 service:
   port: 80

@@ -26,6 +26,6 @@ ENV VERSION=${VERSION}
 
 RUN yarn deploy
 
-FROM nginx:1.17-alpine
+FROM registry.gitlab.factory.social.gouv.fr/socialgouv/docker/nginx4spa:0.28.0
 
 COPY --from=builder /app/out /usr/share/nginx/html
