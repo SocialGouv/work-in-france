@@ -41,6 +41,3 @@ ingress:
     - hosts:
         - "work-in-france.fabrique.social.gouv.fr"
       secretName: work-in-france-crt
-
-autoscaling:
-  enabled: false
