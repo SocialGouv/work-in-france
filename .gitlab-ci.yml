@@ -8,3 +8,22 @@ variables:
   RANCHER_PROJECT_ID: "c-kk8xm:p-gj8cn" # "default" project id here
   VALUES_FILE: ./.k8s/app.values.yml # Your values
   DOCKER_BUILD_ARGS: "--shm-size 512M"
+
+#
+
+Build:
+  extends:
+    - .base_yarn_build_next
+  dependencies:
+    - Install
+  needs:
+    - Install
+  variables:
+    VERSION: ${CI_COMMIT_SHORT_SHA}
+  script:
+    - yarn build
+    - yarn export
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - out
