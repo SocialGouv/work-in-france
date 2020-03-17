@@ -1289,10 +1289,10 @@
   resolved "https://registry.yarnpkg.com/@redux-saga/types/-/types-1.1.0.tgz#0e81ce56b4883b4b2a3001ebe1ab298b84237204"
   integrity sha512-afmTuJrylUU/0OtqzaRkbyYFFNgCF73Bvel/sw90pvGrWIZ+vyoIJqA6eMSoA6+nb443kTmulmBtC9NerXboNg==
 
-"@socialgouv/react-departements@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@socialgouv/react-departements/-/react-departements-2.0.2.tgz#b5bb93a9727b2bd009377a53e287f50b6f719d27"
-  integrity sha512-ymqQz6OnPVi/Nhmc5Vo1JpFXZ15u80+IjS85jdkQM1O2OtClaXoNS93HMhIsNByzDQlHmRowHdip4p5S+evIGg==
+"@socialgouv/react-departements@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@socialgouv/react-departements/-/react-departements-2.1.0.tgz#2bf34c06cebe99866b66581bb98e08ed1d7cd7d1"
+  integrity sha512-5x144v0Hzz9g68aZKWB8y8yn/DN/GMAA8aHRpEKXokM+zZ457DcktXh4qH2Sdf2djN7XGXsqonIbIgpi/Bkspw==
   dependencies:
     react-svgmt "^1.1.9"
 
