@@ -3,6 +3,10 @@ const withMDX = require("@zeit/next-mdx")({
 });
 
 module.exports = withMDX({
+  env: {
+    DS_AGGREGATOR_API_URL:
+      process.env.DS_AGGREGATOR_API_URL || "https://ds-aggregator-api.incubateur.social.gouv.fr",
+  },
   exportTrailingSlash: true,
   publicRuntimeConfig: {
     // eslint-disable-next-line global-require
