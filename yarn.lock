@@ -1289,15 +1289,12 @@
   resolved "https://registry.yarnpkg.com/@redux-saga/types/-/types-1.1.0.tgz#0e81ce56b4883b4b2a3001ebe1ab298b84237204"
   integrity sha512-afmTuJrylUU/0OtqzaRkbyYFFNgCF73Bvel/sw90pvGrWIZ+vyoIJqA6eMSoA6+nb443kTmulmBtC9NerXboNg==
 
-"@socialgouv/react-departements@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@socialgouv/react-departements/-/react-departements-1.0.1.tgz#94a351770e5e403802ea3120f50eb611b24233aa"
-  integrity sha512-GdgvmKBXXDp5hV4trcKP4jnUZMpVJQblmbbSm3FS4qWL4H5qslqXYrqDDARFxiGNi0l1SaTZB26cm/MJjGs2FQ==
+"@socialgouv/react-departements@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@socialgouv/react-departements/-/react-departements-2.0.2.tgz#b5bb93a9727b2bd009377a53e287f50b6f719d27"
+  integrity sha512-ymqQz6OnPVi/Nhmc5Vo1JpFXZ15u80+IjS85jdkQM1O2OtClaXoNS93HMhIsNByzDQlHmRowHdip4p5S+evIGg==
   dependencies:
-    prop-types "^15.7.2"
-    react "^16.8.6"
-    react-dom "^16.8.6"
-    react-svgmt "^1.1.8"
+    react-svgmt "^1.1.9"
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
@@ -7360,7 +7357,7 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.13.0, react-dom@^16.8.6:
+react-dom@^16.13.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.0.tgz#cdde54b48eb9e8a0ca1b3dc9943d9bb409b81866"
   integrity sha512-y09d2c4cG220DzdlFkPTnVvGTszVvNpC73v+AaLGLHbkpy3SSgvYq8x0rNwPJ/Rk/CicTNgk0hbHNw1gMEZAXg==
@@ -7484,10 +7481,10 @@ react-smooth@^1.0.5:
     raf "^3.4.0"
     react-transition-group "^2.5.0"
 
-react-svgmt@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/react-svgmt/-/react-svgmt-1.1.8.tgz#c8bef2e888e9f97f2a7943bc26a578625a8a60c4"
-  integrity sha512-3xu7iWuHIbqM2hv4eMsAN1mZKz6EnXTPAcE4mMX/NwuYY5uUKJBoKDAmxY+I6KXHx2SpYJtKAqe1a5jEehteZg==
+react-svgmt@^1.1.9:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/react-svgmt/-/react-svgmt-1.1.11.tgz#2c28477ccc44e6bbfa621a92476c5c4b579a1022"
+  integrity sha512-y85s2dy37AJ0z+Sjsnwpkt/5md9nUFh2gkcTZL68uG5ZqIIXf7Na2CrinXWm6anY5JmnMQAXsoMlozcro1H8DA==
   dependencies:
     d3-ease "^1.0.3"
     react-motion "^0.5.2"
@@ -7502,7 +7499,7 @@ react-transition-group@^2.2.1, react-transition-group@^2.5.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react@^16.13.0, react@^16.8.6:
+react@^16.13.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.0.tgz#d046eabcdf64e457bbeed1e792e235e1b9934cf7"
   integrity sha512-TSavZz2iSLkq5/oiE7gnFzmURKZMltmi193rm5HEoUDAXpzT9Kzw6oNZnGoai/4+fUnm7FqS5dwgUL34TujcWQ==
