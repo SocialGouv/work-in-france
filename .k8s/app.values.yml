@@ -8,11 +8,11 @@ deployment:
 
   resources:
     limits:
-      cpu: "50m"
-      memory: "96Mi"
+      cpu: "150m"
+      memory: "64Mi"
     requests:
       cpu: "5m"
-      memory: "80Mi"
+      memory: "16Mi"
 
   livenessProbe:
     initialDelaySeconds: 30
