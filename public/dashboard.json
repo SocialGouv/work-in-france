@@ -4,199 +4,199 @@
       "id": "national",
       "title": "France entière",
       "data": [
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/02",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/10",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/13",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/25",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/33",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/35",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/36",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/42",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/45",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/51",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/52",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/54",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/55",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/57",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/59",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/60",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/62",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/63",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/67",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/68",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/69",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/75",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/76",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/77",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/78",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/80",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/88",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/91",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/92",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/93",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/94",
-        "https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/95"
+        "/api/statistics/02",
+        "/api/statistics/10",
+        "/api/statistics/13",
+        "/api/statistics/25",
+        "/api/statistics/33",
+        "/api/statistics/35",
+        "/api/statistics/36",
+        "/api/statistics/42",
+        "/api/statistics/45",
+        "/api/statistics/51",
+        "/api/statistics/52",
+        "/api/statistics/54",
+        "/api/statistics/55",
+        "/api/statistics/57",
+        "/api/statistics/59",
+        "/api/statistics/60",
+        "/api/statistics/62",
+        "/api/statistics/63",
+        "/api/statistics/67",
+        "/api/statistics/68",
+        "/api/statistics/69",
+        "/api/statistics/75",
+        "/api/statistics/76",
+        "/api/statistics/77",
+        "/api/statistics/78",
+        "/api/statistics/80",
+        "/api/statistics/88",
+        "/api/statistics/91",
+        "/api/statistics/92",
+        "/api/statistics/93",
+        "/api/statistics/94",
+        "/api/statistics/95"
       ]
     },
     {
       "id": "aisne",
       "title": "02 - Aisne",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/02"]
+      "data": ["/api/statistics/02"]
     },
     {
       "id": "aube",
       "title": "10 - Aube",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/10"]
+      "data": ["/api/statistics/10"]
     },
     {
       "id": "bouches-du-rhone",
       "title": "13 - Bouches du Rhône",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/13"]
+      "data": ["/api/statistics/13"]
     },
     {
       "title": "25 - Doubs",
       "id": "doubs",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/25"]
+      "data": ["/api/statistics/25"]
     },
     {
       "title": "33 - Gironde",
       "id": "gironde",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/33"]
+      "data": ["/api/statistics/33"]
     },
     {
       "title": "35 - Ille-et-Vilaine",
       "id": "ille-et-villaine",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/35"]
+      "data": ["/api/statistics/35"]
     },
     {
       "title": "36 - Indre",
       "id": "indre",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/36"]
+      "data": ["/api/statistics/36"]
     },
     {
       "title": "42 - Loire",
       "id": "loire",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/42"]
+      "data": ["/api/statistics/42"]
     },
     {
       "title": "45 - Loiret",
       "id": "loiret",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/45"]
+      "data": ["/api/statistics/45"]
     },
     {
       "title": "51 - Marne",
       "id": "marne",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/51"]
+      "data": ["/api/statistics/51"]
     },
     {
       "title": "52 - Haute-Marne",
       "id": "haute-marne",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/52"]
+      "data": ["/api/statistics/52"]
     },
     {
       "title": "54 - Meurthe-et-Moselle",
       "id": "meurthe-et-moselle",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/54"]
+      "data": ["/api/statistics/54"]
     },
     {
       "title": "55 - Meuse",
       "id": "meuse",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/55"]
+      "data": ["/api/statistics/55"]
     },
     {
       "title": "57 - Moselle",
       "id": "moselle",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/57"]
+      "data": ["/api/statistics/57"]
     },
     {
       "title": "59 - Nord",
       "id": "nord",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/59"]
+      "data": ["/api/statistics/59"]
     },
     {
       "title": "60 - Oise",
       "id": "oise",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/60"]
+      "data": ["/api/statistics/60"]
     },
     {
       "title": "62 - Pas-de-Calais",
       "id": "pas-de-calais",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/62"]
+      "data": ["/api/statistics/62"]
     },
     {
       "title": "63 - Puy-de-Dôme",
       "id": "puy-de-dome",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/63"]
+      "data": ["/api/statistics/63"]
     },
     {
       "title": "67 - Bas-Rhin",
       "id": "bas-rhin",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/67"]
+      "data": ["/api/statistics/67"]
     },
     {
       "title": "68 - Haut-Rhin",
       "id": "haut-rhin",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/68"]
+      "data": ["/api/statistics/68"]
     },
     {
       "title": "69 - Rhône",
       "id": "rhone",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/69"]
+      "data": ["/api/statistics/69"]
     },
     {
       "title": "75 - Paris",
       "id": "paris",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/75"]
+      "data": ["/api/statistics/75"]
     },
     {
       "title": "76 - Seine Maritime",
       "id": "seine-maritime",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/76"]
+      "data": ["/api/statistics/76"]
     },
     {
       "title": "77 - Seine et marne",
       "id": "seine-et-marne",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/77"]
+      "data": ["/api/statistics/77"]
     },
     {
       "title": "78 - Yvelines",
       "id": "yvelines",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/78"]
+      "data": ["/api/statistics/78"]
     },
     {
       "title": "80 - Somme",
       "id": "somme",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/80"]
+      "data": ["/api/statistics/80"]
     },
     {
       "title": "88 - Vosges",
       "id": "vosges",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/88"]
+      "data": ["/api/statistics/88"]
     },
     {
       "title": "91 - Essonne",
       "id": "essonne",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/91"]
+      "data": ["/api/statistics/91"]
     },
     {
       "title": "92 - Hauts de Seine",
       "id": "hauts-de-seine",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/92"]
+      "data": ["/api/statistics/92"]
     },
     {
       "title": "93 - Seine-Saint-Denis",
       "id": "seine-saint-denis",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/93"]
+      "data": ["/api/statistics/93"]
     },
     {
       "title": "94 - Val de Marne",
       "id": "val-de-marne",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/94"]
+      "data": ["/api/statistics/94"]
     },
     {
       "title": "95 - Val-d'Oise",
       "id": "val-d-oise",
-      "data": ["https://ds-aggregator-api.incubateur.social.gouv.fr/api/statistics/95"]
+      "data": ["/api/statistics/95"]
     }
   ]
 }

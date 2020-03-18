@@ -17,6 +17,14 @@ deployment:
   livenessProbe:
     initialDelaySeconds: 30
 
+  env:
+    - name: DS_AGGREGATOR_API_URL
+      value: "https://ds-aggregator-api.incubateur.social.gouv.fr"
+    - name: PORT
+      value: "80"
+    - name: NODE_ENV
+      value: production
+
 service:
   port: 80
   targetPort: 80
