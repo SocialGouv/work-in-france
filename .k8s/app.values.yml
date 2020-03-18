@@ -19,7 +19,7 @@ deployment:
 
   env:
     - name: DS_AGGREGATOR_API_URL
-      value: "https://ds-aggregator-api.incubateur.social.gouv.fr"
+      value: "https://661e3c5-wif-bo.dev.fabrique.social.gouv.fr"
     - name: PORT
       value: "80"
     - name: NODE_ENV
