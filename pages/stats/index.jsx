@@ -15,7 +15,7 @@ import mergeStats from "../../lib/mergeStats";
 import { Wrapper } from "../../components/commons/Grid";
 
 const MenuLink = styled.a`
-  color: ${props => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.text};
   &:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -24,7 +24,7 @@ const MenuLink = styled.a`
 
 const Menu = ({ groups, selected }) =>
   (groups &&
-    groups.map(group => (
+    groups.map((group) => (
       <div key={group.id} style={{ display: "block", width: 200 }}>
         <Link href={`/stats?region=${group.id}`} passHref>
           <MenuLink
@@ -39,15 +39,15 @@ const Menu = ({ groups, selected }) =>
     ))) ||
   null;
 
-const fetchAllData = async urls => {
+const fetchAllData = async (urls) => {
   // sum up multiple results and make averages
-  const result = await Promise.all(urls.map(url => fetchDs(url)));
+  const result = await Promise.all(urls.map((url) => fetchDs(url)));
   const summed = result.slice(1).reduce((a, c) => mergeStats(a, c), result[0]);
   return summed;
 };
 
 // fetch a single stat or merge multiple
-const fetchData = urls => (urls.length === 1 ? fetchDs(urls[0]) : fetchAllData(urls));
+const fetchData = (urls) => (urls.length === 1 ? fetchDs(urls[0]) : fetchAllData(urls));
 
 const CardNumber = ({ title, value }) => (
   <Card style={{ textAlign: "center", border: "1px solid silver", borderRadius: 3, padding: 10 }}>
@@ -92,7 +92,7 @@ const Charts = ({ group }) => {
 const Stats = () => {
   const router = useRouter();
   const { region = "national" } = router.query;
-  const { data } = useQuery("dashboard", () => fetch("/dashboard.json").then(r => r.json()));
+  const { data } = useQuery("dashboard", () => fetch("/dashboard.json").then((r) => r.json()));
   return (
     <Box bg="white" p={4}>
       <Head>
@@ -102,7 +102,7 @@ const Stats = () => {
         <Flex flexDirection="row">
           <Box width={200}>{data && <Menu groups={data.groups} selected={region} />}</Box>
           <Box width="100%">
-            {(data && <Charts group={data.groups.find(g => g.id === region)} />) || (
+            {(data && <Charts group={data.groups.find((g) => g.id === region)} />) || (
               <div>chargement...</div>
             )}
           </Box>

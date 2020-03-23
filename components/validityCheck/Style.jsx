@@ -7,7 +7,7 @@ const Form = styled.form``;
 const Input = styled.input`
   height: 50px;
   font-size: 16px;
-  border: 1px solid ${props => (props.hasError ? "#d1335b" : "#cccccc")};
+  border: 1px solid ${(props) => (props.hasError ? "#d1335b" : "#cccccc")};
   background-color: #fff;
   border-radius: 3px;
   padding: 5px 10px;

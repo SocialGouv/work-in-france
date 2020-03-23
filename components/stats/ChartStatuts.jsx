@@ -20,7 +20,7 @@ const LABELS = {
   without_continuation: "Sans suite",
 };
 
-const getChartData = data => {
+const getChartData = (data) => {
   if (data) {
     return Object.keys(data.status)
       .reduce(
@@ -34,12 +34,12 @@ const getChartData = data => {
         ],
         [],
       )
-      .filter(row => row.count > 0);
+      .filter((row) => row.count > 0);
   }
   return [];
 };
 
-const renderCustomizedLabel = props => `${props.payload.name} : ${props.payload.count}`;
+const renderCustomizedLabel = (props) => `${props.payload.name} : ${props.payload.count}`;
 
 const ChartStatuts = ({ data }) => {
   const pieData = getChartData(data);
@@ -50,7 +50,7 @@ const ChartStatuts = ({ data }) => {
       <ResponsiveContainer height={400}>
         <PieChart>
           <Pie data={pieData} dataKey="count" fill="#8884d8" label={renderCustomizedLabel}>
-            {pieData && pieData.map(entry => <Cell key={entry.color} fill={entry.color} />)}
+            {pieData && pieData.map((entry) => <Cell key={entry.color} fill={entry.color} />)}
           </Pie>
         </PieChart>
       </ResponsiveContainer>

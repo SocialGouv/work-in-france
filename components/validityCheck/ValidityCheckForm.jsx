@@ -27,7 +27,7 @@ const ValidityCheckForm = (props: Props) => {
         birthdateMonth: "",
         birthdateYear: "",
       }}
-      onSubmit={values => {
+      onSubmit={(values) => {
         submitValidityCheck({
           authorizationId: values.authorizationId,
           birthdate: `${values.birthdateYear}-${values.birthdateMonth}-${values.birthdateDay}`,
@@ -117,7 +117,7 @@ const ValidityCheckForm = (props: Props) => {
           </Flex>
         </Form>
       )}
-      validate={values => {
+      validate={(values) => {
         const errors = {};
         if (!values.authorizationId) {
           errors.authorizationId = "Ce champ est obligatoire";

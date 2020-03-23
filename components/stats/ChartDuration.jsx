@@ -6,7 +6,7 @@ import { Heading } from "rebass";
 
 import SimpleLineChart from "./SimpleLineChart";
 
-const dateFormat = str => format(new Date(str), "MMM yy", { locale: frLocale });
+const dateFormat = (str) => format(new Date(str), "MMM yy", { locale: frLocale });
 
 const dateSort = (a, b) => {
   if (a.month < b.month) return -1;
@@ -14,7 +14,7 @@ const dateSort = (a, b) => {
   return 0;
 };
 
-const getChartData = data => {
+const getChartData = (data) => {
   if (data) {
     const rows = Object.keys(data.monthly).reduce(
       (months, month) => [
