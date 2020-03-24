@@ -44,7 +44,7 @@ class SearchForm extends Component<Props, State> {
         initialValues={{
           currentDepartement: null,
         }}
-        onSubmit={values => {
+        onSubmit={(values) => {
           this.handleSubmit(values);
         }}
         render={({ errors, touched, values, setFieldValue, handleSubmit }) => (
@@ -60,7 +60,7 @@ class SearchForm extends Component<Props, State> {
                   id="departement"
                   isSearchable
                   name="departement"
-                  onChange={value => this.setcurrentDepartement(value, setFieldValue)}
+                  onChange={(value) => this.setcurrentDepartement(value, setFieldValue)}
                   options={orderDepartement(DEPARTEMENTS, true)}
                   placeholder="Département sur le titre de séjour"
                   value={values.currentDepartement}
@@ -112,7 +112,7 @@ class SearchForm extends Component<Props, State> {
             </Flex>
           </form>
         )}
-        validate={values => {
+        validate={(values) => {
           const errors = {};
           if (values.currentDepartement === null) {
             errors.currentDepartement = "Ce champ est obligatoire";

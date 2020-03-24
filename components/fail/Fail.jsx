@@ -4,14 +4,14 @@ import Router from "next/router";
 import { DEPARTEMENTS } from "../../constants/departements";
 import { CONTACTS } from "../../constants/contact";
 
-const getContacts = currentDepartement => {
-  const currentContacts = CONTACTS.filter(contact => {
+const getContacts = (currentDepartement) => {
+  const currentContacts = CONTACTS.filter((contact) => {
     return contact.departments.includes(currentDepartement);
   });
   return currentContacts;
 };
 const Fail = () => {
-  const departements = DEPARTEMENTS.filter(departement => {
+  const departements = DEPARTEMENTS.filter((departement) => {
     return departement.isAllowed;
   });
   const departementsSize = departements.length;
@@ -40,11 +40,11 @@ const Fail = () => {
         <Heading mb="2" mt="4">
           En attendant, veuillez vous adresser à la :
         </Heading>
-        {currentContacts.map(currentContact => {
+        {currentContacts.map((currentContact) => {
           return (
             <Card key={currentContact.slug} bg="grey" borderRadius="6px" mb="4" p={3}>
               <Heading mb="2">{`${currentContact.type} ${currentContact.name}`}</Heading>
-              {currentContact.address.map(line => {
+              {currentContact.address.map((line) => {
                 return <Text key={line}>{line}</Text>;
               })}
               <Text fontStyle="italic">{currentContact.post_code}</Text>

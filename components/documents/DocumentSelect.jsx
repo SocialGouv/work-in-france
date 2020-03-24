@@ -20,10 +20,10 @@ const DocumentSelect = (props: Props) => {
     let qualify = "";
     const link = new URLSearchParams(window.location.search);
     qualify = link.get("link");
-    const currentDepartementArray = DEPARTEMENTS.filter(departement => {
+    const currentDepartementArray = DEPARTEMENTS.filter((departement) => {
       return departement.company === qualify || departement.student === qualify;
     });
-    currentDepartement = currentDepartementArray.reduce(current => {
+    currentDepartement = currentDepartementArray.reduce((current) => {
       return current;
     });
   }
@@ -33,7 +33,7 @@ const DocumentSelect = (props: Props) => {
         id="departement"
         isSearchable
         name="departement"
-        onChange={selectedOption => {
+        onChange={(selectedOption) => {
           redirect(
             {},
             isStudent

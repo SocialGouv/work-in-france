@@ -1,6 +1,6 @@
 const orderDepartements = (departements, hasInactivateDepartement) => {
   const orderedDepartement = [];
-  departements.map(departement => {
+  departements.map((departement) => {
     if (departement.isAllowed) {
       orderedDepartement.push(departement);
     }
@@ -8,7 +8,7 @@ const orderDepartements = (departements, hasInactivateDepartement) => {
   });
   if (hasInactivateDepartement) {
     orderedDepartement.push({ value: "", label: "", isDisabled: true });
-    departements.map(departement => {
+    departements.map((departement) => {
       if (!departement.isAllowed) {
         orderedDepartement.push(departement);
       }

@@ -26,7 +26,7 @@ const MenuLink = styled.a`
   &:first-child {
     margin-right: 20px;
   }
-  color: ${props => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.text};
   &:hover {
     text-decoration: underline;
     cursor: pointer;

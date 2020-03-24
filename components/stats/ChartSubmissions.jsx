@@ -12,7 +12,7 @@ import Bar from "recharts/lib/cartesian/Bar";
 import XAxis from "recharts/lib/cartesian/XAxis";
 import YAxis from "recharts/lib/cartesian/YAxis";
 
-const dateFormat = str => format(new Date(str), "MMM yy", { locale: frLocale });
+const dateFormat = (str) => format(new Date(str), "MMM yy", { locale: frLocale });
 
 const dateSort = (a, b) => {
   if (a.month < b.month) return -1;
@@ -20,7 +20,7 @@ const dateSort = (a, b) => {
   return 0;
 };
 
-const getChartData = data => {
+const getChartData = (data) => {
   if (data) {
     const rows = Object.keys(data.monthly).reduce(
       (months, month) => [
