@@ -43,28 +43,28 @@ const Footer = () => {
                 </NextLink>
               </Text>
               <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
-                <a href="mailto:contact@workinfrance.beta.gouv.fr">
-                  <StyledLink>Contactez-nous</StyledLink>
-                </a>
+                <StyledLink href="mailto:contact@workinfrance.beta.gouv.fr">
+                  Contactez-nous
+                </StyledLink>
               </Text>
             </Flex>
           </Box>
           <Box px={5} width={1}>
             <Flex flexDirection="row-reverse" flexWrap="wrap" justifyContent="space-around">
-              <a
+              <StyledLink
                 href={`${GITHUB_REPO}/tree/${publicRuntimeConfig.VERSION}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <StyledLink>Contribuer sur Github</StyledLink>
-              </a>
-              <a
+                Contribuer sur Github
+              </StyledLink>
+              <StyledLink
                 href={`${GITHUB_REPO}/compare/${publicRuntimeConfig.VERSION}...master`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <StyledLink>Journal des modifications</StyledLink>
-              </a>
+                Journal des modifications
+              </StyledLink>
               <Text>{`Version ${publicRuntimeConfig.VERSION}`}</Text>
             </Flex>
           </Box>
