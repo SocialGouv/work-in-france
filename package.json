@@ -29,7 +29,7 @@
     "@socialgouv/react-departements": "^3.0.0",
     "@zeit/next-mdx": "^1.2.0",
     "axios": "^0.19.2",
-    "date-fns": "^2.11.0",
+    "date-fns": "^2.11.1",
     "formik": "^2.1.4",
     "memoizee": "^0.4.14",
     "next": "^9.3.2",
