@@ -69,7 +69,7 @@
     "flow-bin": "^0.123.0",
     "flow-typed": "^2.5.1",
     "husky": "^4.2.5",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.5"
   },
   "config": {
     "commitizen": {
