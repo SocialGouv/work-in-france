@@ -68,7 +68,7 @@
     "eslint-plugin-react": "^7.19.0",
     "flow-bin": "^0.123.0",
     "flow-typed": "^2.5.1",
-    "husky": "^4.2.3",
+    "husky": "^4.2.5",
     "prettier": "^2.0.2"
   },
   "config": {
