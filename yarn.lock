@@ -7797,10 +7797,10 @@ react-move@^2.7.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-query@^1.4.1:
-  version "1.5.8"
-  resolved "https://registry.yarnpkg.com/react-query/-/react-query-1.5.8.tgz#80cd99cb279d1ff0ac64122761d95a3e4b014d49"
-  integrity sha512-tQIndH00/pJ21jCIche2jwcoflNGPrSBx0m9MxuDEbTwbQztp5dCzN+3/tKWk6dRw2jrhsV78KhoeYrR21SkZQ==
+react-query@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.0.2.tgz#6fd9b4dfb4a1c06364f840e7ed53050af395a2d8"
+  integrity sha512-AvVA7+1SK+TFiu5KcRoEFKC2cCWIlnIDXIWuqcboIH3JSh56UXxl0WDS1x5TqBvNkpu6oIT+IFjT8voj3dGojg==
   dependencies:
     "@scarf/scarf" "^1.0.6"
     ts-toolbelt "^6.9.4"
