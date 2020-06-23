@@ -177,7 +177,13 @@ const DEPARTEMENTS = [
     company: "ud063-apt-etudiants-employeur",
     student: "ud063-apt-etudiants",
   },
-  { value: "64", label: "64 - Pyrénées-atlantiques" },
+  {
+    isAllowed: true,  
+    value: "64",
+    label: "64 - Pyrénées-atlantiques",
+    company: "ud064-apt-etudiants-employeur",
+    student: "ud064-apt-etudiants",
+  },
   { value: "65", label: "65 - Hautes-Pyrénées" },
   { value: "66", label: "66 - Pyrénées-orientales" },
   {
