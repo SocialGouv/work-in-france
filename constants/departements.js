@@ -9,7 +9,7 @@ const DEPARTEMENTS = [
   },
   { value: "03", label: "03 - Allier" },
   { value: "04", label: "04 - Alpes-de-Haute-Provence" },
-  { value: "05", label: "05 - Hautes-alpes" },
+  { value: "05", label: "05 - Hautes-Alpes" },
   { value: "06", label: "06 - Alpes-maritimes" },
   { value: "07", label: "07 - Ardèche" },
   { value: "08", label: "08 - Ardennes" },
