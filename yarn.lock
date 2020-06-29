@@ -7748,10 +7748,10 @@ react-move@^2.7.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-query@^2.4.4:
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.4.4.tgz#31cb61738f2534fe51eb3921afd3a57abefa3f07"
-  integrity sha512-rDGMj4KHFt+D83Aq076rmAZDnfsVcArrOYQusO7EgIbMa9ioeppJ/fdSGiGH+tfShB4o+8xpKBxpHFjuLnitQw==
+react-query@^2.4.5:
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.4.5.tgz#3f72f8695430c5c4d9dd4a84fe2e6fa4a3e68445"
+  integrity sha512-q1OLp+FcME56m7o/ZPjbdx3VRucWOAM+S6oJRQEoxTRckUoZTcW+Ep1xpWUKes57CNea2Je5xYSc9nEg5VxAmw==
   dependencies:
     "@scarf/scarf" "^1.0.6"
     ts-toolbelt "^6.9.4"
