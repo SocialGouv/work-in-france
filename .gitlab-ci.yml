@@ -1,13 +1,14 @@
 include:
   - project: SocialGouv/gitlab-ci-yml
     file: /autodevops_simple_app.yml
-    ref: v9.1.1
+    ref: v16.1.0
 
 variables:
   PROJECT: work-in-france
   RANCHER_PROJECT_ID: "c-kk8xm:p-gj8cn" # "default" project id here
   VALUES_FILE: ./.k8s/app.values.yml # Your values
   DOCKER_BUILD_ARGS: "--shm-size 512M"
+  PORT: 80
 
 #
 

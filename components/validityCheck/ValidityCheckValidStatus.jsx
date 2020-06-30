@@ -2,6 +2,7 @@
 import React from "react";
 import { Card, Heading, Text } from "rebass";
 import { format } from "date-fns";
+import frLocale from "date-fns/locale/fr";
 import { List, SubList } from "./Style";
 
 type Props = {
@@ -12,8 +13,8 @@ const ValidityCheckValidStatus = (props: Props) => {
   const {
     data: { ds_id: id, prenom, nom, siret, date_de_debut_apt: start, date_de_fin_apt: end },
   } = props;
-  const startDate = format(start, "DD/MM/YYYY");
-  const endDate = format(end, "DD/MM/YYYY");
+  const startDate = format(new Date(start), "dd-MM-yyyy", { locale: frLocale });
+  const endDate = format(new Date(end), "dd-MM-yyyy", { locale: frLocale });
   return (
     <Card border="1px solid" borderColor="green" borderRadius="6px" mb="4" p={[3, 4]}>
       <Heading color="green" mb="2">

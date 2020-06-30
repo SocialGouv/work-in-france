@@ -11,6 +11,7 @@
         "/api/statistics/33",
         "/api/statistics/35",
         "/api/statistics/36",
+        "/api/statistics/38",
         "/api/statistics/42",
         "/api/statistics/45",
         "/api/statistics/51",
@@ -22,6 +23,7 @@
         "/api/statistics/60",
         "/api/statistics/62",
         "/api/statistics/63",
+        "/api/statistics/64",
         "/api/statistics/67",
         "/api/statistics/68",
         "/api/statistics/69",
@@ -72,6 +74,11 @@
       "title": "36 - Indre",
       "id": "indre",
       "data": ["/api/statistics/36"]
+    },
+    {
+      "title": "38 - Isère",
+      "id": "isere",
+      "data": ["/api/statistics/38"]
     },
     {
       "title": "42 - Loire",
@@ -127,6 +134,11 @@
       "title": "63 - Puy-de-Dôme",
       "id": "puy-de-dome",
       "data": ["/api/statistics/63"]
+    },
+    {
+      "title": "64 - Pyrénées-atlantiques",
+      "id": "pyrenees-atlantiques",
+      "data": ["/api/statistics/64"]
     },
     {
       "title": "67 - Bas-Rhin",
