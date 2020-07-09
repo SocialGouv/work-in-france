@@ -3,7 +3,7 @@ import Head from "next/head";
 import IntroductionSearch from "../components/introductionSearch";
 import IntroductionExplanation from "../components/introductionExplanations";
 
-const Home = () => {
+const IntroductionPage = () => {
   return (
     <Fragment>
       <Head>
@@ -15,4 +15,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default IntroductionPage;
