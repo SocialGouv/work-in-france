@@ -53,15 +53,15 @@ const Footer = () => {
             <Flex flexDirection="row-reverse" flexWrap="wrap" justifyContent="space-around">
               <StyledLink
                 href={`${GITHUB_REPO}/tree/${publicRuntimeConfig.VERSION}`}
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 Contribuer sur Github
               </StyledLink>
               <StyledLink
                 href={`${GITHUB_REPO}/compare/${publicRuntimeConfig.VERSION}...master`}
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 Journal des modifications
               </StyledLink>
