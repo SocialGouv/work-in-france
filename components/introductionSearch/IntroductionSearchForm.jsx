@@ -23,7 +23,7 @@ const IntroductionSearchForm = () => {
           name="departement"
           onChange={(option) => setDepartement(option)}
           options={DEPARTEMENT_OPTIONS}
-          placeholder="Département sur le titre de séjour"
+          placeholder="Département de l'établissement de rattachement"
           value={departement}
         />
       </Box>
