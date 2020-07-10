@@ -7,7 +7,7 @@ const IntroductionPage = () => {
   return (
     <>
       <Head>
-        <title>Work in France - Votre demande d'introduction de salarié</title>
+        <title>Work in France - Votre demande d'autorisation de travail</title>
       </Head>
       <IntroductionSearch />
       <IntroductionExplanation />
