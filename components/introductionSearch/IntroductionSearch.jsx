@@ -25,7 +25,7 @@ const IntroductionSearch = () => {
           mb={[2, 3]}
           textAlign="center"
         >
-          Faire une introduction de salarié
+          Demander votre autorisation de travail (introduction d'un salarié étranger en France)
         </Heading>
         <Flex justifyContent="center">
           <Text
@@ -36,8 +36,7 @@ const IntroductionSearch = () => {
             textAlign="center"
             width={[1, 2 / 3]}
           >
-            Etudiants étrangers ou employeurs, faites votre demande d’autorisation provisoire de
-            travail en quelques clics avec Work in France
+            Employeurs, faites votre demande d'autorisation de travail pour recruter un salarié étranger résident hors de France (procédure d'untroduction) en quelques clics
           </Text>
         </Flex>
         <IntroductionSearchForm />
