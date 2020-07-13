@@ -25,7 +25,7 @@ const IntroductionSearch = () => {
           mb={[2, 3]}
           textAlign="center"
         >
-          Demander votre autorisation de travail (introduction d'un salarié étranger en France)
+          Demandez votre autorisation de travail
         </Heading>
         <Flex justifyContent="center">
           <Text
