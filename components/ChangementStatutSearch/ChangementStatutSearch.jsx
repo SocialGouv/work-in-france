@@ -25,7 +25,7 @@ const IntroductionSearch = () => {
           mb={[2, 3]}
           textAlign="center"
         >
-          Faire une demande de changement de statut
+          Demandez votre changement de statut d'étudiant à salarié
         </Heading>
         <Flex justifyContent="center">
           <Text
@@ -36,8 +36,8 @@ const IntroductionSearch = () => {
             textAlign="center"
             width={[1, 2 / 3]}
           >
-            Etudiants étrangers ou employeurs, faites votre demande d’autorisation provisoire de
-            travail en quelques clics avec Work in France
+           Employeurs, Etudiants, demandez votre autorisation de travail pour recruter 
+           un salarié étranger résidant en France (procédure de changement de statut) en quelques clics
           </Text>
         </Flex>
         <ChangementStatutSearchForm />
