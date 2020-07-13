@@ -45,7 +45,7 @@ const ChangementStatutExplanation = () => {
               </Flex>
               <Text color="black" fontSize={2} textAlign="center">
                 {`Recevez l’état d’avancement ainsi que votre `}
-                <b>autorisation par e-mail</b>
+                <b>autorisation de travail par e-mail</b>
                 {`, dans un délai
                 moyen de 5 jours ouvrés.`}
               </Text>
