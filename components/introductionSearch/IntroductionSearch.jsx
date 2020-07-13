@@ -25,7 +25,7 @@ const IntroductionSearch = () => {
           mb={[2, 3]}
           textAlign="center"
         >
-          Demandez votre autorisation de travail
+          Demandez votre autorisation de travail (procédure d'introduction)
         </Heading>
         <Flex justifyContent="center">
           <Text
@@ -37,7 +37,7 @@ const IntroductionSearch = () => {
             width={[1, 2 / 3]}
           >
             {` Employeurs, faites votre demande d'autorisation de travail pour recruter un salarié 
-            étranger résidant hors de France (procédure d'introduction) en quelques clics `}
+            étranger résidant hors de France en quelques clics `}
           </Text>
         </Flex>
         <IntroductionSearchForm />
