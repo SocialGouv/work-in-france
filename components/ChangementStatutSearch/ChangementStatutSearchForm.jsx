@@ -35,7 +35,7 @@ const ChangementStatutSearchForm = () => {
             width={1}
           >
             <Button bg="blueBg" color="white" fontSize={2} py={2} width={[1]}>
-              Faire une changementStatut
+              Faire un changement de statut
             </Button>
           </Link>
         </Box>
