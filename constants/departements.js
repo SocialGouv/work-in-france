@@ -229,8 +229,8 @@ const DEPARTEMENTS = [
     value: "75",
     label: "75 - Paris",
     company: "ud075-apt-etudiants-employeur",
-    introduction: "ud075-introduction",
-    changementStatut: "ud075-statut",
+    introduction: "test/c0fbbb21-2db8-4f50-b44a-02c75ca44953",
+    changementStatut: "test/d3350d9e-22c3-44e6-acf5-59087a3ed91c",
     student: "ud075-apt-etudiants",
   },
   {
