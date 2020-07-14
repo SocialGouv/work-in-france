@@ -30,7 +30,7 @@
     "@zeit/next-mdx": "^1.2.0",
     "axios": "^0.19.2",
     "date-fns": "^2.14.0",
-    "formik": "^2.1.4",
+    "formik": "^2.1.5",
     "memoizee": "^0.4.14",
     "next": "^9.4.4",
     "next-redux-wrapper": "^5.0.0",
