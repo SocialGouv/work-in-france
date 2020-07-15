@@ -6,11 +6,12 @@ import { Flex, Box } from "rebass";
 import { useRouter } from "next/router";
 import { Wrapper } from "../commons/Grid";
 import { LogoLink, Logo, MenuLink } from "./Style";
+import isNouvelleDemarche from "../../lib/isNouvelleDemarche"
 
 const Header = () => {
   const router = useRouter();
   const pathname = router.pathname;
-  const isCheckLinkVisible = !["/introduction", "/changementstatut"].includes(pathname);
+  const isCheckLinkVisible = !isNouvelleDemarche(pathname);
 
   return (
     <Box bg="white">

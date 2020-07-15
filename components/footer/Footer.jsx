@@ -1,16 +1,24 @@
 // @flow
 import React from "react";
 import getConfig from "next/config";
+import { useRouter } from "next/router";
 import NextLink from "next/link";
 import { Flex, Box, Text, Image } from "rebass";
 import { Wrapper } from "../commons/Grid";
 import { StyledLink } from "../commons/Link";
+import isNouvelleDemarche from "../../lib/isNouvelleDemarche"
 
 const { publicRuntimeConfig } = getConfig();
 
 const GITHUB_REPO = "https://github.com/SocialGouv/work-in-france";
 
 const Footer = () => {
+  const router = useRouter();
+  const pathname = router.pathname;
+  const nouvelleDemarche = isNouvelleDemarche(pathname);
+
+  const contactEmail = nouvelleDemarche ? "support.workinfrance@beta.gouv.fr" : "contact@workinfrance.beta.gouv.fr";
+
   return (
     <Box bg="grey" px={3} py={4}>
       <Wrapper>
@@ -37,13 +45,13 @@ const Footer = () => {
                   <StyledLink>CGU</StyledLink>
                 </NextLink>
               </Text>
-              <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
+              {!nouvelleDemarche && <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
                 <NextLink href="/stats" passHref>
                   <StyledLink>Statistiques</StyledLink>
                 </NextLink>
-              </Text>
+              </Text>}
               <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
-                <StyledLink href="mailto:contact@workinfrance.beta.gouv.fr">
+                <StyledLink href={`mailto:${contactEmail}`}>
                   Contactez-nous
                 </StyledLink>
               </Text>
