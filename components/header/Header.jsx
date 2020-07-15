@@ -10,7 +10,7 @@ import isNouvelleDemarche from "../../lib/isNouvelleDemarche";
 
 const Header = () => {
   const router = useRouter();
-  const {pathname} = router;
+  const { pathname } = router;
   const isCheckLinkVisible = !isNouvelleDemarche(pathname);
 
   return (
@@ -32,7 +32,8 @@ const Header = () => {
                   <Link href="/validitycheck">
                     <MenuLink> Vérifier une autorisation</MenuLink>
                   </Link>
-              </Box>)}
+                </Box>
+              )}
               <Box px={0} py={1} width={[1, "auto"]}>
                 <Link href="/faq">
                   <MenuLink> Questions / Réponses </MenuLink>

@@ -16,7 +16,7 @@ const IntroductionSearchForm = () => {
   const qualify = DEPARTEMENTS.find((dep) => dep.value === departement.value);
   return (
     <Flex alignItems="center" flexDirection="column" flexWrap="wrap" justifyContent="center">
-      <Box alignItems="center" pb={3} pt={1} width={[1, 1 / 2, 1 / 3]}>
+      <Box alignItems="center" pb={3} pt={1} width={[1, 0.7, 1 / 2]}>
         <Select
           id="departement"
           isSearchable
@@ -28,7 +28,7 @@ const IntroductionSearchForm = () => {
         />
       </Box>
       {qualify && (
-        <Box alignItems="center" pb={0} pt={1} width={[1, 1 / 2, 1 / 3]}>
+        <Box alignItems="center" pb={0} pt={1} width={[1, 0.7, 1 / 2]}>
           <Link
             href={`https://www.demarches-simplifiees.fr/commencer/${qualify.introduction}`}
             pt={2}

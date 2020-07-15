@@ -14,7 +14,7 @@ const GITHUB_REPO = "https://github.com/SocialGouv/work-in-france";
 
 const Footer = () => {
   const router = useRouter();
-  const {pathname} = router;
+  const { pathname } = router;
   const nouvelleDemarche = isNouvelleDemarche(pathname);
 
   const contactEmail = nouvelleDemarche
@@ -52,7 +52,8 @@ const Footer = () => {
                   <NextLink href="/stats" passHref>
                     <StyledLink>Statistiques</StyledLink>
                   </NextLink>
-              </Text>)}
+                </Text>
+              )}
               <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
                 <StyledLink href={`mailto:${contactEmail}`}>Contactez-nous</StyledLink>
               </Text>

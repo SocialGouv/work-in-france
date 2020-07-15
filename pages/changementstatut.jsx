@@ -12,7 +12,7 @@ const ChangementStatutPage = () => {
       </Head>
       <ChangementStatutSearch />
       <Text bg="blueBg" color="white" p="4" textAlign="center">
-        {`Le service est en test sur Paris.`}
+        Le service est en test sur Paris.
       </Text>
       <ChangementStatutExplanation />
     </>
