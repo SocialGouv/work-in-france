@@ -27,6 +27,7 @@
         "/api/statistics/67",
         "/api/statistics/68",
         "/api/statistics/69",
+        "/api/statistics/74",
         "/api/statistics/75",
         "/api/statistics/76",
         "/api/statistics/77",
@@ -154,6 +155,11 @@
       "title": "69 - Rhône",
       "id": "rhone",
       "data": ["/api/statistics/69"]
+    },
+    {
+      "title": "74 - Haute-Savoie",
+      "id": "haute-savoie",
+      "data": ["/api/statistics/74"]
     },
     {
       "title": "75 - Paris",
