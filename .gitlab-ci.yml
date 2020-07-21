@@ -20,8 +20,9 @@ Build:
   needs:
     - Install
   variables:
-    VERSION: ${CI_COMMIT_SHORT_SHA}
+    BACKOFFICE_API_URL: "%%BACKOFFICE_API_URL%%"
     DS_AGGREGATOR_API_URL: "%%DS_AGGREGATOR_API_URL%%"
+    VERSION: ${CI_COMMIT_SHORT_SHA}
   script:
     - yarn build
     - yarn export
