@@ -32,7 +32,7 @@
     "date-fns": "^2.14.0",
     "formik": "^2.1.5",
     "memoizee": "^0.4.14",
-    "next": "^9.4.4",
+    "next": "^9.5.0",
     "next-redux-wrapper": "^5.0.0",
     "normalize.css": "^8.0.1",
     "raw-loader": "^4.0.1",
