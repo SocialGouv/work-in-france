@@ -54,7 +54,7 @@
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
     "babel-eslint": "^10.1.0",
-    "babel-plugin-styled-components": "^1.10.7",
+    "babel-plugin-styled-components": "^1.11.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.5.0",
