@@ -4,7 +4,6 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/permanent-redirect: https://work-in-france.fabrique.social.gouv.fr
-  creationTimestamp: "2020-07-09T11:05:44Z"
   labels:
     app.kubernetes.io/component: redirect
     app.kubernetes.io/name: work-in-france
