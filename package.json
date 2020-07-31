@@ -1,5 +1,6 @@
 {
   "name": "work-in-france",
+  "private": true,
   "version": "0.0.1",
   "description": "La plateforme de demande d'autorisation provisoires de travail.",
   "author": "",
