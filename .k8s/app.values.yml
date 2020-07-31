@@ -23,7 +23,7 @@ deployment:
     - name: BACKOFFICE_API_URL
       value: "https://wif-bo-api.incubateur.social.gouv.fr"
     - name: DS_AGGREGATOR_API_URL
-      value: "https://ds-aggregator-api.incubateur.social.gouv.fr"
+      value: "https://wif.ds-aggregator.fabrique.social.gouv.fr"
     - name: PORT
       value: "${PORT}"
     - name: NODE_ENV
