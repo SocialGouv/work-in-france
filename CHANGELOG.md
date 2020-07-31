@@ -1,3 +1,11 @@
+## [3.0.1](https://github.com/SocialGouv/work-in-france/compare/v3.0.0...v3.0.1) (2020-07-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency date-fns to ^2.15.0 ([#333](https://github.com/SocialGouv/work-in-france/issues/333)) ([0b4fcc3](https://github.com/SocialGouv/work-in-france/commit/0b4fcc3cb3a1372b83f6ce9e18ff0b3f00f6faa7))
+* **deps:** update dependency kubernetes-models to ^0.8.1 ([#365](https://github.com/SocialGouv/work-in-france/issues/365)) ([3724674](https://github.com/SocialGouv/work-in-france/commit/3724674d02f3894a1e1b8e324130e5fa880a61a1))
+
 # [3.0.0](https://github.com/SocialGouv/work-in-france/compare/v2.0.0...v3.0.0) (2020-07-31)
 
 
