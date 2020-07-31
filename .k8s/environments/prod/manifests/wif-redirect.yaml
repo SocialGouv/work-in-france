@@ -10,15 +10,12 @@ metadata:
     app.kubernetes.io/component: redirect
     app.kubernetes.io/name: work-in-france
   name: work-in-france-redirect
-  namespace: mattermost
-  resourceVersion: "26740232"
-  selfLink: /apis/extensions/v1beta1/namespaces/mattermost/ingresses/mattermost-redirect
-  uid: 0bf54211-1a78-4d9a-a313-badc9848eb1c
+  namespace: work-in-france
 spec:
   rules:
   - host: work-in-france.incubateur.social.gouv.fr
   tls:
-  - secretName: wif-redirect-crt-secret
+  - secretName: wif-crt
 status:
   loadBalancer:
     ingress:
