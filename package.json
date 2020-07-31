@@ -1,30 +1,31 @@
 {
   "name": "work-in-france",
-  "private": true,
-  "version": "0.0.1",
   "description": "La plateforme de demande d'autorisation provisoires de travail.",
-  "author": "",
-  "license": "Apache",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kwiss/work-in-france.git"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  "version": "0.0.1",
+  "author": "Incubateur des Ministères Sociaux <dsi-incubateur@sg.social.gouv.fr> (https://incubateur.social.gouv.fr)",
+  "bugs": "https://github.com/SocialGouv/work-in-france/issues",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": "^[A-Z]+-[0-9]+ - .*",
+      "subjectPatternErrorMsg": "Subject must be in format 'CMS-123 - Commit message'",
+      "helpMessage": ""
     }
-  },
-  "main": "index.js",
-  "scripts": {
-    "commitmsg": "validate-commit-msg",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "lint": "eslint --ext .jsx,.js ./pages ./components ./lib ./utils ./theme",
-    "deploy": "npm run build && npm run export",
-    "test": "exit 0 ",
-    "k8s": "yarn --silent --cwd .k8s"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.16",
@@ -73,27 +74,24 @@
     "husky": "^4.2.5",
     "prettier": "^2.0.5"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    },
-    "validate-commit-msg": {
-      "types": [
-        "feat",
-        "fix",
-        "docs",
-        "style",
-        "refactor",
-        "perf",
-        "test",
-        "chore",
-        "revert"
-      ],
-      "warnOnFail": false,
-      "maxSubjectLength": 100,
-      "subjectPattern": "^[A-Z]+-[0-9]+ - .*",
-      "subjectPatternErrorMsg": "Subject must be in format 'CMS-123 - Commit message'",
-      "helpMessage": ""
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "private": true,
+  "repository": "SocialGouv/work-in-france",
+  "scripts": {
+    "build": "next build",
+    "commitmsg": "validate-commit-msg",
+    "deploy": "npm run build && npm run export",
+    "dev": "next",
+    "export": "next export",
+    "k8s": "yarn --silent --cwd .k8s",
+    "lint": "eslint --ext .jsx,.js ./pages ./components ./lib ./utils ./theme",
+    "start": "next start",
+    "test": "exit 0 "
   }
 }
