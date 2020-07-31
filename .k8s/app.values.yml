@@ -21,7 +21,7 @@ deployment:
 
   env:
     - name: BACKOFFICE_API_URL
-      value: "https://wif-bo-api.incubateur.social.gouv.fr"
+      value: "https://work-in-france-backoffice.fabrique.social.gouv.fr"
     - name: DS_AGGREGATOR_API_URL
       value: "https://wif.ds-aggregator.fabrique.social.gouv.fr"
     - name: PORT
