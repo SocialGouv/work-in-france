@@ -22,7 +22,8 @@
     "export": "next export",
     "lint": "eslint --ext .jsx,.js ./pages ./components ./lib ./utils ./theme",
     "deploy": "npm run build && npm run export",
-    "test": "exit 0 "
+    "test": "exit 0 ",
+    "k8s": "yarn --silent --cwd .k8s"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.16",
