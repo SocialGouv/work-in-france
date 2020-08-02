@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/SocialGouv/work-in-france/compare/v3.0.5...v3.0.6) (2020-08-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @socialgouv/kosko-charts to ^2.2.0 ([c5afae7](https://github.com/SocialGouv/work-in-france/commit/c5afae7315d79c7fe26956ec0e458f495cfb06c8))
+
 ## [3.0.5](https://github.com/SocialGouv/work-in-france/compare/v3.0.4...v3.0.5) (2020-08-02)
 
 
