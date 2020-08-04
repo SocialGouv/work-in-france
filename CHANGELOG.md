@@ -1,3 +1,10 @@
+## [3.1.3](https://github.com/SocialGouv/work-in-france/compare/v3.1.2...v3.1.3) (2020-08-04)
+
+
+### Bug Fixes
+
+* **k8s:** add ingress annotations ([#382](https://github.com/SocialGouv/work-in-france/issues/382)) ([ad35a8c](https://github.com/SocialGouv/work-in-france/commit/ad35a8c6478d6f585a3cd086928bab821f58ef10))
+
 ## [3.1.2](https://github.com/SocialGouv/work-in-france/compare/v3.1.1...v3.1.2) (2020-08-04)
 
 
