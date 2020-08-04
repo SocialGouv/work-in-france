@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/permanent-redirect: https://work-in-france.fabrique.social.gouv.fr
+  labels:
+    app.kubernetes.io/component: redirect
+    app.kubernetes.io/name: work-in-france
+  name: work-in-france-redirect
+  namespace: work-in-france
+spec:
+  rules:
+  - host: work-in-france.incubateur.social.gouv.fr
+  tls:
+  - secretName: wif-crt
+status:
+  loadBalancer:
+    ingress:
+    - ip: 10.2.64.239
+    - ip: 10.2.64.97
+    - ip: 10.2.65.94
