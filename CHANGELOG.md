@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/SocialGouv/work-in-france/compare/v3.0.8...v3.1.0) (2020-08-04)
+
+
+### Features
+
+* **ci:** add prod ingress for work-in-france.incubateur.social.gouv.fr ([#368](https://github.com/SocialGouv/work-in-france/issues/368)) ([1ef5c8c](https://github.com/SocialGouv/work-in-france/commit/1ef5c8c6523704156da8d78714b1c6d0f35adaba))
+
 ## [3.0.8](https://github.com/SocialGouv/work-in-france/compare/v3.0.7...v3.0.8) (2020-08-04)
 
 
