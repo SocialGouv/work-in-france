@@ -1,3 +1,10 @@
+## [3.1.4](https://github.com/SocialGouv/work-in-france/compare/v3.1.3...v3.1.4) (2020-08-05)
+
+
+### Bug Fixes
+
+* **k8s:** fix additionnal ingresses ([#384](https://github.com/SocialGouv/work-in-france/issues/384)) ([e59570a](https://github.com/SocialGouv/work-in-france/commit/e59570a350a82bbb7c01aca5e87199aa5c4376d7))
+
 ## [3.1.3](https://github.com/SocialGouv/work-in-france/compare/v3.1.2...v3.1.3) (2020-08-04)
 
 
