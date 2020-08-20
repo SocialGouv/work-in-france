@@ -7191,12 +7191,10 @@ react-move@^2.7.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-query@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.7.0.tgz#54ce04f108515e2f33b57b70efbe4ac38f2e4e2f"
-  integrity sha512-+3VoqjBs8fxK5Nh75/+tRFKI85AmYFPvazoiKSy1yxmzH80xsAd5pCUn5E0zIIi0KKWN/13kYnKUdvIUPyuRqA==
-  dependencies:
-    ts-toolbelt "^6.9.4"
+react-query@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.8.0.tgz#7c4c39c9344b99d3af5646f95267adf57e6b16fd"
+  integrity sha512-V9lwIA18MKY/sm3WNGHQOQvRGKI3ywlaoy5UejhBontoIljAjbvmffEUvJIvLTu3pymNG7QIVQV6jjBo6G9sCA==
 
 react-redux@^7.2.1:
   version "7.2.1"
@@ -8706,11 +8704,6 @@ ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
-
-ts-toolbelt@^6.9.4:
-  version "6.15.5"
-  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.15.5.tgz#cb3b43ed725cb63644782c64fbcad7d8f28c0a83"
-  integrity sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==
 
 tsconfig-paths@^3.9.0:
   version "3.9.0"
