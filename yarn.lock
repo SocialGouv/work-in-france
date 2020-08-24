@@ -7233,10 +7233,10 @@ react-move@^2.7.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-query@^2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.11.0.tgz#c0e3ff383508de5b615877bc00bb5ab59cdd61c9"
-  integrity sha512-kVsvZA+qe6ONfsi4rn4t1koxbnpmwRsFev8dRijUdH/p3AocYPYhh9mabaEgBQ+S5uKwFgnODdAc5+ooudnngA==
+react-query@^2.11.1:
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.11.1.tgz#4e8210c65e95d64797185e879d7d3a16e356f89a"
+  integrity sha512-W67fQqAVJYtwylKzL6cBnNWIGBQMNuvGrOcp4r6StvOqd5zPT/KBO57pKV9fnQkdeIeFYFyYwNq9UNjRSZGWUQ==
 
 react-redux@^7.2.1:
   version "7.2.1"
