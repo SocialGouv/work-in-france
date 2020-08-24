@@ -1,3 +1,10 @@
+## [3.1.19](https://github.com/SocialGouv/work-in-france/compare/v3.1.18...v3.1.19) (2020-08-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-query to ^2.12.0 ([28edb5f](https://github.com/SocialGouv/work-in-france/commit/28edb5fe2a09a959d00175cad9124c6b93fa0137))
+
 ## [3.1.18](https://github.com/SocialGouv/work-in-france/compare/v3.1.17...v3.1.18) (2020-08-24)
 
 
