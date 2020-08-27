@@ -1,7 +1,7 @@
 {
   "name": "work-in-france",
   "description": "La plateforme de demande d'autorisation provisoires de travail.",
-  "version": "3.1.22",
+  "version": "3.1.23",
   "author": "Incubateur des Ministères Sociaux <dsi-incubateur@sg.social.gouv.fr> (https://incubateur.social.gouv.fr)",
   "bugs": "https://github.com/SocialGouv/work-in-france/issues",
   "config": {

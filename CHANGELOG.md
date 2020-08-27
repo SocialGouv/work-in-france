@@ -1,3 +1,10 @@
+## [3.1.23](https://github.com/SocialGouv/work-in-france/compare/v3.1.22...v3.1.23) (2020-08-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency axios to ^0.20.0 ([b47d3b4](https://github.com/SocialGouv/work-in-france/commit/b47d3b435db675cf8e5261cc29c32a54f3d4c23a))
+
 ## [3.1.22](https://github.com/SocialGouv/work-in-france/compare/v3.1.21...v3.1.22) (2020-08-27)
 
 
