@@ -1,3 +1,10 @@
+## [3.1.27](https://github.com/SocialGouv/work-in-france/compare/v3.1.26...v3.1.27) (2020-09-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to ^9.5.3 ([d654761](https://github.com/SocialGouv/work-in-france/commit/d654761aec9b8d796de45039d594098462c4d904))
+
 ## [3.1.26](https://github.com/SocialGouv/work-in-france/compare/v3.1.25...v3.1.26) (2020-09-01)
 
 
