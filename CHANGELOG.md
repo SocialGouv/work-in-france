@@ -1,3 +1,10 @@
+## [3.1.34](https://github.com/SocialGouv/work-in-france/compare/v3.1.33...v3.1.34) (2020-09-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency recharts to ^2.0.0-beta.7 ([81317d7](https://github.com/SocialGouv/work-in-france/commit/81317d793d81f23735a03a4ea7046edb4e9ea8ae))
+
 ## [3.1.33](https://github.com/SocialGouv/work-in-france/compare/v3.1.32...v3.1.33) (2020-09-06)
 
 
