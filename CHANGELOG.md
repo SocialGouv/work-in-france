@@ -1,3 +1,23 @@
+# [3.2.0](https://github.com/SocialGouv/work-in-france/compare/v3.1.34...v3.2.0) (2020-09-10)
+
+
+### Bug Fixes
+
+* lint ([efd6591](https://github.com/SocialGouv/work-in-france/commit/efd65916d067920a62b2b3d35a4b9591f1de801c))
+* wording ([da99b78](https://github.com/SocialGouv/work-in-france/commit/da99b782cd801a8c462285b69ff17d23ae47cd94))
+* **lint:** make linter happy ([2295c6f](https://github.com/SocialGouv/work-in-france/commit/2295c6ffa0ff2484deff3ab43209aa83b2ecb839))
+
+
+### Features
+
+* **bandeau:** add bandeau ([13ebd55](https://github.com/SocialGouv/work-in-france/commit/13ebd555940745642148d4971a511a9b0096124e))
+* **check-link:** handle visibility ([465af54](https://github.com/SocialGouv/work-in-france/commit/465af548b6bf57356b0ab43c9d8502afa90655d0))
+* **demarche-changement-statut:** create page ([6d16387](https://github.com/SocialGouv/work-in-france/commit/6d16387a33380f76058ed532154470dcb0b6bbf8))
+* **demarche-introduction:** create page ([5684210](https://github.com/SocialGouv/work-in-france/commit/5684210b48589e8130356c39f37fc396b23e19ea))
+* **demarche-introduction:** create page ([3965cb4](https://github.com/SocialGouv/work-in-france/commit/3965cb44b108e659da82d65d60860156cc8d08c0))
+* **footer:** handle nouvelle demarche ([7941b19](https://github.com/SocialGouv/work-in-france/commit/7941b19ba8acd5feb607d34e145785238fe7db10))
+* **footer:** handle nouvelle demarche ([937dcdf](https://github.com/SocialGouv/work-in-france/commit/937dcdfc758735646d6f4582766c477c06dbf5c7))
+
 ## [3.1.34](https://github.com/SocialGouv/work-in-france/compare/v3.1.33...v3.1.34) (2020-09-08)
 
 
