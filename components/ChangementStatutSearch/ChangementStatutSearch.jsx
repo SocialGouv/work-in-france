@@ -36,8 +36,8 @@ const IntroductionSearch = () => {
             textAlign="center"
             width={[1, 2 / 3]}
           >
-            {`Etudiants étrangers, demandez votre autorisation de travail pour 
-            salarié étranger résidant en France (procédure de changement de statut) en quelques clics`}
+            Etudiants étrangers, demandez votre autorisation de travail pour 
+            salarié étranger résidant en France (procédure de changement de statut) en quelques clics
           </Text>
         </Flex>
         <ChangementStatutSearchForm />
