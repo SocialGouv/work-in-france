@@ -35,7 +35,7 @@ const IntroductionSearchForm = () => {
             width={1}
           >
             <Button bg="blueBg" color="white" fontSize={2} py={2} width={[1]}>
-              Je fais une introduction
+              Je fais ma demande d'introduction
             </Button>
           </Link>
         </Box>
