@@ -17,7 +17,7 @@ const IntroductionExplanation = () => {
                 lineHeight={1.4}
                 textAlign="center"
               >
-                Une autorisation de travail, comment ça se passe ?
+                Une demande d'introduction, comment ça se passe ?
               </Heading>
             </Box>
             <Box p={4} width={[1, 1 / 3]}>
@@ -25,7 +25,7 @@ const IntroductionExplanation = () => {
                 <Image src="/static/icon-screen.png" width="80px" />
               </Flex>
               <Text color="black" fontSize={2} textAlign="center">
-                {`Démarrez votre demande d’autorisation de travail sur notre site et
+                {`Démarrez votre demande d’introduction sur notre site et
                 préparez vos `}
                 <b>pièces justificatives.</b>
               </Text>
@@ -35,7 +35,7 @@ const IntroductionExplanation = () => {
                 <Image src="/static/icon-lock.png" width="80px" />
               </Flex>
               <Text color="black" fontSize={2} textAlign="center">
-                {`Remplissez votre demande d’autorisation de travail sur le site Démarches Simplifiées : `}
+                {`Remplissez la demande d’introduction de votre salarié sur le site Démarches Simplifiées : `}
                 <b>c’est sécurisé, rapide et gratuit.</b>
               </Text>
             </Box>
