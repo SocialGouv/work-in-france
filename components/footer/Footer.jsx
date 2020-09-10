@@ -1,16 +1,26 @@
 // @flow
 import React from "react";
 import getConfig from "next/config";
+import { useRouter } from "next/router";
 import NextLink from "next/link";
 import { Flex, Box, Text, Image } from "rebass";
 import { Wrapper } from "../commons/Grid";
 import { StyledLink } from "../commons/Link";
+import isNouvelleDemarche from "../../lib/isNouvelleDemarche";
 
 const { publicRuntimeConfig } = getConfig();
 
 const GITHUB_REPO = "https://github.com/SocialGouv/work-in-france";
 
 const Footer = () => {
+  const router = useRouter();
+  const { pathname } = router;
+  const nouvelleDemarche = isNouvelleDemarche(pathname);
+
+  const contactEmail = nouvelleDemarche
+    ? "support.workinfrance@beta.gouv.fr"
+    : "contact@workinfrance.beta.gouv.fr";
+
   return (
     <Box bg="grey" px={3} py={4}>
       <Wrapper>
@@ -37,15 +47,15 @@ const Footer = () => {
                   <StyledLink>CGU</StyledLink>
                 </NextLink>
               </Text>
+              {!nouvelleDemarche && (
+                <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
+                  <NextLink href="/stats" passHref>
+                    <StyledLink>Statistiques</StyledLink>
+                  </NextLink>
+                </Text>
+              )}
               <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
-                <NextLink href="/stats" passHref>
-                  <StyledLink>Statistiques</StyledLink>
-                </NextLink>
-              </Text>
-              <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
-                <StyledLink href="mailto:contact@workinfrance.beta.gouv.fr">
-                  Contactez-nous
-                </StyledLink>
+                <StyledLink href={`mailto:${contactEmail}`}>Contactez-nous</StyledLink>
               </Text>
             </Flex>
           </Box>
@@ -53,15 +63,15 @@ const Footer = () => {
             <Flex flexDirection="row-reverse" flexWrap="wrap" justifyContent="space-around">
               <StyledLink
                 href={`${GITHUB_REPO}/tree/${publicRuntimeConfig.VERSION}`}
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 Contribuer sur Github
               </StyledLink>
               <StyledLink
                 href={`${GITHUB_REPO}/compare/${publicRuntimeConfig.VERSION}...master`}
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 Journal des modifications
               </StyledLink>
