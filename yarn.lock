@@ -7216,10 +7216,10 @@ react-move@^2.7.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-query@^2.15.4:
-  version "2.15.4"
-  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.15.4.tgz#0447510fc30aebba5a4b99879ec4b7155d9b3f20"
-  integrity sha512-gEF2Ebe1MtiyLKEaVEIlRMl6rwvP/RVwP+Xf68vhXDfD91IeZkkW7plRjoaHa0/NeUPM1AgTHb1Z7NtqaYDXjA==
+react-query@^2.16.0:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.16.0.tgz#21771d020fdaeedd60e55c7df27b7339f93db4ce"
+  integrity sha512-P70M+BzpHXG4quyAHQOkL0DDMvXFCWoRJpw+6L+gfufIisNodYfuo0K0m9/Bw3Xmg5IvJLFdDSKdFjA/y/omeQ==
 
 react-redux@^7.2.1:
   version "7.2.1"
