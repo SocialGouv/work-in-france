@@ -1,3 +1,10 @@
+## [3.2.6](https://github.com/SocialGouv/work-in-france/compare/v3.2.5...v3.2.6) (2020-09-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @mdx-js/mdx to ^1.6.17 ([c497f84](https://github.com/SocialGouv/work-in-france/commit/c497f84e6c292bf2bb8197208684eaa059794911))
+
 ## [3.2.5](https://github.com/SocialGouv/work-in-france/compare/v3.2.4...v3.2.5) (2020-09-13)
 
 
