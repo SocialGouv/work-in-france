@@ -28,7 +28,7 @@
     }
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.17",
+    "@mdx-js/mdx": "^1.6.18",
     "@socialgouv/react-departements": "^3.0.0",
     "@zeit/next-mdx": "^1.2.0",
     "axios": "^0.20.0",
