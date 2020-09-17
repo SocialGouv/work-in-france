@@ -1,3 +1,11 @@
+## [3.2.10](https://github.com/SocialGouv/work-in-france/compare/v3.2.9...v3.2.10) (2020-09-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @mdx-js/mdx to ^1.6.18 ([75b729b](https://github.com/SocialGouv/work-in-france/commit/75b729bfdd4d7d663822dc24c741fc57e7535c87))
+* **deps:** update dependency react-query to ^2.21.2 ([be6977a](https://github.com/SocialGouv/work-in-france/commit/be6977a60e79a725874c6ab96f736dede0d58f1c))
+
 ## [3.2.9](https://github.com/SocialGouv/work-in-france/compare/v3.2.8...v3.2.9) (2020-09-16)
 
 
