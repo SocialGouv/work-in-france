@@ -1,3 +1,10 @@
+## [3.2.13](https://github.com/SocialGouv/work-in-france/compare/v3.2.12...v3.2.13) (2020-09-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rebass to v4 ([78e9a05](https://github.com/SocialGouv/work-in-france/commit/78e9a0570360e9f2914a7a20c29093c13a8cc998))
+
 ## [3.2.12](https://github.com/SocialGouv/work-in-france/compare/v3.2.11...v3.2.12) (2020-09-18)
 
 
