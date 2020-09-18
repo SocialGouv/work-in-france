@@ -40,7 +40,7 @@ const ValidityCheckForm = (props: Props) => {
           )}
           {validityCheck.status === "invalid" && <ValidityCheckInvalidStatus />}
           <Label>
-            <Text mb="3">Numéro de l'autorisation provisoire de travail </Text>
+            <Text mb="3">Numéro de l'autorisation de travail </Text>
             <Input
               hasError={errors.authorizationId && touched.authorizationId}
               name="authorizationId"
@@ -56,7 +56,7 @@ const ValidityCheckForm = (props: Props) => {
           </Label>
           <Flex flexWrap="wrap">
             <Box pt="3" width={[1]}>
-              <Label>Date de naissance de l'étudiant </Label>
+              <Label>Date de naissance du salarié </Label>
             </Box>
             <Box pr="1" width={[1 / 3]}>
               <Label>
