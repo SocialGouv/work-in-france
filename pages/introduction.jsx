@@ -12,7 +12,7 @@ const IntroductionPage = () => {
       </Head>
       <IntroductionSearch />
       <Text bg="blueBg" color="white" p="4" textAlign="center">
-        Le service est en test sur Paris.
+        Le service est uniquement accessible aux établissements de rattachement localisés à Paris.
       </Text>
       <IntroductionExplanation />
     </>
