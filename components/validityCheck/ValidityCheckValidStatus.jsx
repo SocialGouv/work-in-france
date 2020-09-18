@@ -18,7 +18,7 @@ const ValidityCheckValidStatus = (props: Props) => {
   return (
     <Card border="1px solid" borderColor="green" borderRadius="6px" mb="4" p={[3, 4]}>
       <Heading color="green" mb="2">
-        Autorisation provisoire de travail valide.
+        Autorisation de travail valide.
       </Heading>
       <List>
         <li>{`- Numéro : ${id}`}</li>
