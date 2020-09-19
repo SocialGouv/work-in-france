@@ -1,3 +1,11 @@
+## [3.2.15](https://github.com/SocialGouv/work-in-france/compare/v3.2.14...v3.2.15) (2020-09-19)
+
+
+### Bug Fixes
+
+* **ci:** remove automergeAll ([#495](https://github.com/SocialGouv/work-in-france/issues/495)) ([042201e](https://github.com/SocialGouv/work-in-france/commit/042201e46b36330e6519116636b9a207890e517a))
+* restore rebass@3 ([#494](https://github.com/SocialGouv/work-in-france/issues/494)) ([ae432dd](https://github.com/SocialGouv/work-in-france/commit/ae432dd569e37f3723992edda3964785ab5a9978))
+
 ## [3.2.14](https://github.com/SocialGouv/work-in-france/compare/v3.2.13...v3.2.14) (2020-09-18)
 
 
