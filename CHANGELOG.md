@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/SocialGouv/work-in-france/compare/v3.2.15...v3.3.0) (2020-09-24)
+
+
+### Features
+
+* add link between introduction and home ([8dfbbe0](https://github.com/SocialGouv/work-in-france/commit/8dfbbe0b9461d61335fb84536015535d6a750f43))
+
 ## [3.2.15](https://github.com/SocialGouv/work-in-france/compare/v3.2.14...v3.2.15) (2020-09-19)
 
 
