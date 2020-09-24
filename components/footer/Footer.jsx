@@ -29,7 +29,7 @@ const Footer = () => {
             <Flex flexWrap="wrap">
               <Image height="47px" mb={3} pr={3} src="/static/logo.png" width={["81px"]} />
               <Text fontSize={3} lineHeight="1.4" width={[1, 4 / 5]}>
-                Site officiel de demande d’autorisation provisoire de travail. Service en version
+                Site officiel de demande d’autorisation de travail. Service en version
                 bêta, créé par le Ministère du Travail en collaboration avec les préfectures de
                 département.
               </Text>
