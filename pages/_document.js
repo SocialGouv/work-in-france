@@ -34,39 +34,20 @@ export default class MyDocument extends Document {
     }
   }
 
-  setHotjar() {
-    return {
-      __html: `   (function(h, o, t, j, a, r) {
-      h.hj =
-        h.hj ||
-        function() {
-          (h.hj.q = h.hj.q || []).push(arguments);
-        };
-      h._hjSettings = { hjid: 1177745, hjsv: 6 };
-      a = o.getElementsByTagName("head")[0];
-      r = o.createElement("script");
-      r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    `,
-    };
-  }
-
-  setPiwik() {
+  setMatomo() {
     return {
       __html: `
-      var _paq = _paq || [];
-      _paq.push(["setDomains", ["*.work-in-france.beta.gouv.fr", "*.workinfrance.beta.gouv.fr"]]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-          var u="//stats.data.gouv.fr/";
-          _paq.push(['setTrackerUrl', u+'piwik.php']);
-          _paq.push(['setSiteId', '46']);
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="https://matomo.fabrique.social.gouv.fr/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '31']);
           var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
     `,
     };
   }
@@ -81,12 +62,11 @@ export default class MyDocument extends Document {
             content="Faites votre demande d'autorisation de travail en ligne avec Work In France. Work In France est un service de l'Etat pour les entreprises ou les étudiants étrangers, en contrat d'alternance, en contrat d'apprentissage, ou en contrat de professionnalisation"
             name="description"
           />
-          <script dangerouslySetInnerHTML={this.setHotjar()} />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script dangerouslySetInnerHTML={this.setPiwik()} />
+          <script dangerouslySetInnerHTML={this.setMatomo()} />
           <noscript>
             <img alt="" src="//stats.data.gouv.fr/piwik.php?idsite=46" style={{ border: 0 }} />
           </noscript>
