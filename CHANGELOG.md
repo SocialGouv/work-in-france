@@ -1,3 +1,10 @@
+## [3.4.2](https://github.com/SocialGouv/work-in-france/compare/v3.4.1...v3.4.2) (2020-10-06)
+
+
+### Bug Fixes
+
+* **ci:** ues 18.0.0-alpha.2 ([e1063e5](https://github.com/SocialGouv/work-in-france/commit/e1063e5d2b8306185e310ea92eccf378d8b08684))
+
 ## [3.4.1](https://github.com/SocialGouv/work-in-france/compare/v3.4.0...v3.4.1) (2020-10-06)
 
 
