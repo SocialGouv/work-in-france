@@ -1,3 +1,75 @@
+## [3.3.1](https://github.com/SocialGouv/work-in-france/compare/v3.3.0...v3.3.1) (2020-10-06)
+
+
+### Bug Fixes
+
+* **k8s:** keep path in redirects ([#513](https://github.com/SocialGouv/work-in-france/issues/513)) ([9773a2d](https://github.com/SocialGouv/work-in-france/commit/9773a2dbb8efb62f0e11ad4a46428befb2ae3c53))
+
+# [3.3.0](https://github.com/SocialGouv/work-in-france/compare/v3.2.15...v3.3.0) (2020-09-24)
+
+
+### Features
+
+* add link between introduction and home ([8dfbbe0](https://github.com/SocialGouv/work-in-france/commit/8dfbbe0b9461d61335fb84536015535d6a750f43))
+
+## [3.2.15](https://github.com/SocialGouv/work-in-france/compare/v3.2.14...v3.2.15) (2020-09-19)
+
+
+### Bug Fixes
+
+* **ci:** remove automergeAll ([#495](https://github.com/SocialGouv/work-in-france/issues/495)) ([042201e](https://github.com/SocialGouv/work-in-france/commit/042201e46b36330e6519116636b9a207890e517a))
+* restore rebass@3 ([#494](https://github.com/SocialGouv/work-in-france/issues/494)) ([ae432dd](https://github.com/SocialGouv/work-in-france/commit/ae432dd569e37f3723992edda3964785ab5a9978))
+
+## [3.2.14](https://github.com/SocialGouv/work-in-france/compare/v3.2.13...v3.2.14) (2020-09-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-query to ^2.22.2 ([baf0d5d](https://github.com/SocialGouv/work-in-france/commit/baf0d5dda1ce24be5386f0b36a149533f3cd2c32))
+
+## [3.2.13](https://github.com/SocialGouv/work-in-france/compare/v3.2.12...v3.2.13) (2020-09-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rebass to v4 ([78e9a05](https://github.com/SocialGouv/work-in-france/commit/78e9a0570360e9f2914a7a20c29093c13a8cc998))
+
+## [3.2.12](https://github.com/SocialGouv/work-in-france/compare/v3.2.11...v3.2.12) (2020-09-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @socialgouv/kosko-charts to ^2.7.1 ([4aebc66](https://github.com/SocialGouv/work-in-france/commit/4aebc664f049940308d67660f5b109db99456f79))
+
+## [3.2.11](https://github.com/SocialGouv/work-in-france/compare/v3.2.10...v3.2.11) (2020-09-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-query to ^2.22.0 ([66f38b2](https://github.com/SocialGouv/work-in-france/commit/66f38b2635c2a2d0643cf48a591b5bb0ec5d9060))
+
+## [3.2.10](https://github.com/SocialGouv/work-in-france/compare/v3.2.9...v3.2.10) (2020-09-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @mdx-js/mdx to ^1.6.18 ([75b729b](https://github.com/SocialGouv/work-in-france/commit/75b729bfdd4d7d663822dc24c741fc57e7535c87))
+* **deps:** update dependency react-query to ^2.21.2 ([be6977a](https://github.com/SocialGouv/work-in-france/commit/be6977a60e79a725874c6ab96f736dede0d58f1c))
+
+## [3.2.9](https://github.com/SocialGouv/work-in-france/compare/v3.2.8...v3.2.9) (2020-09-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-query to ^2.21.0 ([44da3cd](https://github.com/SocialGouv/work-in-france/commit/44da3cdf73f7400b005e7accd1da91ebce836f51))
+
+## [3.2.8](https://github.com/SocialGouv/work-in-france/compare/v3.2.7...v3.2.8) (2020-09-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-query to ^2.20.0 ([0f1930e](https://github.com/SocialGouv/work-in-france/commit/0f1930eb3fb3143a23565c35ae643badc22f8a3a))
+
 ## [3.2.7](https://github.com/SocialGouv/work-in-france/compare/v3.2.6...v3.2.7) (2020-09-15)
 
 
@@ -61,7 +133,7 @@
 
 * **bandeau:** add bandeau ([13ebd55](https://github.com/SocialGouv/work-in-france/commit/13ebd555940745642148d4971a511a9b0096124e))
 * **check-link:** handle visibility ([465af54](https://github.com/SocialGouv/work-in-france/commit/465af548b6bf57356b0ab43c9d8502afa90655d0))
-* **demarche-changement-statut:** create page ([6d16387](https://github.com/SocialGouv/work-in-france/commit/6d16387a33380f76058ed532154470dcb0b6bbf8))
+* **demarche-:** create page ([6d16387](https://github.com/SocialGouv/work-in-france/commit/6d16387a33380f76058ed532154470dcb0b6bbf8))
 * **demarche-introduction:** create page ([5684210](https://github.com/SocialGouv/work-in-france/commit/5684210b48589e8130356c39f37fc396b23e19ea))
 * **demarche-introduction:** create page ([3965cb4](https://github.com/SocialGouv/work-in-france/commit/3965cb44b108e659da82d65d60860156cc8d08c0))
 * **footer:** handle nouvelle demarche ([7941b19](https://github.com/SocialGouv/work-in-france/commit/7941b19ba8acd5feb607d34e145785238fe7db10))

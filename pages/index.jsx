@@ -18,6 +18,12 @@ const Home = () => {
           départements ouverts.
         </Link>
       </Text>
+      <Text bg="greyBg" color="black" p="4" textAlign="center">
+        {"Pour les demandes d’introduction d’un salarié étranger, "}
+        <Link color="black" href="/introduction">
+          cliquez ici
+        </Link>
+      </Text>
       <Explanations />
     </>
   );
