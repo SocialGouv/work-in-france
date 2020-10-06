@@ -1,3 +1,10 @@
+## [3.3.1](https://github.com/SocialGouv/work-in-france/compare/v3.3.0...v3.3.1) (2020-10-06)
+
+
+### Bug Fixes
+
+* **k8s:** keep path in redirects ([#513](https://github.com/SocialGouv/work-in-france/issues/513)) ([9773a2d](https://github.com/SocialGouv/work-in-france/commit/9773a2dbb8efb62f0e11ad4a46428befb2ae3c53))
+
 # [3.3.0](https://github.com/SocialGouv/work-in-france/compare/v3.2.15...v3.3.0) (2020-09-24)
 
 
