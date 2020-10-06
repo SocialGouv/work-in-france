@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/SocialGouv/work-in-france/compare/v3.3.1...v3.4.0) (2020-10-06)
+
+
+### Features
+
+* use SocialGouv/renovate-config:light ([#481](https://github.com/SocialGouv/work-in-france/issues/481)) ([5118bd4](https://github.com/SocialGouv/work-in-france/commit/5118bd4ddfb4164e30718559b38c8b804fcc8e4d))
+
 ## [3.3.1](https://github.com/SocialGouv/work-in-france/compare/v3.3.0...v3.3.1) (2020-10-06)
 
 
