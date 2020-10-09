@@ -46,7 +46,54 @@ la valeur est l'id trouvé dans l'url du formulaire DS par exemple
 ud010-apt-etudiants-employeur
 ```
 
-4 - mettre à jour [la FAQ](https://github.com/SocialGouv/work-in-france/blob/master/contents/faq.mdx) avec le(s) nouveau(x) départements.
+4 - mettre à jour [les statistiques](https://github.com/SocialGouv/work-in-france/blob/master/public/dashboard.json) avec le(s) nouveau(x) départements.
+
+```diff
+   "groups": [
+     {
+       "id": "national",
+       "title": "France entière",
+       "data": [
+         "/api/statistics/02",
++        "/api/statistics/03",
+         "/api/statistics/04",
+ // ...
+         "/api/statistics/95"
+       ]
+     },
+     {
+       "id": "aisne",
+       "title": "02 - Aisne",
+       "data": ["/api/statistics/02"]
+     },
++    {
++      "id": "allier",
++      "title": "03 - Allier",
++      "data": ["/api/statistics/03"]
++    },
+     {
+ // ...
+```
+
+Mettre à jour [l'aggregateur de données](https://github.com/SocialGouv/ds-aggregator/blob/master/packages/api/src/util/ds-config.ts) 
+
+```diff
+ export const dsConfigs = [
+   {
+     group: {
+       id: "02",
+       label: "02 - Aisne",
+     },
+     procedures: [19147, 19142],
+   },
++  {
++   group: {
++     id: "03",
++     label: "03 - Allier",
++   },
++   procedures: [12345, 67890],
++ },
+```
 
 #### Mettre à jour les coordonnées MOE
 
