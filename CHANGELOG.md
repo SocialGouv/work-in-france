@@ -1,3 +1,10 @@
+# [3.5.0](https://github.com/SocialGouv/work-in-france/compare/v3.4.2...v3.5.0) (2020-10-09)
+
+
+### Features
+
+* **stats:** add Côte-d'Or (21) ([#515](https://github.com/SocialGouv/work-in-france/issues/515)) ([2dffd1b](https://github.com/SocialGouv/work-in-france/commit/2dffd1b09e32c0f6c4fc437a61810ac332d4d00e)), closes [#182](https://github.com/SocialGouv/work-in-france/issues/182)
+
 ## [3.4.2](https://github.com/SocialGouv/work-in-france/compare/v3.4.1...v3.4.2) (2020-10-06)
 
 
