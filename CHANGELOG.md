@@ -1,3 +1,10 @@
+## [3.7.2](https://github.com/SocialGouv/work-in-france/compare/v3.7.1...v3.7.2) (2020-10-13)
+
+
+### Bug Fixes
+
+* lint ([#524](https://github.com/SocialGouv/work-in-france/issues/524)) ([fc348c6](https://github.com/SocialGouv/work-in-france/commit/fc348c6d7af995b9f00018778c769b1c8347881d))
+
 ## [3.7.1](https://github.com/SocialGouv/work-in-france/compare/v3.7.0...v3.7.1) (2020-10-13)
 
 
