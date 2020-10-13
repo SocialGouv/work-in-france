@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/permanent-redirect: https://incubateurministeressociaux.typeform.com/to/EpJsGp
+    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+    kubernetes.io/tls-acme: "true"
+  labels:
+    app.kubernetes.io/component: redirect-satisfaction
+    app.kubernetes.io/name: work-in-france
+  name: work-in-france-form-satisfaction
+  namespace: work-in-france
+spec:
+  rules:
+  - host: satisfaction.workinfrance.num.social.gouv.fr
+  tls:
+  - hosts:
+    - satisfaction.workinfrance.num.social.gouv.fr
+    secretName: wif-form-satisfaction-crt
