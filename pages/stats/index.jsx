@@ -92,7 +92,7 @@ const Charts = ({ group }) => {
 const Stats = () => {
   const router = useRouter();
   const { region = "national" } = router.query;
-  const regionId = region.replace(/^\//,"");
+  const regionId = region.replace(/^\//, "");
   const { data } = useQuery("dashboard", () => fetch("/dashboard.json").then((r) => r.json()));
   return (
     <Box bg="white" p={4}>
