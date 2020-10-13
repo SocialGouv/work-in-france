@@ -17,4 +17,4 @@ spec:
   tls:
   - hosts:
     - wif-dashboard.num.social.gouv.fr
-    secretName: wif-crt
+    secretName: wif-crt3
