@@ -1,3 +1,11 @@
+# [3.7.0](https://github.com/SocialGouv/work-in-france/compare/v3.6.0...v3.7.0) (2020-10-13)
+
+
+### Features
+
+* **k8s:** add satisfaction ingress ([#521](https://github.com/SocialGouv/work-in-france/issues/521)) ([a7f629c](https://github.com/SocialGouv/work-in-france/commit/a7f629c2ebe91db839dd735c6fed4c1ae0780225))
+* **k8s:** redirect wif-dashboard ([#522](https://github.com/SocialGouv/work-in-france/issues/522)) ([f64ddcb](https://github.com/SocialGouv/work-in-france/commit/f64ddcbe42a308f0c11b5ea40a10c33d1fd44826))
+
 # [3.6.0](https://github.com/SocialGouv/work-in-france/compare/v3.5.0...v3.6.0) (2020-10-13)
 
 
