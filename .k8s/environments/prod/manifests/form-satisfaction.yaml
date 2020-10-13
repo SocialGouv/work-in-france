@@ -17,4 +17,4 @@ spec:
   tls:
   - hosts:
     - satisfaction.workinfrance.num.social.gouv.fr
-    secretName: wif-crt2
+    secretName: wif-form-satisfaction-crt
