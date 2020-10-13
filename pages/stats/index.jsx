@@ -92,6 +92,7 @@ const Charts = ({ group }) => {
 const Stats = () => {
   const router = useRouter();
   const { region = "national" } = router.query;
+  const regionId = region.replace(/^\//,"");
   const { data } = useQuery("dashboard", () => fetch("/dashboard.json").then((r) => r.json()));
   return (
     <Box bg="white" p={4}>
@@ -100,9 +101,9 @@ const Stats = () => {
       </Head>
       <Wrapper>
         <Flex flexDirection="row">
-          <Box width={200}>{data && <Menu groups={data.groups} selected={region} />}</Box>
+          <Box width={200}>{data && <Menu groups={data.groups} selected={regionId} />}</Box>
           <Box width="100%">
-            {(data && <Charts group={data.groups.find((g) => g.id === region)} />) || (
+            {(data && <Charts group={data.groups.find((g) => g.id === regionId)} />) || (
               <div>chargement...</div>
             )}
           </Box>
