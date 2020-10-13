@@ -14,8 +14,10 @@ metadata:
 spec:
   rules:
   - host: work-in-france.incubateur.social.gouv.fr
+  - host: work-in-france.num.social.gouv.fr
   tls:
   - hosts:
     - work-in-france.incubateur.social.gouv.fr
+    - work-in-france.num.social.gouv.fr
     secretName: wif-crt
   
