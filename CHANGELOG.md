@@ -1,3 +1,10 @@
+## [3.7.1](https://github.com/SocialGouv/work-in-france/compare/v3.7.0...v3.7.1) (2020-10-13)
+
+
+### Bug Fixes
+
+* **stats:** handle redirections with slash prefix ([#523](https://github.com/SocialGouv/work-in-france/issues/523)) ([22ac620](https://github.com/SocialGouv/work-in-france/commit/22ac6201bf81d0f208b6cdacb3aa4968f1fd22d9))
+
 # [3.7.0](https://github.com/SocialGouv/work-in-france/compare/v3.6.0...v3.7.0) (2020-10-13)
 
 
