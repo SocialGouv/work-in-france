@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/permanent-redirect: https://work-in-france.fabrique.social.gouv.fr/stats/?region=$request_uri
+    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+    kubernetes.io/tls-acme: "true"
+  labels:
+    app.kubernetes.io/component: redirect
+    app.kubernetes.io/name: work-in-france
+  name: wif-dashboard-redirect
+  namespace: work-in-france
+spec:
+  rules:
+  - host: wif-dashboard.num.social.gouv.fr
+  tls:
+  - hosts:
+    - wif-dashboard.num.social.gouv.fr
+    secretName: wif-dashboard-num-crt
