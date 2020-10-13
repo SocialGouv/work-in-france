@@ -1,3 +1,10 @@
+# [3.6.0](https://github.com/SocialGouv/work-in-france/compare/v3.5.0...v3.6.0) (2020-10-13)
+
+
+### Features
+
+* **k8s:** restore wif.num url ([#520](https://github.com/SocialGouv/work-in-france/issues/520)) ([e1b4e17](https://github.com/SocialGouv/work-in-france/commit/e1b4e176fc0e3117d8a7daacc56ef752e8d16e34))
+
 # [3.5.0](https://github.com/SocialGouv/work-in-france/compare/v3.4.2...v3.5.0) (2020-10-09)
 
 
