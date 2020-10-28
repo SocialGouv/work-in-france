@@ -1,3 +1,10 @@
+## [3.7.3](https://github.com/SocialGouv/work-in-france/compare/v3.7.2...v3.7.3) (2020-10-28)
+
+
+### Bug Fixes
+
+* **stats:** add legends to status charts ([#526](https://github.com/SocialGouv/work-in-france/issues/526)) ([2eac104](https://github.com/SocialGouv/work-in-france/commit/2eac1048390200c16191107db9fb6819788db8e5)), closes [#175](https://github.com/SocialGouv/work-in-france/issues/175)
+
 ## [3.7.2](https://github.com/SocialGouv/work-in-france/compare/v3.7.1...v3.7.2) (2020-10-13)
 
 
