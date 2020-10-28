@@ -1,0 +1,16 @@
+{
+  "groups": [
+    {
+      "id": "national",
+      "title": "France entière",
+      "data": [
+        "/api/statistics-introduction/75"
+      ]
+    },
+    {
+      "title": "75 - Paris",
+      "id": "paris",
+      "data": ["/api/statistics-introduction/75"]
+    }
+  ]
+}
