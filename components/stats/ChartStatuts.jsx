@@ -1,5 +1,5 @@
 import React from "react";
-import { PieChart, Pie, Cell } from "recharts";
+import { PieChart, Pie, Cell, Legend, Tooltip } from "recharts";
 import { Heading } from "rebass";
 
 import ResponsiveContainer from "recharts/lib/component/ResponsiveContainer";
@@ -52,6 +52,8 @@ const ChartStatuts = ({ data }) => {
           <Pie data={pieData} dataKey="count" fill="#8884d8" label={renderCustomizedLabel}>
             {pieData && pieData.map((entry) => <Cell key={entry.color} fill={entry.color} />)}
           </Pie>
+          <Legend />
+          <Tooltip />
         </PieChart>
       </ResponsiveContainer>
     </div>
