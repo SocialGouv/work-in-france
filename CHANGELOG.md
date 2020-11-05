@@ -1,3 +1,10 @@
+# [3.8.0](https://github.com/SocialGouv/work-in-france/compare/v3.7.3...v3.8.0) (2020-11-05)
+
+
+### Features
+
+* add stats page for introduction ([4057103](https://github.com/SocialGouv/work-in-france/commit/4057103b0e56a7ddb79ad429bb311bfa2aab3b39))
+
 ## [3.7.3](https://github.com/SocialGouv/work-in-france/compare/v3.7.2...v3.7.3) (2020-10-28)
 
 
