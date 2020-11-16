@@ -1,3 +1,10 @@
+# [3.9.0](https://github.com/SocialGouv/work-in-france/compare/v3.8.0...v3.9.0) (2020-11-16)
+
+
+### Features
+
+* **gitlab:** update to SocialGouv/gitlab-ci-yml v18.11.0 ([#542](https://github.com/SocialGouv/work-in-france/issues/542)) ([330f25e](https://github.com/SocialGouv/work-in-france/commit/330f25ed3ebef4fadcd68bafb3d4ff6917004f49))
+
 # [3.8.0](https://github.com/SocialGouv/work-in-france/compare/v3.7.3...v3.8.0) (2020-11-05)
 
 
