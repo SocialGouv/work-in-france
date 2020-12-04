@@ -27,19 +27,19 @@ metadata:
     app.gitlab.com/env: preprod-dev2
     app.gitlab.com/env.name: preprod-dev2
   labels:
-    app: www
+    app: app
     application: v1-2-3-work-in-france
     owner: work-in-france
     team: work-in-france
     cert: wildcard
     component: nginx
-  name: www
+  name: app
   namespace: work-in-france-50-preprod-dev2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: www
+      app: app
   template:
     metadata:
       annotations:
@@ -47,7 +47,7 @@ spec:
         app.gitlab.com/env: preprod-dev2
         app.gitlab.com/env.name: preprod-dev2
       labels:
-        app: www
+        app: app
         application: v1-2-3-work-in-france
         owner: work-in-france
         team: work-in-france
@@ -56,7 +56,7 @@ spec:
     spec:
       containers:
         - image: >-
-            registry.gitlab.factory.social.gouv.fr/socialgouv/work-in-france/www:1.2.3
+            registry.gitlab.factory.social.gouv.fr/socialgouv/work-in-france/app:1.2.3
           livenessProbe:
             failureThreshold: 6
             httpGet:
@@ -65,7 +65,7 @@ spec:
             initialDelaySeconds: 30
             periodSeconds: 5
             timeoutSeconds: 5
-          name: www
+          name: app
           ports:
             - containerPort: 80
               name: http
@@ -91,17 +91,38 @@ spec:
               path: /index.html
               port: http
             periodSeconds: 5
+          envFrom:
+            - configMapRef:
+                name: app-configmap
 apiVersion: apps/v1
 kind: Deployment
 ---
 metadata:
+  name: app-configmap
+  annotations:
+    app.gitlab.com/app: socialgouv-work-in-france
+    app.gitlab.com/env: preprod-dev2
+    app.gitlab.com/env.name: preprod-dev2
   labels:
-    app: www
     application: v1-2-3-work-in-france
     owner: work-in-france
     team: work-in-france
     cert: wildcard
-  name: www
+  namespace: work-in-france-50-preprod-dev2
+data:
+  BACKOFFICE_API_URL: 'https://work-in-france-backoffice.fabrique.social.gouv.fr'
+  DS_AGGREGATOR_API_URL: 'https://wif.ds-aggregator.fabrique.social.gouv.fr'
+apiVersion: v1
+kind: ConfigMap
+---
+metadata:
+  labels:
+    app: app
+    application: v1-2-3-work-in-france
+    owner: work-in-france
+    team: work-in-france
+    cert: wildcard
+  name: app
   annotations:
     app.gitlab.com/app: socialgouv-work-in-france
     app.gitlab.com/env: preprod-dev2
@@ -113,7 +134,7 @@ spec:
       port: 80
       targetPort: 80
   selector:
-    app: www
+    app: app
   type: ClusterIP
 apiVersion: v1
 kind: Service
@@ -125,12 +146,12 @@ metadata:
     app.gitlab.com/env: preprod-dev2
     app.gitlab.com/env.name: preprod-dev2
   labels:
-    app: www
+    app: app
     application: v1-2-3-work-in-france
     owner: work-in-france
     team: work-in-france
     cert: wildcard
-  name: www
+  name: app
   namespace: work-in-france-50-preprod-dev2
 spec:
   rules:
@@ -138,7 +159,7 @@ spec:
       http:
         paths:
           - backend:
-              serviceName: www
+              serviceName: app
               servicePort: 80
             path: /
   tls:
