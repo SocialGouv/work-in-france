@@ -13,6 +13,7 @@ metadata:
     app.gitlab.com/env: master-dev2
     app.gitlab.com/env.name: master-dev2
   labels:
+    azure-pg-admin-user: work-in-france
     application: master-dev2-work-in-france
     owner: work-in-france
     team: work-in-france

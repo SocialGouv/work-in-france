@@ -13,6 +13,7 @@ metadata:
     app.gitlab.com/env: preprod-dev2
     app.gitlab.com/env.name: preprod-dev2
   labels:
+    azure-pg-admin-user: work-in-france
     application: v1-2-3-work-in-france
     owner: work-in-france
     team: work-in-france
