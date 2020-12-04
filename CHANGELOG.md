@@ -1,3 +1,10 @@
+## [3.10.1](https://github.com/SocialGouv/work-in-france/compare/v3.10.0...v3.10.1) (2020-12-04)
+
+
+### Bug Fixes
+
+* **k8s:** name the image /app ([4cfabc0](https://github.com/SocialGouv/work-in-france/commit/4cfabc04684d04bf5a4c1c9fd9fbfb1a0802c0b8))
+
 # [3.10.0](https://github.com/SocialGouv/work-in-france/compare/v3.9.0...v3.10.0) (2020-12-04)
 
 
