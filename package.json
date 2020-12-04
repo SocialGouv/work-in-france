@@ -1,7 +1,7 @@
 {
   "name": "work-in-france",
   "description": "La plateforme de demande d'autorisation provisoires de travail.",
-  "version": "3.8.0",
+  "version": "3.9.0",
   "author": "Incubateur des Ministères Sociaux <dsi-incubateur@sg.social.gouv.fr> (https://incubateur.social.gouv.fr)",
   "bugs": "https://github.com/SocialGouv/work-in-france/issues",
   "config": {
@@ -35,11 +35,11 @@
     "date-fns": "^2.16.1",
     "formik": "^2.1.5",
     "memoizee": "^0.4.14",
-    "next": "^9.5.5",
+    "next": "^10.0.1",
     "next-redux-wrapper": "^6.0.2",
     "normalize.css": "^8.0.1",
     "raw-loader": "^4.0.2",
-    "react": "^16.13.1",
+    "react": "^17.0.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
     "react-query": "^2.22.2",
