@@ -4,25 +4,6 @@ exports[`kosko generate --prod 1`] = `
 "---
 metadata:
   annotations:
-    field.cattle.io/creatorId: gitlab
-    field.cattle.io/projectId: ''
-    git/branch: v1.2.3
-    git/remote: >-
-      https://gitlab-ci-token:[MASKED]@gitlab.factory.social.gouv.fr/SocialGouv/work-in-france.git
-    app.gitlab.com/app: socialgouv-work-in-france
-    app.gitlab.com/env: prod2
-    app.gitlab.com/env.name: prod2
-  labels:
-    azure-pg-admin-user: work-in-france
-    application: work-in-france
-    owner: work-in-france
-    team: work-in-france
-  name: work-in-france
-apiVersion: v1
-kind: Namespace
----
-metadata:
-  annotations:
     app.gitlab.com/app: socialgouv-work-in-france
     app.gitlab.com/env: prod2
     app.gitlab.com/env.name: prod2
