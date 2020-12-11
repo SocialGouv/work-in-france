@@ -7,9 +7,9 @@ jest.setTimeout(1000 * 60);
 test("kosko generate --preprod", async () => {
   expect(
     await getEnvManifests("preprod", "", {
-      ...project("serving-ml").preprod,
-      RANCHER_PROJECT_ID: "c-bd7z2:p-2qlgk",
+      ...project("work-in-france").preprod,
       KUBE_NAMESPACE: "work-in-france-50-preprod-dev2",
+      RANCHER_PROJECT_ID: "c-bd7z2:p-2qlgk",
     })
   ).toMatchSnapshot();
 });
