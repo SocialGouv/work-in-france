@@ -1,3 +1,10 @@
+## [3.10.2](https://github.com/SocialGouv/work-in-france/compare/v3.10.1...v3.10.2) (2020-12-11)
+
+
+### Bug Fixes
+
+* force path version ([4291c35](https://github.com/SocialGouv/work-in-france/commit/4291c355fcd3eca33990c0587d2406b2147ac8ac))
+
 ## [3.10.1](https://github.com/SocialGouv/work-in-france/compare/v3.10.0...v3.10.1) (2020-12-04)
 
 
