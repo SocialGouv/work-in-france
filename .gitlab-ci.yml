@@ -5,6 +5,7 @@ include:
     # ref: v20.0.0
 
 variables:
+  AUTO_DEVOPS_KANIKO: "pouet"
   AUTO_DEVOPS_RELEASE_AUTO: "🔖"
   # AUTO_DEVOPS_PRODUCTION_AUTO: "🚀"
 
