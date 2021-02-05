@@ -2,12 +2,12 @@ include:
   - project: SocialGouv/gitlab-ci-yml
     file: /autodevops.yml
     ref: no-k8s
-    # ref: v20.0.0
 
 variables:
-  AUTO_DEVOPS_KANIKO: "pouet"
+  AUTO_DEVOPS_KANIKO: "🐕"
+  AUTO_DEVOPS_ENABLE_KAPP: "😱"
   AUTO_DEVOPS_RELEASE_AUTO: "🔖"
-  # AUTO_DEVOPS_PRODUCTION_AUTO: "🚀"
+  AUTO_DEVOPS_PRODUCTION_AUTO: "🚀"
 
 # NOTE(douglasduteil): No install :(
 # sharing the node_modules is too slow...

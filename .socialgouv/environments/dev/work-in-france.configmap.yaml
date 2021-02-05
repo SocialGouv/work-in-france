@@ -1,7 +1,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: app-configmap
+  name: work-in-france-configmap
 data:
   BACKOFFICE_API_URL: "https://work-in-france-backoffice.fabrique.social.gouv.fr"
   DS_AGGREGATOR_API_URL: "https://wif.ds-aggregator.fabrique.social.gouv.fr"
