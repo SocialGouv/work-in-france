@@ -7,7 +7,10 @@ import ValidityCheck from "../components/validityCheck";
 const ValidityCheckPage = () => (
   <Box bg="white">
     <Head>
-      <title>Work in France - Vérification d'une autorisation provisoire de travail</title>
+      <title>
+        Work in France - Vérification d'une autorisation provisoire de travail ou d'une demande
+        d'introduction d'un travailleur étranger
+      </title>
     </Head>
     <Wrapper>
       <Flex justifyContent="center">
