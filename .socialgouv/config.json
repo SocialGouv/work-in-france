@@ -1,5 +1,7 @@
 {
   "name": "work-in-france",
   "type": "static",
-  "subdomain": "work-in-france"
+  "subdomain": "work-in-france",
+  "hasura": false,
+  "azure-pg": false
 }
