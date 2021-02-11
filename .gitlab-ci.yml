@@ -1,7 +1,7 @@
 include:
   - project: SocialGouv/gitlab-ci-yml
     file: /autodevops.yml
-    ref: v20.7.1
+    ref: v20.7.3
 
 variables:
   AUTO_DEVOPS_KANIKO: "🐕"
