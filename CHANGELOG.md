@@ -1,3 +1,10 @@
+# [3.11.0](https://github.com/SocialGouv/work-in-france/compare/v3.10.2...v3.11.0) (2021-02-22)
+
+
+### Features
+
+* enable authorization validity check ([#549](https://github.com/SocialGouv/work-in-france/issues/549)) ([16e24af](https://github.com/SocialGouv/work-in-france/commit/16e24af33fb1d435a7aeb094882d10ba7b16e87a))
+
 ## [3.10.2](https://github.com/SocialGouv/work-in-france/compare/v3.10.1...v3.10.2) (2020-12-11)
 
 
