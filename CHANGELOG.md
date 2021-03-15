@@ -1,3 +1,10 @@
+# [3.12.0](https://github.com/SocialGouv/work-in-france/compare/v3.11.0...v3.12.0) (2021-03-15)
+
+
+### Features
+
+* add platform closing warning ([6e45b64](https://github.com/SocialGouv/work-in-france/commit/6e45b64028daa1710440bec63a80bee4979abb03))
+
 # [3.11.0](https://github.com/SocialGouv/work-in-france/compare/v3.10.2...v3.11.0) (2021-02-22)
 
 
