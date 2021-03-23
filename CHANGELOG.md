@@ -1,3 +1,10 @@
+## [3.12.2](https://github.com/SocialGouv/work-in-france/compare/v3.12.1...v3.12.2) (2021-03-23)
+
+
+### Bug Fixes
+
+* ajout du lien dans le message ([52f5558](https://github.com/SocialGouv/work-in-france/commit/52f555871908ce549023c825e9a7824cbe599de8))
+
 ## [3.12.1](https://github.com/SocialGouv/work-in-france/compare/v3.12.0...v3.12.1) (2021-03-23)
 
 
