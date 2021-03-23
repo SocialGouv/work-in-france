@@ -50,14 +50,14 @@ const Header = () => {
           <p>
             La délivrance des autorisations de travail et des autorisations provisoires de travail
             pour les travailleurs et étudiants non membres de l’UE sera prise en charge à compter du
-            6 avril par nouveau service dématérialisé du ministère de l'Intérieur : 
+            6 avril par nouveau service dématérialisé du ministère de l'Intérieur:<br>  
             <a href="https://administration-etrangers-en-france.interieur.gouv.fr/">
             https://administration-etrangers-en-france.interieur.gouv.fr/</a>.
           </p>
           <p>
             Il n'est désormais 
             plus possible de déposer des dossiers sur la plateforme Work in France 
-            23 mars afin de permettre aux services de terminer l’instruction des dossiers en cours
+            23 mars afin de permettre aux services de terminer l’instruction des dossiers en cours.
           </p>
         </Wrapper>
       </Text>
