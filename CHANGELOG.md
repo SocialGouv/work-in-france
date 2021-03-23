@@ -1,3 +1,10 @@
+# [3.13.0](https://github.com/SocialGouv/work-in-france/compare/v3.12.3...v3.13.0) (2021-03-23)
+
+
+### Features
+
+* disable Work in France ([6b44314](https://github.com/SocialGouv/work-in-france/commit/6b443143abf8f005c70285a29a74adc1f6939243))
+
 ## [3.12.3](https://github.com/SocialGouv/work-in-france/compare/v3.12.2...v3.12.3) (2021-03-23)
 
 
