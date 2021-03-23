@@ -48,16 +48,18 @@ const Header = () => {
         <Wrapper>
           <p>Information importante</p>
           <p>
-            La délivrance des autorisations de travail et des autorisations provisoires de travail
-            pour les travailleurs et étudiants non membres de l’UE sera prise en charge à compter du
-            6 avril par nouveau service dématérialisé du ministère de l'Intérieur:<br/>  
-            <a href="https://administration-etrangers-en-france.interieur.gouv.fr/">
-            https://administration-etrangers-en-france.interieur.gouv.fr/</a>.
+            La délivrance des autorisations de travail (AT) et des autorisations provisoires de
+            travail (APT) pour les travailleurs et étudiants non membres de l’UE sera prise en
+            charge à compter du 6 avril 2021 par le nouveau service dématérialisé du ministère de
+            l'Intérieur sur le site suivant :{" "}
+            <Link href="https://administration-etrangers-en-france.interieur.gouv.fr">
+              https://administration-etrangers-en-france.interieur.gouv.fr
+            </Link>
           </p>
           <p>
-            Il n'est désormais 
-            plus possible de déposer des dossiers sur la plateforme Work in France 
-            afin de permettre aux services de terminer l’instruction des dossiers en cours.
+            Afin de permettre aux services de terminer l’instruction des dossiers en cours, il n’est
+            plus possible de déposer de nouveaux dossiers sur la plateforme Work in France depuis le
+            23 mars.
           </p>
         </Wrapper>
       </Text>
