@@ -1,3 +1,10 @@
+## [3.13.1](https://github.com/SocialGouv/work-in-france/compare/v3.13.0...v3.13.1) (2021-04-22)
+
+
+### Reverts
+
+* Revert "chore(deps): update all dependencies (patch)" (#564) ([3eda56a](https://github.com/SocialGouv/work-in-france/commit/3eda56aa7f357b00199bad36c178a9f46e042561)), closes [#564](https://github.com/SocialGouv/work-in-france/issues/564)
+
 # [3.13.0](https://github.com/SocialGouv/work-in-france/compare/v3.12.3...v3.13.0) (2021-03-23)
 
 
