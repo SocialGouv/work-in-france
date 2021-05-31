@@ -1,10 +1,11 @@
 include:
   - project: SocialGouv/gitlab-ci-yml
     file: /autodevops.yml
-    ref: v22.0.0
+    ref: v22.1.8
 
 variables:
   AUTO_DEVOPS_RELEASE_AUTO: "🔖"
+  AUTO_DEVOPS_KANIKO: "🐕"
   # AUTO_DEVOPS_PRODUCTION_AUTO: "🚀"
 
 # NOTE(douglasduteil): No install :(
@@ -51,6 +52,6 @@ Build:
 # By default, kosko-charts use a "/app" for default docker images names
 # TODO: discuss
 Register image:
-  extends: .autodevops_register_image
+  extends: .autodevops_register_kaniko_image
   variables:
-    IMAGE_NAME: $CI_REGISTRY_IMAGE/app
+    IMAGE_NAME: wif-front

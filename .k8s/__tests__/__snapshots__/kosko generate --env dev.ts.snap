@@ -24,6 +24,8 @@ kind: Namespace
 ---
 metadata:
   annotations:
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-work-in-france
     app.gitlab.com/env: master-dev2
     app.gitlab.com/env.name: master-dev2
@@ -44,6 +46,8 @@ spec:
   template:
     metadata:
       annotations:
+        kapp.k14s.io/disable-default-ownership-label-rules: ''
+        kapp.k14s.io/disable-default-label-scoping-rules: ''
         app.gitlab.com/app: socialgouv-work-in-france
         app.gitlab.com/env: master-dev2
         app.gitlab.com/env.name: master-dev2
@@ -57,7 +61,7 @@ spec:
     spec:
       containers:
         - image: >-
-            registry.gitlab.factory.social.gouv.fr/socialgouv/work-in-france/app:0123456789abcdefghijklmnopqrstuvwxyz0123
+            harbor.fabrique.social.gouv.fr/wif/wif-front:0123456789abcdefghijklmnopqrstuvwxyz0123
           livenessProbe:
             failureThreshold: 6
             httpGet:
@@ -101,6 +105,8 @@ kind: Deployment
 metadata:
   name: app-configmap
   annotations:
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-work-in-france
     app.gitlab.com/env: master-dev2
     app.gitlab.com/env.name: master-dev2
@@ -125,6 +131,8 @@ metadata:
     cert: wildcard
   name: app
   annotations:
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-work-in-france
     app.gitlab.com/env: master-dev2
     app.gitlab.com/env.name: master-dev2
@@ -143,6 +151,8 @@ kind: Service
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
+    kapp.k14s.io/disable-default-ownership-label-rules: ''
+    kapp.k14s.io/disable-default-label-scoping-rules: ''
     app.gitlab.com/app: socialgouv-work-in-france
     app.gitlab.com/env: master-dev2
     app.gitlab.com/env.name: master-dev2
