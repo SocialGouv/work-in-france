@@ -1,3 +1,46 @@
+## [3.13.1](https://github.com/SocialGouv/work-in-france/compare/v3.13.0...v3.13.1) (2021-04-22)
+
+
+### Reverts
+
+* Revert "chore(deps): update all dependencies (patch)" (#564) ([3eda56a](https://github.com/SocialGouv/work-in-france/commit/3eda56aa7f357b00199bad36c178a9f46e042561)), closes [#564](https://github.com/SocialGouv/work-in-france/issues/564)
+
+# [3.13.0](https://github.com/SocialGouv/work-in-france/compare/v3.12.3...v3.13.0) (2021-03-23)
+
+
+### Features
+
+* disable Work in France ([6b44314](https://github.com/SocialGouv/work-in-france/commit/6b443143abf8f005c70285a29a74adc1f6939243))
+
+## [3.12.3](https://github.com/SocialGouv/work-in-france/compare/v3.12.2...v3.12.3) (2021-03-23)
+
+
+### Bug Fixes
+
+* lien à la ligne ([56fc776](https://github.com/SocialGouv/work-in-france/commit/56fc776508203901fd0f14f32f7c013bdefee274))
+* maj message ([853113e](https://github.com/SocialGouv/work-in-france/commit/853113e3d6d9d58850583b2cb1b621c8ac8aa4b3))
+
+## [3.12.2](https://github.com/SocialGouv/work-in-france/compare/v3.12.1...v3.12.2) (2021-03-23)
+
+
+### Bug Fixes
+
+* ajout du lien dans le message ([52f5558](https://github.com/SocialGouv/work-in-france/commit/52f555871908ce549023c825e9a7824cbe599de8))
+
+## [3.12.1](https://github.com/SocialGouv/work-in-france/compare/v3.12.0...v3.12.1) (2021-03-23)
+
+
+### Bug Fixes
+
+* update du message ([9fafe77](https://github.com/SocialGouv/work-in-france/commit/9fafe7777ca172d94821ece104b9d2314a2dec11))
+
+# [3.12.0](https://github.com/SocialGouv/work-in-france/compare/v3.11.0...v3.12.0) (2021-03-15)
+
+
+### Features
+
+* add platform closing warning ([6e45b64](https://github.com/SocialGouv/work-in-france/commit/6e45b64028daa1710440bec63a80bee4979abb03))
+
 # [3.11.0](https://github.com/SocialGouv/work-in-france/compare/v3.10.2...v3.11.0) (2021-02-22)
 
 
