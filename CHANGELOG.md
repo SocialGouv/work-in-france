@@ -1,3 +1,11 @@
+## [3.13.2](https://github.com/SocialGouv/work-in-france/compare/v3.13.1...v3.13.2) (2021-05-31)
+
+
+### Bug Fixes
+
+* **ci:** use yaml subfolder ([61f632a](https://github.com/SocialGouv/work-in-france/commit/61f632a9b99a557f71220f9b5ad290cfc9f91b4c))
+* No k8s ([#548](https://github.com/SocialGouv/work-in-france/issues/548)) ([acd0291](https://github.com/SocialGouv/work-in-france/commit/acd029146d80b8abb0fded1162b19271e3191b3f))
+
 ## [3.13.1](https://github.com/SocialGouv/work-in-france/compare/v3.13.0...v3.13.1) (2021-04-22)
 
 
