@@ -3,5 +3,5 @@ apiVersion: v1
 metadata:
   name: work-in-france-configmap
 data:
-  BACKOFFICE_API_URL: "https://work-in-france-backoffice.fabrique.social.gouv.fr"
+  BACKOFFICE_API_URL: "https://renovate-socialgo-j8gngn-work-in-france-backoffice.dev2.fabrique.social.gouv.fr/"
   DS_AGGREGATOR_API_URL: "https://wif.ds-aggregator.fabrique.social.gouv.fr"
