@@ -1,3 +1,10 @@
+## [3.13.5](https://github.com/SocialGouv/work-in-france/compare/v3.13.4...v3.13.5) (2021-08-25)
+
+
+### Bug Fixes
+
+* deactivate ([#587](https://github.com/SocialGouv/work-in-france/issues/587)) ([3ba2f20](https://github.com/SocialGouv/work-in-france/commit/3ba2f20e248fb2b6f7d4a86854f7e5e99aac23d4))
+
 ## [3.13.4](https://github.com/SocialGouv/work-in-france/compare/v3.13.3...v3.13.4) (2021-06-20)
 
 
