@@ -15,7 +15,8 @@ const ValidityCheckPage = () => (
     <Wrapper>
       <Flex justifyContent="center">
         <Box bg="white" p={[2, 4]} width={[1, 2 / 3]}>
-          <ValidityCheck />
+          Service non disponible
+          {/**<ValidityCheck />*/}
         </Box>
       </Flex>
     </Wrapper>
