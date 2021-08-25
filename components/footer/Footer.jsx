@@ -46,13 +46,6 @@ const Footer = () => {
                   <StyledLink>CGU</StyledLink>
                 </NextLink>
               </Text>
-              {!nouvelleDemarche && (
-                <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
-                  <NextLink href="/stats" passHref>
-                    <StyledLink>Statistiques</StyledLink>
-                  </NextLink>
-                </Text>
-              )}
               <Text textAlign={["left", "center"]} width={[1, 1 / 6]}>
                 <StyledLink href={`mailto:${contactEmail}`}>Contactez-nous</StyledLink>
               </Text>
