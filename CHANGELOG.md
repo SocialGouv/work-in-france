@@ -1,3 +1,10 @@
+## [3.13.7](https://github.com/SocialGouv/work-in-france/compare/v3.13.6...v3.13.7) (2021-08-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency recharts to ^2.1.2 ([02e4e5e](https://github.com/SocialGouv/work-in-france/commit/02e4e5eded029c2071ad30ea621e54cd4f5672d2))
+
 ## [3.13.6](https://github.com/SocialGouv/work-in-france/compare/v3.13.5...v3.13.6) (2021-08-25)
 
 
